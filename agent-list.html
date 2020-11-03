@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+	<!-- Metas -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links -->
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<!-- google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Plugins CSS -->
+	<link href="css/plugin.css" rel="stylesheet" />
+	<!-- style CSS -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!-- Document Title -->
+	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
+</head>
+
+<body>
+	<!--Preloader ends-->
+	<!--Page Wrapper starts-->
+	<div class="page-wrapper">
+		<!--Header starts-->
+		<header class="header transparent scroll-hide">
+			<!--Main Menu starts-->
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-3 col-4">
+						<a class="logo" href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-8">
+						<ul class="top-nav">
+							<li>
+								<select class="select-arrow">
+									<option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
+									<option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
+									<option value="https://www.5xprop.com/?change_city=ghaziabad">Ghaziabad</option>
+									<option value="https://www.5xprop.com/?change_city=greater-noida">Greater Noida</option>
+									<option value="https://www.5xprop.com/?change_city=gurugram">Gurugram</option>
+									<option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
+									<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
+								</select>
+							</li>
+							<li class="d-none d-md-block"><a href="#"><i class="fa fa-user-alt mr-1"></i>  Profile </a> </li>
+							<li><a class="btn v7" href="#"><i class="fa fa-home mr-2"></i>Post Free Ad </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Main Menu ends-->
+		</header>
+		<div class="mobile-footer-menu d-md-none"> <a href="#" class="active"><i class="fa fa-home"></i>Home</a> <a href="#"><i class="fa fa-user"></i>Box</a> <a href="#"><i class="fa fa-server"></i>Exclusive</a> <a href="#"><i class="fa fa-building"></i>Project </a> <a href="#"><i class="fa fa-users"></i>Experts</a> </div>
+		<!-- Mobile popup start -->
+		<div class="modal fade moblie-search" id="MoblieSearchResidential" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header mb-4">
+						<h5 class="modal-title"> Fastest Way to Search Property</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body p-0">
+						<h4> Location </h4>
+						<input type=" text" class="form-control mb-4 font-14" placeholder="Type Property Location..">
+						<div class="btn-box">
+							<h4> Type  </h4>
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="images/home-buy.png" alt=""> Buy </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> <img src="images/rent.png" alt=""> Rent </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> <img src="images/pg.png" alt=""> Paying Guest </label>
+							</div>
+						</div>
+						<div class="btn-box mt-20">
+							<h4> Property Type  </h4>
+							<div class="btn-group btn-group-toggle btn-50" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> Farm House </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> Independent House/ Villa </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Independent/ Builder floor </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Land </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> Other </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Residential Apartment </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Studio </label>
+							</div>
+							<div class="apply-btn pt-4">
+								<button type="button" class="btn v7 d-block w-100">APPLY</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade moblie-search" id="MoblieSearchCommercial" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header mb-4">
+						<h5 class="modal-title"> Fastest Way to Search Property</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body p-0">
+						<h4> Location </h4>
+						<input type=" text" class="form-control mb-4 font-14" placeholder="Type Property Location..">
+						<div class="btn-box">
+							<h4> Type  </h4>
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="images/home-buy.png" alt=""> Buy </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> <img src="images/rent.png" alt=""> Rent </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> <img src="images/pg.png" alt=""> Co-Working </label>
+							</div>
+						</div>
+						<div class="btn-box mt-20">
+							<h4> Property Type  </h4>
+							<div class="btn-group btn-group-toggle btn-50" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> Agricultural /Farm land </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> Commercial land </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Hotel / Resort </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Office Space </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> Shop / Showroom </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Space in Retail mall </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option3" autocomplete="off"> Warehouse </label>
+							</div>
+							<div class="apply-btn pt-4">
+								<button type="button" class="btn v7 d-block w-100">APPLY</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade moblie-search" id="MoblieSearchProject" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header mb-4">
+						<h5 class="modal-title"> Fastest Way to Search Property</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body p-0">
+						<h4> Location </h4>
+						<input type=" text" class="form-control mb-4 font-14" placeholder="Type Property Location..">
+						<div class="btn-box">
+							<h4>Property Type  </h4>
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="images/residential-project.png" alt=""> Residential Project </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> <img src="images/placeholder.png" alt=""> Commercial Project </label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade moblie-search" id="MoblieSearchExpert" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header mb-4">
+						<h5 class="modal-title"> Fastest Way to Search Property</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body p-0">
+						<h4> Location </h4>
+						<input type=" text" class="form-control mb-4 font-14" placeholder="Type Property Location..">
+						<div class="btn-box">
+							<h4> Type  </h4>
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-danger btn-sm px-3 btn-sm  active">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="images/agent.png" alt=""> Agent </label>
+								<label class="btn btn-danger btn-sm px-3 btn-sm">
+									<input type="radio" name="options" id="option2" autocomplete="off"> <img src="images/manager.png" alt=""> Manager </label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile popup End -->
+		<section class="inner-pages">
+			<div class="inner-pages-items">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<form class="hero__form v2 filter listing-filter property-filter">
+								<div class="row">
+									<div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12">
+										<div class="input-search d-none d-md-block">
+											<input type="text" name="place-event" id="place-event" placeholder="Search (e.g. 'Expert Name')"> </div>
+										<div class="input-search d-md-none mobile-list-filter mb-0">
+											<input type="text" name="place-event" id="place-event" placeholder="Search (e.g. 'Expert Name')">
+											<a href="#" class="mobile-list-filer-btn"> <i class="fas fa-filter"></i> </a>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-md-block">
+										<div class="submit_btn">
+											<button class="btn v3" type="submit">Search</button>
+										</div>
+										<div class="dropdown-filter"><span>More Filters</span></div>
+									</div>
+									<div class="explore__form-checkbox-list full-filter">
+										<div class="d-md-none">
+											<label class="text-white">Expert</label>
+											<input type=" text" class="form-control mb-4 font-14" placeholder="Enter Property, Location .."> </div>
+										<div class="row">
+											<div class="col-lg-3 col-md-4">
+												<div class="filter-checkbox">
+													<p>City </p>
+													<ul>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">Delhi</label>
+														</li>
+														<li>
+															<input id="check-b" type="checkbox" name="check">
+															<label for="check-b">Faridabad</label>
+														</li>
+														<li>
+															<input id="check-c" type="checkbox" name="check">
+															<label for="check-c">Ghaziabad</label>
+														</li>
+														<li>
+															<input id="check-d" type="checkbox" name="check">
+															<label for="check-d">Greater Noida</label>
+														</li>
+														<li>
+															<input id="check-e" type="checkbox" name="check">
+															<label for="check-e">Gurugram</label>
+														</li>
+														<li>
+															<input id="check-f" type="checkbox" name="check">
+															<label for="check-f">Mathura </label>
+														</li>
+														<li>
+															<input id="check-g" type="checkbox" name="check">
+															<label for="check-g">Noida</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4">
+												<div class="filter-checkbox">
+													<p>Property</p>
+													<ul>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a"> New Projects</label>
+														</li>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">Resale/Rental </label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4">
+												<div class="filter-checkbox">
+													<p>Languages</p>
+													<ul>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">Hindi</label>
+														</li>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">English</label>
+														</li>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">Urdu</label>
+														</li>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">Punjabi</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4">
+												<div class="filter-checkbox">
+													<p>Experience</p>
+													<ul>
+														<li>
+															<input id="check-a" type="checkbox" name="check">
+															<label for="check-a">0-5 Years</label>
+														</li>
+														<li>
+															<input id="check-b" type="checkbox" name="check">
+															<label for="check-b">6-10 Years</label>
+														</li>
+														<li>
+															<input id="check-c" type="checkbox" name="check">
+															<label for="check-c">11-15 Years</label>
+														</li>
+														<li>
+															<input id="check-c" type="checkbox" name="check">
+															<label for="check-c">16-20 Years</label>
+														</li>
+														<li>
+															<input id="check-c" type="checkbox" name="check">
+															<label for="check-c">21-25 Years</label>
+														</li>
+														<li>
+															<input id="check-c" type="checkbox" name="check">
+															<label for="check-c">26-30 Years</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="btn-close"> <i class="fas fa-times-circle"></i> </a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-lg-8">
+							<div class="property-list-box agent-list-box">
+								<div class="d-flex">
+									<div class="agent-list-box-img"><img src="images/client_1.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="property-list-box-info">
+										<div class="agent-list-box-top"> 
+											<div class="d-flex justify-content-between">
+											<a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
+											<a href="#" class="btn border-danger text-danger py-1"> <i class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect </span></a>
+										</div>
+
+											<div class="property-location"> <i class="fa fa-map-marker-alt"></i>
+												<p>Noida, Uttar Pradesh</p>
+											</div>
+										</div>
+										<!-- <div class="property-list-box-info-size">2 BHK | <i class="fas fa-arrows-alt"></i> 890 Sq.ft</div> -->
+
+										<ul class="agent-feature">
+											<li>  15 Years Experience </li>
+											<li>  Connected By : <strong>10</strong> </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="property-list-box-info-btn align-items-center">
+
+									<div><span class="m-0"><i class="fa fa-list"></i> Listing (5)</span>  &nbsp; &nbsp;<span class="m-0"><i class="fa fa-eye"></i>  Posts (5)</span></div>
+									<div>
+									<a href="#" class="btn btn-success"><i class="fab fa-whatsapp m-0"></i>  <span class="text-white d-none d-md-inline-block"> Whatsapp </span></a>
+										<a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom"> <i class="fa fa-phone m-0"></i> <span class="text-white d-none d-md-inline-block"> Call </span></a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="property-list-box agent-list-box">
+								<div class="d-flex">
+									<div class="agent-list-box-img"><img src="images/client_2.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="property-list-box-info">
+										<div class="agent-list-box-top"> 
+											<div class="d-flex justify-content-between">
+											<a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
+											<a href="#" class="btn border-danger text-danger py-1"> <i class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect </span></a>
+										</div>
+
+											<div class="property-location"> <i class="fa fa-map-marker-alt"></i>
+												<p>Noida, Uttar Pradesh</p>
+											</div>
+										</div>
+										<!-- <div class="property-list-box-info-size">2 BHK | <i class="fas fa-arrows-alt"></i> 890 Sq.ft</div> -->
+
+										<ul class="agent-feature">
+											<li>  15 Years Experience </li>
+											<li>  Connected By : <strong>10</strong> </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="property-list-box-info-btn align-items-center">
+
+									<div><span class="m-0"><i class="fa fa-list"></i> Listing (5)</span>  &nbsp; &nbsp;<span class="m-0"><i class="fa fa-eye"></i>  Posts (5)</span></div>
+									<div>
+									<a href="#" class="btn btn-success"><i class="fab fa-whatsapp m-0"></i>  <span class="text-white d-none d-md-inline-block"> Whatsapp </span></a>
+										<a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom"> <i class="fa fa-phone m-0"></i> <span class="text-white d-none d-md-inline-block"> Call </span></a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="property-list-box agent-list-box">
+								<div class="d-flex">
+									<div class="agent-list-box-img"><img src="images/user-default.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="property-list-box-info">
+										<div class="agent-list-box-top"> 
+											<div class="d-flex justify-content-between">
+											<a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
+											<a href="#" class="btn border-danger text-danger py-1"> <i class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect </span></a>
+										</div>
+
+											<div class="property-location"> <i class="fa fa-map-marker-alt"></i>
+												<p>Noida, Uttar Pradesh</p>
+											</div>
+										</div>
+										<!-- <div class="property-list-box-info-size">2 BHK | <i class="fas fa-arrows-alt"></i> 890 Sq.ft</div> -->
+
+										<ul class="agent-feature">
+											<li>  15 Years Experience </li>
+											<li>  Connected By : <strong>10</strong> </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="property-list-box-info-btn align-items-center">
+
+									<div><span class="m-0"><i class="fa fa-list"></i> Listing (5)</span>  &nbsp; &nbsp;<span class="m-0"><i class="fa fa-eye"></i>  Posts (5)</span></div>
+									<div>
+									<a href="#" class="btn btn-success"><i class="fab fa-whatsapp m-0"></i>  <span class="text-white d-none d-md-inline-block"> Whatsapp </span></a>
+										<a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom"> <i class="fa fa-phone m-0"></i> <span class="text-white d-none d-md-inline-block"> Call </span></a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="property-list-box agent-list-box">
+								<div class="d-flex">
+									<div class="agent-list-box-img"><img src="images/client_4.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="property-list-box-info">
+										<div class="agent-list-box-top"> 
+											<div class="d-flex justify-content-between">
+											<a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
+											<a href="#" class="btn border-danger text-danger py-1"> <i class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect </span></a>
+										</div>
+
+											<div class="property-location"> <i class="fa fa-map-marker-alt"></i>
+												<p>Noida, Uttar Pradesh</p>
+											</div>
+										</div>
+										<!-- <div class="property-list-box-info-size">2 BHK | <i class="fas fa-arrows-alt"></i> 890 Sq.ft</div> -->
+
+										<ul class="agent-feature">
+											<li>  15 Years Experience </li>
+											<li>  Connected By : <strong>10</strong> </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="property-list-box-info-btn align-items-center">
+
+									<div><span class="m-0"><i class="fa fa-list"></i> Listing (5)</span>  &nbsp; &nbsp;<span class="m-0"><i class="fa fa-eye"></i>  Posts (5)</span></div>
+									<div>
+									<a href="#" class="btn btn-success"><i class="fab fa-whatsapp m-0"></i>  <span class="text-white d-none d-md-inline-block"> Whatsapp </span></a>
+										<a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom"> <i class="fa fa-phone m-0"></i> <span class="text-white d-none d-md-inline-block"> Call </span></a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="property-list-box agent-list-box">
+								<div class="d-flex">
+									<div class="agent-list-box-img"><img src="images/user-default.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="property-list-box-info">
+										<div class="agent-list-box-top"> 
+											<div class="d-flex justify-content-between">
+											<a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
+											<a href="#" class="btn border-danger text-danger py-1"> <i class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect </span></a>
+										</div>
+
+											<div class="property-location"> <i class="fa fa-map-marker-alt"></i>
+												<p>Noida, Uttar Pradesh</p>
+											</div>
+										</div>
+										<!-- <div class="property-list-box-info-size">2 BHK | <i class="fas fa-arrows-alt"></i> 890 Sq.ft</div> -->
+
+										<ul class="agent-feature">
+											<li>  15 Years Experience </li>
+											<li>  Connected By : <strong>10</strong> </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="property-list-box-info-btn align-items-center">
+
+									<div><span class="m-0"><i class="fa fa-list"></i> Listing (5)</span>  &nbsp; &nbsp;<span class="m-0"><i class="fa fa-eye"></i>  Posts (5)</span></div>
+									<div>
+									<a href="#" class="btn btn-success"><i class="fab fa-whatsapp m-0"></i>  <span class="text-white d-none d-md-inline-block"> Whatsapp </span></a>
+										<a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom"> <i class="fa fa-phone m-0"></i> <span class="text-white d-none d-md-inline-block"> Call </span></a>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="page-num text-center mt-40">
+								<ul>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#"><i class="lnr lnr-chevron-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<!-- <div class="left-filter">
+								<div class="left-filter-item"> 
+								<div class="left-filter-item-title">Type of Property</div>	
+								</div>
+							</div> -->
+							<div id="list-sidebar" class="listing-sidebar">
+
+							<div class="listing-rightbar">
+								<div class="widget widget-white experts">
+									<h3 class="widget-title widget-title-w-icon text-center"><img src="images/agent.png" alt=""/> Contact Our Real Estate Experts</h3>
+									<input type="text" class="form-control" placeholder="Name">
+									<input type="text" class="form-control" placeholder="Email ID">
+									<input type="text" class="form-control" placeholder="Phone Number">
+									<select class="form-control custom-select">
+										<option value="https://www.5xprop.com/?change_city=delhi" selected="">--Select City--</option>
+										<option value="https://www.5xprop.com/?change_city=delhi">Delhi</option>
+										<option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
+										<option value="https://www.5xprop.com/?change_city=ghaziabad">Ghaziabad</option>
+										<option value="https://www.5xprop.com/?change_city=greater-noida">Greater Noida</option>
+										<option value="https://www.5xprop.com/?change_city=gurugram">Gurugram</option>
+										<option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
+										<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
+									</select>
+									<div class="experts-btn">
+										<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i> Get a Call Back </a>
+										<a href="#" class="btn btn-success py-2 mt-10"> <i class="fab fa-whatsapp mr-5"></i> Whatsapp </a>
+									</div>
+								</div>
+								<div class="widget pro-add">
+									<div class="pro-add-img"><img src="images/add1.png" alt="" /> </div>
+									<div class="pro-add-img"><img src="images/add2.png" alt="" /> </div>
+								</div>
+							</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Contact Popup Start -->
+	<div class="modal fade align-items-center justify-content-center contant-agenet-popup" id="ContactAgent" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog " role="document">
+			<div class="modal-content pb-0">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contact Our Real Estate Experts</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="form-control" placeholder="Name">
+					<input type="text" class="form-control" placeholder="Email ID">
+					<input type="text" class="form-control" placeholder="Phone Number">
+					<div class="enq-checkbox">
+						<p>Intereset in (Optional)</p>
+						<ul>
+							<li>
+								<input id="check-a" type="checkbox" name="check">
+								<label for="check-a">Site Visit</label>
+							</li>
+							<li>
+								<input id="check-a" type="checkbox" name="check">
+								<label for="check-a">Immediate Purchase</label>
+							</li>
+							<li>
+								<input id="check-a" type="checkbox" name="check">
+								<label for="check-a">Home Loan</label>
+							</li>
+						</ul>
+					</div>
+					<div class="experts-btn">
+						<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i> Enquiry Now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Popup Start -->
+	<!--Footer Starts-->
+	<div class="footer-wrapper v3">
+		<div class="footer-top-area">
+			<div class="container">
+				<div class="row nav-folderized">
+					<div class="col-lg-3">
+						<div class="footer-content nav">
+							<h2 class="title">OVERVIEW</h2>
+							<ul class="footer-list list res-list">
+								<li> <a href="#">About us </a> </li>
+								<li> <a href="#">Career  </a> </li>
+								<li> <a href="#">Services  </a> </li>
+								<li> <a href="#">Contact us  </a> </li>
+								<li> <a href="#">Term and Condition </a> </li>
+								<li> <a href="#">Policy of use  </a> </li>
+								<li> <a href="#">Buy property online </a> </li>
+								<li> <a href="#">Request info </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer-content nav">
+							<h2 class="title">5xprop</h2>
+							<ul class="footer-list list res-list">
+								<li><a href="https://www.5xprop.com/residential-property-in-noida">Residential property in Noida</a> </li>
+								<li><a href="https://www.5xprop.com/commercial-property-in-noida">Commercial property in Noida</a> </li>
+								<li><a href="https://www.5xprop.com/new-residential-project-in-noida">New  Residential Project in Noida</a> </li>
+								<li><a href="https://www.5xprop.com/new-commercial-project-in-noida">New  Commercial Project in Noida</a> </li>
+								<li><a href="#">Advertise your Property</a> </li>
+								<li><a href="#">Sitemap </a> </li>
+								<li><a href="#">Get alerts</a> </li>
+								<li><a href="https://www.5xprop.com/builder-list">Builders in India </a> </li>
+								<li><a href="https://www.5xprop.com/blog">Blog </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer-content nav">
+							<h2 class="title">Quick Links</h2>
+							<ul class="footer-list list res-list">
+								<li> <a href="https://www.5xprop.com/?change_city=delhi"> Delhi </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=faridabad"> Faridabad </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=ghaziabad"> Ghaziabad </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=greater-noida"> Greater Noida </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=gurugram"> Gurugram </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=mathura"> Mathura </a> </li>
+								<li> <a href="https://www.5xprop.com/?change_city=noida"> Noida </a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer-content">
+							<h4 class="title">KEEP IN TOUCH</h4>
+							<div class="value-input-wrap newsletter">
+								<form action="#">
+									<input type="text" placeholder="Your mail address ..">
+									<button type="submit">Subscribe</button>
+								</form>
+							</div>
+							<ul class="list footer-list mt-20">
+								<li>
+									<div class="contact-info">
+										<div class="icon"> <i class="fas fa-envelope"></i> </div>
+										<div class="text"><a href="#"> support@5xprop.com</a></div>
+									</div>
+								</li>
+								<li>
+									<div class="contact-info">
+										<div class="icon"> <i class="fas fa-phone-alt"></i> </div>
+										<div class="text">+91 8375929675</div>
+									</div>
+								</li>
+							</ul>
+							<div class="footer-social-wrap">
+								<p>Follow us on </p>
+								<ul class="social-buttons style2">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom-area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-8 offset-md-2">
+						<p> © 2019-20 5xProp.com. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Footer ends-->
+	<!--Scripts starts-->
+	<!--plugin js-->
+	<script src="js/plugin.js"></script>
+	<!--Main js-->
+	<script src="js/main.js"></script>
+	<!--Scripts ends-->
+	<script>
+	$('.tab-content').on('show', function() {
+		$(this).find('.swiper-container')[0].swiper.update()
+	});
+	</script>
+</body>
+
+</html>
