@@ -12301,7 +12301,7 @@ span.infobox_rate {
         margin-top: 0;
         padding-left: 0;
         width: 100%;
-        display: block;
+        display: none;
     }
 
     .single-property_prev,
