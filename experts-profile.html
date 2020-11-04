@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-
 <head>
 	<!-- Metas -->
 	<meta charset="UTF-8" />
@@ -10,6 +9,7 @@
 	<!-- google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Plugins CSS -->
 	<link href="css/plugin.css" rel="stylesheet" />
 	<!-- style CSS -->
@@ -51,14 +51,18 @@
 			<!--Main Menu ends-->
 		</header>
 
-		<section class="page-banner" style="padding-top: 60px; color: rgb(0, 0, 0); background-image: url(&quot;images/building.jpg&quot;); height: 300px; width: 100%;background-size: cover;background-attachment: fixed;background-position: bottom;">
-			<div class="container">
-				<div class="row top" style="padding-top: 197px;">
-					<div class="col-md-12">
-						<div class="col-md-12" style="">
-							<img src="images/client_2.jpg" class="img-responsive" style="width: 100px; border-radius: 50%;">
+		<section class="page-banner" style="background-image: url(&quot;images/building.jpg&quot;);">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			  <path fill="#fff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,266.7C384,288,480,288,576,256C672,224,768,160,864,149.3C960,139,1056,181,1152,218.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+			</svg>
+			<!--<span class="skewed"></span>-->
+			<div class="banner-container">
+				<div class="row top1" style="margin-top: -120px;">
+					<div class="col-md-12 clip">
+						<div class="col-md-12">
+							<img src="images/client_2.jpg" class="img-responsive">
 	      				</div>
-	      				<div  style="display: flex;">
+	      				<div class="" style="display: flex;">
 		      				<div class="agent-list-box-top"> 
 								<div class="d-flex justify-content-between">
 								    <a href="#" class="property-list-box-info-title"> Sunil Kumar</a>
@@ -112,12 +116,22 @@
 				<div class="col-md-8 in_p" style="">
        				<div class="col-md-12 property-list-box agent-list-box" id="pro" style="margin-top:12px;background: #fff;
     					padding: 10px; margin-bottom: 15px;">
-       					<h4> Personal Details </h4>
-        				<h5> <i style="color: #f52e5d" class="fa fa-map-marker-alt" aria-hidden="true"></i>  Noida ,Uttar Pradesh</h5>
+       					<div class="whiteBox" id="profile">
+							<h3>Personal Details</h3>
+							<h5> <i style="color: #f52e5d" class="fa fa-map-marker-alt" aria-hidden="true"></i>  Noida ,Uttar Pradesh</h5>
+							<ul class="listBox">
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-user" aria-hidden="true"></i>
+								</span><small class="redtext" style="color: #f52e5d;">&nbsp;&nbsp; 15+</small> Years of Experience</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-users" aria-hidden="true"></i></span> &nbsp;&nbsp;Has <small class="redtext" style="color: #f52e5d;">11-20</small> Employee working with him</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-building" aria-hidden="true"></i></span> &nbsp;&nbsp;Has Office in Noida</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-paper-plane" aria-hidden="true"></i></span>&nbsp;&nbsp;Sports &amp; Entertainment, Health &amp; Fitness, Movies, Music &amp; Arts</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-comments" aria-hidden="true"></i></span>&nbsp;&nbsp;Speaks English, Hindi</li>
+							</ul>
+						</div>
        				</div>
        				<div class="col-md-12 property-list-box agent-list-box" style="margin-top:12px; margin-bottom:20px;background: #fff;
     					padding: 10px; ">
-       					<h4> Featured Micromarkets </h4>
+       					<h3> Featured Micromarkets </h3>
         				<span style="background: #eee;padding: 8px 30px 8px 30px;border-radius: 24px;color: #000">  Noida </span>
        				</div>
 			        <div class="col-md-12 " id="rat" style=" margin-bottom:20px;background: #fff;
@@ -167,11 +181,11 @@
 									<a href="#" class="btn btn-success py-2 mt-10"> <i class="fab fa-whatsapp mr-5"></i> Whatsapp </a>
 								</div>
 							</div>
-							<div class="widget pro-add">
+							<!--<div class="widget pro-add">
 								<div class="pro-add-img"><img src="images/add1.png" alt="" /> </div>
 									<div class="pro-add-img"><img src="images/add2.png" alt="" /> </div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -502,5 +516,14 @@
 	$('.tab-content').on('show', function() {
 		$(this).find('.swiper-container')[0].swiper.update()
 	});
+	</script>
+	<script>
+		/*------Page Banner----*/
+
+	   var skewed = document.querySelector('.skewed');
+	   window.addEventListener('scroll', function () {
+	     var value = -25 + window.scrollY/60;
+	     skewed.style.transform = "skewY("+ value + "deg)"
+	   });
 	</script>
 </body>
