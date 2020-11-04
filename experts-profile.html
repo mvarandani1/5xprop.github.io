@@ -76,7 +76,7 @@
 									<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
 								</select>
 								<div class="experts-btn">
-									<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i>&nbsp;Call </a>
+									<a href="#" class="btn btn-custom  py-2 mt-10" data-toggle="modal" data-target="#ContactAgent"> <i class="fa fa-phone mr-5"></i>&nbsp;Call </a>
 									<a href="#" class="btn btn-success py-2 mt-10"> <i class="fab fa-whatsapp mr-5"></i> Whatsapp </a>
 								</div>
 							</div>
@@ -85,9 +85,9 @@
 	      		</div>
 	      	</div>
 	    </section>
-	    <section style="display: flex;">
+	    <section style="display: flex;width:120%;">
 		    	
-		    <div class="col-lg-8" style="margin-top: 200px;">
+		    <div class="col-lg-8" style="margin-top: 210px;">
 				<div class="property-list-box agent-list-box" style="width: 100vw;">
 
 					<div class="container-fluid" style=" display:block; font-size: 16px;line-height: 52px ;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;">
@@ -98,15 +98,15 @@
 				       					<a href="#pro" id="pro" style="background: none;border: none;" class="ap"> Profile </a>
 				       				</div>
 				       
-				        			<div class="" style="text-align: center;">
-				        				<a href="#rat" id="rat" style="background: none;border: none;" class="ap">  Ratings &amp; Reviews  </a>
-				       				</div>
 				        			<div class="">
-				        				<a href="#list" id="list" style="background: none;border: none;" class="ap">   Listings </a>
+				        				<a href="#list" id="list" style="background: none;border: none;" class="ap">  Listings </a>
 				      				</div>
 				      				<div class="">
 				        				<a href="#list" id="list" style="background: none;border: none;" class="ap">   Posts </a>
 				      				</div>
+				        			<div class="" style="text-align: center;">
+				        				<a href="#rat" id="rat" style="background: none;border: none;" class="ap"> Reviews  </a>
+				       				</div>
 				       				
 				      		 	</div>
 				       		</div>
@@ -115,24 +115,24 @@
 				</div>
 				<div class="col-md-8 in_p" style="">
        				<div class="col-md-12 property-list-box agent-list-box" id="pro" style="margin-top:3rem;background: #fff;
-    					padding: 10px; margin-bottom: 15px;">
+    					padding: 10px; margin-bottom: 15px;height: 300px;">
        					<div class="whiteBox" id="profile">
 							<h3>Personal Details</h3>
-							<h5> <i style="color: #f52e5d" class="fa fa-map-marker-alt" aria-hidden="true"></i>  Noida ,Uttar Pradesh</h5>
 							<ul class="listBox">
 								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-user" aria-hidden="true"></i>
 								</span><small class="redtext" style="color: #f52e5d;">&nbsp;&nbsp; 15+</small> Years of Experience</li>
-								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-users" aria-hidden="true"></i></span> &nbsp;&nbsp;Has <small class="redtext" style="color: #f52e5d;">11-20</small> Employee working with him</li>
-								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-building" aria-hidden="true"></i></span> &nbsp;&nbsp;Has Office in Noida</li>
-								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-paper-plane" aria-hidden="true"></i></span>&nbsp;&nbsp;Sports &amp; Entertainment, Health &amp; Fitness, Movies, Music &amp; Arts</li>
-								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-comments" aria-hidden="true"></i></span>&nbsp;&nbsp;Speaks English, Hindi</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-users" aria-hidden="true"></i></span> &nbsp;&nbsp;<small class="redtext" style="color: #f52e5d;">Working with</small> 5xprop</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-building" aria-hidden="true"></i></span> &nbsp;&nbsp;Has Office in sector 12 Noida</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-paper-plane" aria-hidden="true"></i></span>&nbsp;&nbsp;Rera ID - UPRERAAGT12670</li>
+								<li><span class="iconBox"><i style="color: #f52e5d;" class="fa fa-comments" aria-hidden="true"></i></span>&nbsp;&nbsp;
+								5X ID - 5X/ND/EX-0001</li>
 							</ul>
 						</div>
        				</div>
        				<div class="col-md-12 property-list-box agent-list-box" style="margin-top:3rem; margin-bottom:20px;background: #fff;
-    					padding: 10px; ">
+    					padding: 10px; height: 150px;">
        					<h3> Featured Micromarkets </h3>
-        				<span style="background: #eee;padding: 8px 30px 8px 30px;border-radius: 24px;color: #000">  Noida </span>
+        				<span style="background: #eee;padding: 8px 30px 8px 30px;border-radius: 24px;color: #000; margin-top: 2rem;">  Noida </span>
        				</div>
       			</div>
 			</div>
@@ -156,7 +156,11 @@
 							</ul>
 							<div class="btn-container">
 								<a href="#" class="btn border-danger text-danger py-1"> <i style="font-size: 18px" class="fas fa-plus"></i> <span class="d-none d-md-inline-block"> Connect</span></a>&nbsp;&nbsp;&nbsp;
-								<a href="#" class="btn border-danger text-danger py-1"> <i style="font-size: 18px" class="fa fa-phone mr-5"></i> <span class="d-none d-md-inline-block"> Call</span></a>&nbsp;&nbsp;&nbsp;
+								<a href="#" class="btn border-danger text-danger py-1"
+								data-toggle="modal" data-target="#ContactAgent">
+									<i style="font-size: 18px" class="fa fa-phone mr-5"></i> 
+									<span class="d-none d-md-inline-block"> Call</span>
+								</a>&nbsp;&nbsp;&nbsp;
 								<a href="#" class="btn border-danger text-danger py-1"> <i style="font-size: 22px" class="fab fa-whatsapp"></i> <span class="d-none d-md-inline-block">Whatsapp</span></a>
 							</div>
 						</div>
@@ -164,12 +168,12 @@
 	      		</div>
 			</div>
 		</section>
-		<div class="widget pro-add listing-side">
+		<div class="widget pro-add listing-side" style="margin-right: 3rem;">
 			<div class="pro-add-img"><img src="images/add1.png" alt="" /> </div>
 				<div class="pro-add-img"><img src="images/add2.png" alt="" /> </div>
 			</div>
 		</div>
-		<section class="in_p" style="background:#fff;margin-bottom:60px;margin-top: 7rem;">
+		<section class="in_p" style="background:#fff;margin-bottom:60px;margin-top: 5rem;">
 			<div class="container">
 			 	<div class="row top">
 			 		<div class="col-md-12" id="list"> 
@@ -484,6 +488,42 @@
 					</div>
 				</div>
 		</section>
+		<!-- Contact Popup Start -->
+		<div class="modal fade align-items-center justify-content-center contant-agenet-popup" id="ContactAgent" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog " role="document">
+				<div class="modal-content pb-0">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Contact Our Real Estate Experts</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body">
+						<input type="text" class="form-control" placeholder="Name">
+						<input type="text" class="form-control" placeholder="Email ID">
+						<input type="text" class="form-control" placeholder="Phone Number">
+						<div class="enq-checkbox">
+							<p>Intereset in (Optional)</p>
+							<ul>
+								<li>
+									<input id="check-a" type="checkbox" name="check">
+									<label for="check-a">Site Visit</label>
+								</li>
+								<li>
+									<input id="check-a" type="checkbox" name="check">
+									<label for="check-a">Immediate Purchase</label>
+								</li>
+								<li>
+									<input id="check-a" type="checkbox" name="check">
+									<label for="check-a">Home Loan</label>
+								</li>
+							</ul>
+						</div>
+						<div class="experts-btn">
+							<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i> Enquiry Now </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--Footer Starts-->
 		<div class="footer-wrapper v3">
 			<div class="footer-top-area">

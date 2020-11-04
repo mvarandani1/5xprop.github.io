@@ -15473,7 +15473,7 @@ section.footer-copyright {
 }
 
 .clip{
-    margin-left: -12rem;
+    margin-left: -22rem;
     margin-top: -12rem;
 }
 
@@ -15493,9 +15493,13 @@ h3{
 }
 
 .listing-side{
-    width: 480px;
+    width: 500px;
     float: right;
     top: 0;
     left: 0;
-    margin-top: -28.5rem;
+    margin-top: -33rem;
+}
+
+.listBox li{
+    font-size: 16px;
 }
