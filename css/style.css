@@ -1522,6 +1522,7 @@ ul.list-inline li {
     transition: 0.7s;
     background: #000;
     padding: 12px;
+    overflow-y: hidden;
 }
 
 .header.hide {
@@ -15031,11 +15032,13 @@ section.footer-copyright {
     .list-details-tab .nav-item a {
         font-size: 14px;
     }
+}
+
+@media only screen and (max-width: 640px){
     ul.top-nav li a.btn.v7 {
         padding: 4px 12px;
-        margin-right: 100px;
+        margin-right: 150px;
     }
-
 }
 
 @media only screen and (max-width:595px) {
@@ -15123,7 +15126,7 @@ section.footer-copyright {
     }
     ul.top-nav li a.btn.v7 {
         padding: 4px 12px;
-        margin-right: 50px;
+        margin-right:50px;
     }
     section.home-trending-project {
         padding-top: 40px !important;
@@ -15188,6 +15191,7 @@ section.footer-copyright {
 
     ul.top-nav select {
         margin-right: 10px;
+
     }
     ul.top-nav {
         margin-top: 0px;
@@ -15415,6 +15419,48 @@ section.footer-copyright {
     }
 }
 
+@media (max-width: 720px){
+    .container1 .card, #list{
+        width: 600px;
+    }
+}
+
+@media (max-width: 650px){
+    .container1 .card, #list{
+        width: 550px;
+    }
+}
+
+@media (max-width: 590px){
+    .container1 .card, #list{
+        width: 490px;
+    }
+}
+
+@media (max-width: 528px){
+    .container1 .card, #list{
+        width: 420px;
+    }
+}
+
+@media (max-width: 457px){
+    .container1 .card, #list{
+        width: 380px;
+    }
+}
+
+@media (max-width: 418px){
+    .container1 .card, #list{
+        width: 350px;
+    }
+}
+
+@media (max-width: 390px){
+    .container1 .card, #list{
+        width: 310px;
+    }
+}
+
 .page-banner{
     padding-top: 60px;
     height: 400px;
@@ -15533,6 +15579,10 @@ section.footer-copyright {
     margin-top: -23.5rem;
 }
 
+.view-btn{
+    padding:0px;margin-top: 22px;margin-left: 41.66666667%;
+}
+
 @media (max-width: 1125px){
     .clip{
         margin-left: -20rem;
@@ -15559,6 +15609,9 @@ section.footer-copyright {
         margin-left: -26rem;
         margin-top: -43rem;
     }
+    .view-btn{
+        margin-left: 34%;
+    }
 }
 
 
@@ -15566,6 +15619,9 @@ section.footer-copyright {
     .clip{
         margin-left: -24.5rem;
         margin-top: -43rem;
+    }
+    .view-btn{
+        margin-left: 26%;
     }
 }
 
