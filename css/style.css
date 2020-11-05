@@ -15182,7 +15182,7 @@ section.footer-copyright {
     }
 
     ul.top-nav select {
-        margin-right: 5px;
+        margin-right: -10px;
     }
     ul.top-nav {
         margin-top: 0px;
