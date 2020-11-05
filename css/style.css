@@ -828,6 +828,7 @@ body {
 }
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 36px;
