@@ -14523,6 +14523,13 @@ ul.agent-connections {
 ul.agent-connections li{
     font-size: 16px;
 }
+
+@media (max-width: 350px){
+    ul.agent-connections li{
+        font-size: 14px;
+    }
+}
+
 ul.agent-feature li {
     line-height: 28px;
     list-style: disc !important;
@@ -15273,12 +15280,17 @@ section.footer-copyright {
 }
 } */
 
-.container .card{
+.container1{
+    width:90%;
+    margin-left: 4rem;
+}
+
+.container1 .card{
     position: relative;
     overflow: hidden;
 }
 
-.container .card::before{
+.container1 .card::before{
     content: '';
     position: absolute;
     top: 2px;
@@ -15287,21 +15299,27 @@ section.footer-copyright {
     pointer-events: none;
 }
 
-.container .card .content{
+.container1 .card .content{
     z-index: 1;
     transition: 0.5s;
 }
 
-.container .card span{
+.container1 .card .content img{
+    width:115px !important;
+    height:100px;
+    float:left;
+}
+
+.container1 .card span{
     transition: 0.5s;
     opacity: 0;
 }
 
-.container .card:hover span{
+.container1 .card:hover span{
     opacity: 1;
 }
 
-.container .card span:nth-child(1){
+.container1 .card span:nth-child(1){
     position: absolute;
     top: 0;
     left: 0;
@@ -15320,7 +15338,7 @@ section.footer-copyright {
     }
 }
 
-.container .card span:nth-child(2){
+.container1 .card span:nth-child(2){
     position: absolute;
     top: 0;
     right: 0;
@@ -15340,7 +15358,7 @@ section.footer-copyright {
     }
 }
 
-.container .card span:nth-child(3){
+.container1 .card span:nth-child(3){
     position: absolute;
     bottom: 0;
     right: 0;
@@ -15359,7 +15377,7 @@ section.footer-copyright {
     }
 }
 
-.container .card span:nth-child(4){
+.container1 .card span:nth-child(4){
     position: absolute;
     top: 0;
     left: 0;
@@ -15378,6 +15396,20 @@ section.footer-copyright {
     }
 }
 
+@media (max-width: 991px){
+    .container1{
+        width: 95%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .container1 .card .content img{
+        width: 70px !important;
+        height:50px;
+        float:left;
+    }
+}
+
 .page-banner{
     padding-top: 60px;
     height: 400px;
@@ -15392,72 +15424,91 @@ section.footer-copyright {
     margin-top: 3rem;
 }
 
-@media screen and (max-width: 1125px){
+.widget-white-mobile{
+    width: 80vw;
+    justify-content: center;
+    align-items:center;
+    margin-left: 8rem;
+}
+@media (max-width: 1500px){
+    .widget-white-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1125px){
     .page-banner svg{
         margin-top: 7rem;
     }
+    .widget-white-mobile{
+        display: none;
+    }
+    .clip{
+        margin-left: -20rem;
+        margin-top: -21rem;
+    }
 }
 
-@media screen and (max-width: 1020px){
+@media (max-width: 1020px){
     .page-banner svg{
         margin-top: 9rem;
     }
-    .clip img{
-        margin-top: 10px !important;
+}
+
+@media (max-width: 991px){
+    .widget-white-mobile{
+        display: block;
+    }
+    .listing-side{
+        display: none;
     }
 }
 
-@media screen and (max-width: 880px){
+@media (max-width: 880px){
     .page-banner svg{
         margin-top: 11rem;
     }
-    .clip img{
-        margin-top: 10px !important;
-    }
 }
 
-@media screen and (max-width: 740px){
+@media (max-width: 740px){
     .page-banner svg{
         margin-top: 13rem;
     }
-    .clip img{
-        margin-top: 15px !important;
+    .widget-white-mobile{
+        width: 80vw;
+        justify-content: center;
+        align-items:center;
+        margin-left: 5rem;
     }
 }
 
-@media screen and (max-width: 620px){
+@media (max-width: 620px){
     .page-banner svg{
         margin-top: 15rem;
     }
-    .clip img{
-        margin-top: 30px !important;
+    .widget-white-mobile{
+        width: 90vw;
+        justify-content: center;
+        align-items:center;
+        margin-left: 2rem;
     }
 }
 
-@media screen and (max-width: 450px){
+@media (max-width: 450px){
     .page-banner svg{
         margin-top: 15.5rem;
     }
-    .clip img{
-        margin-top: 40px !important;
-    }
 }
 
-@media screen and (max-width: 415px){
+@media (max-width: 415px){
     .page-banner svg{
         margin-top: 16rem;
     }
-    .clip img{
-        margin-top: 45px !important;
-    }
 }
 
-@media screen and (max-width: 375px){
+@media (max-width: 375px){
     .page-banner svg{
         margin-top: 17rem;
-    }
-    .clip img{
-        margin-top: 47px !important;
     }
 }
 
@@ -15474,11 +15525,55 @@ section.footer-copyright {
 
 .clip{
     margin-left: -22rem;
-    margin-top: -12rem;
+    margin-top: -23.5rem;
+}
+
+@media (max-width: 1125px){
+    .clip{
+        margin-left: -20rem;
+        margin-top: -21rem;
+    }
+}
+
+@media (max-width: 991px){
+    .clip{
+        margin-left: -30rem;
+        margin-top: -43rem;
+    }
+}
+
+@media (max-width: 770px){
+    .clip{
+        margin-left: -26rem;
+        margin-top: -45rem;
+    }
+}
+
+@media (max-width: 628px){
+    .clip{
+        margin-left: -26rem;
+        margin-top: -43rem;
+    }
+}
+
+
+@media (max-width: 380px){
+    .clip{
+        margin-left: -24.5rem;
+        margin-top: -43rem;
+    }
+}
+
+@media (max-width: 350px){
+    .clip{
+        margin-left: -22rem;
+        margin-top: -43rem;
+    }
 }
 
 .clip img{
     width: 100px; 
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
     box-shadow: 0 0 70px 0 rgba(0,0,0,0.8);
@@ -15492,14 +15587,72 @@ h3{
     width: 320px;
 }
 
-.listing-side{
-    width: 500px;
-    float: right;
-    top: 0;
-    left: 0;
-    margin-top: -33rem;
-}
+.listing-side{ width: 500px; float: right; top: 0; left: 0; margin-top:
+-33rem; }
 
 .listBox li{
     font-size: 14px;
 }
+
+.clip2{
+    display: flex;
+}
+
+.top2{
+    margin-top: 10rem;
+}
+
+.banner-mobile{
+    width: 100vw;
+}
+
+.box1{
+    width: 700px;
+}
+
+.sec{
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+
+@media (max-width: 760px){
+    .box1{
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px){
+    .sec{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .box1{
+        width: 400px;
+    }
+}
+
+@media (max-width: 440px){
+    .box1{
+        width: 325px;
+    }
+}
+
+@media (max-width: 360px){
+    .box1{
+        width: 290px;
+    }
+    .sec{
+        margin-left: 1rem;
+    }
+}
+
+.in_p1{
+    background:#fff;margin-bottom:60px;margin-top: 4rem;
+}
+
+
+
