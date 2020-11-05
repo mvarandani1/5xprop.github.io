@@ -15768,13 +15768,13 @@ h3{
 
 @media (max-width: 440px){
     .box1{
-        width: 325px;
+        width: 330px;
     }
 }
 
 @media (max-width: 360px){
     .box1{
-        width: 290px;
+        width: 310px;
     }
     .sec{
         margin-left: 1rem;
