@@ -828,7 +828,6 @@ body {
 }
 html, body {
     height: 100%;
-    overflow-x: hidden;
 }
 h1 {
     font-size: 36px;
@@ -15038,6 +15037,7 @@ section.footer-copyright {
 @media only screen and (max-width: 640px){
     ul.top-nav li a.btn.v7 {
         padding: 4px 12px;
+        margin-right: 80px;
     }
 }
 
@@ -15126,6 +15126,7 @@ section.footer-copyright {
     }
     ul.top-nav li a.btn.v7 {
         padding: 4px 12px;
+        margin-right:10px;
     }
     section.home-trending-project {
         padding-top: 40px !important;
@@ -15445,17 +15446,26 @@ section.footer-copyright {
     .container1 .card, #list{
         width: 380px;
     }
+    .ap{
+        font-size: 12px;font-weight: bold;
+    }
 }
 
 @media (max-width: 418px){
     .container1 .card, #list{
         width: 350px;
     }
+    .ap{
+        font-size: 12px;font-weight: bold;
+    }
 }
 
 @media (max-width: 390px){
     .container1 .card, #list{
         width: 310px;
+    }
+    .ap{
+        font-size: 12px;font-weight: bold;
     }
 }
 
@@ -15636,7 +15646,7 @@ section.footer-copyright {
 @media (max-width: 440px){
     .clip{
         margin-left: -24rem;
-        margin-top: -17rem;
+        margin-top: -15rem;
     }
     .view-btn{
         margin-left: 34%;
@@ -15766,13 +15776,13 @@ h3{
 
 @media (max-width: 440px){
     .box2{
-        width: 360px;
+        width: 322px;
     }
 }
 
 @media (max-width: 414px){
     .box2{
-        width: 340px;
+        width: 322px;
     }
 }
 
