@@ -15671,9 +15671,79 @@ h3{
     width: 700px;
 }
 
+.box2{
+    width: 100vw;
+}
+
 .sec{
     margin-right: 4rem;
     margin-left: 4rem;
+}
+
+@media (max-width: 1020px){
+    .box2{
+        width: 920px;
+    }
+}
+
+@media (max-width: 950px){
+    .box2{
+        width: 850px;
+    }
+}
+
+@media (max-width: 870px){
+    .box2{
+        width: 750px;
+    }
+}
+
+@media (max-width: 750px){
+    .box2{
+        width: 650px;
+    }
+}
+
+@media (max-width: 685px){
+    .box2{
+        width: 590px;
+    }
+}
+
+@media (max-width: 570px){
+    .box2{
+        width: 500px;
+    }
+}
+
+@media (max-width: 535px){
+    .box2{
+        width: 460px;
+    }
+}
+
+@media (max-width: 492px){
+    .box2{
+        width: 430px;
+    }
+}
+
+@media (max-width: 465px){
+    .box2{
+        width: 400px;
+    }
+}
+
+@media (max-width: 440px){
+    .box2{
+        width: 380px;
+    }
+}
+
+@media (max-width: 414px){
+    .box2{
+        width: 340px;
+    }
 }
 
 
