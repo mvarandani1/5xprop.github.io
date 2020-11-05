@@ -15534,7 +15534,7 @@ section.footer-copyright {
 
 @media (max-width: 620px){
     .page-banner svg{
-        margin-top: 15rem;
+        margin-top: 8rem;
     }
     .widget-white-mobile{
         width: 90vw;
@@ -15542,23 +15542,44 @@ section.footer-copyright {
         align-items:center;
         margin-left: 2rem;
     }
+    .page-banner{
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px){
+    .page-banner svg{
+        margin-top: 9rem;
+    }
+    .page-banner{
+        height: 290px;
+    }
 }
 
 @media (max-width: 450px){
     .page-banner svg{
-        margin-top: 15.5rem;
+        margin-top: 9rem;
+    }
+    .page-banner{
+        height: 290px;
     }
 }
 
 @media (max-width: 415px){
     .page-banner svg{
-        margin-top: 16rem;
+        margin-top: 6rem;
+    }
+    .page-banner{
+        height: 240px;
     }
 }
 
 @media (max-width: 375px){
     .page-banner svg{
-        margin-top: 17rem;
+        margin-top: 6rem;
+    }
+    .page-banner{
+        height: 220px;
     }
 }
 
@@ -15619,7 +15640,7 @@ section.footer-copyright {
         margin-top: -15rem;
     }
     .view-btn{
-        margin-left: 33%;
+        margin-left: 34%;
     }
 }
 
@@ -15627,7 +15648,7 @@ section.footer-copyright {
 @media (max-width: 380px){
     .clip{
         margin-left: -24.5rem;
-        margin-top: -18rem;
+        margin-top: -17rem;
     }
     .view-btn{
         margin-left: 24%;
@@ -15637,7 +15658,7 @@ section.footer-copyright {
 @media (max-width: 350px){
     .clip{
         margin-left: -23rem;
-        margin-top: -18rem;
+        margin-top: -17rem;
     }
 }
 
