@@ -828,7 +828,7 @@ body {
 }
 html, body {
     height: 100%;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 36px;
@@ -1523,7 +1523,6 @@ ul.list-inline li {
     transition: 0.7s;
     background: #000;
     padding: 12px;
-    overflow-y: hidden;
 }
 
 .header.hide {
@@ -15840,4 +15839,88 @@ h3{
 }
 
 
+/*Texyt Slider*/
+.text-slider-container{
+    height: 500px;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+}
 
+.item-1, 
+.item-2, 
+.item-3 {
+    position: absolute;
+    display: block;
+    top: 2em;
+    color: #fff;
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 2em;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.item-1{
+    animation-name: anim-1;
+}
+
+
+.item-2{
+    animation-name: anim-2;
+}
+
+.item-3{
+    animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+    0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+    0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.experts-manager{
+    width: 30vw;
+}
+.divider{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-divider{
+    margin-top: 2rem;
+    float: left;
+    margin-left: 2rem;
+    width: 50%;
+}
+
+.second-divider{
+    margin-top: 2rem; 
+    float: right;
+    width: 40%;
+}
+
+.sec1{
+    width: 100vw;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 30rem;
+}
