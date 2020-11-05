@@ -15736,13 +15736,13 @@ h3{
 
 @media (max-width: 440px){
     .box2{
-        width: 380px;
+        width: 390px;
     }
 }
 
 @media (max-width: 414px){
     .box2{
-        width: 340px;
+        width: 360px;
     }
 }
 
@@ -15768,13 +15768,13 @@ h3{
 
 @media (max-width: 440px){
     .box1{
-        width: 330px;
+        width: 325px;
     }
 }
 
 @media (max-width: 360px){
     .box1{
-        width: 310px;
+        width: 290px;
     }
     .sec{
         margin-left: 1rem;
