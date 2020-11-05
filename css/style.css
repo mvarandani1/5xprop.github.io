@@ -15614,6 +15614,16 @@ section.footer-copyright {
     }
 }
 
+@media (max-width: 440px){
+    .clip{
+        margin-left: -24rem;
+        margin-top: -43rem;
+    }
+    .view-btn{
+        margin-left: 34%;
+    }
+}
+
 
 @media (max-width: 380px){
     .clip{
@@ -15627,7 +15637,7 @@ section.footer-copyright {
 
 @media (max-width: 350px){
     .clip{
-        margin-left: -22rem;
+        margin-left: -23rem;
         margin-top: -43rem;
     }
 }
@@ -15730,7 +15740,7 @@ h3{
 
 @media (max-width: 465px){
     .box2{
-        width: 400px;
+        width: 410px;
     }
 }
 
