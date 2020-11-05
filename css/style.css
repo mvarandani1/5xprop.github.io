@@ -15291,7 +15291,6 @@ section.footer-copyright {
 
 .container1{
     width:90%;
-    margin-left: 4rem;
 }
 
 .container1 .card{
@@ -15593,21 +15592,21 @@ section.footer-copyright {
 @media (max-width: 991px){
     .clip{
         margin-left: -30rem;
-        margin-top: -43rem;
+        margin-top: -20rem;
     }
 }
 
 @media (max-width: 770px){
     .clip{
         margin-left: -26rem;
-        margin-top: -45rem;
+        margin-top: -18rem;
     }
 }
 
 @media (max-width: 628px){
     .clip{
         margin-left: -26rem;
-        margin-top: -43rem;
+        margin-top: -16rem;
     }
     .view-btn{
         margin-left: 34%;
@@ -15617,7 +15616,7 @@ section.footer-copyright {
 @media (max-width: 440px){
     .clip{
         margin-left: -24rem;
-        margin-top: -43rem;
+        margin-top: -15rem;
     }
     .view-btn{
         margin-left: 34%;
@@ -15628,7 +15627,7 @@ section.footer-copyright {
 @media (max-width: 380px){
     .clip{
         margin-left: -24.5rem;
-        margin-top: -43rem;
+        margin-top: -16rem;
     }
     .view-btn{
         margin-left: 26%;
@@ -15638,7 +15637,7 @@ section.footer-copyright {
 @media (max-width: 350px){
     .clip{
         margin-left: -23rem;
-        margin-top: -43rem;
+        margin-top: -16rem;
     }
 }
 
@@ -15670,7 +15669,7 @@ h3{
 }
 
 .top2{
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 .banner-mobile{
@@ -15793,6 +15792,19 @@ h3{
 
 .in_p1{
     background:#fff;margin-bottom:60px;margin-top: 4rem;
+    margin-left: 5rem;
+}
+
+@media (max-width: 810px){
+    .in_p1{
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 400px){
+    .in_p1{
+        margin-left: 1rem;
+    }
 }
 
 
