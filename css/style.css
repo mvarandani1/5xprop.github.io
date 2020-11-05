@@ -15119,6 +15119,7 @@ section.footer-copyright {
     }
     ul.top-nav li a.btn.v7 {
         padding: 4px 12px;
+        margin-right: 20px;
     }
     section.home-trending-project {
         padding-top: 40px !important;
@@ -15182,7 +15183,7 @@ section.footer-copyright {
     }
 
     ul.top-nav select {
-        margin-right: -10px;
+        margin-right: 10px;
     }
     ul.top-nav {
         margin-top: 0px;
