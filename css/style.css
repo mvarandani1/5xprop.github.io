@@ -1517,7 +1517,7 @@ ul.list-inline li {
 .header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 999;
     transition: 0.7s;
     background: #000;
