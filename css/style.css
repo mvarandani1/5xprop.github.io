@@ -16031,6 +16031,38 @@ h3{
 .experts-manager{
     width: 27vw;
     float: right;
+    border-radius: 40px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #cbced1,
+                -5px -5px 10px #ffffff;
+}
+
+.username, .email, .password{
+    display: flex;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 18px;
+    height: 60px;
+    padding: 20px 10px 20px 5px;
+    border-radius: 25px !important;
+    box-shadow: inset 0px 0px 2px #ffffff,
+                inset 0px 0px 0px 5px #ecf0f3, 
+                inset 8px 8px 15px #a7aaaf,
+                inset -8px -8px 15px #ffffff;
+    color: #000;
+}
+
+.username svg, .email svg, .password svg, .svg-icon, .man{
+    height: 40px;
+    margin-top: -10px !important;
+    margin: 0 10px -3px 25px;
+}
+
+.man{
+    margin-right: 5px;
+    margin-left: 12px;
 }
 
 @media (max-width: 991px ){
@@ -16294,3 +16326,6 @@ h3{
     transition: 0.5s;
 }
 
+.ending-section{
+    width: 100vw;
+}
