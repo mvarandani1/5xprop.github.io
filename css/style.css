@@ -16037,7 +16037,7 @@ h3{
                 -5px -5px 10px #ffffff;
 }
 
-.username, .email, .password{
+.username, .email, .password, .phonenumber{
     display: flex;
     margin-bottom: 1rem;
     border: none;
@@ -16054,7 +16054,7 @@ h3{
     color: #000;
 }
 
-.username svg, .email svg, .password svg, .svg-icon, .man{
+.username svg, .email svg, .password svg, .svg-icon, .man, .phonenumber svg{
     height: 40px;
     margin-top: -10px !important;
     margin: 0 10px -3px 25px;
