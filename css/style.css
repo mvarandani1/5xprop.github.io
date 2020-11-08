@@ -14307,6 +14307,7 @@ section.inner-pages {
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.8);
     border: solid 1px #ededed;
     background: #fff;
+    margin-bottom: 20px;
 }
 
 .listing-sidebar{
@@ -16624,8 +16625,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 2rem;
     width: 100%;
     color: #000;
-    justify-content: center;
-    align-items: center;
 }
 
 .box21 ul li{
@@ -16634,7 +16633,11 @@ input[type="range"]::-webkit-slider-thumb {
     align-items: center;
 }
 .box21 figure{
-    text-align: center;
+    display: flex;
+}
+
+.box21 figure img{
+    margin-right: 1rem;
 }
 
 .docs-list ul{
