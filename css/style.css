@@ -16626,6 +16626,12 @@ input[type="range"]::-webkit-slider-thumb {
     color: #000;
 }
 
+@media (max-width: 1400px){
+    .none{
+        display: none;
+    }
+}
+
 @media (max-width: 1125px){
     .head-slide{
         width: 100%;
@@ -16655,6 +16661,15 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .right-listing{
         display: none;
+    }
+    .none{
+        display: block;
+        background: #fff;
+        padding: 20px;
+    }
+
+    .listing-sidebar-mob{
+        width: 100%;
     }
 }
 
@@ -16723,6 +16738,12 @@ input[type="range"]::-webkit-slider-thumb {
         display: flex;
         flex-direction: column;
     }
+    .in_p1{
+        margin-top: 0px;margin-left: 0px;
+    }
+    .container1 .card{
+        min-width: 600px;
+    }
 }
 
 @media (max-width: 768px){
@@ -16751,6 +16772,12 @@ input[type="range"]::-webkit-slider-thumb {
     .emiStart{
         margin-left: 0px;
     }
+    .in_p1{
+        margin-top: 0px;margin-left: 0px;
+    }
+    .container1 .card{
+        min-width: 500px;
+    }
 }
 
 @media (max-width: 670px){
@@ -16776,6 +16803,13 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .emiStart{
         margin-left: 0px;
+    }
+    .in_p1{
+        margin-top: 0px;margin-left: 0px;
+    }
+    .container1 .card{
+        min-width: 500px;
+        margin-left: -2rem;
     }
 }
 
@@ -16808,8 +16842,9 @@ input[type="range"]::-webkit-slider-thumb {
     .in_p1{
         margin-top: 0px;margin-left: 0px;
     }
-    .container1{
-        margin-left: 1rem;
+    .container1 .card{
+        min-width: 400px;
+        margin-left: -2rem;
     }
     .box21 ul{
         display: flex;
@@ -16847,8 +16882,9 @@ input[type="range"]::-webkit-slider-thumb {
     .in_p1{
         margin-top: 0px;margin-left: 0px;
     }
-    .container1{
-        margin-left: -0.7rem;
+    .container1 .card{
+        min-width: 350px;
+        margin-left: -2.8rem;
     }
 }
 
@@ -16881,8 +16917,9 @@ input[type="range"]::-webkit-slider-thumb {
     .in_p1{
         margin-top: 0px;margin-left: 0px;
     }
-    .container1{
-        margin-left: -2rem;
+    .container1 .card{
+        min-width: 320px;
+        margin-left: -3.7rem;
     }
 }
 
