@@ -14,6 +14,7 @@
 	<link href="css/plugin.css" rel="stylesheet" />
 	<!-- style CSS -->
 	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 	<!-- Document Title -->
 	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
 </head>
@@ -52,38 +53,38 @@
 		</header>
 
 		<!-- Show in desktop only-->
-		<div class="head-slide">
-			<div class="imgUrl">
+		<div class="head-slide" id="head-slide">
+			<div class="imgUrl url">
 				<img src="./images/property/property_1.jpg">
 			</div>
 
 			<ul class="navigation" id="gallery">
-				<li data-toggle="modal" data-target="#Img1">
+				<li>
 					<a href="./images/property/property_1.jpg" target="imgUrl">
 						<img src="./images/property/property_1.jpg">
 					</a>
 				</li>
-				<li data-toggle="modal" data-target="#Img2">
+				<li>
 					<a href="./images/property/property_2.jpg" target="imgUrl">
 						<img src="./images/property/property_2.jpg">
 					</a>
 				</li>
-				<li data-toggle="modal" data-target="#Img3">
+				<li>
 					<a href="./images/property/property_3.jpg" target="imgUrl">
 						<img src="./images/property/property_3.jpg">
 					</a>
 				</li>
-				<li data-toggle="modal" data-target="#Img4">
+				<li>
 					<a href="./images/property/property_4.jpg" target="imgUrl">
 						<img src="./images/property/property_4.jpg">
 					</a>
 				</li>
-				<li data-toggle="modal" data-target="#Img5">
+				<li>
 					<a href="./images/property/property_5.jpg" target="imgUrl">
 						<img src="./images/property/property_5.jpg">
 					</a>
 				</li>
-				<li data-toggle="modal" data-target="#Img6">
+				<li>
 					<a href="./images/property/property_6.jpg" target="imgUrl">
 						<img src="./images/property/property_6.jpg">
 					</a>
@@ -205,26 +206,40 @@
 											<div class="docs-list">
 												<h4>Property Documents</h4>
 													<ul class="listing-features pp_docs">
-														<li>
-															<a href="#" class="btn border-danger text-danger py-1"> <i style="font-size: 18px" class="fa fa-download"></i> <span class="d-md-inline-block" style="color: #000;">Download Brochure</span></a>
+														<li class="wave-buttons">
+															<div class="btn-waves">
+																<button class="spin thick" style="padding: 0px !important;">
+																	<img src="./images/download.png">
+																	&nbsp;&nbsp;Download Brochure
+																</button>
+															</div>
 														</li>
-														<li>
-															<a href="#" class="btn border-danger text-danger py-1">
-																<i style="font-size: 18px" class="fa fa-download"></i> 
-																<span class=" d-md-inline-block" style="color: #000;"> Download Pricelist</span>
-															</a>
+														<li class="wave-buttons">
+															<div class="btn-waves">
+																<button class="spin thick" style="padding: 0px !important;">
+																	<img src="./images/download.png">
+																	&nbsp;&nbsp;Download Pricelist
+																</button>
+															</div>
 														</li>
 													</ul>
 													<ul class="listing-features pp_docs">
-														<li>
-															<a href="#" class="btn border-danger text-danger py-1">
-																<i style="font-size: 18px" class="fa fa-download"></i> 
-																<span class=" d-md-inline-block" style="color: #000;"> Download Payment Play</span>
-															</a>
+														<li class="wave-buttons">
+															<div class="btn-waves">
+																<button class="spin thick" style="padding: 0px !important;">
+																	<img src="./images/download.png">
+																	&nbsp;&nbsp;Download Payment Play
+																</button>
+															</div>
 														</li>
 														
-														<li>
-															<a href="#" class="btn border-danger text-danger py-1"> <i style="font-size: 19px" class="fa fa-download"></i> <span class=" d-md-inline-block" style="color: #000;"> Download Rera Certificate</span></a>
+														<li class="wave-buttons">
+															<div class="btn-waves">
+																<button class="spin thick" style="padding: 0px !important;">
+																	<img src="./images/download.png">
+																	&nbsp;&nbsp;Download Rera Certificate
+																</button>
+															</div>
 														</li>
 													</ul>
 											</div>
@@ -418,48 +433,53 @@
 										<div id="buy" class="list-details-section">
 											<div class="container no-pad-lr">
 												<h4 class="description-title"><i class="fa fa-credit-card"></i>&nbsp;Digital Buy</h4>
-												<ul class="property-info">
-													<li>
+												<ul class="property-info infro">
+													<li class="wave-buttons">
+														<div class="btn-waves">
+															<button class="spin thick">
+																<img src="./images/video-call.png">
+																&nbsp;&nbsp;Virtual Visit
+															</button>
+														</div>
+													</li>
+													<li class="wave-buttons">
 
-														<button class="btn-wave"><span class="waveBox">
-															<span class="circle"></span></span>
-															<img src="./images/gps.png">
-															<b>&nbsp;&nbsp;Virtual&nbsp;</b>
-															<strong>Visit</strong></button>
+														<div class="btn-waves" data-toggle="modal" data-target="#ContactAgent">
+															<button class="spin thick">
+																<img src="./images/video-conference.png">
+																&nbsp;&nbsp;Virtual Meeting	
+															</button>
+														</div>
 
 													</li>
-													<li>
+													<li class="wave-buttons">
 
-														<button class="btn-wave" data-toggle="modal" data-target="#ContactAgent"><span class="waveBox">
-															<span class="circle"></span></span>
-															<img src="./images/meet.png">
-															<b>&nbsp;&nbsp;Virtual&nbsp;</b>
-															<strong>Meeting</strong></button>
-
-													</li>
-													<li>
-
-														<button class="btn-wave"><span class="waveBox">		<span class="circle"></span></span>
-															<img src="./images/profile.png">
-															<b>&nbsp;&nbsp;Virtual&nbsp;</b>
-															<strong>Castsheet</strong></button>
+														<div class="btn-waves">
+															<button class="spin thick">
+																<img src="./images/paper.png">
+																&nbsp;&nbsp;Virtual Castsheet
+															</button>
+														</div>
 
 													</li>
-													<li>
+													<li class="wave-buttons">
 
-														<button class="btn-wave"><span class="waveBox">
-															<span class="circle"></span></span>
-															<img src="./images/house.png">
-															<b>&nbsp;&nbsp;Live&nbsp;</b>
-															<strong>Inventory</strong></button>
+														<div class="btn-waves">
+															<button class="spin thick">
+																<img src="./images/office-building.png">
+																&nbsp;&nbsp;Live Inventory
+															</button>
+														</div>
 
 													</li>
-													<li>
+													<li class="wave-buttons">
 
-														<button class="btn-wave"><span class="waveBox"><span class="circle"></span></span>
-															<img src="./images/house.png">
-															<b>&nbsp;&nbsp;Online Loan&nbsp;</b>
-															<strong>Apply</strong></button>
+														<div class="btn-waves">
+															<button class="spin thick">
+																<img src="./images/personal.png">
+																&nbsp;&nbsp;Online Loan Apply
+															</button>
+														</div>
 
 													</li>		
 												</ul>
@@ -1513,6 +1533,19 @@
 
 		$getvalues.on("click", writeResult);
 
+	</script>
+	<!-- Onclick Slider -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+			$("#head-slide").magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				gallery: {
+					enabled: true
+				}
+			});
+		});
 	</script>
 </body>
 

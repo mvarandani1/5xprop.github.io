@@ -16381,28 +16381,110 @@ h3{
 }
 
 /* Residential Apparment Details */
-.btn-wave {
-    position: relative;
-    text-align: left;
-    border: 2px solid #f52e5d;
-    color: #000 !important;
-    width: 250px;
-    background: none;
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+.infro{
+    margin-left: -2rem !important;
+}
+.btn-waves button{
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1.7em;
+  padding: 1em 1em;
+
+  /* Using inset box-shadow instead of border for sizing simplicity*/
+  box-shadow: inset 0 0 0 2px #f52e5d;
+  color: #f52e5d;
+  font-size: inherit;
+  font-weight: 700;
+
+  /* Required, since we're setting absolute on pseudo-elements*/
+  position: relative;
+  vertical-align: middle;
 }
 
-.btn-wave:hover{
-    border: 2px solid #000;
+.btn-waves button::before,
+.btn-waves button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.btn-wave strong{
+.spin {
+  width: 15rem;
+  height: 3rem;
+  padding: 0;
+}
+  
+.spin:hover {
+    color: #f52e5d;
+  }
+
+.spin::before,
+.spin::after {
+    top: 0;
+    left: 0;
+  }
+
+.spin::before {
+    border: 2px solid transparent; 
+  }
+
+.spin:hover::before {
+    border-top-color: #f52e5d; 
+    border-right-color: #f52e5d;
+    border-bottom-color: #f52e5d;
+
+    transition:
+      border-top-color 0.15s linear, 
+      border-right-color 0.15s linear 0.10s,
+      border-bottom-color 0.15s linear 0.20s;
+  }
+
+.spin::after {
+    border: 0 solid transparent;
+  }
+
+.thick {
+  color: #f52e5d;
+}
+
+.thick:hover {
+    color: #fff;
     font-weight: 700;
+}
+
+.thick::before {
+    border: 2.5em solid transparent;
+    z-index: -1;
+}
+
+.thick::after {
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+.thick:hover::before {
+    background: #f52e5d;
+    border-top-color: #f52e5d;
+    border-right-color: #f52e5d;
+    border-bottom-color: #f52e5d;
+    transition:
+    background 0s linear 0.4s,
+    border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.15s,
+    border-bottom-color 0.15s linear 0.25s;
+}
+
+.thick:hover::after {
+    border-top: 2.5em solid #f52e5d;
+    border-left-width: 2.5em;
+    border-right-width: 2.5em;
+}
+
+.wave-buttons {
+  isolation: isolate;
 }
 
 .banks{
@@ -16412,6 +16494,7 @@ h3{
 .banks img{
     width: 70px;
 }
+
 .head-slide{
     position: relative;
     width: 100%;
@@ -16422,16 +16505,16 @@ h3{
 
 
 .imgUrl img{
-    width: 85%;
-    height: 80vh;
+    width: 84%;
+    height: 90vh;
     margin-top: 3rem;
-    padding-left: 5rem;
+    padding-left: 7rem;
     padding-right: 5rem;
 }
 
 .head-slide .navigation{
     position: absolute;
-    bottom: -60px;
+    bottom: -10px;
     left: 43%;
     transform: translateX(-50%);
     z-index: 100;
@@ -16695,7 +16778,7 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
         margin-top: 2rem;
         margin-left: 0.5rem;
-        height: 95vh;
+        height: 100vh;
     }
     .head-slide .navigation{
         left: 49%;
@@ -16760,6 +16843,10 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .rangeBox{
         max-width: 70%;
+    }
+    .infro{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -16859,7 +16946,7 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
         margin-top: 2rem;
         margin-left: 0.5rem;
-        height: 70vh;
+        height: 65vh;
     }
     .head-slide .navigation{
         left: 49%;
@@ -16873,9 +16960,9 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .imgUrl img{
         width: 100%;
-        height: 50vh;
+        height: 45vh;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 3rem;
     }
     .emiStart{
         margin-left: 0px;
@@ -16890,7 +16977,7 @@ input[type="range"]::-webkit-slider-thumb {
     .box21 ul{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        min-width: 500px;
     }
 }
 
@@ -16925,7 +17012,15 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .container1 .card{
         min-width: 360px;
-        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 430px){
+    .in_p1{
+        margin-top: 0px;margin-left: 0px;
+    }
+    .container1 .card{
+        min-width: 350px;
     }
 }
 
@@ -16933,7 +17028,6 @@ input[type="range"]::-webkit-slider-thumb {
     .head-slide{
         width: 100%;
         margin-top: 2rem;
-        margin-left: 0.5rem;
         height: 40vh;
     }
     .head-slide .navigation{
@@ -16950,11 +17044,20 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
         height: 35vh;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
     }
     .emiStart{
         margin-left: 0px;
     }
+    .in_p1{
+        margin-top: 0px;margin-left: 0px;
+    }
+    .container1 .card{
+        min-width: 340px;
+    }
+}
+
+@media (max-width: 408px){
     .in_p1{
         margin-top: 0px;margin-left: 0px;
     }
@@ -16972,15 +17075,14 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 385px){
     .head-slide{
         width: 100%;
         margin-top: 2rem;
-        margin-left: 0.5rem;
         height: 35vh;
     }
     .head-slide .navigation{
-        left: 49%;
+        left: 48%;
         bottom: -20px;
     }
     .head-slide .navigation li{
@@ -16993,7 +17095,7 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
         height: 30vh;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
     }
     .emiStart{
         margin-left: 0px;
@@ -17003,7 +17105,28 @@ input[type="range"]::-webkit-slider-thumb {
         margin-bottom: 0px;
     }
     .container1 .card{
-        min-width: 290px;
+        min-width: 300px;
+    }
+    .box21 ul{
+        min-width: 360px;
+    }
+}
+
+@media (max-width: 370px){
+    .container1 .card{
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 355px){
+    .container1 .card{
+        min-width: 270px;
+    }
+}
+
+@media (max-width: 340px){
+    .container1 .card{
+        min-width: 250px;
     }
 }
 
@@ -17073,3 +17196,4 @@ input[type="range"]::-webkit-slider-thumb {
 .priceBox{
     font-size: 16px;
 }
+
