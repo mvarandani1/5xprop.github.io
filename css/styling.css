@@ -11507,13 +11507,13 @@ ul.amenities-one li:last-child {
     /* 02-jan-2020 */
 }
 
-@media (min-width: 820px){
+@media only screen and (min-width: 820px){
     .mobil{
         display: none !important;
     }
 }
 
-@media (max-width: 820px){
+@media only screen and (max-width: 820px){
     .desktop{
         display: none !important;
     }
