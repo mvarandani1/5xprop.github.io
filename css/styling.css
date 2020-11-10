@@ -11519,6 +11519,8 @@ ul.amenities-one li:last-child {
     }
     .mobil{
         display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 }
 
@@ -11869,7 +11871,6 @@ ul.amenities-one li:last-child {
 }
 
 .container-div{
-  overflow-x: hidden;
   overflow-y: scroll;
   
   -ms-overflow-style: none;
