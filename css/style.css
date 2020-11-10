@@ -16270,7 +16270,20 @@ h3{
     flex-wrap: wrap;
 }
 
+@media (min-width: 770px){
+    .mobile{
+        display: none;
+    }
+}
 
+@media (max-width: 768px){
+    .section2{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
 .brief-container .cardB{
     position: relative;
     width: 100%;
