@@ -11534,7 +11534,7 @@ ul.amenities-one li:last-child {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #2D5440;
+    background: #2D5440 !important;
 
     /* Center slide text vertically */
     display: -webkit-box;
