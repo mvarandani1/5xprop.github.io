@@ -15750,7 +15750,7 @@ section.footer-copyright {
 }
 
 h3{
-    border-bottom: 2px solid #f52e5d;
+    border-bottom: 2px solid #2D5440;
 }
 
 .listing-sidebar{
@@ -17256,3 +17256,263 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 16px;
 }
 
+/* Godrej Palm Retreat */
+
+#main-menu{
+    float: right;   
+}
+
+div.container-purple
+{
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 240px;
+    padding: 5em 3em;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+div.container-purple a
+{
+    color: #396330;
+    font-weight: 500;
+    text-decoration: none;
+    font-size:20px;
+    margin: 0px 20px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.retreat-content{
+    width: 500px;
+    margin-left: -2rem;
+    margin-top: 4rem;
+}
+
+.retreat-content h1{
+    color:#396330;font-size: 45px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+#section1 {
+    background-size: cover;
+    height: 100vh;
+    background-position: center;  
+    width: 45%;
+    float: right;    
+    background-color: #ebcfc4;
+}
+
+#section1 img{
+    position: relative;
+    min-width: 500px;
+    margin-left: -200px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    object-position: 50% 50%;
+    width: 643px;
+    height: 428px;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+#section2 {
+    position: relative;
+    color: #2D5440;
+    background-color: #fff;
+    float: left;
+    width: 55%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+}
+
+#section4 {
+    background-attachment: fixed;
+}
+
+#section5 {
+    background-size: cover;
+}
+
+.sectionss {
+    width: 100%;
+    margin: 0;
+    padding: 100px;
+}   
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #396330;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.tabbable{
+    justify-content: center;
+    background: #fff;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.background-div{
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background: #ebcfc4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Buttons Spin thick */
+
+.btn-w button{
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 1em;
+
+  /* Using inset box-shadow instead of border for sizing simplicity*/
+  box-shadow: inset 0 0 0 2px #2D5440;
+  color: #2D5440;
+  font-size: inherit;
+  font-weight: 700;
+  opacity: 1;
+  /* Required, since we're setting absolute on pseudo-elements*/
+  position: relative;
+  vertical-align: middle;
+}
+
+.btn-w button::before,
+.btn-w button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.spin1 {
+  width: 8rem;
+  height: 3rem;
+  padding: 0;
+}
+
+.spin-active{
+  width: 8rem;
+  height: 3rem;
+  padding: 0;
+  background: #2D5440;
+  color: #fff;
+}
+  
+.spin1:hover {
+    color: #2D5440;
+  }
+
+.spin1::before,
+.spin1::after {
+    top: 0;
+    left: 0;
+  }
+
+.spin1::before {
+    border: 2px solid transparent; 
+  }
+
+.spin1:hover::before {
+    border-top-color: #2D5440; 
+    border-right-color: #2D5440;
+    border-bottom-color: #2D5440;
+
+    transition:
+      border-top-color 0.15s linear, 
+      border-right-color 0.15s linear 0.10s,
+      border-bottom-color 0.15s linear 0.20s;
+  }
+
+.spin1::after {
+    border: 0 solid transparent;
+  }
+
+.thick1 {
+  color: #2D5440;
+}
+
+.thick1:hover {
+    color: #fff;
+    font-weight: 700;
+}
+
+.thick1::before {
+    border: 2.5em solid transparent;
+    z-index: -1;
+}
+
+.thick1::after {
+    mix-blend-mode: color-dodge;
+    z-index: -1;
+}
+
+.thick1:hover::before {
+    background: #2D5440;
+    border-top-color: #2D5440;
+    border-right-color: #2D5440;
+    border-bottom-color: #2D5440;
+    transition:
+    background 0s linear 0.4s,
+    border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.15s,
+    border-bottom-color 0.15s linear 0.25s;
+}
+
+.thick1:hover::after {
+    border-top: 2.5em solid #2D5440;
+    border-left-width: 2.5em;
+    border-right-width: 2.5em;
+}
+
+.wave-btn {
+  isolation: isolate;
+}
