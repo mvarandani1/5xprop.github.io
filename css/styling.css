@@ -11732,6 +11732,7 @@ ul.amenities-one li:last-child {
     border-radius: 5px;
     background: #fff;
     color:#E26262;
+    margin-left: 3rem;
     font-size: 15px;
     border: 0;
 }
@@ -11739,6 +11740,7 @@ ul.amenities-one li:last-child {
 #slide2 .upimg-flex button{
     border-radius: 5px;
     background: #fff;
+    margin-left: 3rem;
     color:#FF6D6D;
     font-size: 15px;
     border: 0;
@@ -11747,6 +11749,7 @@ ul.amenities-one li:last-child {
 #slide3 .upimg-flex button{
     border-radius: 5px;
     background: #fff;
+    margin-left: 3rem;
     color: #FF7777;
     font-size: 15px;
     border: 0;
@@ -11757,6 +11760,7 @@ ul.amenities-one li:last-child {
     background: #fff;
     color:  #FF9090;
     font-size: 15px;
+    margin-left: 3rem;
     border: 0;
 }
 
@@ -11765,6 +11769,7 @@ ul.amenities-one li:last-child {
     background: #fff;
     color: #FFAEAE;
     font-size: 15px;
+    margin-left: 3rem;
     border: 0;
 }
 
@@ -11841,6 +11846,10 @@ ul.amenities-one li:last-child {
     margin-top: 1rem;
 }
 
+.upimg-btns-list a{
+    cursor: pointer;
+}
+
 .upimg-btns-list p{
     font-weight: 600;
     margin-top: 0.5rem;
@@ -11848,60 +11857,69 @@ ul.amenities-one li:last-child {
     color: #fff;
 }
 
-.upimg-btns-list p:hover,
-.upimg-btns-list a:hover{
-    color: #2D5440;
+.upimg-btns-list p:hover{
+    color: #fff;
 }
 
 .upimg-foot{
     display: flex;
     justify-content: space-around;
-    margin-top: 12rem;
+    margin-top: 3rem;
 }
 
-#slide1 .upimg-foot button{
+#slide1 .upimg-footer button{
     font-size: 16px;
     background: #fff;
     font-weight: 600;
     border: 0;
     color: #E26262;
+    padding: 5px;
+    margin-top: 8rem;
     border-radius: 5px;
 }
 
-#slide2 .upimg-foot button{
+#slide2 .upimg-footer button{
     font-size: 16px;
     background: #fff;
     font-weight: 600;
     border: 0;
+    padding: 5px;
     color: #FF6D6D;
     border-radius: 5px;
+    margin-top: 8rem;
 }
 
-#slide3 .upimg-foot button{
+#slide3 .upimg-footer button{
     font-size: 16px;
     background: #fff;
     font-weight: 600;
     border: 0;
+    padding: 5px;
     color: #FF7777;
+    margin-top: 8rem;
     border-radius: 5px;
 }
 
-#slide4 .upimg-foot button{
+#slide4 .upimg-footer button{
     font-size: 16px;
     background: #fff;
     font-weight: 600;
     border: 0;
+    padding: 5px;
     color: #FF9090;
     border-radius: 5px;
+    margin-top: 8rem;
 }
 
-#slide5 .upimg-foot button{
+#slide5 .upimg-footer button{
     font-size: 16px;
     background: #fff;
     font-weight: 600;
     border: 0;
+    padding: 5px;
     color: #FFAEAE;
     border-radius: 5px;
+    margin-top: 8rem;
 }
 
 .upimg-foot a{
@@ -11909,7 +11927,7 @@ ul.amenities-one li:last-child {
     border: 2px solid #fff;
     color: #fff;
     font-weight: 600;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }

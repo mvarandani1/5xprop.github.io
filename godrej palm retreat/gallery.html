@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="../css/styling.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#map{
+			width: 100vw;
+			height: 100vh;
+		}
+
+		header{
+			display: flex;
+			justify-content: space-between;
+			background: #E26262;
+			width: 100vw;
+			height: 70px;
+			margin: 0;
+			padding: 0;
+			align-items: center;
+		}
+
+		.mid{
+			text-align: center;
+			margin-top: 0.5rem;
+		}
+
+		.mid h4{
+			color: #fff;
+			font-size: 18px;
+		}
+
+		.mid p{
+			color: #fff;
+			font-size: 14px;
+		}
+
+		a{
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+			margin-right: 2rem;
+			margin-top: -0.5rem;
+		}
+
+		a p{
+			margin-right: -2rem;
+		}
+
+		header i{
+			margin-left: 2rem;
+			font-size: 20px !important;
+			color: #fff;
+			margin-top: 1rem;
+		}
+
+		.wrap {
+		    overflow: hidden;
+		    margin: 10px;
+		  max-width: 1500px;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		.box {
+		    float: left;
+		    position: relative;
+		    width: 20%;
+		    padding-bottom: 20%;
+		    margin: 0px !important;
+		}
+
+		.boxInner {
+		    position: absolute;
+		    left: 5px;
+		    right: 5px;
+		    top: 5px;
+		    bottom: 5px;
+		    overflow: hidden;
+		}
+		 .boxInner img { width: 100% }
+
+
+		@media only screen and (max-width:480px) { 
+		    /* Smartphone view: 1 tile */
+		    .box {
+		        width: 100%;
+		        padding-bottom: 50%;
+		    }
+		}
+		@media only screen and (max-width:650px) and (min-width:481px) { 
+		    /* Tablet view: 2 tiles */
+		    .box {
+		        width: 50%;
+		        padding-bottom: 25%;
+		    }
+		}
+		@media only screen and (max-width:1050px) and (min-width:651px) { 
+		    /* Small desktop / ipad view: 3 tiles */
+		    .box {
+		        width: 33.3%;
+		        padding-bottom: 33.3%;
+		    }
+		}
+		@media only screen and (max-width:1290px) and (min-width:1051px) { 
+		    /* Medium desktop: 4 tiles */
+		    .box {
+		        width: 25%;
+		        padding-bottom: 25%;
+		    }
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<a href="godrej-palm-retreat.html"><i class="fa fa-arrow-left"></i></a>
+		<div class="mid">
+			<h4>Vaisakhi Skypark</h4>
+			<p>Yendada, Vizag</p> 
+		</div>
+		<a href="">
+            <i class="fa fa-picture-o"></i>
+            <p>Gallery</p>
+        </a>
+	</header>
+
+	<div class="wrap">
+	<!-- Define all of the tiles: -->
+	<div class="box">
+		<div class="boxInner">
+			<img src="../images/property/property_1.jpg" />
+			
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="../images/property/property_2.jpg" />
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="../images/property/property_3.jpg" />
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="../images/property/property_4.jpg" />
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="../images/property/property_5.jpg" />
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
