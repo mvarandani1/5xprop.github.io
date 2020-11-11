@@ -11628,23 +11628,98 @@ ul.amenities-one li:last-child {
   right: 0;
 }
 
+.full-width{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#slide1{
+    background: #E26262;
+}
+
+#slide2{
+    background: #FF6D6D;
+}
+
+#slide3{
+    background: #FF7777;
+}
+
+#slide4{
+    background: #FF9090;
+}
+
+#slide5{
+    background: #FFAEAE;
+}
+
+.img-outer{
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+#slide1 .img-outer i{
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 28px;
+    color: #E26262;
+}
+
+#slide2 .img-outer i{
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 28px;
+    color: #FF6D6D;
+}
+
+#slide3 .img-outer i{
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 28px;
+    color: #FF7777;
+}
+
+#slide4 .img-outer i{
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 28px;
+    color:  #FF9090;
+}
+
+#slide5 .img-outer i{
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 28px;
+    color: #FFAEAE;
+}
+
 .full-img{
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 65%;
     position: relative;
     z-index: 0;
+    margin-top: 2rem;
 }
 
 .upimg{
-    border-radius: 50px;
-    background: #fff;
+    background: transparent;
     position: absolute;
     z-index: 1;
     width: 85%;
-    margin-top: -6rem;
-    margin-left: 3rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    margin-top: -21rem;
+    margin-left: 7rem;
 }
 
 .upimg-flex {
@@ -11653,17 +11728,50 @@ ul.amenities-one li:last-child {
     margin-top: 1rem;
 }
 
-.upimg-flex button{
+#slide1 .upimg-flex button{
     border-radius: 5px;
-    background: #2D5440;
-    color: #fff;
+    background: #fff;
+    color:#E26262;
     font-size: 15px;
+    border: 0;
+}
+
+#slide2 .upimg-flex button{
+    border-radius: 5px;
+    background: #fff;
+    color:#FF6D6D;
+    font-size: 15px;
+    border: 0;
+}
+
+#slide3 .upimg-flex button{
+    border-radius: 5px;
+    background: #fff;
+    color: #FF7777;
+    font-size: 15px;
+    border: 0;
+}
+
+#slide4 .upimg-flex button{
+    border-radius: 5px;
+    background: #fff;
+    color:  #FF9090;
+    font-size: 15px;
+    border: 0;
+}
+
+#slide5 .upimg-flex button{
+    border-radius: 5px;
+    background: #fff;
+    color: #FFAEAE;
+    font-size: 15px;
+    border: 0;
 }
 
 .upimg-flex p{
     margin-top: 0.5rem;
     font-size: 16px;
-    color: #2D5440;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -11680,6 +11788,7 @@ ul.amenities-one li:last-child {
 .upimg-flx p{
     margin-top: 1rem;
     font-size: 16px;
+    color: #fff;
 }
 
 .upimg-content{
@@ -11695,7 +11804,7 @@ ul.amenities-one li:last-child {
 }
 
 .upimg-content p{
-    
+    color: #fff;
 }
 
 .upimg-content ul{
@@ -11708,8 +11817,8 @@ ul.amenities-one li:last-child {
 }
 
 .upimg-content ul li::marker{
-    color: #2D5440;
-    font-size: 18px;
+    color: #fff;
+    font-size: 20px;
 }
 
 .upimg-content ul li p{
@@ -11718,9 +11827,14 @@ ul.amenities-one li:last-child {
     font-weight: 500;
 }
 
+.upimg-btns{
+    width: 25%;
+}
+
 .upimg-btns-list{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin-left: 5px;
     margin-bottom: 2rem;
     margin-right: 5px;
@@ -11728,7 +11842,10 @@ ul.amenities-one li:last-child {
 }
 
 .upimg-btns-list p{
-    font-weight: 500;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: left;
+    color: #fff;
 }
 
 .upimg-btns-list p:hover,
@@ -11736,39 +11853,62 @@ ul.amenities-one li:last-child {
     color: #2D5440;
 }
 
-.img-outer{
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
-    text-align: center;
-    background: #fff;
-    height: 50px;
-    width: 50px;
-    margin-bottom: 0.5rem;
-}
-
-.img-outer img{
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 0.8rem;
-}
-
 .upimg-foot{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-top: 12rem;
 }
 
-.upimg-foot button{
+#slide1 .upimg-foot button{
     font-size: 16px;
-    background: #2D5440;
-    color: #fff;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    color: #E26262;
+    border-radius: 5px;
+}
+
+#slide2 .upimg-foot button{
+    font-size: 16px;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    color: #FF6D6D;
+    border-radius: 5px;
+}
+
+#slide3 .upimg-foot button{
+    font-size: 16px;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    color: #FF7777;
+    border-radius: 5px;
+}
+
+#slide4 .upimg-foot button{
+    font-size: 16px;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    color: #FF9090;
+    border-radius: 5px;
+}
+
+#slide5 .upimg-foot button{
+    font-size: 16px;
+    background: #fff;
+    font-weight: 600;
+    border: 0;
+    color: #FFAEAE;
     border-radius: 5px;
 }
 
 .upimg-foot a{
     font-size: 16px;
-    border: 2px solid #2D5440;
-    color: #2D5440;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -11776,8 +11916,8 @@ ul.amenities-one li:last-child {
 
 .upimg-foot a:hover{
     font-size: 16px;
-    border: 3px solid #2D5440;
-    color: #2D5440;
+    border: 3px solid #fff;
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
 }
