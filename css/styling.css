@@ -11934,6 +11934,7 @@ ul.amenities-one li:last-child {
     display: flex;
     margin-top: 5rem;
     margin-left: 2rem;
+    width: 100vw;
 }
 
 .upimg-foot ul li{
