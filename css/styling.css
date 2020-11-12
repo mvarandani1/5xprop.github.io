@@ -12084,7 +12084,7 @@ ul.amenities-one li:last-child {
     border-radius: 5px;
     margin-right: 2.4rem;
     margin-left: 1.2rem;
-    margin-bottom: -2rem;
+    margin-bottom: -1.9rem;
     cursor: pointer;
   background: #E26262;
   align-self: center;
@@ -12103,7 +12103,7 @@ ul.amenities-one li:last-child {
   border-radius: 8px;
   display: -webkit-box;
   display: flex;
-  background: #E26262;
+  background: transparent;
   margin-bottom: 8px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
