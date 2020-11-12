@@ -12054,7 +12054,7 @@ ul.amenities-one li:last-child {
 /* Sharing Button */
 
 .share-wrapper {
-  background: #E26262;
+  background: transparent;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -12087,7 +12087,7 @@ ul.amenities-one li:last-child {
     margin-right: 0.5rem;
     margin-bottom: -1.8rem;
     cursor: pointer;
-  background: #E26262;
+  background: transparent;
   align-self: center;
 }
 .share i {
