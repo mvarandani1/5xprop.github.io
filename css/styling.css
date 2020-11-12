@@ -11659,7 +11659,7 @@ ul.amenities-one li:last-child {
     vertical-align: middle;
     text-align: center;
     padding-top: 1rem;
-    font-size: 28px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -11877,9 +11877,9 @@ ul.amenities-one li:last-child {
     border: 0;
     color: #E26262;
     border-radius: 5px;
-    padding: 9px;
-    margin-top: -0.8rem;
-    margin-right: 1.3rem;
+    padding: 6px;
+    margin-top: -0.6rem;
+    margin-right: 0.5rem;
 }
 
 #slide2 .upimg-foot button{
@@ -11887,11 +11887,11 @@ ul.amenities-one li:last-child {
     background: #fff;
     font-weight: 600;
     border: 0;
-    padding: 9px;
+    padding: 6px;
     color: #FF6D6D;
     border-radius: 5px;
-    margin-top: -0.8rem;
-    margin-right: 1.3rem;
+    margin-top: -0.6rem;
+    margin-right: 0.5rem;
 }
 
 #slide3 .upimg-foot button{
@@ -11899,11 +11899,11 @@ ul.amenities-one li:last-child {
     background: #fff;
     font-weight: 600;
     border: 0;
-    padding: 9px;
+    padding: 6px;
     color: #FF7777;
     border-radius: 5px;
-    margin-top: -0.8rem;
-    margin-right: 1.3rem;
+    margin-top: -0.6rem;
+    margin-right: 0.5rem;
 }
 
 #slide4 .upimg-foot button{
@@ -11911,11 +11911,11 @@ ul.amenities-one li:last-child {
     background: #fff;
     font-weight: 600;
     border: 0;
-    padding: 9px;
+    padding: 6px;
     color: #FF9090;
     border-radius: 5px;
-    margin-top: -0.8rem;
-    margin-right: 1.3rem;
+    margin-top: -0.6rem;
+    margin-right: 0.5rem;
 }
 
 #slide5 .upimg-foot button{
@@ -11923,21 +11923,21 @@ ul.amenities-one li:last-child {
     background: #fff;
     font-weight: 600;
     border: 0;
-    padding: 9px;
+    padding: 6px;
     color: #FFAEAE;
     border-radius: 5px;
-    margin-top: -0.8rem;
-    margin-right: 1.3rem;
+    margin-top: -0.6rem;
+    margin-right: 0.5rem;
 }
 
 .upimg-foot ul{
     display: flex;
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-left: 2rem;
 }
 
 .upimg-foot ul li{
-     margin-right: 0.5rem;
+     margin-right: 1.7rem;
 }
 
 .upimg-foot a{
@@ -11945,12 +11945,13 @@ ul.amenities-one li:last-child {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: 600;
-    padding: 16px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -11964,7 +11965,7 @@ ul.amenities-one li:last-child {
 }
 
 .upimg-foot a i{
-    font-size: 32px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -12075,22 +12076,22 @@ ul.amenities-one li:last-child {
 }
 
 .share {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: 600;
-    padding-top: 10px;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
     border-radius: 5px;
-    margin-right: 2.4rem;
-    margin-left: 1.2rem;
+    margin-right: 0.5rem;
     margin-bottom: -1.8rem;
     cursor: pointer;
   background: #E26262;
   align-self: center;
 }
 .share i {
-  font-size: 28px;
+  font-size: 18px;
 }
 
 .butt.fa {
