@@ -113,9 +113,20 @@
                     <div class="line3"></div>
                 </div>
             </div>
+
             <!-- Table Admin Panel-->
-            <div class="col-lg-9 col-md-9" style="margin-top: 5rem;">
+            <div class="col-lg-9 col-md-9" style="margin-top: 3rem;">
                 <table class="responstable">
+                <!-- Search Filter-->
+                <div class="row" style="margin-bottom: 3rem;">
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+                        <input type="text" class="textbox" placeholder="Search" style="width: 92%;text-align: center;justify-content: center;background: #cdcdcd;">
+                        <i class="buttonn fa fa-search"></i>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <i class="fa fa-filter" style="font-size: 40px; color: #1d293e;"></i>
+                    </div>
+                </div>
   
                   <tr>
                     <th>Lead ID</th>
@@ -222,6 +233,15 @@
     <script>
         $('.feat-btn').click(function() {
            $('nav ul .feat-show').toggleClass("show"); 
+        });
+    </script>
+    <script>
+        $("#search").focusin(function(){
+            $("#Modal").show();
+        });
+
+        $("#close").click(function() {
+           $('#Modal').hide();
         });
     </script>
 </body>
