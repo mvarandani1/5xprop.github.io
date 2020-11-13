@@ -18052,6 +18052,9 @@ header ul li{
   .responstable td {
     border: 1px solid #D9E4E6;
   }
+  .responstable tr:nth-child(odd) {
+      background-color: #f4e8d6;
+    }
 }
 .responstable th, .responstable td {
   text-align: left;
