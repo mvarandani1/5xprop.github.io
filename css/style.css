@@ -17749,7 +17749,7 @@ nav ul{
     margin-top: 1rem;
 }
 
-nav a {
+nav a{
   display: block;
   padding: 15px;
   border-left: 5px solid transparent;
@@ -18065,4 +18065,30 @@ header ul li{
     display: table-cell;
     padding: 1em;
   }
+}
+
+nav ul ul{
+    position: static;
+    display: none;
+}
+
+nav ul .feat-show.show{
+    display: block;
+}
+
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+}
+
+nav ul ul li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
 }

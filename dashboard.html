@@ -73,19 +73,23 @@
                                 <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Total Listing</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Total Lead</a>
-                            </li>
-                            <li> 
-                                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Follow Up Lead</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Meeting Lead</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Visit Lead</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Dump Lead</a>
+                               <a href="#" class="feat-btn"><i class="fa fa-book" aria-hidden="true"></i>Total Leads&nbsp;&nbsp;
+                                    <span class="fa fa-caret-down first"></span>
+                               </a>
+                               <ul class="feat-show" style="margin-left:2rem;">
+                                   <li>
+                                       <a href="#"><i class="fa fa-book"></i>Follow Up Lead</a>
+                                   </li>
+                                   <li>
+                                       <a href="#"><i class="fa fa-book"></i>Meeting Lead</a>
+                                   </li>
+                                   <li>
+                                       <a href="#"><i class="fa fa-book"></i>Visit Lead</a>
+                                   </li>
+                                   <li>
+                                       <a href="#"><i class="fa fa-book"></i>Dump Lead</a>
+                                   </li>
+                               </ul>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Register Customer</a>
@@ -114,84 +118,73 @@
                 <table class="responstable">
   
                   <tr>
-                    <th>Property Details</th>
-                    <th data-th="Driver details"><span>Customer name</span></th>
-                    <th>Customer Email</th>
-                    <th>Customer Mobile</th>
+                    <th>Lead ID</th>
+                    <th><span>Lead name</span></th>
                     <th>Date</th>
+                    <th>Stage</th>
                     <th>Action</th>
                   </tr>
                   
                   <tr>
-                    <td>3C Lotus Boulevard<br>
-                        12052020172918<br>
-                        (Sector 100 , Noida)
+                    <td>
+                        121315
                     </td>
                     <td>
                         User
                     </td>
                     <td>
-                        admin@gmail.com
-                    </td>
-                    <td>
-                        9015215327
-                    </td>
-                    <td>
                         2020-10-31 14:38:25
+                    </td>
+                    <td>
+                        New
                     </td>
                     <td style="color: #f52e5d;font-weight: 600;cursor: pointer;">Change Status</td>
                   </tr>
                   
                   <tr>
-                    <td>3C Lotus Boulevard<br>
-                        12052020172918<br>
-                        (Sector 100 , Noida)
+                    <td>
+                        121315
                     </td>
                     <td>
                         User
                     </td>
                     <td>
-                        admin@gmail.com
-                    </td>
-                    <td>9015215327</td>
-                    <td>
                         2020-10-31 14:38:25
                     </td>
-                   <td style="color: #f52e5d;font-weight: 600;cursor: pointer;">Change Status</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>3C Lotus Boulevard<br>
-                        12052020172918<br>
-                        (Sector 100 , Noida)
-                    </td>
                     <td>
-                        User
-                    </td>
-                    <td>
-                        admin@gmail.com
-                    </td>
-                    <td>9015215327</td>
-                    <td>
-                        2020-10-31 14:38:25
+                        New
                     </td>
                     <td style="color: #f52e5d;font-weight: 600;cursor: pointer;">Change Status</td>
                   </tr>
                   
                   <tr>
-                    <td>3C Lotus Boulevard<br>
-                        12052020172918<br>
-                        (Sector 100 , Noida)
+                    <td>
+                        121315
                     </td>
                     <td>
                         User
                     </td>
                     <td>
-                        admin@gmail.com
+                        2020-10-31 14:38:25
                     </td>
-                    <td>9015215327</td>
+                    <td>
+                        New
+                    </td>
+                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;">Change Status</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                        121315
+                    </td>
+                    <td>
+                        User
+                    </td>
                     <td>
                         2020-10-31 14:38:25
+                    </td>
+                    <td>
+                        New
                     </td>
                     <td style="color: #f52e5d;font-weight: 600;cursor: pointer;">Change Status</td>
                   </tr>
@@ -223,6 +216,13 @@
         });
     }
     navSlide();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--Toggle leads-->
+    <script>
+        $('.feat-btn').click(function() {
+           $('nav ul .feat-show').toggleClass("show"); 
+        });
     </script>
 </body>
 </html>
