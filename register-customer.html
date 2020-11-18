@@ -55,51 +55,60 @@
                         <fieldset class="wizard-fieldset show">
                             <h4 style="text-align: center;">Register Customer</h4>
                             <div class="property-list-box-info-btn justify-content-center" style="background: transparent;">
-                                <a href="#" class="btn btn-success" style="margin-right: 2rem;"  data-toggle="modal" data-target="#whatsapp"><i class="fa fa-whatsapp" style="font-size: 18px;"></i> Whatsapp</a>
-                                <a href="#" class="btn btn-custom" style="width: 100px;"  data-toggle="modal" data-target="#call"><i class="fa fa-volume-control-phone" aria-hidden="true"style="transform: rotate(-40deg);font-size: 18px;"></i> Call</a>
+                                <a href="#" class="btn btn-success" style="margin-right: 2rem;"><i class="fa fa-whatsapp" style="font-size: 18px;"></i> Whatsapp</a>
+                                <a href="#" class="btn btn-custom" style="width: 100px;"><i class="fa fa-volume-control-phone" aria-hidden="true"style="transform: rotate(-40deg);font-size: 18px;"></i> Call</a>
                             </div>
                             <div class="row d-flex">
                                 <div class="col-md-6 form-group ">
-                                   <input type="text" class="form-control wizard-required" id="fname" placeholder="Lead Id*">
+                                   <label>Lead Id*</label>
+                                   <input type="text" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control wizard-required" id="fname" placeholder="Lead Referal*">
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                            </div>
-                            <div class="row d-flex">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control wizard-required" id="fname" placeholder="First Name*">
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control wizard-required" id="fname" placeholder="Last Name*">
+                                    <label>Lead Referal*</label>
+                                    <input type="text" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                             </div>
                             <div class="row d-flex">
                                 <div class="form-group col-md-6">
-                                    <input type="email" class="form-control wizard-required" id="fname" placeholder="Email Id*">
+                                    <label>First Name*</label>
+                                    <input type="text" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control wizard-required" id="fname" placeholder="Phone No.*">
+                                    <label>Last Name*</label>
+                                    <input type="text" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                             </div>
                             <div class="row d-flex">
                                 <div class="form-group col-md-6">
-                                    <input type="number" class="form-control wizard-required" id="fname" placeholder="Lead Stage">
+                                    <label>Email Id*</label>
+                                    <input type="email" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control wizard-required" id="fname" placeholder="Second No.">
+                                    <label>Phone No.*</label>
+                                    <input type="text" class="form-control wizard-required" id="fname">
+                                    <div class="wizard-form-error"></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="form-group col-md-6">
+                                    <label>Lead Stage</label>
+                                    <input type="number" class="form-control wizard-required" id="fname">
+                                    <div class="wizard-form-error"></div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Second No.</label>
+                                    <input type="text" class="form-control wizard-required" id="fname">
                                     <div class="wizard-form-error"></div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea type="text" class="form-control wizard-required" id="lname" placeholder="Note"></textarea>
+                                <label>Note</label>
+                                <textarea type="text" class="form-control wizard-required" id="lname"></textarea>
                                 <div class="wizard-form-error"></div>
                             </div>
                             <div class="row d-flex">
@@ -162,7 +171,7 @@
                 </div>
             </div>
 
-            <div class="modal fade align-items-center justify-content-center" id="whatsapp" tabindex="-1" role="dialog" aria-hidden="true">
+            <!--<div class="modal fade align-items-center justify-content-center" id="whatsapp" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog " role="document">
                     <div class="modal-content pb-0">
                         <div class="modal-header">
@@ -182,7 +191,7 @@
                         <iframe src="call.html" style="height: 60vh;width: 100%;"></iframe>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <script src="js/main.js"></script>
             <script src="js/plugin.js"></script>
