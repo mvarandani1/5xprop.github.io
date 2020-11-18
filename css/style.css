@@ -15684,7 +15684,7 @@ section.footer-copyright {
     }
     .clipu{
         margin-left: -9rem !important;
-        margin-top: -21rem;
+        margin-top: -15rem !important;
     }
 }
 
@@ -15719,7 +15719,7 @@ section.footer-copyright {
 @media (max-width: 590px){
     .clipu{
         margin-left: -15rem !important;
-        margin-top: -18rem;
+        margin-top: -16rem;
     }
 }
 
@@ -17541,12 +17541,13 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
   background-blend-mode: darken;
   background-color: #1d293e;
   color: #b8c7ce;
-  width: 85%;
+  width: 21.3%;
   margin-right: 0px;
   background-position: center center;
   background-size: cover;
   height: 100vh;
   padding: 30px;
+  position: fixed;
 }
 
 .form-wizard {
@@ -17792,7 +17793,7 @@ nav a .fa {
 header{
     display: flex;
     justify-content: space-between;
-    background: transparent;
+    background: black;
     width: 100vw;
     height: 60px;
     position: relative;
@@ -17817,7 +17818,7 @@ header ul li{
 
 @media (max-width: 850px){
     .wizard-content-left{
-        width: 100%;
+        width: 24.5%;
     }
 }
 
