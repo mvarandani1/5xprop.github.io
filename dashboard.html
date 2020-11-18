@@ -23,11 +23,11 @@
     <!--Page Wrapper starts-->
     <div class="page-wrapper">
         <header>
-                <div class="logo" style="background:black;width: 21.3%;height:70px;position:fixed;">
+                <div class="logo" style="background:black;width: 21.3%;height:60px;position: fixed;">
                     <img src="./images/logo.png" style="margin-left: 1.3rem;margin-top:1rem;">
                 </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-8">
-                        <ul class="top-nav">
+                        <ul class="top-nav top-nav2">
                             <li>
                                 <select class="select-arrow" style="color: #fff;font-size: 16px;">
                                     <option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
@@ -51,7 +51,7 @@
                                         Hey, Sunil<span class="caret"></span>
                                     </button>
 
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu" style="position: absolute;z-index: 1;">
                                         <li>
                                             <a href="dashboard.html" style="color: #000 !important;cursor: pointer !important;">
                                                 Dashboard
@@ -196,16 +196,54 @@
                                         <a href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a>
                                     </li>
                                     <li>
-                                        <a href="all-listings.html"><i class="fa fa-th-large" aria-hidden="true"></i>Listings</a>
+                                       <a href="#" class="feat-btn"><i class="fa fa-list" aria-hidden="true"></i>Listings&nbsp;&nbsp;
+                                            <span class="fa fa-caret-down first"></span>
+                                       </a>
+                                       <ul class="feat-show" style="margin-left:2rem;">
+                                           <li>
+                                               <a href="all-listings.html"><i class="fa fa-list" aria-hidden="true"></i>View Listings</a>
+                                           </li>
+                                           <li>
+                                               <a href="post-free-ad.html"><i class="fa fa-plus" aria-hidden="true"></i>Add Listing</a>
+                                           </li>
+                                       </ul>
                                     </li>
                                     <li>
-                                        <a href="earn.html"><i class="fa fa-money" aria-hidden="true"></i>Earn</a>
+                                       <a href="#" class="feat-btnn"><i class="fa fa-book" aria-hidden="true"></i>Leads&nbsp;&nbsp;
+                                            <span class="fa fa-caret-down first"></span>
+                                       </a>
+                                       <ul class="feat-shown" style="margin-left:2rem;">
+                                           <li>
+                                               <a href="leads.html" style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Total Leads</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Follow up Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Meeting Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Visit Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Hot Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Cold Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Dump Lead</a>
+                                           </li>
+                                       </ul>
                                     </li>
                                     <li>
                                         <a href="register-customer.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Register Customer</a>
                                     </li>
                                     <li>
-                                        <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>Leads</a>
+                                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
+                                    </li>
+                                    <li>
+                                        <a href="marketing.html"><i class="fa fa-cog" aria-hidden="true"></i>Marketing</a>
                                     </li>
                                     <li>
                                         <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>Claim Leads</a>
@@ -214,10 +252,7 @@
                                         <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>My deals</a>
                                     </li>
                                     <li>
-                                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
-                                    </li>
-                                    <li>
-                                        <a href="marketing.html"><i class="fa fa-cog" aria-hidden="true"></i>Marketing</a>
+                                        <a href="earn.html"><i class="fa fa-money" aria-hidden="true"></i>Earn</a>
                                     </li>
                                 </ul>
                               </nav>
@@ -498,7 +533,7 @@
                             </div>
                         </section>
                     </div>
-                    <section class="sec">
+                    <section class="sec section-sec">
                         <div id="reviews" class="list-details-section">
                             <h4>Reviews <span>(2)</span></h4>
                             <div class="review-box comment-box">
@@ -594,106 +629,7 @@
                                     <input class="btn v3" type="submit" name="submit-contact" value="Submit"> </form>
                                 </div>
                             </div>
-                    </section>
-                    <!--Footer Starts-->
-                    <!--<div class="footer-wrapper v3 col-lg-9 col-md-9 col-sm-9" style="float: right !important;">
-                        <div class="footer-top-area">
-                            <div class="container">
-                                <div class="row nav-folderized">
-                                    <div class="col-lg-3">
-                                        <div class="footer-content nav">
-                                            <h2 class="title">OVERVIEW</h2>
-                                            <ul class="footer-list list res-list">
-                                                <li> <a href="#">About us </a> </li>
-                                                <li> <a href="#">Career  </a> </li>
-                                                <li> <a href="#">Services  </a> </li>
-                                                <li> <a href="#">Contact us  </a> </li>
-                                                <li> <a href="#">Term and Condition </a> </li>
-                                                <li> <a href="#">Policy of use  </a> </li>
-                                                <li> <a href="#">Buy property online </a> </li>
-                                                <li> <a href="#">Request info </a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="footer-content nav">
-                                            <h2 class="title">5xprop</h2>
-                                            <ul class="footer-list list res-list">
-                                                <li><a href="https://www.5xprop.com/residential-property-in-noida">Residential property in Noida</a> </li>
-                                                <li><a href="https://www.5xprop.com/commercial-property-in-noida">Commercial property in Noida</a> </li>
-                                                <li><a href="https://www.5xprop.com/new-residential-project-in-noida">New  Residential Project in Noida</a> </li>
-                                                <li><a href="https://www.5xprop.com/new-commercial-project-in-noida">New  Commercial Project in Noida</a> </li>
-                                                <li><a href="#">Advertise your Property</a> </li>
-                                                <li><a href="#">Sitemap </a> </li>
-                                                <li><a href="#">Get alerts</a> </li>
-                                                <li><a href="https://www.5xprop.com/builder-list">Builders in India </a> </li>
-                                                <li><a href="https://www.5xprop.com/blog">Blog </a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="footer-content nav">
-                                            <h2 class="title">Quick Links</h2>
-                                            <ul class="footer-list list res-list">
-                                                <li> <a href="https://www.5xprop.com/?change_city=delhi"> Delhi </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=faridabad"> Faridabad </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=ghaziabad"> Ghaziabad </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=greater-noida"> Greater Noida </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=gurugram"> Gurugram </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=mathura"> Mathura </a> </li>
-                                                <li> <a href="https://www.5xprop.com/?change_city=noida"> Noida </a> </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="footer-content">
-                                            <h4 class="title">KEEP IN TOUCH</h4>
-                                            <div class="value-input-wrap newsletter">
-                                                <form action="#">
-                                                    <input type="text" placeholder="Your mail address ..">
-                                                    <button type="submit">Subscribe</button>
-                                                </form>
-                                            </div>
-                                            <ul class="list footer-list mt-20">
-                                                <li>
-                                                    <div class="contact-info">
-                                                        <div class="icon"> <i class="fas fa-envelope"></i> </div>
-                                                        <div class="text"><a href="#"> support@5xprop.com</a></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="contact-info">
-                                                        <div class="icon"> <i class="fas fa-phone-alt"></i> </div>
-                                                        <div class="text">+91 8375929675</div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="footer-social-wrap">
-                                                <p>Follow us on </p>
-                                                <ul class="social-buttons style2">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-bottom-area">
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8 offset-md-2">
-                                        <p> © 2019-20 5xProp.com. All rights reserved.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                <!--Footer ends-->
+                    </section> 
             </div>
     </div>
     <!--Scripts starts-->
@@ -702,6 +638,16 @@
     <!--Main js-->
     <script src="js/main.js"></script>
     <!--Scripts ends-->
+    <script>
+        $('.feat-btn').click(function() {
+           $('nav ul .feat-show').toggleClass("show"); 
+        });
+    </script>
+    <script>
+        $('.feat-btnn').click(function() {
+           $('nav ul .feat-shown').toggleClass("show"); 
+        });
+    </script>
     <script>
     $('.tab-content').on('show', function() {
         $(this).find('.swiper-container')[0].swiper.update()

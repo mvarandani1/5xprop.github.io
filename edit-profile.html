@@ -19,11 +19,11 @@
 </head>
     <body>
             <header>
-                <div class="logo" style="background:black;width: 21.3%;height: 70px;position:fixed;">
+                <div class="logo" style="background:black;width: 21.3%;height: 60px;position:fixed;">
                     <img src="./images/logo.png" style="margin-left: 1.3rem;margin-top:1rem;">
                 </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-8">
-                        <ul class="top-nav">
+                        <ul class="top-nav top-nav2">
                             <li>
                                 <select class="select-arrow" style="color: #fff;font-size: 16px;">
                                     <option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
@@ -69,118 +69,6 @@
                         </ul>
                     </div>
             </header>
-            <!--Show this grid in mobile only -->
- 
-                <div class="nav-grid">
-                    <a href="dashboard.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>My Profile</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="all-listings.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-list"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Listings</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="earn.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-money"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Earn</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="register-customer.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-user-circle"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Register Customer</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="leads.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-book"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Leads</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="leads.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-book"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Claim Leads</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="leads.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-book"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>My Deals</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="news.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-newspaper-o"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>News</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="marketing.html">
-                        <div class="nav-card">
-                            <div class="nav-card-content">
-                                <div class="nav-grid-icon">
-                                    <i class="fa fa-cog"></i>
-                                </div>
-                                <div class="nav-grid-title">
-                                    <h6>Marketing</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             <section class="wizard-section">
                 <div class="row no-gutters d-flex">
                     <div class="col-lg-3 col-md-3">
@@ -192,16 +80,54 @@
                                         <a href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a>
                                     </li>
                                     <li>
-                                        <a href="all-listings.html"><i class="fa fa-th-large" aria-hidden="true"></i>Listings</a>
+                                       <a href="#" class="feat-btn"><i class="fa fa-list" aria-hidden="true"></i>Listings&nbsp;&nbsp;
+                                            <span class="fa fa-caret-down first"></span>
+                                       </a>
+                                       <ul class="feat-show" style="margin-left:2rem;">
+                                           <li>
+                                               <a href="all-listings.html"><i class="fa fa-list" aria-hidden="true"></i>View Listings</a>
+                                           </li>
+                                           <li>
+                                               <a href="post-free-ad.html"><i class="fa fa-plus" aria-hidden="true"></i>Add Listing</a>
+                                           </li>
+                                       </ul>
                                     </li>
                                     <li>
-                                        <a href="earn.html"><i class="fa fa-money" aria-hidden="true"></i>Earn</a>
+                                       <a href="#" class="feat-btnn"><i class="fa fa-book" aria-hidden="true"></i>Leads&nbsp;&nbsp;
+                                            <span class="fa fa-caret-down first"></span>
+                                       </a>
+                                       <ul class="feat-shown" style="margin-left:2rem;">
+                                           <li>
+                                               <a href="leads.html" style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Total Leads</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Follow up Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Meeting Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Visit Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Hot Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Cold Lead</a>
+                                           </li>
+                                           <li>
+                                               <a href="#"style="padding:5px !important"><i class="fa fa-book" aria-hidden="true"></i>Dump Lead</a>
+                                           </li>
+                                       </ul>
                                     </li>
                                     <li>
                                         <a href="register-customer.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Register Customer</a>
                                     </li>
                                     <li>
-                                        <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>Leads</a>
+                                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
+                                    </li>
+                                    <li>
+                                        <a href="marketing.html"><i class="fa fa-cog" aria-hidden="true"></i>Marketing</a>
                                     </li>
                                     <li>
                                         <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>Claim Leads</a>
@@ -210,10 +136,7 @@
                                         <a href="leads.html"><i class="fa fa-book" aria-hidden="true"></i>My deals</a>
                                     </li>
                                     <li>
-                                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
-                                    </li>
-                                    <li>
-                                        <a href="marketing.html"><i class="fa fa-cog" aria-hidden="true"></i>Marketing</a>
+                                        <a href="earn.html"><i class="fa fa-money" aria-hidden="true"></i>Earn</a>
                                     </li>
                                 </ul>
                               </nav>
@@ -330,28 +253,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-15 col-md-15 col-sm-15">
-                                    <label value="">Specializations</label>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option value="">Rental Residential</option>
-                                            <option value="">Lease Commercial</option>
-                                            <option value="">Resale Residential</option>
-                                            <option value="">Resale Commercial</option>
-                                            <option value="">New Sale</option>
-                                        </select>
+                            <div class="col-lg-15 col-md-15 col-sm-15 form-group">
+                                <div class="multiselect form-control" id="countries" multiple="multiple" data-target="multi-0">
+                                    <div class="title noselect">
+                                        <span class="text">Specialisations</span>
+                                        <span class="close-icon">&times;</span>
+                                        <span class="expand-icon">&plus;</span>
                                     </div>
+                                    <div class="container">
+                                        <option value="Rental Residential">Rental Residential</option>
+                                        <option value="Lease Commercial">Lease Commercial</option>
+                                        <option value="Resale Residential">Resale Residential</option>
+                                        <option value="Resale Commercial">Resale Commercial</option>
+                                        <option value="New Sale">New Sale</option>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-15 col-md-15 col-sm-15">
-                                    <label value="">Select Language</label>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option value="">Hindi</option>
-                                            <option value="">English</option>
-                                            <option value="">Urdu</option>
-                                            <option value="">Punjabi</option>
-                                        </select>
+                            <div class="col-lg-15 col-md-15 col-sm-15 form-group">
+                                <div class="multiselect form-control" id="count" multiple="multiple" data-target="multi-0">
+                                    <div class="title noselect">
+                                        <span class="text">Select Languages</span>
+                                        <span class="close-icon">&times;</span>
+                                        <span class="expand-icon">&plus;</span>
                                     </div>
+                                    <div class="container">
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="English">English</option>
+                                        <option value="Odia">Odia</option>
+                                        <option value="Tamil">Tamil</option>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group clearfix" style="margin-top: 1rem;">
                                 <a href="javascript:;" class="form-wizard-previous-btn float-left">
@@ -367,5 +298,171 @@
 
             <script src="js/main.js"></script>
             <script src="js/plugin.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+            <!--Multi Select-->
+            <script>
+                Array.prototype.search = function(elem) {
+                    for(var i = 0; i < this.length; i++) {
+                        if(this[i] == elem) return i;
+                    }
+                    
+                    return -1;
+                };
+
+                var Multiselect = function(selector) {
+                    if(!$(selector)) {
+                        console.error("ERROR: Element %s does not exist.", selector);
+                        return;
+                    }
+
+                    this.selector = selector;
+                    this.selections = [];
+
+                    (function(that) {
+                        that.events();
+                    })(this);
+                };
+
+                Multiselect.prototype = {
+                    open: function(that) {
+                        var target = $(that).parent().attr("data-target");
+
+                        // If we are not keeping track of this one's entries, then
+                        // start doing so.
+                        if(!this.selections) {
+                            this.selections = [ ];
+                        }
+
+                        $(this.selector + ".multiselect").toggleClass("active");
+                    },
+
+                    close: function() {
+                        $(this.selector + ".multiselect").removeClass("active");
+                    },
+
+                    events: function() {
+                        var that = this;
+
+                        $(document).on("click", that.selector + ".multiselect > .title", function(e) {
+                            if(e.target.className.indexOf("close-icon") < 0) {
+                                that.open();
+                            }
+                        });
+
+                        $(document).on("click", that.selector + ".multiselect option", function(e) {
+                            var selection = $(this).attr("value");
+                            var target = $(this).parent().parent().attr("data-target");
+
+                            var io = that.selections.search(selection);
+
+                            if(io < 0) that.selections.push(selection);
+                            else that.selections.splice(io, 1);
+
+                            that.selectionStatus();
+                            that.setSelectionsString();
+                        });
+
+                        $(document).on("click", that.selector + ".multiselect > .title > .close-icon", function(e) {
+                            that.clearSelections();
+                        });
+
+                        $(document).click(function(e) {
+                            if(e.target.className.indexOf("title") < 0) {
+                                if(e.target.className.indexOf("text") < 0) {
+                                    if(e.target.className.indexOf("-icon") < 0) {
+                                        if(e.target.className.indexOf("selected") < 0 ||
+                                           e.target.localName != "option") {
+                                            that.close();
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    },
+
+                    selectionStatus: function() {
+                        var obj = $(this.selector + ".multiselect");
+
+                        if(this.selections.length) obj.addClass("selection");
+                        else obj.removeClass("selection");
+                    },
+
+                    clearSelections: function() {
+                        this.selections = [];
+                        this.selectionStatus();
+                        this.setSelectionsString();
+                    },
+
+                    getSelections: function() {
+                        return this.selections;
+                    },
+
+                    setSelectionsString: function() {
+                        var selects = this.getSelectionsString().split(", ");
+                        $(this.selector + ".multiselect > .title").attr("title", selects);
+
+                        var opts = $(this.selector + ".multiselect option");
+
+                        if(selects.length > 6) {
+                            var _selects = this.getSelectionsString().split(", ");
+                            _selects = _selects.splice(0, 6);
+                            $(this.selector + ".multiselect > .title > .text")
+                                .text(_selects + " [...]");
+                        }
+                        else {
+                            $(this.selector + ".multiselect > .title > .text")
+                                .text(selects);
+                        }
+
+                        for(var i = 0; i < opts.length; i++) {
+                            $(opts[i]).removeClass("selected");
+                        }
+
+                        for(var j = 0; j < selects.length; j++) {
+                            var select = selects[j];
+
+                            for(var i = 0; i < opts.length; i++) {
+                                if($(opts[i]).attr("value") == select) {
+                                    $(opts[i]).addClass("selected");
+                                    break;
+                                }
+                            }
+                        }
+                    },
+
+                    getSelectionsString: function() {
+                        if(this.selections.length > 0)
+                            return this.selections.join(", ");
+                        else return "Select";
+                    },
+
+                    setSelections: function(arr) {
+                        if(!arr[0]) {
+                            error("ERROR: This does not look like an array.");
+                            return;
+                        }
+
+                        this.selections = arr;
+                        this.selectionStatus();
+                        this.setSelectionsString();
+                    },
+                };
+
+                $(document).ready(function() {
+                    var multi = new Multiselect("#countries");
+                    var multi = new Multiselect("#count");
+                });
+
+            </script>
+            <script>
+                $('.feat-btn').click(function() {
+                   $('nav ul .feat-show').toggleClass("show"); 
+                });
+            </script>
+            <script>
+                $('.feat-btnn').click(function() {
+                   $('nav ul .feat-shown').toggleClass("show"); 
+                });
+            </script>
         </body>
 </html>
