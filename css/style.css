@@ -15682,12 +15682,20 @@ section.footer-copyright {
         margin-left: -20rem;
         margin-top: -21rem;
     }
+    .clipu{
+        margin-left: -9rem !important;
+        margin-top: -21rem;
+    }
 }
 
 @media (max-width: 991px){
     .clip{
         margin-left: -30rem;
         margin-top: -20rem;
+    }
+    .clipu{
+        margin-left: -28rem !important;
+        margin-top: -19rem;
     }
 }
 
@@ -15708,6 +15716,13 @@ section.footer-copyright {
     }
 }
 
+@media (max-width: 590px){
+    .clipu{
+        margin-left: -15rem !important;
+        margin-top: -18rem;
+    }
+}
+
 @media (max-width: 440px){
     .clip{
         margin-left: -24rem;
@@ -15715,6 +15730,10 @@ section.footer-copyright {
     }
     .view-btn{
         margin-left: 34%;
+    }
+    .clipu{
+        margin-left: -16rem !important;
+        margin-top: -18rem;
     }
 }
 
@@ -17796,20 +17815,6 @@ header ul li{
     margin-top: 0 !important;
 }
 
-.burger{
-    display: none;
-    cursor: pointer;
-}
-
-.burger div{
-    width: 20px;
-    height: 2px;
-    background-color: #f52e5d;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-
 @media (max-width: 850px){
     .wizard-content-left{
         width: 100%;
@@ -17834,12 +17839,6 @@ header ul li{
 
     .wizard-content-left a{
         opacity: 0;
-    }
-    .burger{
-        display: block;
-        z-index: 2;
-        position: absolute;
-        margin-top: 1rem;
     }
 }
 
@@ -17950,10 +17949,6 @@ header ul li{
     .buttonn{
         margin-right: 0.2rem !important;
     }
-}
-
-.nav-active{
-    transform: translateX(0%);
 }
 
 @keyframes navLinkFade{
@@ -18500,5 +18495,62 @@ main section .profile-pic .pic-info {
     }
     #wrapper{
         width: 300px;
+    }
+}
+
+.mar{
+    margin-left: -3.2rem;width: 70vw;
+}
+
+@media (max-width: 768px){
+    .mar{
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 415px){
+    .in_p2{
+        margin-left: 50px;
+    }
+}
+
+/* Mobile grid nav */
+
+.nav-grid{
+    display: none;
+}
+
+.nav-card{
+    background: #fff;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    margin: 2px;
+    box-shadow: 0px 2px 4px #757575;
+}
+
+.nav-card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.nav-grid-icon i{
+    font-size: 16px;
+    color: #f52e5d;
+}
+
+.nav-grid-title h6{
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+    .nav-grid{
+        width: 100%;
+        padding: 5px;
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
     }
 }

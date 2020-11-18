@@ -18,12 +18,23 @@
     <script src="https://cdn.staticmb.com/property/mb-microsite/mb-js/ga.js"></script>
 </head>
     <body>
-            <header style="background: black;">
-                <div class="logoo" style="width: 21%;height: 70px;">
+            <header>
+                <div class="logo" style="background: #1d293e;width: 21%;height: 70px;">
                     <img src="./images/logo.png" style="margin-left: 1.3rem;margin-top:1rem;">
                 </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-8" style="margin-right: 2rem;">
-                        <ul class="top-nav top-nav1">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-8">
+                        <ul class="top-nav">
+                            <li>
+                                <select class="select-arrow" style="color: #000;font-size: 16px;">
+                                    <option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
+                                    <option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
+                                    <option value="https://www.5xprop.com/?change_city=ghaziabad">Ghaziabad</option>
+                                    <option value="https://www.5xprop.com/?change_city=greater-noida">Greater Noida</option>
+                                    <option value="https://www.5xprop.com/?change_city=gurugram">Gurugram</option>
+                                    <option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
+                                    <option value="https://www.5xprop.com/?change_city=noida">Noida</option>
+                                </select>
+                            </li>
                             <li>
                                 <a class="btn v7" href="post-free-ad.html">
                                     <i class="fa fa-home mr-2"></i>
@@ -32,22 +43,183 @@
                             </li>
                             <li>
                                 <div class="dropdown" tabindex="1">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background: #f52e5d;border: none;padding: 6px 20px;border-radius: 3px;border: 1px solid transparent;color: #fff !important;transition: 0.3s;display: inline-block;font-size: 14px;font-weight: 400;">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background: #f52e5d;border: none;padding: 6px 20px;border-radius: 3px;border: 1px solid transparent;color: #fff !important;transition: 0.3s;display: inline-block;font-size: 14px;font-weight: 400;cursor:pointer;">
                                         Hey, Sunil<span class="caret"></span>
                                     </button>
 
                                     <ul class="dropdown-menu">
-                                        <li><a href="dashboard.html" style="color: #000 !important;cursor: pointer;">Dashboard</a></li>
-                                        <li><a href="profile.html" style="color: #000 !important;cursor: pointer;">My Profile</a></li>
-                                        <li><a href="#" style="color: #000 !important;cursor: pointer;">Logout</a></li>
+                                        <li>
+                                            <a href="dashboard.html" style="color: #000 !important;cursor: pointer !important;">
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="dashboard.html" style="color: #000 !important;cursor: pointer !important;">
+                                            My Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" style="color: #000 !important;cursor: pointer;">
+                                            Logout
+                                            </a>
+                                        </li>
                                     </ul>
-
                                 </div>        
                             </li>
                         </ul>
                     </div>
             </header>
+            <!--Show this grid in mobile only -->
+ 
+                <div class="nav-grid">
+                    <a href="dashboard.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>My Profile</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="all-listings.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-list"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Listings</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="earn.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-money"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Earn</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="register-customer.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-user-circle"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Register Customer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="leads.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Leads</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="leads.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Claim Leads</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="leads.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>My Deals</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="news.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-newspaper-o"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>News</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="marketing.html">
+                        <div class="nav-card">
+                            <div class="nav-card-content">
+                                <div class="nav-grid-icon">
+                                    <i class="fa fa-cog"></i>
+                                </div>
+                                <div class="nav-grid-title">
+                                    <h6>Marketing</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <section class="wizard-section">
+                <div class="row no-gutters d-flex">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="wizard-content-left d-flex justify-content-center align-items-center" id="wizard-content-left">
+                           <section id="sideMenu">
+                              <nav>
+                                <ul>
+                                    <li>
+                                        <a href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="all-listings.html"><i class="fa fa-th-large" aria-hidden="true"></i>Listings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-money" aria-hidden="true"></i>Earn</a>
+                                    </li>
+                                    <li>
+                                        <a href="register-customer.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Register Customer</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Leads</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Claim Leads</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-book" aria-hidden="true"></i>My deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Marketing</a>
+                                    </li>
+                                </ul>
+                              </nav>
+                            </section>
+                        </div>
+                    </div>
             <div style="justify-content: center;align-items: center;height:90vh;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.5);text-align: center;
                 padding: 20px;margin: auto;width: 100%;">
