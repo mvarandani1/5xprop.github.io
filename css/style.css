@@ -18928,6 +18928,9 @@ main section .profile-pic .pic-info {
         margin: auto;
         margin-top:1rem;
     }
+    .social-buttons {
+        text-align: center;
+    }
 }
 
 @media (max-width: 570px){
