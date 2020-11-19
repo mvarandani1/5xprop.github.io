@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
     <script src="https://cdn.staticmb.com/property/mb-microsite/mb-js/ga.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -21,6 +22,30 @@
         .dropdown:focus .dropdown-menu {
             display: block !important;
             margin-top: 0 !important;
+        }
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: transparent;
+          min-height: 160px !important;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
         }
     </style>
 </head>
@@ -77,8 +102,140 @@
                     </div>
             </header>
             <!--Show this grid in mobile only -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                             <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>New Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Hot Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Warm Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Cold Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content" style="padding-top:10px;">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Follow up Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Visit Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Meeting Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Not Interested</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Dump Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
  
-                <div class="nav-grid justify-content-center">
+            <!--<div class="nav-grid justify-content-center">
                     <a href="#">
                         <div class="nav-card">
                             <div class="nav-card-content">
@@ -187,7 +344,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div>-->
             <section class="wizard-section">
                 <div class="row no-gutters d-flex">
                     <div class="col-lg-3 col-md-3">
@@ -270,7 +427,7 @@
                     </div>
 
             <!-- Table Admin Panel-->
-            <div class="col-lg-9 col-md-9" style="margin-top: 6rem;">
+            <div class="col-lg-9 col-md-9" style="margin-top: 2rem;">
                 <table class="responstable">
                     <!-- Search Filter-->
                 
@@ -288,7 +445,7 @@
                                             <a href="filter-lead-status.html">
                                                 <button type="button" class="btn btn-default"style="height:45px;">
                                                     <span id="search_concept">
-                                                        <i class="fa fa-filter" style="font-size: 16px;"></i> &nbsp;Filter
+                                                        <i class="fa fa-calendar" style="font-size: 16px;"></i> &nbsp;Filter Date
                                                     </span>
                                                     <span class="caret"></span>
                                                 </button>
@@ -379,7 +536,7 @@
                       <!-- Cards -->
                             <p style="margin-left: 0.5rem;">18 Nov 2020</p>
                             <div class="property-list-box project-list-box">
-                                <a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom" style="float: right;border-radius: 50px;width: 85px;"><i class="fa fa-volume-control-phone" aria-hidden="true" style="transform: rotate(-40deg);font-size: 18px;"></i> &nbsp;&nbsp;Call</a>
+                                <a href="#" data-toggle="modal" data-target="#change-status" class="btn btn-custom" style="float: right;border-radius: 50px;width: 85px;"><i class="fa fa-volume-control-phone" aria-hidden="true" style="transform: rotate(-40deg);font-size: 18px;"></i> &nbsp;&nbsp;Call</a>
                                 <div class="d-flex">
                                     <div class="property-list-box-img"><h4 class="img-fluid" style="color: grey;">A</h4></div>
                                     <div class="property-list-box-info">
@@ -455,7 +612,7 @@
     </section>
 
         <div class="modal fade align-items-center justify-content-center" id="change-status" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document" style="max-width: 70vw;">
+            <div class="modal-dialog" role="document" style="width: 100%;">
                 <div class="modal-content pb-0">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
@@ -470,7 +627,7 @@
                                         <a href="#" class="btn btn-custom" style="width: 100px;"  data-toggle="modal" data-target="#call"><i class="fa fa-volume-control-phone" aria-hidden="true"style="transform: rotate(-40deg);font-size: 18px;"></i> Call</a>
                                     </div>
                                     <div class="row d-flex">
-                                        <div class="col-md-6 form-group ">
+                                        <div class="col-md-6 form-group">
                                            <label>Lead Id*</label>
                                            <input type="text" class="form-control wizard-required" id="fname">
                                             <div class="wizard-form-error"></div>
@@ -585,55 +742,6 @@
             </div>
         </div>
 
-        <div class="modal fade align-items-center justify-content-center contant-agenet-popup" id="ContactAgent" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog " role="document">
-                <div class="modal-content pb-0">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                    </div>
-                    <iframe src="call.html" style="height:60vh;width: 100%;overflow:hidden;"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <!--<div class="modal fade align-items-center justify-content-center" id="filter" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog " role="document">
-                <div class="modal-content pb-0">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                    </div>
-                    <div class="col-lg-14 col-md-14">
-                        <div class="form-wizard">
-                            <form action="" method="post" role="form">
-                                <fieldset class="wizard-fieldset show">
-                                    <div class="form-group" style="display: flex;flex-direction: column;">
-                                        Filter by
-                                        <div class="wizard-form-radio" style="margin-top:1rem;">
-                                            <input name="radio-name" id="radio1" type="radio">
-                                            <label for="radio1">Search Leads</label>
-                                        </div>
-                                        <div class="wizard-form-radio">
-                                            <input name="radio-name" id="radio1" type="radio">
-                                            <label for="radio1">Stage</label>
-                                        </div>
-                                        <div class="wizard-form-radio">
-                                            <input name="radio-name" id="radio2" type="radio">
-                                            <label for="radio2">Source</label>
-                                        </div>
-                                        <div class="wizard-form-radio">
-                                            <input name="radio-name" id="radio2" type="radio">
-                                            <label for="radio2">Meeting</label>
-                                        </div>
-                                    </div>
-                                </fieldset> 
-                                
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
 
     <!--plugin js-->
     <script src="js/plugin.js"></script>
@@ -651,5 +759,16 @@
            $('nav ul .feat-shown').toggleClass("show"); 
         });
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 </html>
