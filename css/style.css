@@ -18735,14 +18735,7 @@ main section .profile-pic .pic-info {
 
 /* Filter */
 
-.form-wizard .wizard-fieldset.show{
+.form-wizard .wizard-fieldset.shown{
     margin: auto;
-    width: 30vw;
-}
-
-@media (max-width: 900px){
-    .form-wizard .wizard-fieldset.show{
-        margin: auto;
-        width: 80vw !important;
-    }
+    width: 60vw;
 }
