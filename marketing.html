@@ -19,10 +19,39 @@
     <script src="https://cdn.staticmb.com/property/mb-microsite/mb-js/ga.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
+        body{
+            overflow: hidden !important;
+        }
         .dropdown:focus .dropdown-menu {
             display: block !important;
             margin-top: 0 !important;
         }
+        <style>
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: transparent;
+          min-height: 160px !important;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+    </style>
     </style>
 </head>
     <body>
@@ -77,6 +106,141 @@
                         </ul>
                     </div>
             </header>
+
+            <!--Show this grid in mobile only -->
+                <div class="swiper-container nav-grid">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                             <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>New Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Hot Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Warm Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Cold Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content" style="padding-top:10px;">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Follow up Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Visit Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Meeting Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Not Interested</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="leads.html">
+                                <div class="nav-card">
+                                    <div class="nav-card-content">
+                                        <div class="nav-grid-icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <div class="nav-grid-title">
+                                            <h6>Dump Leads</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+ 
             <section class="wizard-section">
                 <div class="row no-gutters d-flex">
                     <div class="col-lg-3 col-md-3">
@@ -189,99 +353,114 @@
                         </div>
 
                         <div class="container4">
-                            
-                            <input type="checkbox" id="one">
-                            <label for="one" class="check">
-                                <span></span> Select
+
+                            <label class="check11" data-toggle="modal" data-target="#whatsapp">
+                                <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
+                                <span></span>Whatsapp
                             </label>
 
-                            <input type="checkbox" id="two" data-toggle="modal" data-target="#whatsapp">
-                            <label for="two" class="check">
-                                <span></span> Whatsapp
-                            </label>
-                            
-                            <input type="checkbox" id="three" data-toggle="modal" data-target="#email">
-                            <label for="three" class="check">
-                                <span></span> Email
-                            </label>
-                            
-                            <input type="checkbox" id="four" data-toggle="modal" data-target="#sms">
-                            <label for="four" class="check">
-                                <span></span> SMS
+                            <label class="check11" data-toggle="modal" data-target="#whatsapp">
+                                <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
+                                <span></span>Email
                             </label>
 
-                            <input type="checkbox" id="five">
-                            <label for="five" class="check">
-                                <span></span> Add
+                            <label class="check11" data-toggle="modal" data-target="#whatsapp">
+                                <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
+                                <span></span>SMS
                             </label>
+                            <button class="check12" style="float:right;border:none;outline:none;background:#f52e5d;border-radius:5px;padding:7px;color:#fff;width:100px;margin-left:2rem;">Add</button>
                             
                         </div>
 
                     </div>
 
                   <tr>
-                    <th>Lead ID</th>
+                    <th> 
+                        <div class="flexx">
+                            <div>
+                                <input type="checkbox" id="one" class="selectall">
+                                <label for="one" class="check check1" style="color: #fff !important;width:100px;">
+                                    <span></span> Select All
+                                </label>
+                            </div>
+                            <div class="leads" style="margin-top:1.4rem;min-width:100px;text-align:left;">
+                                Lead ID
+                            </div>
+                        </div>   
+                    </th>
                     <th><span>Lead name</span></th>
-                    <th>Phone No.</th>
-                    <th>Stage</th>
+                    <th class="hidee">Phone No.</th>
+                    <th class="hidee">Stage</th>
                   </tr>
                   
                   <tr>
                     <td>
-                        121315
+                        <input type="checkbox" id="six" class="individual">
+                        <label for="six" class="check">
+                            <span></span> 121315
+                        </label>
                     </td>
                     <td>
                         User
                     </td>
-                    <td>
+                    <td class="hidee">
                         9015215327
                     </td>
-                    <td>
+                    <td class="hidee">
                         New
                     </td>
                   </tr>
                   
                   <tr>
                     <td>
-                        121315
+                        <input type="checkbox" id="seven" class="individual">
+                        <label for="seven" class="check">
+                            <span></span> 121315
+                        </label>
                     </td>
                     <td>
                         User
                     </td>
-                    <td>
+                    <td class="hidee">
                         9015215327
                     </td>
-                    <td>
+                    <td class="hidee">
                         New
                     </td>
                   </tr>
                   
                   <tr>
                     <td>
-                        121315
+                        <input type="checkbox" id="eight" class="individual">
+                        <label for="eight" class="check">
+                            <span></span> 121315
+                        </label>
                     </td>
                     <td>
                         User
                     </td>
-                    <td>
+                    <td class="hidee">
                         9015215327
                     </td>
-                    <td>
+                    <td class="hidee">
                         New
                     </td>
                   </tr>
                   
                   <tr>
                     <td>
-                        121315
+                        <input type="checkbox" id="nine" class="individual">
+                        <label for="nine" class="check">
+                            <span></span> 121315
+                        </label>
                     </td>
                     <td>
                         User
                     </td>
-                    <td>
+                    <td class="hidee">
                         9015215327
                     </td>
-                    <td>
+                    <td class="hidee">
                         New
                     </td>
                   </tr>
@@ -321,29 +500,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade align-items-center justify-content-center" id="email" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content pb-0">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade align-items-center justify-content-center" id="sms" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content pb-0">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
 
     <!--plugin js-->
     <script src="js/plugin.js"></script>
@@ -422,5 +578,40 @@
         }
 
     </script>
+    <script>
+        $(".selectall").click(function(){
+            $(".individual").prop("checked",$(this).prop("checked"));
+        });
+    </script>
+    <script>
+        // the selector will match all input controls of type :checkbox
+        // and attach a click event handler 
+        $(".radio:checkbox").on('click', function() {
+          // in the handler, 'this' refers to the box clicked on
+          var $box = $(this);
+          if ($box.is(":checked")) {
+            // the name of the box is retrieved using the .attr() method
+            // as it is assumed and expected to be immutable
+            var group = ".radio:checkbox[name='" + $box.attr("name") + "']";
+            // the checked state of the group/box on the other hand will change
+            // and the current value is retrieved using .prop() method
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+          } else {
+            $box.prop("checked", false);
+          }
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 </html>
