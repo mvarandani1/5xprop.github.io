@@ -17813,7 +17813,7 @@ header ul li{
     margin-right: 3rem;
 }
 
-.dropdown:focus .dropdown-menu, .dropdown:hover .dropdown-menu {
+.dropdown:focus .dropdown-menu{
     display: block !important;
     margin-top: 0 !important;
 }
@@ -19701,6 +19701,8 @@ input[type="checkbox"]:checked + .check > span::before {
     display: flex;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    z-index: 0;
+    position: relative;
 }
 
 .avlb-coins p{
@@ -19932,5 +19934,35 @@ a:hover {
 @media (max-width:380px){
     .avlb-coins{
         height:180px;
+    }
+}
+
+.lx-column{
+    margin-top:1.7rem;
+}
+
+.column-user-pic{
+    margin-top: -2rem;
+}
+.mob{
+    display: none !important;
+}
+
+@media (max-width: 768px){
+    .lx-column{
+        margin-top:1.7rem;
+    }
+
+    .column-user-pic{
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 500px){
+    .mob{
+        display: flex !important;
+    }
+    .des{
+        display: none !important;
     }
 }
