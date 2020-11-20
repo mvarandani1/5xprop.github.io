@@ -19689,3 +19689,248 @@ input[type="checkbox"]:checked + .check > span::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
+
+/* Earn Page */
+.avlb-coins{
+    width: 77.3vw;
+    margin-left: -2.9rem;
+    height: 170px;
+    background: #1d293e;
+    opacity: 0.97;
+    color: #fff;
+    display: flex;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.avlb-coins p{
+    font-size:16px;
+}
+
+.avlb-coins .lft{
+    width: 50%;
+    float: left;
+    margin-left: 5rem;
+}
+
+.avlb-coins .rgt{
+    width: 50%;
+    float: right;
+    margin-right: 2rem;
+}
+
+.container7 {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding: 1.6em;
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  align-content: start;
+  grid-gap: 1.6em;
+  grid-template: auto/repeat(auto-fill, minmax(33em, 33em));
+}
+
+.cardd {
+  margin: 0;
+  height: 10em;
+  display: -webkit-box;
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+}
+
+.cardd img {
+  height: 35px;
+  width: 35px;
+  margin-left:0.7rem;
+}
+
+.cardd-body {
+  width: 12em;
+  max-height: 100%;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  padding: 1.6em;
+}
+.cardd button {
+  min-width: 8.3em;
+  -webkit-box-flex: 0;
+  flex: none;
+  align-self: flex-start;
+  margin: auto;
+  padding: 0.6em 1.2em;
+  margin-right: 0.5em;
+  font-size: 0.92em;
+  color: #fff;
+  outline: none;
+  border: none;
+  background: #f52e5d;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.cardd button:hover {
+  background: transparent;
+  border: 1px solid #f52e5d;
+  color: #000;
+}
+
+.cardd-text {
+  position: relative;
+  -webkit-box-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+}
+
+.cardd-text h6, .cardd-text p {
+  margin-top: 0px !important;
+}
+
+.cardd-text h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cardd-text:after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2.8em;
+}
+
+a {
+  color: #d07777;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1125px){
+    .avlb-coins{
+        width: 77vw;
+        margin-left: -2.4rem;
+    }
+}
+
+@media (max-width: 1050px){
+    .avlb-coins{
+        width: 76vw;
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 890px){
+    .avlb-coins{
+        width: 74vw;
+        margin-left: -1rem;
+    }
+}
+
+@media (max-width: 845px){
+    .avlb-coins{
+        width: 70vw;
+        margin-left: 1rem;
+    }
+
+    .avlb-coins .rgt{
+        margin-right: -2rem;
+    }
+}
+
+@media (max-width: 660px){
+    .avlb-coins .lft{
+        margin-left:2rem;
+    }
+    .rgt1, .rgt2{
+        width:100px;
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width: 570px) {
+  .container7 {
+    grid-template: auto / 1fr;
+    padding: 1.0666666667em;
+  }
+
+  .cardd {
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+  }
+  .cardd img {
+    max-width: 45%;
+  }
+    .avlb-coins{
+        width: 90vw;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .avlb-coins{
+        width: 90vw;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 430px){
+    .avlb-coins{
+        width: 93vw;
+        margin-left: 0.4rem;
+    }
+}
+
+@media (max-width: 410px){
+    .cardd button {
+      min-width: 7em;
+      padding: 0.3em 1.2em;
+      margin-left: -2em;
+      height: 30px;
+      font-weight: bold;
+    }
+    .cardd-text{
+        width: 140px;
+    }
+    .cardd-text h6{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .cardd-text p{
+        font-size: 12px;
+    }
+    .cardd-body{
+        padding:1em;
+    }
+    .rgt1, .rgt2{
+        width: 90px;
+        height: 90px;
+    }
+    .avlb-coins{
+        height: 180px;
+    }
+}
+
+@media (max-width:380px){
+    .avlb-coins{
+        height:180px;
+    }
+}
