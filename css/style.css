@@ -19495,7 +19495,7 @@ input[type="checkbox"]:checked + .check > span::before {
   opacity: 1;
 }
 
-.container6.anim1 {
+/*.container6.anim1 {
   animation: goUp 0.8s forwards;
   top: 0;
   right: 0;
@@ -19536,7 +19536,7 @@ input[type="checkbox"]:checked + .check > span::before {
   90% {
     transform: translateY(-1px);
   }
-}
+}*/
 @keyframes goUpDelay {
   from {
     transform: translateY(32px);
