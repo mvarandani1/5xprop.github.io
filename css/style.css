@@ -19578,11 +19578,11 @@ input[type="checkbox"]:checked + .check > span::before {
 
 @media (max-width: 415px){
     .container6 {
-      width: 330px;
+      width: 300px;
       left: 305%;
     }
     .inputt {
-        width: 220px !important;
+        width: 200px !important;
     }
 }
 
