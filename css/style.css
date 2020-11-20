@@ -19389,7 +19389,7 @@ input[type="checkbox"]:checked + .check > span::before {
 .container6 {
   z-index: 100;
   border-radius: 8px;
-  width: 400px;
+  width: 450px;
   height: 55px;
   background-color: #f52e5d;
   margin: auto;
@@ -19453,7 +19453,7 @@ input[type="checkbox"]:checked + .check > span::before {
   color: #fff;
   border-radius: 8px;
   transform-origin: -40px 0px;
-  width: 280px !important;
+  width: 340px !important;
   transition: all 0.4s ease;
   outline: none;
 }
@@ -19465,7 +19465,6 @@ input[type="checkbox"]:checked + .check > span::before {
 }
 
 .inputt::placeholder {
-  font-family: "Lexend Deca";
   color: #757575;
 }
 
@@ -19559,57 +19558,57 @@ input[type="checkbox"]:checked + .check > span::before {
 
 @media (max-width: 500px){
     .container6 {
-      width: 350px;
+      width: 420px;
       left: 400%;
     }
     .inputt {
-        width: 250px !important;
+        width: 320px !important;
     }
 }
 
-@media (max-width: 460px){
+@media (max-width: 465px){
     .container6 {
-      width: 300px;
+      width: 390px;
       left: 350%;
     }
     .inputt {
-        width: 200px !important;
+        width: 280px !important;
     }
 }
 
-@media (max-width: 430px){
+@media (max-width: 435px){
     .container6 {
-      width: 300px;
+      width: 350px;
       left: 320%;
     }
     .inputt {
-        width: 200px !important;
+        width: 240px !important;
     }
 }
 
 @media (max-width: 415px){
     .container6 {
-      width: 300px;
+      width: 330px;
       left: 305%;
     }
     .inputt {
-        width: 200px !important;
+        width: 220px !important;
     }
 }
 
 @media (max-width: 400px){
     .container6 {
-      width: 300px;
+      width: 320px;
       left: 290%;
     }
     .inputt {
-        width: 200px !important;
+        width: 210px !important;
     }
 }
 
 @media (max-width: 380px){
     .container6 {
-      width: 300px;
+      width: 310px;
       left: 270%;
     }
     .inputt {
