@@ -19611,7 +19611,6 @@ input[type="checkbox"]:checked + .check > span::before {
     padding-left: 15px;
     border-radius: 5px;
     margin-right: 1rem;
-    margin-bottom: -1.8rem;
     cursor: pointer;
   background: transparent;
   align-self: center;
