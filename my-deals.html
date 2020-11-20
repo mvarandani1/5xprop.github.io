@@ -19,38 +19,83 @@
     <script src="https://cdn.staticmb.com/property/mb-microsite/mb-js/ga.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
-        body{
-            overflow: hidden !important;
-        }
-        
         .dropdown:focus .dropdown-menu {
             display: block !important;
             margin-top: 0 !important;
         }
-
-        .swiper-container {
+        .responstable {
+          margin: 1em 0;
           width: 100%;
-          height: 100%;
+          overflow: hidden;
+          background: #FFF;
+          color: #024457;
+          border-radius: 10px;
+          border: 1px solid #f52e5d;
+        }
+        .responstable tr {
+          border: 1px solid #D9E4E6;
+        }
+        .responstable tr:nth-child(odd) {
+          background-color: #f4e8d6;
+        }
+        
+        .responstable th:first-child {
+          display: table-cell;
+          text-align: center;
+        }
+        .responstable th:nth-child(2) {
+          display: table-cell;
+        }
+        .responstable th:nth-child(2) span {
+          display: none;
+        }
+        .responstable th:nth-child(2):after {
+          content: attr(data-th);
+        }
+        @media (min-width: 480px) {
+          .responstable th:nth-child(2) span {
+            display: block;
+          }
+          .responstable th:nth-child(2):after {
+            display: none;
+          }
+        }
+        .responstable td {
+          display: block;
+          word-wrap: break-word;
+          max-width: 20em !important;
+        }
+        .responstable td:first-child {
+          display: table-cell;
+          text-align: center;
+          border-right: 1px solid #D9E4E6;
+        }
+        @media (min-width: 480px) {
+          .responstable td {
+            border: 1px solid #D9E4E6;
+          }
+          .responstable tr:nth-child(odd) {
+              background-color: #f4e8d6;
+            }
+        }
+        .responstable th, .responstable td {
+          text-align: left;
+          margin: .5em 1em;
+        }
+        @media (min-width: 480px) {
+          .responstable th, .responstable td {
+            display: table-cell;
+            padding: 1em;
+          }
         }
 
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: transparent;
-          min-height: 160px !important;
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
+        @media (max-width: 480px) {
+          .responstable tr{
+            visibility: visible !important;
+          }
+          .hidee{
+            display: none !important;
+          }
         }
     </style>
 </head>
@@ -106,139 +151,6 @@
                         </ul>
                     </div>
             </header>
-            <!--Show this grid in mobile only -->
-                <div class="swiper-container nav-grid">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                             <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>New Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Hot Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Warm Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Cold Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content" style="padding-top:10px;">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Follow up Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Visit Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Meeting Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Not Interested</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="leads.html">
-                                <div class="nav-card">
-                                    <div class="nav-card-content">
-                                        <div class="nav-grid-icon">
-                                            <i class="fa fa-book"></i>
-                                        </div>
-                                        <div class="nav-grid-title">
-                                            <h6>Dump Leads</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
             <section class="wizard-section">
                 <div class="row no-gutters d-flex">
                     <div class="col-lg-3 col-md-3">
@@ -323,42 +235,12 @@
             <!-- Table Admin Panel-->
             <div class="col-lg-9 col-md-9" style="margin-top: 2rem;">
                 <table class="responstable">
-                    <!-- Search Filter-->
-                
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="container3">
-                            <div class="row1">    
-                                <div class="col-xs-8 col-xs-offset-2">
-                                    <div class="input-group">
-                                        <input type="hidden" name="search_param" value="all" id="search_param">         
-                                        <input type="text" class="form-control" name="x" placeholder="Search...">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button" style="height:45px;"><span class="fa fa-search"></span></button>
-                                        </span>&nbsp;&nbsp;
-                                        <div class="input-group-btn search-panel dropdown" tabindex="1">
-                                            <a href="filter-lead-status.html">
-                                                <button type="button" class="btn btn-default"style="height:45px;">
-                                                    <span id="search_concept">
-                                                        <i class="fa fa-calendar" style="font-size: 16px;"></i> &nbsp;Filter Date
-                                                    </span>
-                                                    <span class="caret"></span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                   <tr>
                     <th>Lead ID</th>
-                    <th><span>Lead name</span></th>
-                    <th>Date</th>
-                    <th>Stage</th>
-                    <th>Action</th>
+                    <th>Project Name</th>
+                    <th class="hidee"><span>Lead name</span></th>
+                    <th class="hidee">Date</th>
+                    <th class="hidee">Details</th>
                   </tr>
                   
                   <tr>
@@ -366,15 +248,15 @@
                         121315
                     </td>
                     <td>
+                        Godrej Palm Retreat
+                    </td>
+                    <td>
                         User
                     </td>
                     <td>
                         2020-10-31 14:38:25
                     </td>
-                    <td>
-                        New
-                    </td>
-                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="" class="btn btn-custom" data-toggle="modal" data-target="#change-status"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Change Status</a></td>
+                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="" class="btn btn-custom" data-toggle="modal" data-target="#change-status">Contact</a></td>
                   </tr>
                   
                   <tr>
@@ -382,15 +264,15 @@
                         121315
                     </td>
                     <td>
+                        Godrej Palm Retreat
+                    </td>
+                    <td>
                         User
                     </td>
                     <td>
                         2020-10-31 14:38:25
                     </td>
-                    <td>
-                        New
-                    </td>
-                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="#" class="btn btn-custom" data-toggle="modal" data-target="#change-status"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Change Status</a></td>
+                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="" class="btn btn-custom" data-toggle="modal" data-target="#change-status">Contact</a></td>
                   </tr>
                   
                   <tr>
@@ -398,15 +280,15 @@
                         121315
                     </td>
                     <td>
+                        Godrej Palm Retreat
+                    </td>
+                    <td>
                         User
                     </td>
                     <td>
                         2020-10-31 14:38:25
                     </td>
-                    <td>
-                        New
-                    </td>
-                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="#" class="btn btn-custom" data-toggle="modal" data-target="#change-status"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Change Status</a></td>
+                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="" class="btn btn-custom" data-toggle="modal" data-target="#change-status">Contact</a></td>
                   </tr>
                   
                   <tr>
@@ -414,92 +296,16 @@
                         121315
                     </td>
                     <td>
+                        Godrej Palm Retreat
+                    </td>
+                    <td>
                         User
                     </td>
                     <td>
                         2020-10-31 14:38:25
                     </td>
-                    <td>
-                        New
-                    </td>
-                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="#" class="btn btn-custom" data-toggle="modal" data-target="#change-status"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Change Status</a></td>
+                    <td style="color: #f52e5d;font-weight: 600;cursor: pointer;"><a href="" class="btn btn-custom" data-toggle="modal" data-target="#change-status">Contact</a></td>
                   </tr>
-
-                    <!--Show in mobile only-->
-                    <div class="response" style="margin-top: 1rem;">
-                      <!-- Cards -->
-                            <p style="margin-left: 0.5rem;">18 Nov 2020</p>
-                            <div class="property-list-box project-list-box">
-                                <a href="#" data-toggle="modal" data-target="#change-status" class="btn btn-custom" style="float: right;border-radius: 50px;width: 85px;"><i class="fa fa-volume-control-phone" aria-hidden="true" style="transform: rotate(-40deg);font-size: 18px;"></i> &nbsp;&nbsp;Call</a>
-                                <div class="d-flex">
-                                    <div class="property-list-box-img"><h4 class="img-fluid" style="color: grey;">A</h4></div>
-                                    <div class="property-list-box-info">
-                                        <div class="property-list-box-top"> <a href="#"><h6>Ashish</h6></a>
-                                            <div class="property-list-box-info-price">
-                                                <p class="sq-fit-price">Lead Id: 7629851</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="property-location"> <i class="fa fa-map-marker-alt"></i>
-                                            <p>Sector 150, Noida</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="property-list-box-info-btn justify-content-end">
-                                    <a href="#" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
-                                    <a href="#" class="btn btn-default"><i class="fas fa-sms" aria-hidden="true"></i> SMS</a>
-                                    <a href="#" class="btn btn-default"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-                                </div>
-                            </div>
-
-                            <p style="margin-left: 0.5rem;">20 Nov 2020</p>
-                            <div class="property-list-box project-list-box">
-                                <a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom" style="float: right;border-radius: 50px;width: 85px;"><i class="fa fa-volume-control-phone" aria-hidden="true" style="transform: rotate(-40deg);font-size: 18px;"></i> &nbsp;&nbsp;Call</a>
-                                <div class="d-flex">
-                                    <div class="property-list-box-img"><h4 class="img-fluid" style="color: grey;">R</h4></div>
-                                    <div class="property-list-box-info">
-                                        <div class="property-list-box-top"> <a href="#"><h6>Rohit</h6></a>
-                                            <div class="property-list-box-info-price">
-                                                <p class="sq-fit-price">Lead Id: 7629851</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="property-location"> <i class="fa fa-map-marker-alt"></i>
-                                            <p>Sector 150, Noida</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="property-list-box-info-btn justify-content-end">
-                                    <a href="#" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
-                                    <a href="#" class="btn btn-default"><i class="fas fa-sms" aria-hidden="true"></i> SMS</a>
-                                    <a href="#" class="btn btn-default"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-                                </div>
-                            </div>
-                            <p style="margin-left: 0.5rem;">22 Nov 2020</p>
-                            <div class="property-list-box project-list-box">
-                                <a href="#" data-toggle="modal" data-target="#ContactAgent" class="btn btn-custom" style="float: right;border-radius: 50px;width: 85px;"><i class="fa fa-volume-control-phone" aria-hidden="true" style="transform: rotate(-40deg);font-size: 18px;"></i> &nbsp;&nbsp;Call</a>
-                                <div class="d-flex">
-                                    <div class="property-list-box-img"><h4 class="img-fluid" style="color: grey;">S</h4></div>
-                                    <div class="property-list-box-info">
-                                        <div class="property-list-box-top"> <a href="#"><h6>Sam</h6></a>
-                                            <div class="property-list-box-info-price">
-                                                <p class="sq-fit-price">Lead Id: 7629851</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="property-location"> <i class="fa fa-map-marker-alt"></i>
-                                            <p>Sector 150, Noida</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="property-list-box-info-btn justify-content-end">
-                                    <a href="#" class="btn btn-success"><i class="fa fa-whatsapp"></i> Whatsapp</a>
-                                    <a href="#" class="btn btn-default"><i class="fas fa-sms" aria-hidden="true"></i> SMS</a>
-                                    <a href="#" class="btn btn-default"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-                                </div>
-                            </div>
-                    </div>
-
                 </table>
             </div>
         </div>
@@ -653,16 +459,5 @@
            $('nav ul .feat-shown').toggleClass("show"); 
         });
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-      </script>
 </body>
 </html>
