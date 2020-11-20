@@ -19393,9 +19393,9 @@ input[type="checkbox"]:checked + .check > span::before {
   height: 55px;
   background-color: #f52e5d;
   margin: auto;
-  position: absolute;
+  position: relative;
   top: 50%;
-  left: 420%;
+  left: 500%;
   transform: translate(-50%, -50%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
@@ -19495,48 +19495,6 @@ input[type="checkbox"]:checked + .check > span::before {
   opacity: 1;
 }
 
-/*.container6.anim1 {
-  animation: goUp 0.8s forwards;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.container6.anim2 {
-  animation: goDown 0.8s forwards;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-@keyframes goUp {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50%,
-  60% {
-    transform: translateY(-3px);
-  }
-  90% {
-    transform: translateY(1px);
-  }
-}
-@keyframes goDown {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50%,
-  60% {
-    transform: translateY(3px);
-  }
-  90% {
-    transform: translateY(-1px);
-  }
-}*/
 @keyframes goUpDelay {
   from {
     transform: translateY(32px);
@@ -19614,4 +19572,120 @@ input[type="checkbox"]:checked + .check > span::before {
     .inputt {
         width: 200px !important;
     }
+}
+
+/* Pics share container */
+/* Sharing Button */
+
+.share-wrapper {
+  background: #E26262;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+    position: absolute;
+    z-index: 200;
+}
+
+.share-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+    justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+    height: 10px;
+    margin-top: -5rem;
+    width: 50px;
+}
+
+.share {
+    color: #fff;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: -1.8rem;
+    cursor: pointer;
+  background: transparent;
+  align-self: center;
+}
+.share i {
+  font-size: 18px;
+}
+
+.butt.fa {
+  color: #FEFAEC;
+  font-size: 48px;
+  text-align: center;
+}
+
+.socials-container {
+  border-radius: 8px;
+  margin-left: -1.5rem;
+  display: -webkit-box;
+  display: flex;
+  background: transparent;
+  margin-bottom: 8px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.socials-container:before {
+  border-top: 8px solid #fff;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  bottom: -8px;
+  content: '';
+  display: block;
+  left: 50%;
+  margin-left: -8px;
+  position: absolute;
+}
+.socials-container .btn {
+  margin: 10px;
+}
+
+.fbook, .twitter, .insta{
+    padding: 5px;
+    border: none !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    height: 40px !important;
+    width: 40px !important;
+    margin-bottom: 1rem;
+    background: #f52e5d;
+    margin-right: 0.5rem;
+}
+
+.fbook i, .twitter i, .insta i{
+    font-size: 15px;
+    margin-top: 0.3rem;
+    color: #fff;
+}
+
+.fbook, .twitter {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+.share-container:hover .fbook, .share-container:hover .twitter {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.share-container:hover .socials-container {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
