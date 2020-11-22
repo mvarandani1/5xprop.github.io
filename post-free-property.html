@@ -33,14 +33,21 @@
             text-align: center;
             vertical-align: middle;
             margin-bottom:1rem;
+            max-height: 30px;
+            max-width: 185px;
         }
         button:hover, button:focus, button:active{
             background: #f52e5d;
             color: #fff;
         }
 
-        #apartDiv button, #houseDiv button{
+        #apartDiv button, #houseDiv button, #othersDiv button,#threeDiv button, #twoDiv button, 
+        #oneDiv button{
             margin-right:0.5rem;
+        }
+
+        #threeDiv , #twoDiv , #oneDiv, #officeDiv1, #retailDiv1, #landDiv1, #hospDiv1{
+            display: none;
         }
         .active_button{
             background: #f52e5d;
@@ -605,35 +612,115 @@
                                                     <div class="residential radio">
                                                         
                                                         <div class="apartments">
+
                                                             
-                                                            <div id="apartDiv" class="d-flex">
-                                                                <button>Apartments</button>
-                                                                <button>Flat</button>
-                                                                <button>Builder</button>
+                                                                <div id="apartDiv" class="d-flex">
+                                                                    <button>Apartments/Flat/Builder 
+                                                                    </button>
+                                                                </div>
+
+                                                                <div id="threeDiv">
+                                                                    <button>Apartments 
+                                                                    </button>
+                                                                    <button>Flat
+                                                                    </button>
+                                                                    <button>Builder Floor
+                                                                    </button>
+                                                                </div>
+                                                            
+                                                            <br>
+                                                            <div class="d-flex">
+                                                                <div id="houseDiv" class="d-flex">
+                                                                    <button>House/Villa</button>
+                                                                </div>
+
+                                                                <div id="twoDiv">
+                                                                    <button>House
+                                                                    </button>
+                                                                    <button>Villa
+                                                                    </button>
+                                                                </div>
                                                             </div>
                                                             <br>
-                                                            <div id="houseDiv" class="d-flex">
-                                                                <button>House</button>
-                                                                <button>Villa</button>
-                                                                <button>Others</button>
+                                                            <div class="d-flex">
+                                                                <div id="othersDiv" class="d-flex">
+                                                                    <button>Others</button>
+                                                                </div>
+
+                                                                <div id="oneDiv">
+                                                                    <button>Others 
+                                                                    </button>
+                                                                </div>
                                                             </div>
                                                         </div>
 
                                                     </div>
 
                                                     <div class="commercial radio">
-                                                        
+                                                        <div class="comm">
+
+                                                            <div class="d-flex">
+                                                                <div id="officeDiv" class="d-flex">
+                                                                    <button>Office
+                                                                    </button>
+                                                                </div>
+
+                                                                <div id="officeDiv1">
+                                                                    <button>Office 
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="d-flex">
+                                                                <div id="retailDiv" class="d-flex">
+                                                                    <button>Retail</button>
+                                                                </div>
+
+                                                                <div id="retailDiv1">
+                                                                    <button>Shop/Showroom
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            
+                                                                <div id="landDiv" class="d-flex">
+                                                                    <button>Land</button>
+                                                                </div>
+
+                                                                <div id="landDiv1">
+                                                                    <button>Agricultural/Farm Land
+                                                                    </button>
+                                                                    <button>Commercial Land
+                                                                    </button>
+                                                                </div>
+                                                            
+                                                            <br>
+                                                            
+                                                                <div id="hospDiv" class="d-flex">
+                                                                    <button>Hospitality</button>
+                                                                </div>
+
+                                                                <div id="hospDiv1">
+                                                                    <button>Warehouse 
+                                                                    </button>
+                                                                    <button>Hotel/Resort
+                                                                    </button>
+                                                                </div>
+                                                            
+                                                        </div>
+
+                                                    </div>
 
                                                     </div>
 
                                                     
-                                                    <h5 style="margin-top:2rem;margin-bottom:1rem;">For</h5>
+                                                    <h5 style="margin-top:2rem;margin-bottom:4rem;">For</h5>
 
-                                                    <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-bottom:1rem;">
+                                                    <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:4rem;">
 
-                                                    <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-bottom:1rem;">
+                                                    <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-top:4rem;">
 
-                                                    <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-bottom:1rem;">
+                                                    <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:4rem;">
 
                                                 </div>
 
@@ -1315,6 +1402,7 @@
         });
     });
     </script>
+    <!-- Show Residential Radio-->
     <script>
         function showDiv() {
            document.getElementById('apartDiv').style.display = "block";
@@ -1322,10 +1410,60 @@
         function shownDiv() {
            document.getElementById('houseDiv').style.display = "block";
         }
+        function shownnDiv() {
+           document.getElementById('othersDiv').style.display = "block";
+        }
+
+        $(document).ready(function () {
+            $('#apartDiv').click(function(){
+              $('#threeDiv').toggle();
+            });
+             $('#houseDiv').click(function(){
+              $('#twoDiv').toggle();
+            });
+             $('#othersDiv').click(function(){
+              $('#oneDiv').toggle();
+            });
+        });
+    </script>
+    <!-- Show Commercial Radio-->
+    <script>
+        function seDiv() {
+           document.getElementById('officeDiv').style.display = "block";
+        }
+        function seeDiv() {
+           document.getElementById('retailDiv').style.display = "block";
+        }
+        function seenDiv() {
+           document.getElementById('landDiv').style.display = "block";
+        }
+        function seennDiv() {
+           document.getElementById('hospDiv').style.display = "block";
+        }
+
+        $(document).ready(function () {
+            $('#officeDiv').click(function(){
+              $('#officeDiv1').toggle();
+            });
+            $('#retailDiv').click(function(){
+              $('#retailDiv1').toggle();
+            });
+            $('#landDiv').click(function(){
+              $('#landDiv1').toggle();
+            });
+            $('#hospDiv').click(function(){
+              $('#hospDiv1').toggle();
+            });
+        });
     </script>
     <script>
         $('.apartments button').on('click', function(){
             $('.apartments button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.comm button').on('click', function(){
+            $('.comm button').removeClass('active_button');
             $(this).addClass('active_button');
         });
 
