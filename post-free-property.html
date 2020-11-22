@@ -41,14 +41,15 @@
             color: #fff;
         }
 
-        #apartDiv button, #houseDiv button, #othersDiv button,#threeDiv button, #twoDiv button, 
-        #oneDiv button{
+        #apartDiv button, #houseDiv button, #othersDiv button,
+        #threeDiv button, #twoDiv button, #oneDiv button{
             margin-right:0.5rem;
         }
 
         #threeDiv , #twoDiv , #oneDiv, #officeDiv1, #retailDiv1, #landDiv1, #hospDiv1{
             display: none;
         }
+
         .active_button{
             background: #f52e5d;
             color: #fff;
@@ -259,14 +260,6 @@
                 margin-bottom: 25px
             }
 
-            .social {
-                height: 30px;
-                width: 30px;
-                font-size: 15px;
-                padding-top: 8px;
-                margin-top: 7px
-            }
-
             .get-bonus {
                 margin-top: 40px !important;
                 margin-left: 75px
@@ -288,7 +281,7 @@
           border-radius:3px;
           color: #fff;
           background-color: #f52e5d;
-          width:5em;
+          width:4em;
           height: 30px !important; 
           margin-right:1em;
           text-align:center;
@@ -614,26 +607,27 @@
                                                         <div class="apartments">
 
                                                             
-                                                                <div id="apartDiv" style="display:flex;">
-                                                                    <div class="in">
-                                                                        <button>Apartments/Flat/Builder 
-                                                                        </button>
-                                                                    </div>
+                                                            <div id="apartDiv" style="display:flex;">
+                                                                <div class="in">
+                                                                    <button>Apartments/Flat/Builder 
+                                                                    </button>
                                                                 </div>
+                                                            </div>
 
-                                                                <div id="threeDiv">
-                                                                    <div class="ins">
-                                                                        <button>Apartments 
-                                                                        </button>
-                                                                        <button>Flat
-                                                                        </button>
-                                                                        <button>Builder Floor
-                                                                        </button>
-                                                                    </div>
+                                                            <div id="threeDiv">
+                                                                <div class="ins">
+                                                                    <button>Apartments 
+                                                                    </button>
+                                                                    <button>Flat
+                                                                    </button>
+                                                                    <button>Builder Floor
+                                                                    </button>
                                                                 </div>
+                                                            </div>
                                                             
                                                             <br>
-                                                            <div class="d-flex">
+
+                                                            <div style="display:flex;">
                                                                 <div id="houseDiv" style="display:flex;">
                                                                     <div class="insi">
                                                                         <button>House/Villa</button>
@@ -649,8 +643,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                             <br>
-                                                            <div class="d-flex">
+                                                            <div style="display:flex;">
                                                                 <div id="othersDiv"style="display:flex;">
                                                                     <div class="inside">
                                                                         <button>Others</button>
@@ -664,6 +659,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
 
                                                     </div>
@@ -734,24 +730,21 @@
                                                                         </button>
                                                                     </div>
                                                                 </div>
-                                                            
                                                         </div>
-
                                                     </div>
-
-                                                    </div>
-
                                                     
-                                                    <h5 style="margin-top:2rem;margin-bottom:4rem;">For</h5>
+                                                    <h5 style="margin-top:2rem;">For</h5>
 
-                                                    <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:4rem;">
+                                                    <div class="d-flex">
+                                                        <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
 
-                                                    <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:4rem;">
+                                                        <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:1rem;">
 
 
-                                                    <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:4rem;">
+                                                        <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
+                                                    </div>
 
-                                                    <div class="rentout" style="display:none;">  
+                                                    <div class="rentout" style="display:none;margin-top:1rem;">  
                                                             
                                                             <div>
                                                                 <h6>Rent Out For</h6>
@@ -805,12 +798,12 @@
                                                         </div>
                                                          
                                                         <div>       
-                                                            <p style="margin-top:-2.6rem;">Distance</p>       
+                                                            <p style="margin-top:-2.6rem;text-align: center;">Distance</p>       
                                                             <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
                                                         </div>
                                                         
                                                         <div>
-                                                            <p style="margin-top:-2.6rem;">Type</p>
+                                                            <p style="margin-top:-2.6rem;text-align: center;">Type</p>
                                                             <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
                                                             <datalist id="location">
                                                                 <option value="meters">
