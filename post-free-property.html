@@ -822,8 +822,7 @@
 
                                         <div class="card2 ml-2">
 
-                                            <div>
-
+                                            <div class="resident">
                                                 <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
 
                                                 <div class="locate">
@@ -1259,14 +1258,191 @@
                                                     
                                                 </div>
 
-
-
                                                 <div class="next-button text-center mt-3 ml-2">
                                                     <span class="fa fa-arrow-right"></span>
                                                 </div>
                                             </div>
 
-                                        </div>
+                                            <!-- Commer -->
+                                            <div class="commer">
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="e">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="l">
+                                                        <h6>Your Office Setup</h6>
+                                                        <button>Min. No. of Seats</button>
+                                                        <button>Max. No. of Seats</button>
+                                                        <button>No. of Cabins</button>
+                                                        <button>No. of Meeting Rooms</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Washroom</h6>
+                                                        <button>Available</button>
+                                                        <button>Not Available</button>
+                                                        <div class="d-flex"style="margin-bottom:1rem;">
+                                                            <h6>No. of Washrooms</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c">
+                                                        <h6>Conference Room</h6>
+                                                        <button>Available</button>
+                                                        <button>Not Available</button>
+                                                        <div class="d-flex"style="margin-bottom:1rem;">
+                                                            <h6>No. of Conference Rooms</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a">
+                                                        <h6>Reception</h6>
+                                                        <button>Self</button>
+                                                        <button>Shared</button>
+                                                        <button>Not Available</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="t">
+                                                        <h6>Property Type</h6>
+                                                        <button>Self</button>
+                                                        <button>Shared</button>
+                                                        <button>Not Available</button>
+                                                    </div>
+                                                </div>
+
+                                                <h6>Floor Details</h6>
+                                                <div class="locate d-flex">
+                                                    <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Total Floor No.</label> </div>
+
+                                                    <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Your Floor No.</label> </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="lo">
+                                                        <h6>No. of Staircase</h6>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button>4</button>
+                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="menu" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="loc">
+                                                        <h6>Lift</h6>
+                                                        <button>Available</button>
+                                                        <button>Not Available</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="loca">
+                                                        <h6>Parking</h6>
+                                                        <button>Available</button>
+                                                        <button>Not Available</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Status</h6>
+                                                        <button>Ready to move</button>
+                                                        <button>Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+                                        </div> <!-- Card Finish-->
+
+
 
                                         <div class="card2 ml-2">
 
@@ -1656,6 +1832,80 @@
             $(this).addClass('active_button');
         });
 
+    </script>
+    <!--Residential Form-->
+    <script>
+         $(document).ready(function () {
+            $('#apartDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#houseDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#othersDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#oneDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#twoDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#threeDiv').click(function(){
+              $('.commer').hide();
+              $('.resident').show();
+            });
+        });
+    </script>
+    <!--Commercial Form -->
+    <script>
+         $(document).ready(function () {
+            $('#officeDiv1').click(function(){
+              $('.commer').show();
+              $('.resident').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#retailDiv').click(function(){
+              $('.commer').show();
+              $('.resident').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#landDiv').click(function(){
+              $('.commer').show();
+              $('.resident').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#hospDiv').click(function(){
+              $('.commer').show();
+              $('.resident').hide();
+            });
+        });
     </script>
     <script>
 
