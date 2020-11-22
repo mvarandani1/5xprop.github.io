@@ -746,9 +746,34 @@
 
                                                     <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:4rem;">
 
-                                                    <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-top:4rem;">
+                                                    <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:4rem;">
+
 
                                                     <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:4rem;">
+
+                                                    <div class="rentout" style="display:none;">  
+                                                            
+                                                            <div>
+                                                                <h6>Rent Out For</h6>
+                                                                <div style="display:flex;"
+                                                                class="ren">
+                                                                    <button>Family</button>
+                                                                    <button>Single Men</button>
+                                                                    <button>Single Women</button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div>
+                                                                <h6>Preferred Agreement Type</h6>
+                                                                <div style="display:flex;"
+                                                                class="rentt">
+                                                                    <button>Any</button>
+                                                                    <button>Company Lease</button>
+                                                                </div>
+                                                            </div>
+
+
+                                                    </div>
 
                                                 </div>
 
@@ -772,6 +797,30 @@
                                                 <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Locality</label> </div>
 
                                                 <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">House No.</label> </div>
+
+                                                <div class="form-group mt-5">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <input type="text" id="pwd" class="form-control" required placeholder="Nearby Location">
+                                                        </div>
+                                                         
+                                                        <div>       
+                                                            <p style="margin-top:-2.6rem;">Distance</p>       
+                                                            <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                        </div>
+                                                        
+                                                        <div>
+                                                            <p style="margin-top:-2.6rem;">Type</p>
+                                                            <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="location">
+                                                                <option value="meters">
+                                                                <option value="kilometers">
+                                                            </datalist>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
                                                 
                                                 <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
                                             </div>
@@ -1430,6 +1479,24 @@
         });
     });
     </script>
+    <!--Show rent Div-->
+    <script>
+        $(document).ready(function () {
+            $('.three-options').click(function(){
+              $('.rentout').toggle();
+            });
+        });
+
+        $('.ren button').on('click', function(){
+            $('.ren button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.rentt button').on('click', function(){
+            $('.rentt button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+    </script>
     <!-- Show Residential Radio-->
     <script>
         function showDiv() {
@@ -1598,6 +1665,7 @@
 
     </script>
     <script>
+
         $('.l button').on('click', function(){
             $('.l button').removeClass('active_button');
             $(this).addClass('active_button');
