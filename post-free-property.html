@@ -596,7 +596,7 @@
                                                                 </div>
                                                                 <div class="wizard-form-radio d-flex">
                                                                     <input name="radio-name" id="radio1" type="radio"  style="height: 25px !important;width:25px !important;"
-                                                                    value="commercial">
+                                                                    value="commercial" class="com">
                                                                     <label for="radio1">Commercial</label>
                                                                 </div>
                                                             </div>
@@ -658,6 +658,40 @@
                                                                         </button>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+
+                                                            <h5 style="margin-top:2rem;">For</h5>
+
+                                                            <div class="d-flex">
+                                                                <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
+
+                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:1rem;">
+
+
+                                                                <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
+                                                            </div>
+
+                                                            <div class="rentout" style="display:none;margin-top:1rem;">  
+                                                                    
+                                                                    <div>
+                                                                        <h6>Rent Out For</h6>
+                                                                        <div style="display:flex;"
+                                                                        class="ren">
+                                                                            <button>Family</button>
+                                                                            <button>Single Men</button>
+                                                                            <button>Single Women</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <h6>Preferred Agreement Type</h6>
+                                                                        <div style="display:flex;"
+                                                                        class="rentt">
+                                                                            <button>Any</button>
+                                                                            <button>Company Lease</button>
+                                                                        </div>
+                                                                    </div>
+
                                                             </div>
 
                                                         </div>
@@ -731,43 +765,19 @@
                                                                     </div>
                                                                 </div>
                                                         </div>
-                                                    </div>
-                                                    
-                                                    <h5 style="margin-top:2rem;">For</h5>
+                                                        <h5 style="margin-top:2rem;">For</h5>
 
-                                                    <div class="d-flex">
-                                                        <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
+                                                        <div class="d-flex">
+                                                            <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
 
-                                                        <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-top:1rem;">
 
 
-                                                        <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
-                                                    </div>
-
-                                                    <div class="rentout" style="display:none;margin-top:1rem;">  
-                                                            
-                                                            <div>
-                                                                <h6>Rent Out For</h6>
-                                                                <div style="display:flex;"
-                                                                class="ren">
-                                                                    <button>Family</button>
-                                                                    <button>Single Men</button>
-                                                                    <button>Single Women</button>
-                                                                </div>
-                                                            </div>
-
-                                                            <div>
-                                                                <h6>Preferred Agreement Type</h6>
-                                                                <div style="display:flex;"
-                                                                class="rentt">
-                                                                    <button>Any</button>
-                                                                    <button>Company Lease</button>
-                                                                </div>
-                                                            </div>
-
+                                                            <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
+                                                        </div>
 
                                                     </div>
-
+                                             
                                                 </div>
 
                                                 <div class="next-button text-center mt-1 ml-2">
@@ -1328,8 +1338,8 @@
                                                     <div class="o">
                                                         <h6>Washroom</h6>
                                                         <button>Available</button>
-                                                        <button>Not Available</button>
-                                                        <div class="d-flex"style="margin-bottom:1rem;">
+                                                        <button class="hide-counter">Not Available</button>
+                                                        <div style="margin-bottom:1rem;display:flex;" class="counter">
                                                             <h6>No. of Washrooms</h6>
                                                             <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
                                                                 <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
@@ -1350,8 +1360,8 @@
                                                     <div class="c">
                                                         <h6>Conference Room</h6>
                                                         <button>Available</button>
-                                                        <button>Not Available</button>
-                                                        <div class="d-flex"style="margin-bottom:1rem;">
+                                                        <button class="hide-count">Not Available</button>
+                                                        <div style="margin-bottom:1rem;display:flex;" class="count">
                                                             <h6>No. of Conference Rooms</h6>
                                                             <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
                                                                 <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
@@ -1907,6 +1917,20 @@
             });
         });
     </script>
+    <!-- Hide Counter on not available-->
+    <script>
+        $(document).ready(function () {
+            $('.hide-count').click(function(){
+              $('.count').hide();
+            });
+        });
+        $(document).ready(function () {
+            $('.hide-counter').click(function(){
+              $('.counter').hide();
+            });
+        });
+    </script>
+    
     <script>
 
         $('.l button').on('click', function(){
