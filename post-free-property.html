@@ -614,7 +614,7 @@
                                                         <div class="apartments">
 
                                                             
-                                                                <div id="apartDiv" class="d-flex">
+                                                                <div id="apartDiv" style="display:flex;">
                                                                     <button>Apartments/Flat/Builder 
                                                                     </button>
                                                                 </div>
@@ -630,7 +630,7 @@
                                                             
                                                             <br>
                                                             <div class="d-flex">
-                                                                <div id="houseDiv" class="d-flex">
+                                                                <div id="houseDiv" style="display:flex;">
                                                                     <button>House/Villa</button>
                                                                 </div>
 
@@ -643,7 +643,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="d-flex">
-                                                                <div id="othersDiv" class="d-flex">
+                                                                <div id="othersDiv"style="display:flex;">
                                                                     <button>Others</button>
                                                                 </div>
 
@@ -660,7 +660,7 @@
                                                         <div class="comm">
 
                                                             <div class="d-flex">
-                                                                <div id="officeDiv" class="d-flex">
+                                                                <div id="officeDiv" style="display:flex;">
                                                                     <button>Office
                                                                     </button>
                                                                 </div>
@@ -672,7 +672,7 @@
                                                             </div>
                                                             <br>
                                                             <div class="d-flex">
-                                                                <div id="retailDiv" class="d-flex">
+                                                                <div id="retailDiv" style="display:flex;">
                                                                     <button>Retail</button>
                                                                 </div>
 
@@ -683,7 +683,7 @@
                                                             </div>
                                                             <br>
                                                             
-                                                                <div id="landDiv" class="d-flex">
+                                                                <div id="landDiv" style="display:flex;">
                                                                     <button>Land</button>
                                                                 </div>
 
@@ -696,7 +696,7 @@
                                                             
                                                             <br>
                                                             
-                                                                <div id="hospDiv" class="d-flex">
+                                                                <div id="hospDiv" style="display:flex;">
                                                                     <button>Hospitality</button>
                                                                 </div>
 
@@ -1417,12 +1417,20 @@
         $(document).ready(function () {
             $('#apartDiv').click(function(){
               $('#threeDiv').toggle();
+              $('#houseDiv').toggle();
+              $('#othersDiv').toggle();
             });
-             $('#houseDiv').click(function(){
+
+            $('#houseDiv').click(function(){
               $('#twoDiv').toggle();
+              $('#apartDiv').toggle();
+              $('#othersDiv').toggle();
             });
-             $('#othersDiv').click(function(){
+
+            $('#othersDiv').click(function(){
               $('#oneDiv').toggle();
+              $('#apartDiv').toggle();
+              $('#houseDiv').toggle();
             });
         });
     </script>
@@ -1444,15 +1452,28 @@
         $(document).ready(function () {
             $('#officeDiv').click(function(){
               $('#officeDiv1').toggle();
+              $('#retailDiv').toggle();
+              $('#landDiv').toggle();
+              $('#hospDiv').toggle();
             });
+
             $('#retailDiv').click(function(){
               $('#retailDiv1').toggle();
+              $('#officeDiv').toggle();
+              $('#landDiv').toggle();
+              $('#hospDiv').toggle();
             });
             $('#landDiv').click(function(){
               $('#landDiv1').toggle();
+              $('#officeDiv').toggle();
+              $('#retailDiv').toggle();
+              $('#hospDiv').toggle();
             });
             $('#hospDiv').click(function(){
               $('#hospDiv1').toggle();
+              $('#officeDiv').toggle();
+              $('#retailDiv').toggle();
+              $('#landDiv').toggle();
             });
         });
     </script>
