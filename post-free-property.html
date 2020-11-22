@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Document Title -->
+    <title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
+    <style>
+        button{
+            background: #fff;
+            border-radius: 24px;
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 24px;
+            outline: none;
+            margin: 0;
+            cursor: pointer;
+            border: 1px solid #f52e5d;
+            padding: 4px 12px 2px;
+            font-size: 14px;
+            line-height: 24px;
+            margin-right: 0.3rem;
+            font-weight: 400;
+            color: #42526e;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin-bottom:1rem;
+        }
+        button:hover, button:focus, button:active{
+            background: #f52e5d;
+            color: #fff;
+        }
+
+        #apartDiv button, #houseDiv button{
+            margin-right:0.5rem;
+        }
+        .active_button{
+            background: #f52e5d;
+            color: #fff;
+        }
+
+        .activate{
+            border: 1px solid #f52e5d !important;
+            color: #000 !important;
+            background: transparent !important;
+        }
+
+        .card0 {
+            z-index: 0;
+        }
+
+        .card00 {
+            z-index: 0;
+        }
+
+        .card1 {
+            margin-left: 140px;
+            z-index: 0;
+        }
+
+        .card2 {
+            display: none
+        }
+
+        .card2.shown {
+            display: block
+        }
+
+        input,
+        select {
+            padding: 2px;
+            border-radius: 0px;
+            box-sizing: border-box;
+            color: #9E9E9E;
+            font-size: 16px;
+            letter-spacing: 1px;
+            height: 50px !important
+        }
+
+        select {
+            width: 100%;
+            margin-bottom: 85px
+        }
+
+        input:focus,
+        select:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #f52e5d !important;
+            outline-width: 0 !important
+        }
+
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+            background-color: #f52e5d;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+            width: 77%
+        }
+
+        .form-control-placeholder {
+            position: absolute;
+            top: 0px;
+            padding: 12px 2px 0 2px;
+            transition: all 300ms;
+            opacity: 0.5;
+        }
+
+        .form-control:focus+.form-control-placeholder,
+        .form-control:valid+.form-control-placeholder {
+            font-size: 95%;
+            top: 10px;
+            transform: translate3d(0, -100%, 0);
+            opacity: 1;
+            background-color: #fff
+        }
+
+        .next-button {
+            width: 18%;
+            height: 50px;
+            background-color: #f52e5d;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px;
+            cursor: pointer
+        }
+
+        .next-button:hover {
+            background-color: #f52e5d;
+            color: #fff
+        }
+
+        .get-bonus {
+            margin-left: 154px
+        }
+
+        .pic {
+            width: 230px;
+            height: 110px
+        }
+
+        #progressbar {
+            position: absolute;
+            left: 35px;
+            overflow: hidden;
+            color: #E53935
+        }
+
+        #progressbar li {
+            list-style-type: none;
+            font-size: 8px;
+            font-weight: 400;
+            margin-bottom: 36px
+        }
+
+        #progressbar .step0:before {
+            content: "";
+            color: #fff
+        }
+
+        #progressbar li:before {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            font-size: 20px;
+            background: #fff;
+            border: 2px solid #f52e5d;
+            border-radius: 50%;
+            margin: auto
+        }
+
+        #progressbar li:after {
+            content: '';
+            width: 3px;
+            height: 66px;
+            background: #f52e5d;
+            position: absolute;
+            left: 14px;
+            top: 15px;
+            z-index: -1
+        }
+
+        #progressbar li:last-child:after {
+            top: 147px;
+            height: 132px
+        }
+
+        #progressbar li:nth-child(3):after {
+            top: 81px
+        }
+
+        #progressbar li:nth-child(2):after {
+            top: 0px
+        }
+
+        #progressbar li:first-child:after {
+            position: absolute;
+            top: -81px
+        }
+
+        #progressbar li.actived:after {
+            background: #f52e5d
+        }
+
+        #progressbar li.actived:before {
+            background: #f52e5d;
+            font-family: FontAwesome;
+            content: "\f00c"
+        }
+
+        .tick {
+            width: 100px;
+            height: 100px
+        }
+
+        .prev {
+            display: block;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            cursor: pointer
+        }
+
+        .prev:hover {
+            color: #f52e5d !important
+        }
+
+        @media screen and (max-width: 912px) {
+            .card00 {
+                padding-top: 30px
+            }
+
+            .card1 {
+                border: none;
+                margin-left: 50px
+            }
+
+            .card2 {
+                border-bottom: 1px solid #F5F5F5;
+                margin-bottom: 25px
+            }
+
+            .social {
+                height: 30px;
+                width: 30px;
+                font-size: 15px;
+                padding-top: 8px;
+                margin-top: 7px
+            }
+
+            .get-bonus {
+                margin-top: 40px !important;
+                margin-left: 75px
+            }
+
+            #progressbar {
+                left: -25px
+            }
+        }
+
+        .radio{
+            display: none;
+        }
+
+        .rddd{
+          display:inline-block;
+          padding:3px;
+          border: 0.5px solid #f52e5d;
+          border-radius:3px;
+          color: #fff;
+          background-color: #f52e5d;
+          width:5em;
+          height: 30px !important; 
+          margin-right:1em;
+          text-align:center;
+        }
+
+        .form-wizard {
+          color: #888888;
+          width: 100%;
+          margin-right: 4rem;
+          padding: 30px;
+        }
+        .form-wizard .wizard-form-radio {
+          display: inline-block;
+          margin-left: 5px;
+          position: relative;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+          background-color: #dddddd;
+          height: 25px;
+          width: 25px;
+          display: inline-block;
+          vertical-align: middle;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"]:focus {
+          outline: 0;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"]:checked {
+          background-color: #fb1647;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"]:checked::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          background-color: #ffffff;
+          border-radius: 50%;
+          left: 1px;
+          right: 0;
+          margin: 0 auto;
+          top: 8px;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"]:checked::after {
+          content: "";
+          display: inline-block;
+          webkit-animation: click-radio-wave 0.65s;
+          -moz-animation: click-radio-wave 0.65s;
+          animation: click-radio-wave 0.65s;
+          background: #000000;
+          content: '';
+          display: block;
+          position: relative;
+          z-index: 100;
+          border-radius: 50%;
+        }
+        .form-wizard .wizard-form-radio input[type="radio"] ~ label {
+          padding-left: 10px;
+          cursor: pointer;
+        }
+
+        .locate{
+            margin-bottom: 2rem;
+        }
+
+        .pad input{
+            height: 30px !important;
+            border: 0.5px solid #f52e5d;
+            border-radius: 3px;
+            border-right-height: 6px;
+            outline: none;
+        }
+
+        .radio[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            opacity: 1 !important;
+        }
+
+        /* Count */
+        .increment-group input{
+            height:30px !important;
+            width: 30px !important;
+            border-radius: 4px;
+        }
+
+        .control{
+            color: #000;
+            font-weight: 600;
+            text-align: center;
+            border: 1px solid #f52e5d;
+        }
+
+        /* Drag image */
+        .container8 {
+          padding: 50px 10%;
+        }
+
+        .box4 {
+          position: relative;
+          background: #ffffff;
+          width: 100%;
+        }
+
+        .box-header {
+          color: #444;
+          display: block;
+          padding: 10px;
+          position: relative;
+          border-bottom: 1px solid #f4f4f4;
+          margin-bottom: 10px;
+        }
+
+        .box-tools {
+          position: absolute;
+          right: 10px;
+          top: 5px;
+        }
+
+        .dropzone-wrapper {
+          border: 2px dashed #91b0b3;
+          color: #92b0b3;
+          position: relative;
+          height: 150px;
+        }
+
+        .dropzone-desc {
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+          width: 40%;
+          top: 50px;
+          font-size: 16px;
+        }
+
+        .dropzone,
+        .dropzone:focus {
+          position: absolute;
+          outline: none !important;
+          width: 100%;
+          height: 150px;
+          cursor: pointer;
+          opacity: 0;
+        }
+
+        .dropzone-wrapper:hover,
+        .dropzone-wrapper.dragover {
+          background: #ecf0f5;
+        }
+
+        .preview-zone {
+          text-align: center;
+        }
+
+        .preview-zone .box {
+          box-shadow: none;
+          border-radius: 0;
+          margin-bottom: 0;
+        }
+
+        @media (max-width:700px){
+            .flex-md-row{
+                display: flex;
+                flex-direction:column-reverse !important;
+            }
+            .card1-boxx{
+                display: none;
+            }
+            .card-col-box{
+                width: 100vw !important;
+            }
+            .fa-long-arrow-left{
+                position: relative !important;
+            }
+            .card2-last textarea{
+                width:90% !important;
+            }
+            .pwd1{
+                display: flex;
+                flex-direction: column !important;
+            }
+            .logo{
+                width: 100% !important;
+                margin-top: -1rem !important;
+            }
+            .v7{
+                margin-top:0.7rem !important;
+            }
+        }
+
+        @media (max-width: 500px){
+            .fa-long-arrow-left{
+                top: -3rem !important;
+            }
+            .accesories{
+                display: flex;
+                flex-direction: column !important;
+                margin-bottom: 20px;
+            }
+            .card-col-box{
+                width: 90vw !important;
+                margin-left: -20px !important;
+            }
+            .form-group{
+                width: 100%;
+            }
+            .v7{
+                margin-top:0.5rem !important;
+                margin-right: 5rem !important;
+            }
+            .logo{
+                margin-top: -0.5rem !important;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!--Preloader ends-->
+    <!--Page Wrapper starts-->
+    <div class="page-wrapper" style="margin-bottom:4rem;">
+        <!--Header starts-->
+        <header class="header transparent scroll-hide">
+            <!--Main Menu starts-->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3 col-4 mb-5">
+                        <a class="logo" href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-8" style="margin-bottom:2rem !important;">
+                        <ul class="top-nav">
+                            <li>
+                                <select class="select-arrow" style="margin-bottom:0px;height:40px !important;">
+                                    <option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
+                                    <option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
+                                    <option value="https://www.5xprop.com/?change_city=ghaziabad">Ghaziabad</option>
+                                    <option value="https://www.5xprop.com/?change_city=greater-noida">Greater Noida</option>
+                                    <option value="https://www.5xprop.com/?change_city=gurugram">Gurugram</option>
+                                    <option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
+                                    <option value="https://www.5xprop.com/?change_city=noida">Noida</option>
+                                </select>
+                            </li>
+                            <li><a class="btn v7" href="#"><i class="fa fa-home mr-2"></i>Post Free Ad </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Main Menu ends-->
+        </header>
+    </div>
+    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+                <div class="card card0 border-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card00 m-2 border-0">
+                                <div class="row text-center justify-content-center px-3">
+                                    <p class="prev text-danger"><span class="fa fa-long-arrow-left" style="position:fixed;"> Go Back</span></p id="back">
+                                    <h4 class="mb-5">Post Free Property on 5xprop</h4>
+                                </div>
+
+                                <div class="flex-md-row px-3 mt-4 flex-column-reverse">
+                                    <div class="col-md-6" style="float:left;width:50%;">
+
+                                        <div class="mt-4 card1-boxx" style="position:fixed;">
+                                            <div class="card1">
+                                                <ul id="progressbar" class="text-center">
+                                                    <li class="actived step0"></li>
+                                                    <li class="step0"></li>
+                                                    <li class="step0"></li>
+                                                    <li class="step0"></li>
+                                                    <li class="step0"></li>
+                                                </ul>
+                                                <h6 class="mb-5">Property Type</h6>
+                                                <h6 class="mb-5">Location</h6>
+                                                <h6 class="mb-5">Location Details</h6>
+                                                <h6 class="mb-5">Pricing Details</h6>
+                                                <h6 class="mb-5">Photos</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 card-col-box" style="position: relative;float:right;width:50%;">
+                                        <div class="card2 first-screen shown ml-2">
+                                            
+                                            <div class="row px-3 mt-3">
+                                                
+
+                                                <h5>What kind of property do you have?</h5>
+
+                                                <div class="form-wizard">
+                                                    <form action="" method="post" role="form">
+                                                        <fieldset class="wizard-fieldset show">
+                                                            <div class="form-group" style="display: flex;">
+                                                                <div class="wizard-form-radio d-flex" style="margin-right:1rem;">
+                                                                    <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;"
+                                                                    value="residential">
+                                                                    <label for="radio1">Residential</label>
+                                                                </div>
+                                                                <div class="wizard-form-radio d-flex">
+                                                                    <input name="radio-name" id="radio1" type="radio"  style="height: 25px !important;width:25px !important;"
+                                                                    value="commercial">
+                                                                    <label for="radio1">Commercial</label>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset> 
+                                                    </form>
+                                                    <div class="residential radio">
+                                                        
+                                                        <div class="apartments">
+                                                            
+                                                            <div id="apartDiv" class="d-flex">
+                                                                <button>Apartments</button>
+                                                                <button>Flat</button>
+                                                                <button>Builder</button>
+                                                            </div>
+                                                            <br>
+                                                            <div id="houseDiv" class="d-flex">
+                                                                <button>House</button>
+                                                                <button>Villa</button>
+                                                                <button>Others</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="commercial radio">
+                                                        
+
+                                                    </div>
+
+                                                    
+                                                    <h5 style="margin-top:2rem;margin-bottom:1rem;">For</h5>
+
+                                                    <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-bottom:1rem;">
+
+                                                    <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-bottom:1rem;">
+
+                                                    <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-bottom:1rem;">
+
+                                                </div>
+
+                                                <div class="next-button text-center mt-1 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="card2 ml-2">
+
+                                            <div>
+                                                <h5 style="margin-bottom:1rem;">Enter Your Property's Location</h5>
+
+                                                <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">City</label> </div>
+
+                                                <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Society Name</label> </div>
+
+                                                <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Locality</label> </div>
+
+                                                <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">House No.</label> </div>
+                                                
+                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card2 ml-2">
+
+                                            <div>
+
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="l">
+                                                        <h6>Your Apartment is a</h6>
+                                                        <button>2 BHK</button>
+                                                        <button>3 BHK</button>
+                                                        <button>4 BHK</button>
+                                                        <button>Other</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Layout of Apartment</h6>
+                                                        <button>Add</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c">
+                                                        <h6>No. of Apartment</h6>
+                                                        <button>0</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button>4</button>
+                                                        <button>5</button>
+                                                        <button>6</button>
+                                                        <button class="ad"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="me" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="do">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a">
+                                                        <h6>No. of Bathrooms</h6>
+                                                        <button>0</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button>4</button>
+                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="men" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="t">
+                                                        <h6>No. of Balconies</h6>
+                                                        <button>0</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button>4</button>
+                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="menu" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="e">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h6>Additional Room</h6>
+                                                <div class="locate d-flex">
+                                                    <div class="l">
+                                                        <div class="multiple-buttons">
+                                                            <button><i class="fa fa-plus"></i> Pooja</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="o">
+                                                        <div class="multiple-buttons">
+                                                            <button><i class="fa fa-plus"></i> Servant</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c">
+                                                        <div class="multiple-buttons">
+                                                            <button><i class="fa fa-plus"></i> Store</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="a">
+                                                        <div class="multiple-buttons">
+                                                            <button><i class="fa fa-plus"></i> Study</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <h6 style="margin-bottom:2rem;">Parking</h6>
+                                                    <div class="d-flex"style="margin-bottom:1rem;">
+                                                        <h6>Covered</h6>
+                                                        <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
+                                                            <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                            <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                            </div>&nbsp;&nbsp;
+                                                            <div class="increment-group__field">
+                                                              <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                            </div>&nbsp;&nbsp;
+                                                            <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                            <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <h6>Open</h6>
+                                                        <div class="increment-group js-increment-group d-flex" style="margin-left:3.5rem;">
+                                                            <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                            <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                            </div>&nbsp;&nbsp;
+                                                            <div class="increment-group__field">
+                                                              <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                            </div>&nbsp;&nbsp;
+                                                            <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                            <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="locate">
+                                                    <div class="lo">
+                                                        <h6>Status</h6>
+                                                        <button>Ready to move</button>
+                                                        <button>Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="loc">
+                                                        <h6>Age</h6>
+                                                        <button>0-1 year</button>
+                                                        <button>1-3 years</button>
+                                                        <button>3-5 years</button>
+                                                        <button>5-10 years</button>
+                                                        <button>10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="d-flex">
+                                                        <h6>RERE Registered</h6>
+                                                        <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="loca">
+                                                        <h6>Facing</h6>
+                                                        <button>East</button>
+                                                        <button>West</button>
+                                                        <button>North</button>
+                                                        <button>South</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Furnishing</h6>
+                                                        <button>Furnished</button>
+                                                        <button>Semi-furnished</button>
+                                                        <button>Un-Furnished</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+
+                                                    <div class="d-flex accesories">
+                                                        
+                                                        <div class="d-flex">
+                                                            <h6>Light</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>TV</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:4rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex mt-3 accesories">
+                                                        
+                                                        <div class="d-flex">
+                                                            <h6>AC</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2.7rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Fan</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:3rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex mt-3 accesories">
+                                                        
+                                                        <div class="d-flex">
+                                                            <h6>Bed</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2.5rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Heater</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:2rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="d-flex mt-3 accesories">
+                                                        
+                                                        <div class="d-flex">
+                                                            <h6>Geyser</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:1rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Exhaust Fan</h6>
+                                                            <div class="increment-group js-increment-group d-flex" style="margin-left:0.8rem;">
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="dec">
+                                                                <i class="fa fa-minus" style="font-size: 18px;"></i>
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="increment-group__field">
+                                                                  <input class="control control--text js-increment-input" type="text" pattern="d*" name="value" readonly="readonly" placeholder="" />
+                                                                </div>&nbsp;&nbsp;
+                                                                <div class="control--button increment-group__button js-increment-button" type="button" data-direction="inc">
+                                                                <i class="fa fa-plus" style="font-size: 18px;"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="locate mt-3">
+
+                                                    <div class="d-flex accesories">
+                                                        <div class="d-flex">
+                                                            <h6>Stove</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Washing Machine</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex accesories">
+                                                        <div class="d-flex">
+                                                            <h6>Fridge</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Microwave</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex accesories">
+                                                        <div class="d-flex">
+                                                            <h6>Modular Kitchen</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Chimney</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex accesories"> 
+                                                        <div class="d-flex">
+                                                            <h6>Curtains</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Purifier</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="d-flex accesories">
+                                                        <div class="d-flex">
+                                                            <h6>Dining Table</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <div class="d-flex">
+                                                            <h6>Sofa</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card2 ml-2">
+
+                                            <div>
+                                                <h5 style="margin-bottom:1rem;">Pricing Details</h5>
+                                               
+                                                    <div class="locatee">
+                                                        <h6>Ownership</h6>
+                                                        <button>Freehold</button>
+                                                        <button>Leasehold</button>
+                                                        <button>Co-operative Society</button>
+                                                        <button>Power of Attorney</button>
+                                                    </div>
+
+                                                    <div class="mt-4">
+                                                        <div class="d-flex pwd1">
+                                                            <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Expected Price</label>
+                                                            <p>Price in words</p>
+                                                            </div>
+                                                            &nbsp;&nbsp;
+                                                            <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Per Sq. ft. Price</label> </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-4" style="display:flex;
+                                                    flex-direction: column;">
+
+                                                        <div class="d-flex">
+                                                            <h6>All inclusive</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <h6>Tax & Govt. Charges Excluded</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <h6>Price Negotiable</h6>
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                        </div>
+                                                        
+                                                    </div>
+                                                
+                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card2 ml-2">
+
+                                            <div class="card2-last">
+                                                <h5 style="margin-bottom:1rem;">What makes your property unique?</h5>
+                                                <p>Enter unique points and description</p>
+                                                <textarea style="width: 100%;height:150px;">
+                                                </textarea>
+
+                                                <!--Drag & Drop or upload photos-->
+                                                <section>
+                                                  <form action="" method="POST" enctype="multipart/form-data">
+                                                    <div class="container8">
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                          <div class="form-group">
+                                                            <label class="control-label">Upload File</label>
+                                                            <div class="preview-zone hidden">
+                                                              <div class="box4 box-solid">
+                                                                <div class="box-header with-border">
+                                                                  <div style="text-align:left;"><b>Preview</b></div>
+                                                                  <div class="box-tools pull-right">
+                                                                    <button type="button" class="btn btn-danger btn-xs remove-preview">
+                                                                      <i class="fa fa-refresh"></i> Reset Again
+                                                                    </button>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="box-body"></div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="dropzone-wrapper">
+                                                              <div class="dropzone-desc">
+                                                                <i class="glyphicon glyphicon-download-alt"></i>
+                                                                <p>Choose an image file or drag it here.</p>
+                                                              </div>
+                                                              <input type="file" name="img_logo" class="dropzone">
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                          <button type="submit" style="background:#f52e5d;color: #fff;">Upload</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+                                                </section>
+
+
+                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card2 ml-2">
+                                            <div class="row px-3 mt-2 mb-4 text-center">
+                                                <h2 class="col-12 text-danger"><strong>Success !</strong></h2>
+                                                <div class="col-12 text-center"><img class="tick" src="https://i.imgur.com/WDI0da4.gif"></div>
+                                                <h6 class="col-12 mt-2"><i>You Have Successfully Posted The Property</i></h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        var current_fs, next_fs, previous_fs;
+
+        // No BACK button on first screen
+        if($(".shown").hasClass("first-screen")) {
+        $(".prev").css({ 'display' : 'none' });
+        }
+
+        // Next button
+        $(".next-button").click(function(){
+
+        current_fs = $(this).parent().parent();
+        next_fs = $(this).parent().parent().next();
+
+        $(".prev").css({ 'display' : 'block' });
+
+        $(current_fs).removeClass("shown");
+        $(next_fs).addClass("shown");
+
+        $("#progressbar li").eq($(".card2").index(next_fs)).addClass("actived");
+
+        current_fs.animate({}, {
+        step: function() {
+
+        current_fs.css({
+        'display': 'none',
+        'position': 'relative'
+        });
+
+        next_fs.css({
+        'display': 'block'
+        });
+        }
+        });
+        });
+
+        // Previous button
+        $(".prev").click(function(){
+
+        current_fs = $(".shown");
+        previous_fs = $(".shown").prev();
+
+        $(current_fs).removeClass("shown");
+        $(previous_fs).addClass("shown");
+
+        $(".prev").css({ 'display' : 'block' });
+
+        if($(".shown").hasClass("first-screen")) {
+        $(".prev").css({ 'display' : 'none' });
+        }
+
+        $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("actived");
+
+        current_fs.animate({}, {
+        step: function() {
+
+        current_fs.css({
+        'display': 'none',
+        'position': 'relative'
+        });
+
+        previous_fs.css({
+        'display': 'block'
+        });
+        }
+        });
+        });
+
+        });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".radio").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+    </script>
+    <script>
+        function showDiv() {
+           document.getElementById('apartDiv').style.display = "block";
+        }
+        function shownDiv() {
+           document.getElementById('houseDiv').style.display = "block";
+        }
+    </script>
+    <script>
+        $('.apartments button').on('click', function(){
+            $('.apartments button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.l button').on('click', function(){
+            $('.l button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.o button').on('click', function(){
+            $('.o button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.c button').on('click', function(){
+            $('.c button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.a button').on('click', function(){
+            $('.a button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.t button').on('click', function(){
+            $('.t button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.e button').on('click', function(){
+            $('.e button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.lo button').on('click', function(){
+            $('.lo button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.loc button').on('click', function(){
+            $('.loc button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.loca button').on('click', function(){
+            $('.loca button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.locat button').on('click', function(){
+            $('.locat button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.locatee button').on('click', function(){
+            $('.locatee button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.rddd').on('click', function(){
+            $('.rddd').removeClass('activate');
+            $(this).addClass('activate');
+        });
+    </script>
+
+    <!-- Incresing decresing -->
+    <script>
+        var $incrementInputs = $('.js-increment-group')
+
+        $incrementInputs.each(function() {
+          $this = $(this)
+          
+          var $buttons = $this.find('.js-increment-button')
+            , $input = $this.find('.js-increment-input')
+            , interval = $input.data('interval') || 1
+            , prefix = $input.data('prefix') || ''
+            , upperLimit = $input.data('upper-limit') || Infinity
+          
+          $buttons.on('touchend click', function(e) {
+            
+            e.stopPropagation()
+            e.preventDefault()
+
+            var direction = $(this).data('direction')
+              , currentVal = $input.val().replace(/[^0-9\.\-]+/g, '') // Strip any non-numeric characters, allowing for negative or decimal numbers
+              , newVal = 0
+            
+            if (isNaN(currentVal)) {
+              $input.val(prefix + '0')
+            } else {
+
+              if (direction === 'dec') {
+                newVal = +currentVal - interval
+              } else if (direction === 'inc') {
+                newVal = +currentVal + interval
+              }
+
+              // Keep things positive
+              newVal = (newVal > 0) ? newVal : 0
+              
+              // Don't exceed upper limits
+              newVal = (newVal < upperLimit) ? newVal : upperLimit
+
+              $input.val(prefix + newVal)
+            }
+
+          })
+
+        })
+    </script>
+
+    <!-- Show input on add button -->
+    <script>
+        $(document).ready(function(){
+            $('.ad').click(function() {
+              $('.me').show();
+              $('.ad').hide();
+            });
+            $('.do').click(function() {
+              $('.ad').show();
+              $('.me').hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $('.add').click(function() {
+              $('.men').show();
+              $('.add').hide();
+            });
+            $('.don').click(function() {
+              $('.add').show();
+              $('.men').hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $('.addd').click(function() {
+              $('.menu').show();
+              $('.addd').hide();
+            });
+            $('.done').click(function() {
+              $('.addd').show();
+              $('.menu').hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $('.adddd').click(function() {
+              $('.menuu').show();
+              $('.adddd').hide();
+            });
+            $('.donee').click(function() {
+              $('.adddd').show();
+              $('.menuu').hide();
+            });
+        });
+    </script>
+    <script>
+        // the selector will match all input controls of type :checkbox
+        // and attach a click event handler 
+        $(".radio:checkbox").on('click', function() {
+          // in the handler, 'this' refers to the box clicked on
+          var $box = $(this);
+          if ($box.is(":checked")) {
+            // the name of the box is retrieved using the .attr() method
+            // as it is assumed and expected to be immutable
+            var group = ".radio:checkbox[name='" + $box.attr("name") + "']";
+            // the checked state of the group/box on the other hand will change
+            // and the current value is retrieved using .prop() method
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+          } else {
+            $box.prop("checked", false);
+          }
+        });
+    </script>
+
+    <!--Drag & Drop or choose files -->
+    <script>
+        function readFile(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+              var htmlPreview =
+                '<img width="200" src="' + e.target.result + '" />' +
+                '<p>' + input.files[0].name + '</p>';
+              var wrapperZone = $(input).parent();
+              var previewZone = $(input).parent().parent().find('.preview-zone');
+              var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
+
+              wrapperZone.removeClass('dragover');
+              previewZone.removeClass('hidden');
+              boxZone.empty();
+              boxZone.append(htmlPreview);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+          }
+        }
+
+        function reset(e) {
+          e.wrap('<form>').closest('form').get(0).reset();
+          e.unwrap();
+        }
+
+        $(".dropzone").change(function() {
+          readFile(this);
+        });
+
+        $('.dropzone-wrapper').on('dragover', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).addClass('dragover');
+        });
+
+        $('.dropzone-wrapper').on('dragleave', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).removeClass('dragover');
+        });
+
+        $('.remove-preview').on('click', function() {
+          var boxZone = $(this).parents('.preview-zone').find('.box-body');
+          var previewZone = $(this).parents('.preview-zone');
+          var dropzone = $(this).parents('.form-group').find('.dropzone');
+          boxZone.empty();
+          previewZone.addClass('hidden');
+          reset(dropzone);
+        });
+
+    </script>
+    <script>
+        $(document).on('click', '.check[type="checkbox"]', function() {      
+            $('.check[type="checkbox"]').not(this).prop('checked', false);      
+        });
+    </script>
+    
+</body>
+</html>
