@@ -615,41 +615,53 @@
 
                                                             
                                                                 <div id="apartDiv" style="display:flex;">
-                                                                    <button>Apartments/Flat/Builder 
-                                                                    </button>
+                                                                    <div class="in">
+                                                                        <button>Apartments/Flat/Builder 
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="threeDiv">
-                                                                    <button>Apartments 
-                                                                    </button>
-                                                                    <button>Flat
-                                                                    </button>
-                                                                    <button>Builder Floor
-                                                                    </button>
+                                                                    <div class="ins">
+                                                                        <button>Apartments 
+                                                                        </button>
+                                                                        <button>Flat
+                                                                        </button>
+                                                                        <button>Builder Floor
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             
                                                             <br>
                                                             <div class="d-flex">
                                                                 <div id="houseDiv" style="display:flex;">
-                                                                    <button>House/Villa</button>
+                                                                    <div class="insi">
+                                                                        <button>House/Villa</button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="twoDiv">
-                                                                    <button>House
-                                                                    </button>
-                                                                    <button>Villa
-                                                                    </button>
+                                                                    <div class="insid">
+                                                                        <button>House
+                                                                        </button>
+                                                                        <button>Villa
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <br>
                                                             <div class="d-flex">
                                                                 <div id="othersDiv"style="display:flex;">
-                                                                    <button>Others</button>
+                                                                    <div class="inside">
+                                                                        <button>Others</button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="oneDiv">
-                                                                    <button>Others 
-                                                                    </button>
+                                                                    <div class="insidee">
+                                                                        <button>Others 
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -661,50 +673,66 @@
 
                                                             <div class="d-flex">
                                                                 <div id="officeDiv" style="display:flex;">
-                                                                    <button>Office
-                                                                    </button>
+                                                                    <div class="com-in">
+                                                                        <button>Office
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="officeDiv1">
-                                                                    <button>Office 
-                                                                    </button>
+                                                                    <div class="com-ins">
+                                                                        <button>Office 
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <br>
                                                             <div class="d-flex">
                                                                 <div id="retailDiv" style="display:flex;">
-                                                                    <button>Retail</button>
+                                                                    <div class="com-insi">
+                                                                        <button>Retail</button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="retailDiv1">
-                                                                    <button>Shop/Showroom
-                                                                    </button>
+                                                                    <div class="com-insid">
+                                                                        <button>Shop/Showroom
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <br>
                                                             
                                                                 <div id="landDiv" style="display:flex;">
-                                                                    <button>Land</button>
+                                                                    <div class="com-inside">
+                                                                        <button>Land</button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="landDiv1">
-                                                                    <button>Agricultural/Farm Land
-                                                                    </button>
-                                                                    <button>Commercial Land
-                                                                    </button>
+                                                                    <div class="com-insidee">
+                                                                        <button>Agricultural/Farm Land
+                                                                        </button>
+                                                                        <button>Commercial Land
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             
                                                             <br>
                                                             
                                                                 <div id="hospDiv" style="display:flex;">
-                                                                    <button>Hospitality</button>
+                                                                    <div class="com-insideee">
+                                                                        <button>Hospitality</button>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div id="hospDiv1">
-                                                                    <button>Warehouse 
-                                                                    </button>
-                                                                    <button>Hotel/Resort
-                                                                    </button>
+                                                                    <div class="com-insideeee">
+                                                                        <button>Warehouse 
+                                                                        </button>
+                                                                        <button>Hotel/Resort
+                                                                        </button>
+                                                                    </div>
                                                                 </div>
                                                             
                                                         </div>
@@ -1434,6 +1462,44 @@
             });
         });
     </script>
+    <script>
+        $('.in button').on('click', function(){
+            $('.in button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.insi button').removeClass('active_button');
+            $('.inside button').removeClass('active_button');
+        });
+
+        $('.ins button').on('click', function(){
+            $('.ins button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.insi button').on('click', function(){
+            $('.insi button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.in button').removeClass('active_button');
+            $('.inside button').removeClass('active_button');
+        });
+
+        $('.insid button').on('click', function(){
+            $('.insid button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.inside button').on('click', function(){
+            $('.inside button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.in button').removeClass('active_button');
+            $('.insi button').removeClass('active_button');
+        });
+
+        $('.insidee button').on('click', function(){
+            $('.insidee button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+    </script>
     <!-- Show Commercial Radio-->
     <script>
         function seDiv() {
@@ -1478,16 +1544,60 @@
         });
     </script>
     <script>
-        $('.apartments button').on('click', function(){
-            $('.apartments button').removeClass('active_button');
+        $('.com-in button').on('click', function(){
+            $('.com-in button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.com-insi button').removeClass('active_button');
+            $('.com-inside button').removeClass('active_button');
+            $('.com-insideee button').removeClass('active_button');
+        });
+
+        $('.com-ins button').on('click', function(){
+            $('.com-ins button').removeClass('active_button');
             $(this).addClass('active_button');
         });
 
-        $('.comm button').on('click', function(){
-            $('.comm button').removeClass('active_button');
+        $('.com-insi button').on('click', function(){
+            $('.com-insi button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.com-in button').removeClass('active_button');
+            $('.com-inside button').removeClass('active_button');
+            $('.com-insideee button').removeClass('active_button');
+        });
+
+        $('.com-insid button').on('click', function(){
+            $('.com-insid button').removeClass('active_button');
             $(this).addClass('active_button');
         });
 
+        $('.com-inside button').on('click', function(){
+            $('.com-inside button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.com-in button').removeClass('active_button');
+            $('.com-insi button').removeClass('active_button');
+            $('.com-insideee button').removeClass('active_button');
+        });
+
+        $('.com-insidee button').on('click', function(){
+            $('.com-insidee button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+        $('.com-insideee button').on('click', function(){
+            $('.com-insideee button').removeClass('active_button');
+            $(this).addClass('active_button');
+            $('.com-in button').removeClass('active_button');
+            $('.com-insi button').removeClass('active_button');
+            $('.com-inside button').removeClass('active_button');
+        });
+
+        $('.com-insideeee button').on('click', function(){
+            $('.com-insideeee button').removeClass('active_button');
+            $(this).addClass('active_button');
+        });
+
+    </script>
+    <script>
         $('.l button').on('click', function(){
             $('.l button').removeClass('active_button');
             $(this).addClass('active_button');
