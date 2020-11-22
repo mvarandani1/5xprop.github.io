@@ -741,10 +741,14 @@
 
                                                                 <div id="landDiv1">
                                                                     <div class="com-insidee">
-                                                                        <button>Agricultural/Farm Land
-                                                                        </button>
-                                                                        <button>Commercial Land
-                                                                        </button>
+                                                                        <div id="landDiv2">
+                                                                            <button>Agricultural/Farm Land
+                                                                            </button>
+                                                                        </div>
+                                                                        <div id="landDiv3">
+                                                                            <button>Commercial Land
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             
@@ -758,10 +762,14 @@
 
                                                                 <div id="hospDiv1">
                                                                     <div class="com-insideeee">
-                                                                        <button>Warehouse 
-                                                                        </button>
-                                                                        <button>Hotel/Resort
-                                                                        </button>
+                                                                        <div id="hospDiv2">
+                                                                            <button>Warehouse 
+                                                                            </button>
+                                                                        </div>
+                                                                        <div id="hospDiv3">
+                                                                            <button>Hotel/Resort
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                         </div>
@@ -1273,8 +1281,8 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Commer -->
-                                            <div class="commer">
+                                            <!-- Commer Office -->
+                                            <div class="commer-office">
                                                 <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
 
                                                 <div class="locate">
@@ -1327,17 +1335,23 @@
                                                 <div class="locate">
                                                     <div class="l">
                                                         <h6>Your Office Setup</h6>
-                                                        <button>Min. No. of Seats</button>
-                                                        <button>Max. No. of Seats</button>
-                                                        <button>No. of Cabins</button>
-                                                        <button>No. of Meeting Rooms</button>
+                                                        <div class="locate d-flex">
+                                                            <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Min. No. of Seats</label> </div>
+
+                                                            <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Max. No. of Seats</label> </div>
+                                                        </div>
+                                                        <div class="locate d-flex">
+                                                            <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">No. of Cabins</label> </div>
+
+                                                            <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">No. of Meeting Rooms</label> </div>
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="o">
                                                         <h6>Washroom</h6>
-                                                        <button>Available</button>
+                                                        <button class="show-counter">Available</button>
                                                         <button class="hide-counter">Not Available</button>
                                                         <div style="margin-bottom:1rem;display:flex;" class="counter">
                                                             <h6>No. of Washrooms</h6>
@@ -1359,7 +1373,7 @@
                                                 <div class="locate">
                                                     <div class="c">
                                                         <h6>Conference Room</h6>
-                                                        <button>Available</button>
+                                                        <button class="show-count">Available</button>
                                                         <button class="hide-count">Not Available</button>
                                                         <div style="margin-bottom:1rem;display:flex;" class="count">
                                                             <h6>No. of Conference Rooms</h6>
@@ -1450,6 +1464,487 @@
                                                     <span class="fa fa-arrow-right"></span>
                                                 </div>
                                             </div>
+
+                                            <!-- Commer Retail -->
+                                            <div class="commer-retail">
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="e">
+                                                        <h6>Room Details</h6>
+                                                        <button>None</button>
+                                                        <button>Shared</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="men" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="l">
+                                                        <h6>Balconies</h6>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button>4</button>
+                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="menu" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Availability Status</h6>
+                                                        <button class="ready">Ready to move</button>
+                                                        <button class="construct">Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c" id="age" style="display: none;">
+                                                        <h6>Age of Property</h6>
+                                                        <button>0-1 year</button>
+                                                        <button>1-3 years</button>
+                                                        <button>3-5 years</button>
+                                                        <button>5-10 years</button>
+                                                        <button>10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a" id="cons" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div>Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Commer Hotel & Resorts -->
+                                            <div class="commer-hotel">
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="e">
+                                                        <h6 style="margin-bottom:2rem;">Add Room Details</h6>
+
+                                                        <div class="form-group mt-1 mb-1"> <input type="number" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Enter No. of Rooms</label> </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="l">
+                                                        <h6>No. of Washroom</h6>
+                                                        <button>None</button>
+                                                        <button>Shared</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="men" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Availability Status</h6>
+                                                        <button class="readyto">Ready to move</button>
+                                                        <button class="underconstruct">Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c" id="ageof" style="display: none;">
+                                                        <h6>Age of Property</h6>
+                                                        <button>0-1 year</button>
+                                                        <button>1-3 years</button>
+                                                        <button>3-5 years</button>
+                                                        <button>5-10 years</button>
+                                                        <button>10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a" id="const" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div>Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="t">
+                                                        <h6>Quality Rating</h6>
+                                                        <button>No Rating</button>
+                                                        <button>1 Star</button>
+                                                        <button>2 Star</button>
+                                                        <button>3 Star</button>
+                                                        <button>5 Star</button>
+                                                        <button>6 Star</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Commer Warehouse -->
+                                            <div class="commer-warehouse">
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="e">
+                                                        <h6>Room Details</h6>
+                                                        <button>None</button>
+                                                        <button>Shared</button>
+                                                        <button>1</button>
+                                                        <button>2</button>
+                                                        <button>3</button>
+                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="men" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Availability Status</h6>
+                                                        <button class="readyy">Ready to move</button>
+                                                        <button class="constructt">Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c" id="agee" style="display: none;">
+                                                        <h6>Age of Property</h6>
+                                                        <button>0-1 year</button>
+                                                        <button>1-3 years</button>
+                                                        <button>3-5 years</button>
+                                                        <button>5-10 years</button>
+                                                        <button>10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a" id="conss" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div>Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Commer Farm Both -->
+                                            <div class="commer-land-farm">
+                                                <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
+
+                                                <div class="locate">
+                                                    <div class="o">
+                                                        <h6>Add Area Details</h6>
+                                                        <div class="d-flex pad">
+                                                            <input type="text" placeholder="Carpet Area">
+                                                            
+                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Build Up Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="d-flex pad" style="margin-top:1rem;">
+                                                            <input type="text" placeholder="Super Area">
+                                                            
+                                                            <input list="area" style="width: 80px;" />
+                                                            <datalist id="area">
+                                                              <option value="sq.ft.">
+                                                              <option value="sq.yards">
+                                                              <option value="sq.m.">
+                                                              <option value="acres">
+                                                              <option value="marla">
+                                                              <option value="cents">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="locat">
+                                                        <h6>Availability Status</h6>
+                                                        <button class="read">Ready to move</button>
+                                                        <button class="construc">Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c" id="ag" style="display: none;">
+                                                        <h6>Age of Property</h6>
+                                                        <button>0-1 year</button>
+                                                        <button>1-3 years</button>
+                                                        <button>3-5 years</button>
+                                                        <button>5-10 years</button>
+                                                        <button>10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a" id="con" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div>Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    <span class="fa fa-arrow-right"></span>
+                                                </div>
+                                            </div>
+
+
                                         </div> <!-- Card Finish-->
 
 
@@ -1887,36 +2382,135 @@
             });
         });
     </script>
-    <!--Commercial Form -->
+
+    <!--Commercial Forms -->
     <script>
          $(document).ready(function () {
             $('#officeDiv1').click(function(){
-              $('.commer').show();
+              $('.commer-office').show();
+                $('.commer-retail').hide();
+                $('.commer-hotel').hide();
+                $('.commer-warehouse').hide();
+                $('.commer-land-farm').hide();
+                $('.resident').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#retailDiv1').click(function(){
+              $('.commer-retail').show();
+              $('.commer-office').hide();
+                $('.commer-hotel').hide();
+                $('.commer-warehouse').hide();
+                $('.commer-land-farm').hide();
               $('.resident').hide();
             });
         });
 
         $(document).ready(function () {
-            $('#retailDiv').click(function(){
-              $('.commer').show();
+            $('#landDiv2').click(function(){
+              $('.commer-land-farm').show();
+              $('.commer-retail').hide();
+              $('.commer-office').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
               $('.resident').hide();
             });
         });
 
         $(document).ready(function () {
-            $('#landDiv').click(function(){
-              $('.commer').show();
+            $('#landDiv3').click(function(){
+              $('.commer-land-farm').show();
+              $('.commer-retail').hide();
+              $('.commer-office').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
               $('.resident').hide();
             });
         });
 
         $(document).ready(function () {
-            $('#hospDiv').click(function(){
-              $('.commer').show();
+            $('#hospDiv2').click(function(){
+              $('.commer-warehouse').show();
+              $('.commer-land-farm').hide();
+              $('.commer-retail').hide();
+              $('.commer-office').hide();
+              $('.commer-hotel').hide();
+              $('.resident').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#hospDiv3').click(function(){
+              $('.commer-hotel').show();
+              $('.commer-land-farm').hide();
+              $('.commer-retail').hide();
+              $('.commer-office').hide();
+              $('.commer-warehouse').hide();
               $('.resident').hide();
             });
         });
     </script>
+
+    <!--Ready & Under Construction -->
+    <script>
+        $(document).ready(function () {
+            $('.ready').click(function(){
+              $('#age').show();
+              $('#cons').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.construct').click(function(){
+              $('#cons').show();
+              $('#age').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.read').click(function(){
+              $('#ag').show();
+              $('#con').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.construc').click(function(){
+              $('#con').show();
+              $('#ag').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.readyy').click(function(){
+              $('#agee').show();
+              $('#conss').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.constructt').click(function(){
+              $('#conss').show();
+              $('#agee').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.readyto').click(function(){
+              $('#ageof').show();
+              $('#const').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.underconstruct').click(function(){
+              $('#const').show();
+              $('#ageof').hide();
+            });
+        });
+    </script>
+
     <!-- Hide Counter on not available-->
     <script>
         $(document).ready(function () {
@@ -1927,6 +2521,17 @@
         $(document).ready(function () {
             $('.hide-counter').click(function(){
               $('.counter').hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.show-count').click(function(){
+              $('.count').show();
+            });
+        });
+        $(document).ready(function () {
+            $('.show-counter').click(function(){
+              $('.counter').show();
             });
         });
     </script>
