@@ -14,31 +14,73 @@
     <!-- Document Title -->
     <title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
     <style>
-        button{
-            background: #fff;
-            border-radius: 24px;
-            -webkit-border-radius: 24px;
-            -moz-border-radius: 24px;
-            outline: none;
-            margin: 0;
-            cursor: pointer;
-            border: 1px solid #f52e5d;
-            padding: 4px 12px 2px;
-            font-size: 14px;
-            line-height: 24px;
-            margin-right: 0.3rem;
-            font-weight: 400;
-            color: #42526e;
-            display: inline-block;
-            text-align: center;
-            vertical-align: middle;
-            margin-bottom:1rem;
-            max-height: 30px;
-            max-width: 185px;
+        .customm-btn{
+          max-height: 30px;
+          max-width: 210px;
+          color: #fff;
+          border-radius: 5px;
+          padding: 4px 12px 2px;
+          font-weight: 500;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+          display: inline-block;
+           box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1);
+          outline: none;
+          margin: 0;
+          margin-right: 0.3rem;
+          text-align: center;
+          vertical-align: middle;
+          margin-bottom:1rem;
         }
-        button:hover, button:focus, button:active{
-            background: #f52e5d;
-            color: #fff;
+
+        textarea{
+          color: #000;
+          border-radius: 5px;
+          font-weight: 500;
+          background: transparent;
+          transition: all 0.3s ease;
+           box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1);
+          outline: none;
+          margin-bottom:1rem;
+        }
+
+        /* 16 */
+        .btn-16 {
+          border: none;
+          color: #000;
+        }
+        .btn-16:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 100%;
+          top: 0;
+          left: 0;
+          direction: rtl;
+          z-index: -1;
+          box-shadow:
+           -7px -7px 20px 0px rgba(245,46,93,.2),
+           -4px -4px 5px 0px rgba(245,46,93,.2),
+           7px 7px 20px 0px rgba(245,46,93,.2),
+           4px 4px 5px 0px rgba(245,46,93,.2);
+          transition: all 0.3s ease;
+        }
+        .btn-16:hover {
+          color: #000;
+        }
+        .btn-16:hover:after {
+          left: auto;
+          right: 0;
+          width: 100%;
+        }
+        .btn-16:active, .btn-16:hover, .btn-16:focus {
+          top: 2px;
         }
 
         #apartDiv button, #houseDiv button, #othersDiv button,
@@ -51,14 +93,16 @@
         }
 
         .active_button{
-            background: #f52e5d;
-            color: #fff;
+            top: 2px;
+            box-shadow:
+           -7px -7px 20px 0px rgba(245,46,93,.2),
+           -4px -4px 5px 0px rgba(245,46,93,.2),
+           7px 7px 20px 0px rgba(245,46,93,.2),
+           4px 4px 5px 0px rgba(245,46,93,.2);
         }
 
         .activate{
-            border: 1px solid #f52e5d !important;
-            color: #000 !important;
-            background: transparent !important;
+            
         }
 
         .card0 {
@@ -114,7 +158,21 @@
         .form-group {
             position: relative;
             margin-bottom: 1.5rem;
-            width: 77%
+            width: 80%;
+            color: #000;
+              border-radius: 5px;
+              font-weight: 500;
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              position: relative;
+              display: inline-block;
+               box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+               7px 7px 2px 0px rgba(0,0,0,.1),
+               4px 4px 5px 0px rgba(0,0,0,.1);
+              outline: none;
+              border: none;
+              margin: 0;
         }
 
         .form-control-placeholder {
@@ -135,7 +193,7 @@
         }
 
         .next-button {
-            width: 18%;
+            width: 30%;
             height: 50px;
             background-color: #f52e5d;
             color: #fff;
@@ -274,19 +332,6 @@
             display: none;
         }
 
-        .rddd{
-          display:inline-block;
-          padding:3px;
-          border: 0.5px solid #f52e5d;
-          border-radius:3px;
-          color: #fff;
-          background-color: #f52e5d;
-          width:4em;
-          height: 30px !important; 
-          margin-right:1em;
-          text-align:center;
-        }
-
         .form-wizard {
           color: #888888;
           width: 100%;
@@ -355,11 +400,26 @@
         }
 
         .pad input{
-            height: 30px !important;
-            border: 0.5px solid #f52e5d;
-            border-radius: 3px;
-            border-right-height: 6px;
-            outline: none;
+            height: 40px !important;
+            color: #000;
+              border-radius: 5px;
+              padding: 4px 12px 2px;
+              font-weight: 500;
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              position: relative;
+              display: inline-block;
+               box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+               7px 7px 20px 0px rgba(0,0,0,.1),
+               4px 4px 5px 0px rgba(0,0,0,.1);
+              outline: none;
+              border: none;
+              margin: 0;
+              margin-right: 0.3rem;
+              text-align: center;
+              vertical-align: middle;
+              margin-bottom:1rem;
         }
 
         .radio[type="checkbox"] {
@@ -379,7 +439,22 @@
             color: #000;
             font-weight: 600;
             text-align: center;
-            border: 1px solid #f52e5d;
+            color: #000;
+              border-radius: 5px;
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              position: relative;
+              display: inline-block;
+               box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+               7px 7px 20px 0px rgba(0,0,0,.1),
+               4px 4px 5px 0px rgba(0,0,0,.1);
+              outline: none;
+              border: none;
+              margin: 0;
+              text-align: center;
+              vertical-align: middle;
+              margin-bottom:1rem;
         }
 
         /* Drag image */
@@ -592,7 +667,7 @@
                                                 <div class="form-wizard">
                                                     <form action="" method="post" role="form">
                                                         <fieldset class="wizard-fieldset show">
-                                                            <div class="form-group" style="display: flex;">
+                                                            <div class="" style="display: flex;">
                                                                 <div class="wizard-form-radio d-flex" style="margin-right:1rem;">
                                                                     <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;"
                                                                     value="residential">
@@ -613,18 +688,18 @@
                                                             
                                                             <div id="apartDiv" style="display:flex;">
                                                                 <div class="in">
-                                                                    <button>Apartments/Flat/Builder 
+                                                                    <button class="customm-btn btn-16">Apartments/Flat/Builder 
                                                                     </button>
                                                                 </div>
                                                             </div>
 
                                                             <div id="threeDiv">
                                                                 <div class="ins">
-                                                                    <button>Apartments 
+                                                                    <button class="customm-btn btn-16">Apartments 
                                                                     </button>
-                                                                    <button>Flat
+                                                                    <button class="customm-btn btn-16">Flat
                                                                     </button>
-                                                                    <button>Builder Floor
+                                                                    <button class="customm-btn btn-16">Builder Floor
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -634,15 +709,15 @@
                                                             <div style="display:flex;">
                                                                 <div id="houseDiv" style="display:flex;">
                                                                     <div class="insi">
-                                                                        <button>House/Villa</button>
+                                                                        <button class="customm-btn btn-16">House/Villa</button>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="twoDiv">
                                                                     <div class="insid">
-                                                                        <button>House
+                                                                        <button class="customm-btn btn-16">House
                                                                         </button>
-                                                                        <button>Villa
+                                                                        <button class="customm-btn btn-16">Villa
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -652,13 +727,13 @@
                                                             <div style="display:flex;">
                                                                 <div id="othersDiv"style="display:flex;">
                                                                     <div class="inside">
-                                                                        <button>Others</button>
+                                                                        <button class="customm-btn btn-16">Others</button>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="oneDiv">
                                                                     <div class="insidee">
-                                                                        <button>Others 
+                                                                        <button class="customm-btn btn-16">Others 
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -667,12 +742,12 @@
                                                             <h5 style="margin-top:2rem;">For</h5>
 
                                                             <div class="d-flex">
-                                                                <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
+                                                                <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
 
-                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options" value="Rent" style="margin-top:1rem;">
+                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options customm-btn btn-16" value="Rent" style="margin-top:1rem;">
 
 
-                                                                <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
+                                                                <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;">
                                                             </div>
 
                                                             <div class="rentout" style="display:none;margin-top:1rem;">  
@@ -681,9 +756,9 @@
                                                                         <h6>Rent Out For</h6>
                                                                         <div style="display:flex;"
                                                                         class="ren">
-                                                                            <button>Family</button>
-                                                                            <button>Single Men</button>
-                                                                            <button>Single Women</button>
+                                                                            <button class="customm-btn btn-16">Family</button>
+                                                                            <button class="customm-btn btn-16">Single Men</button>
+                                                                            <button class="customm-btn btn-16">Single Women</button>
                                                                         </div>
                                                                     </div>
 
@@ -691,8 +766,8 @@
                                                                         <h6>Preferred Agreement Type</h6>
                                                                         <div style="display:flex;"
                                                                         class="rentt">
-                                                                            <button>Any</button>
-                                                                            <button>Company Lease</button>
+                                                                            <button class="customm-btn btn-16">Any</button>
+                                                                            <button class="customm-btn btn-16">Company Lease</button>
                                                                         </div>
                                                                     </div>
 
@@ -708,15 +783,14 @@
                                                             <div class="d-flex">
                                                                 <div id="officeDiv" style="display:flex;">
                                                                     <div class="com-in">
-                                                                        <button name="projectName">Office
+                                                                        <button name="projectName" class="customm-btn btn-16">Office
                                                                         </button>
-                                                                        <span class="error">Please select the field inside</span>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="officeDiv1">
                                                                     <div class="com-ins">
-                                                                        <button>Office 
+                                                                        <button class="customm-btn btn-16">Office 
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -725,14 +799,13 @@
                                                             <div class="d-flex">
                                                                 <div id="retailDiv" style="display:flex;">
                                                                     <div class="com-insi">
-                                                                        <button>Retail</button>
-                                                                        <span class="error">Please select the field inside</span>
+                                                                        <button class="customm-btn btn-16">Retail</button>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="retailDiv1">
                                                                     <div class="com-insid">
-                                                                        <button>Shop/Showroom
+                                                                        <button class="customm-btn btn-16">Shop/Showroom
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -741,19 +814,18 @@
                                                             
                                                                 <div id="landDiv" style="display:flex;">
                                                                     <div class="com-inside">
-                                                                        <button>Land</button>
-                                                                        <span class="error">Please select the field inside</span>
+                                                                        <button class="customm-btn btn-16">Land</button>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="landDiv1">
                                                                     <div class="com-insidee">
                                                                         <div id="landDiv2">
-                                                                            <button>Agricultural/Farm Land
+                                                                            <button class="customm-btn btn-16">Agricultural/Farm Land
                                                                             </button>
                                                                         </div>
                                                                         <div id="landDiv3">
-                                                                            <button>Commercial Land
+                                                                            <button class="customm-btn btn-16">Commercial Land
                                                                             </button>
                                                                         </div>
                                                                     </div>
@@ -763,19 +835,18 @@
                                                             
                                                                 <div id="hospDiv" style="display:flex;">
                                                                     <div class="com-insideee">
-                                                                        <button>Hospitality</button>
-                                                                        <span class="error">Please select the field inside</span>
+                                                                        <button class="customm-btn btn-16">Hospitality</button>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="hospDiv1">
                                                                     <div class="com-insideeee">
                                                                         <div id="hospDiv2">
-                                                                            <button>Warehouse 
+                                                                            <button class="customm-btn btn-16">Warehouse 
                                                                             </button>
                                                                         </div>
                                                                         <div id="hospDiv3">
-                                                                            <button>Hotel/Resort
+                                                                            <button class="customm-btn btn-16">Hotel/Resort
                                                                             </button>
                                                                         </div>
                                                                     </div>
@@ -784,12 +855,12 @@
                                                         <h5 style="margin-top:2rem;">For</h5>
 
                                                         <div class="d-flex">
-                                                            <input type="button" name="buttonGroup" id="one" class="rddd" value="Sale" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
 
-                                                            <input type="button" name="buttonGroup" id="two" class="rddd" value="Rent" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="two" class="rddd customm-btn btn-16" value="Rent" style="margin-top:1rem;">
 
 
-                                                            <input type="button" name="buttonGroup" id="three" class="rddd" value="PG" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;">
                                                         </div>
 
                                                     </div>
@@ -797,7 +868,8 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-1 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -841,7 +913,10 @@
                                                 </div>
 
                                                 
-                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -854,36 +929,36 @@
                                                 <div class="locate">
                                                     <div class="l">
                                                         <h6>Your Apartment is a</h6>
-                                                        <button>2 BHK</button>
-                                                        <button>3 BHK</button>
-                                                        <button>4 BHK</button>
-                                                        <button>Other</button>
+                                                        <button class="customm-btn btn-16">2 BHK</button>
+                                                        <button class="customm-btn btn-16">3 BHK</button>
+                                                        <button class="customm-btn btn-16">4 BHK</button>
+                                                        <button class="customm-btn btn-16">Other</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="o">
                                                         <h6>Layout of Apartment</h6>
-                                                        <button>Add</button>
+                                                        <button class="customm-btn btn-16">Add</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="c">
                                                         <h6>No. of Apartment</h6>
-                                                        <button>0</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button>4</button>
-                                                        <button>5</button>
-                                                        <button>6</button>
-                                                        <button class="ad"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">0</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="customm-btn btn-16">4</button>
+                                                        <button class="customm-btn btn-16">5</button>
+                                                        <button class="customm-btn btn-16">6</button>
+                                                        <button class="ad customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="me" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="do">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="do customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -893,17 +968,17 @@
                                                 <div class="locate">
                                                     <div class="a">
                                                         <h6>No. of Bathrooms</h6>
-                                                        <button>0</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button>4</button>
-                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">0</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="customm-btn btn-16">4</button>
+                                                        <button class="add customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="men" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -913,17 +988,17 @@
                                                 <div class="locate">
                                                     <div class="t">
                                                         <h6>No. of Balconies</h6>
-                                                        <button>0</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button>4</button>
-                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">0</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="customm-btn btn-16">4</button>
+                                                        <button class="addd customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="menu" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -936,7 +1011,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -950,7 +1025,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -964,7 +1039,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -981,22 +1056,22 @@
                                                 <div class="locate d-flex">
                                                     <div class="l">
                                                         <div class="multiple-buttons">
-                                                            <button><i class="fa fa-plus"></i> Pooja</button>
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Pooja</button>
                                                         </div>
                                                     </div>
                                                     <div class="o">
                                                         <div class="multiple-buttons">
-                                                            <button><i class="fa fa-plus"></i> Servant</button>
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Servant</button>
                                                         </div>
                                                     </div>
                                                     <div class="c">
                                                         <div class="multiple-buttons">
-                                                            <button><i class="fa fa-plus"></i> Store</button>
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Store</button>
                                                         </div>
                                                     </div>
                                                     <div class="a">
                                                         <div class="multiple-buttons">
-                                                            <button><i class="fa fa-plus"></i> Study</button>
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Study</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1037,19 +1112,19 @@
                                                 <div class="locate">
                                                     <div class="lo">
                                                         <h6>Status</h6>
-                                                        <button>Ready to move</button>
-                                                        <button>Under Construction</button>
+                                                        <button class="customm-btn btn-16">Ready to move</button>
+                                                        <button class="customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="loc">
                                                         <h6>Age</h6>
-                                                        <button>0-1 year</button>
-                                                        <button>1-3 years</button>
-                                                        <button>3-5 years</button>
-                                                        <button>5-10 years</button>
-                                                        <button>10+ years</button>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
                                                     </div>
                                                 </div>
 
@@ -1064,19 +1139,19 @@
                                                 <div class="locate">
                                                     <div class="loca">
                                                         <h6>Facing</h6>
-                                                        <button>East</button>
-                                                        <button>West</button>
-                                                        <button>North</button>
-                                                        <button>South</button>
+                                                        <button class="customm-btn btn-16">East</button>
+                                                        <button class="customm-btn btn-16">West</button>
+                                                        <button class="customm-btn btn-16">North</button>
+                                                        <button class="customm-btn btn-16">South</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Furnishing</h6>
-                                                        <button>Furnished</button>
-                                                        <button>Semi-furnished</button>
-                                                        <button>Un-Furnished</button>
+                                                        <button class="customm-btn btn-16">Furnished</button>
+                                                        <button class="customm-btn btn-16">Semi-furnished</button>
+                                                        <button class="customm-btn btn-16">Un-Furnished</button>
                                                     </div>
                                                 </div>
 
@@ -1285,7 +1360,8 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1299,7 +1375,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1313,7 +1389,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1327,7 +1403,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1359,8 +1435,8 @@
                                                 <div class="locate">
                                                     <div class="o">
                                                         <h6>Washroom</h6>
-                                                        <button class="show-counter">Available</button>
-                                                        <button class="hide-counter">Not Available</button>
+                                                        <button class="show-counter customm-btn btn-16">Available</button>
+                                                        <button class="hide-counter customm-btn btn-16">Not Available</button>
                                                         <div style="margin-bottom:1rem;display:flex;" class="counter">
                                                             <h6>No. of Washrooms</h6>
                                                             <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
@@ -1381,8 +1457,8 @@
                                                 <div class="locate">
                                                     <div class="c">
                                                         <h6>Conference Room</h6>
-                                                        <button class="show-count">Available</button>
-                                                        <button class="hide-count">Not Available</button>
+                                                        <button class="show-count customm-btn btn-16">Available</button>
+                                                        <button class="hide-count customm-btn btn-16">Not Available</button>
                                                         <div style="margin-bottom:1rem;display:flex;" class="count">
                                                             <h6>No. of Conference Rooms</h6>
                                                             <div class="increment-group js-increment-group d-flex" style="margin-left:2rem">
@@ -1403,18 +1479,18 @@
                                                 <div class="locate">
                                                     <div class="a">
                                                         <h6>Reception</h6>
-                                                        <button>Self</button>
-                                                        <button>Shared</button>
-                                                        <button>Not Available</button>
+                                                        <button class="customm-btn btn-16">Self</button>
+                                                        <button class="customm-btn btn-16">Shared</button>
+                                                        <button class="customm-btn btn-16">Not Available</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="t">
                                                         <h6>Property Type</h6>
-                                                        <button>Self</button>
-                                                        <button>Shared</button>
-                                                        <button>Not Available</button>
+                                                        <button class="customm-btn btn-16">Self</button>
+                                                        <button class="customm-btn btn-16">Shared</button>
+                                                        <button class="customm-btn btn-16">Not Available</button>
                                                     </div>
                                                 </div>
 
@@ -1428,16 +1504,16 @@
                                                 <div class="locate">
                                                     <div class="lo">
                                                         <h6>No. of Staircase</h6>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button>4</button>
-                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="customm-btn btn-16">4</button>
+                                                        <button class="addd customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="menu" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -1447,29 +1523,30 @@
                                                 <div class="locate">
                                                     <div class="loc">
                                                         <h6>Lift</h6>
-                                                        <button>Available</button>
-                                                        <button>Not Available</button>
+                                                        <button class="customm-btn btn-16">Available</button>
+                                                        <button class="customm-btn btn-16">Not Available</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="loca">
                                                         <h6>Parking</h6>
-                                                        <button>Available</button>
-                                                        <button>Not Available</button>
+                                                        <button class="customm-btn btn-16">Available</button>
+                                                        <button class="customm-btn btn-16">Not Available</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Status</h6>
-                                                        <button>Ready to move</button>
-                                                        <button>Under Construction</button>
+                                                        <button class="customm-btn btn-16">Ready to move</button>
+                                                        <button class="customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1480,17 +1557,17 @@
                                                 <div class="locate">
                                                     <div class="e">
                                                         <h6>Room Details</h6>
-                                                        <button>None</button>
-                                                        <button>Shared</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">None</button>
+                                                        <button class="customm-btn btn-16">Shared</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="add customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="men" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -1500,16 +1577,16 @@
                                                 <div class="locate">
                                                     <div class="l">
                                                         <h6>Balconies</h6>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button>4</button>
-                                                        <button class="addd"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="customm-btn btn-16">4</button>
+                                                        <button class="addd customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="menu" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="done customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -1522,7 +1599,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1536,7 +1613,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1550,7 +1627,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1566,19 +1643,19 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Availability Status</h6>
-                                                        <button class="ready">Ready to move</button>
-                                                        <button class="construct">Under Construction</button>
+                                                        <button class="ready customm-btn btn-16">Ready to move</button>
+                                                        <button class="construct customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="c" id="age" style="display: none;">
                                                         <h6>Age of Property</h6>
-                                                        <button>0-1 year</button>
-                                                        <button>1-3 years</button>
-                                                        <button>3-5 years</button>
-                                                        <button>5-10 years</button>
-                                                        <button>10+ years</button>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
                                                     </div>
                                                 </div>
 
@@ -1588,7 +1665,7 @@
                                                        <div class="d-flex pad">
                                                             <div>Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <input list="time" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1603,7 +1680,8 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1622,17 +1700,17 @@
                                                 <div class="locate">
                                                     <div class="l">
                                                         <h6>No. of Washroom</h6>
-                                                        <button>None</button>
-                                                        <button>Shared</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">None</button>
+                                                        <button class="customm-btn btn-16">Shared</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="add customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="men" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -1645,7 +1723,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1659,7 +1737,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1673,7 +1751,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1689,19 +1767,19 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Availability Status</h6>
-                                                        <button class="readyto">Ready to move</button>
-                                                        <button class="underconstruct">Under Construction</button>
+                                                        <button class="readyto customm-btn btn-16">Ready to move</button>
+                                                        <button class="underconstruct customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="c" id="ageof" style="display: none;">
                                                         <h6>Age of Property</h6>
-                                                        <button>0-1 year</button>
-                                                        <button>1-3 years</button>
-                                                        <button>3-5 years</button>
-                                                        <button>5-10 years</button>
-                                                        <button>10+ years</button>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
                                                     </div>
                                                 </div>
 
@@ -1711,7 +1789,7 @@
                                                        <div class="d-flex pad">
                                                             <div>Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <input list="time" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1728,17 +1806,18 @@
                                                 <div class="locate">
                                                     <div class="t">
                                                         <h6>Quality Rating</h6>
-                                                        <button>No Rating</button>
-                                                        <button>1 Star</button>
-                                                        <button>2 Star</button>
-                                                        <button>3 Star</button>
-                                                        <button>5 Star</button>
-                                                        <button>6 Star</button>
+                                                        <button class="customm-btn btn-16">No Rating</button>
+                                                        <button class="customm-btn btn-16">1 Star</button>
+                                                        <button class="customm-btn btn-16">2 Star</button>
+                                                        <button class="customm-btn btn-16">3 Star</button>
+                                                        <button class="customm-btn btn-16">5 Star</button>
+                                                        <button class="customm-btn btn-16">6 Star</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1749,17 +1828,17 @@
                                                 <div class="locate">
                                                     <div class="e">
                                                         <h6>Room Details</h6>
-                                                        <button>None</button>
-                                                        <button>Shared</button>
-                                                        <button>1</button>
-                                                        <button>2</button>
-                                                        <button>3</button>
-                                                        <button class="add"><i class="fa fa-plus"></i> Add</button>
+                                                        <button class="customm-btn btn-16">None</button>
+                                                        <button class="customm-btn btn-16">Shared</button>
+                                                        <button class="customm-btn btn-16">1</button>
+                                                        <button class="customm-btn btn-16">2</button>
+                                                        <button class="customm-btn btn-16">3</button>
+                                                        <button class="add customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="men" style="display:none;">
 
                                                             <div class="d-flex">
                                                                 <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;">&nbsp;
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don">Done</button>
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="don customm-btn btn-16">Done</button>
                                                             </div>
 
                                                         </div>
@@ -1772,7 +1851,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1786,7 +1865,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1800,7 +1879,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width:100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1816,19 +1895,19 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Availability Status</h6>
-                                                        <button class="readyy">Ready to move</button>
-                                                        <button class="constructt">Under Construction</button>
+                                                        <button class="readyy customm-btn btn-16">Ready to move</button>
+                                                        <button class="constructt customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="c" id="agee" style="display: none;">
                                                         <h6>Age of Property</h6>
-                                                        <button>0-1 year</button>
-                                                        <button>1-3 years</button>
-                                                        <button>3-5 years</button>
-                                                        <button>5-10 years</button>
-                                                        <button>10+ years</button>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
                                                     </div>
                                                 </div>
 
@@ -1838,7 +1917,7 @@
                                                        <div class="d-flex pad">
                                                             <div>Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <input list="time" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1853,7 +1932,8 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1867,7 +1947,7 @@
                                                         <div class="d-flex pad">
                                                             <input type="text" placeholder="Carpet Area">
                                                             
-                                                            <input list="area" name="myBrowser" style="width: 80px;" />
+                                                            <input list="area" name="myBrowser" style="width: 100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1881,7 +1961,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Build Up Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width:100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1895,7 +1975,7 @@
                                                         <div class="d-flex pad" style="margin-top:1rem;">
                                                             <input type="text" placeholder="Super Area">
                                                             
-                                                            <input list="area" style="width: 80px;" />
+                                                            <input list="area" style="width:100px;" />
                                                             <datalist id="area">
                                                               <option value="sq.ft.">
                                                               <option value="sq.yards">
@@ -1911,19 +1991,19 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Availability Status</h6>
-                                                        <button class="read">Ready to move</button>
-                                                        <button class="construc">Under Construction</button>
+                                                        <button class="read customm-btn btn-16">Ready to move</button>
+                                                        <button class="construc customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
                                                     <div class="c" id="ag" style="display: none;">
                                                         <h6>Age of Property</h6>
-                                                        <button>0-1 year</button>
-                                                        <button>1-3 years</button>
-                                                        <button>3-5 years</button>
-                                                        <button>5-10 years</button>
-                                                        <button>10+ years</button>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
                                                     </div>
                                                 </div>
 
@@ -1933,7 +2013,7 @@
                                                        <div class="d-flex pad">
                                                             <div>Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 80px;" />
+                                                            <input list="time" name="myBrowser" style="width:100px;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1948,7 +2028,8 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    <span class="fa fa-arrow-right"></span>
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
                                                 </div>
                                             </div>
 
@@ -1964,16 +2045,15 @@
                                                
                                                     <div class="locatee">
                                                         <h6>Ownership</h6>
-                                                        <button>Freehold</button>
-                                                        <button>Leasehold</button>
-                                                        <button>Co-operative Society</button>
-                                                        <button>Power of Attorney</button>
+                                                        <button class="customm-btn btn-16">Freehold</button>
+                                                        <button class="customm-btn btn-16">Leasehold</button>
+                                                        <button class="customm-btn btn-16">Co-operative Society</button>
+                                                        <button class="customm-btn btn-16">Power of Attorney</button>
                                                     </div>
 
                                                     <div class="mt-4">
                                                         <div class="d-flex pwd1">
                                                             <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Expected Price</label>
-                                                            <p>Price in words</p>
                                                             </div>
                                                             &nbsp;&nbsp;
                                                             <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Per Sq. ft. Price</label> </div>
@@ -1998,7 +2078,10 @@
                                                         
                                                     </div>
                                                 
-                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -2024,7 +2107,7 @@
                                                                 <div class="box-header with-border">
                                                                   <div style="text-align:left;"><b>Preview</b></div>
                                                                   <div class="box-tools pull-right">
-                                                                    <button type="button" class="btn btn-danger btn-xs remove-preview">
+                                                                    <button type="button" class="btn  btn-xs remove-preview customm-btn btn-16">
                                                                       <i class="fa fa-refresh"></i> Reset Again
                                                                     </button>
                                                                   </div>
@@ -2045,7 +2128,7 @@
 
                                                       <div class="row">
                                                         <div class="col-md-12">
-                                                          <button type="submit" style="background:#f52e5d;color: #fff;">Upload</button>
+                                                          <button type="submit" style="background:#f52e5d;color: #fff;" class="customm-btn btn-16">Upload</button>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -2053,7 +2136,10 @@
                                                 </section>
 
 
-                                                <div class="next-button text-center mt-3 ml-2"> <span class="fa fa-arrow-right"></span> </div>
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    Continue&nbsp;&nbsp;&nbsp;
+                                                    <span class="fa fa-chevron-right"></span>
+                                                </div>
                                             </div>
 
                                         </div>
