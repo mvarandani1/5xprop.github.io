@@ -428,6 +428,10 @@
             opacity: 1 !important;
         }
 
+        .form-control{
+            font-size: 14px;
+        }
+
         /* Count */
         .increment-group input{
             height:30px !important;
@@ -561,11 +565,13 @@
             .fa-long-arrow-left{
                 top: -3rem !important;
             }
+
             .accesories{
                 display: flex;
                 flex-direction: column !important;
                 margin-bottom: 20px;
             }
+
             .card-col-box{
                 width: 90vw !important;
                 margin-left: -20px !important;
@@ -582,10 +588,80 @@
             }
         }
 
-        .error{
-            display:none;
+        .needs input[type="checkbox"]{
+            width:20px !important;
+            height: 20px !important;
+            visibility: visible !important;
+            opacity: 1 !important;
         }
 
+        .needs div{
+            display: flex;
+        }
+
+        .needs .label1{
+            margin-right: 8.7rem;
+        }
+
+        .needs .label2{
+            margin-right: 8.5rem;
+        }
+
+        .needs .label3{
+            margin-right: 4rem;
+        }
+
+        .needs .label4{
+            margin-right: 8.2rem;
+        }
+
+        .needs .label5{
+            margin-right: 5.9rem;
+        }
+
+        @media (max-width: 460px){
+            .needs .label1{
+                margin-right: 6.5rem;
+            }
+
+            .needs .label2{
+                margin-right: 6.1rem;
+            }
+
+            .needs .label3{
+                margin-right: 1.5rem;
+            }
+
+            .needs .label4{
+                margin-right: 5.7rem;
+            }
+
+            .needs .label5{
+                margin-right: 3.4rem;
+            }
+        }
+
+        @media (max-width: 410px){
+            .needs .label1{
+                margin-right: 5.5rem;
+            }
+
+            .needs .label2{
+                margin-right: 5rem;
+            }
+
+            .needs .label3{
+                margin-right: 0.5rem;
+            }
+
+            .needs .label4{
+                margin-right: 4.6rem;
+            }
+
+            .needs .label5{
+                margin-right: 2.3rem;
+            }
+        }
 
     </style>
 </head>
@@ -756,9 +832,11 @@
                                                                         <h6>Rent Out For</h6>
                                                                         <div style="display:flex;"
                                                                         class="ren">
-                                                                            <button class="customm-btn btn-16">Family</button>
-                                                                            <button class="customm-btn btn-16">Single Men</button>
-                                                                            <button class="customm-btn btn-16">Single Women</button>
+                                                                            <button style="width:180px;margin-right:0.5rem;" class="customm-btn btn-16">Family</button>
+
+                                                                            <button style="width:210px;margin-right:0.5rem;" class="customm-btn btn-16">Single Men</button>
+
+                                                                            <button style="width:280px;margin-right:0.5rem;" class="customm-btn btn-16">Single Women</button>
                                                                         </div>
                                                                     </div>
 
@@ -766,8 +844,8 @@
                                                                         <h6>Preferred Agreement Type</h6>
                                                                         <div style="display:flex;"
                                                                         class="rentt">
-                                                                            <button class="customm-btn btn-16">Any</button>
-                                                                            <button class="customm-btn btn-16">Company Lease</button>
+                                                                            <button style="margin-right:0.5rem;" class="customm-btn btn-16">Any</button>
+                                                                            <button style="margin-right:0.5rem;" class="customm-btn btn-16">Company Lease</button>
                                                                         </div>
                                                                     </div>
 
@@ -933,11 +1011,11 @@
                                                                     <option value="kilometers">
                                                                 </datalist>
                                                             </div>
+                                                        </div>
                                                             <div style="margin-left:0.2rem;font-size:20px;text-align:center;
                                                                 margin-top: 0.3rem;">
                                                                 <i class="fa fa-times"></i>
                                                             </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             
@@ -1326,65 +1404,66 @@
                                                 </div>
 
 
-                                                <div class="locate mt-3">
+                                                <div class="locate mt-3 needs">
 
-                                                    <div class="d-flex accesories">
-                                                        <div class="d-flex">
-                                                            <h6>Stove</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div class="d-flex">
-                                                            <h6>Washing Machine</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
+                                                    <div>
+
+                                                        <label class="checkbox-inline label1">
+                                                          <input type="checkbox" value="">Stove
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                          <input type="checkbox" value="">Washing Machine
+                                                        </label>
+
                                                     </div>
 
-                                                    <div class="d-flex accesories">
-                                                        <div class="d-flex">
-                                                            <h6>Fridge</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div class="d-flex">
-                                                            <h6>Microwave</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
+                                                    <div>
+
+                                                        <label class="checkbox-inline label2">
+                                                          <input type="checkbox" value="">Fridge
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                          <input type="checkbox" value="">Microwave
+                                                        </label>
+
                                                     </div>
 
-                                                    <div class="d-flex accesories">
-                                                        <div class="d-flex">
-                                                            <h6>Modular Kitchen</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div class="d-flex">
-                                                            <h6>Chimney</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
+                                                    <div>
+
+                                                        <label class="checkbox-inline label3">
+                                                          <input type="checkbox" value="">Modular Kitchen
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                          <input type="checkbox" value="">Chimney
+                                                        </label>
+
                                                     </div>
-                                                    <div class="d-flex accesories"> 
-                                                        <div class="d-flex">
-                                                            <h6>Curtains</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div class="d-flex">
-                                                            <h6>Purifier</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
+
+                                                    <div>
+
+                                                        <label class="checkbox-inline label4">
+                                                          <input type="checkbox" value="">Curtain
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                          <input type="checkbox" value="">Purifier
+                                                        </label>
+
                                                     </div>
                                                     
-                                                    <div class="d-flex accesories">
-                                                        <div class="d-flex">
-                                                            <h6>Dining Table</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <div class="d-flex">
-                                                            <h6>Sofa</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
-                                                        </div>
+                                                    <div>
+
+                                                        <label class="checkbox-inline label5">
+                                                          <input type="checkbox" value="">Dining Table
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                          <input type="checkbox" value="">Sofa
+                                                        </label>
+
                                                     </div>
                                                     
                                                 </div>
@@ -2496,42 +2575,66 @@
     <script>
          $(document).ready(function () {
             $('#apartDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
 
         $(document).ready(function () {
             $('#houseDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
 
         $(document).ready(function () {
             $('#othersDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
 
         $(document).ready(function () {
             $('#oneDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
 
         $(document).ready(function () {
             $('#twoDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
 
         $(document).ready(function () {
             $('#threeDiv').click(function(){
-              $('.commer').hide();
+              $('.commer-office').hide();
+              $('.commer-retail').hide();
+              $('.commer-hotel').hide();
+              $('.commer-warehouse').hide();
+              $('.commer-land-farm').hide();
               $('.resident').show();
             });
         });
