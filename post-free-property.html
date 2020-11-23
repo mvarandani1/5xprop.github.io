@@ -506,6 +506,10 @@
             }
         }
 
+        .error{
+            display:none;
+        }
+
 
     </style>
 </head>
@@ -704,8 +708,9 @@
                                                             <div class="d-flex">
                                                                 <div id="officeDiv" style="display:flex;">
                                                                     <div class="com-in">
-                                                                        <button>Office
+                                                                        <button name="projectName">Office
                                                                         </button>
+                                                                        <span class="error">Please select the field inside</span>
                                                                     </div>
                                                                 </div>
 
@@ -721,6 +726,7 @@
                                                                 <div id="retailDiv" style="display:flex;">
                                                                     <div class="com-insi">
                                                                         <button>Retail</button>
+                                                                        <span class="error">Please select the field inside</span>
                                                                     </div>
                                                                 </div>
 
@@ -736,6 +742,7 @@
                                                                 <div id="landDiv" style="display:flex;">
                                                                     <div class="com-inside">
                                                                         <button>Land</button>
+                                                                        <span class="error">Please select the field inside</span>
                                                                     </div>
                                                                 </div>
 
@@ -757,6 +764,7 @@
                                                                 <div id="hospDiv" style="display:flex;">
                                                                     <div class="com-insideee">
                                                                         <button>Hospitality</button>
+                                                                        <span class="error">Please select the field inside</span>
                                                                     </div>
                                                                 </div>
 
@@ -2240,6 +2248,35 @@
             $(this).addClass('active_button');
         });
 
+    </script>
+    <!--Validation -->
+    <script>
+        $(document).ready(function () {
+            $('#officeDiv').click(function(){
+                $('.next-button').hide();
+            });
+            $('#officeDiv1').click(function(){
+                $('.next-button').show();
+            });
+            $('#retailDiv').click(function(){
+                $('.next-button').hide();
+            });
+            $('#retailDiv1').click(function(){
+                $('.next-button').show();
+            });
+            $('#landDiv').click(function(){
+                $('.next-button').hide();
+            });
+            $('#landDiv1').click(function(){
+                $('.next-button').show();
+            });
+            $('#hospDiv').click(function(){
+                $('.next-button').hide();
+            });
+            $('#hospDiv1').click(function(){
+                $('.next-button').show();
+            });
+        });
     </script>
     <!-- Show Commercial Radio-->
     <script>
