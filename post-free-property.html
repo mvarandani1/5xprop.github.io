@@ -488,6 +488,7 @@
           color: #92b0b3;
           position: relative;
           height: 150px;
+          width: 100%;
         }
 
         .dropzone-desc {
@@ -744,10 +745,9 @@
                                                             <div class="d-flex">
                                                                 <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
 
-                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options customm-btn btn-16" value="Rent" style="margin-top:1rem;">
+                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options customm-btn btn-16" value="Rent" style="margin-top:1rem;margin-left:1rem;">
 
-
-                                                                <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;">
+                                                                <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;margin-left:1rem;">
                                                             </div>
 
                                                             <div class="rentout" style="display:none;margin-top:1rem;">  
@@ -778,7 +778,7 @@
                                                     </div>
 
                                                     <div class="commercial radio">
-                                                        <div class="comm">
+                                                        <div class="comm" style="display:flex;justify-content:space-between;">
 
                                                             <div class="d-flex">
                                                                 <div id="officeDiv" style="display:flex;">
@@ -857,10 +857,10 @@
                                                         <div class="d-flex">
                                                             <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
 
-                                                            <input type="button" name="buttonGroup" id="two" class="rddd customm-btn btn-16" value="Rent" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="two" class="rddd customm-btn btn-16" value="Rent" style="margin-top:1rem;margin-left:1rem;">
 
 
-                                                            <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;">
+                                                            <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;margin-left:1rem;">
                                                         </div>
 
                                                     </div>
@@ -908,9 +908,39 @@
                                                                 <option value="kilometers">
                                                             </datalist>
                                                         </div>
-
                                                     </div>
                                                 </div>
+                                                <button class="add-loc" style="border: none;outline:none;background:none;color:#f52e5d;font-weight: 600;font-size:16px;margin-top:0.5rem;cursor:pointer;"><i class="fa fa-plus"></i> &nbsp;Add Location
+                                                </button>
+
+                                                <div class="add-loc-sec" style="display:none;">
+                                                    <div class="form-group mt-5">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <input type="text" id="pwd" class="form-control" required placeholder="Nearby Location">
+                                                            </div>
+                                                             
+                                                            <div>       
+                                                                <p style="margin-top:-2.6rem;text-align: center;">Distance</p>       
+                                                                <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                            </div>
+                                                            
+                                                            <div>
+                                                                <p style="margin-top:-2.6rem;text-align: center;">Type</p>
+                                                                <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                                <datalist id="location">
+                                                                    <option value="meters">
+                                                                    <option value="kilometers">
+                                                                </datalist>
+                                                            </div>
+                                                            <div style="margin-left:0.2rem;font-size:20px;text-align:center;
+                                                                margin-top: 0.3rem;">
+                                                                <i class="fa fa-times"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
 
                                                 
                                                 <div class="next-button text-center mt-3 ml-2">
@@ -1663,9 +1693,9 @@
                                                     <div class="a" id="cons" style="display: none;">
                                                        <h6>Possession By</h6>
                                                        <div class="d-flex pad">
-                                                            <div>Expected By</div>
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 100px;" />
+                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1787,9 +1817,9 @@
                                                     <div class="a" id="const" style="display: none;">
                                                        <h6>Possession By</h6>
                                                        <div class="d-flex pad">
-                                                            <div>Expected By</div>
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 100px;" />
+                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1915,9 +1945,9 @@
                                                     <div class="a" id="conss" style="display: none;">
                                                        <h6>Possession By</h6>
                                                        <div class="d-flex pad">
-                                                            <div>Expected By</div>
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 100px;" />
+                                                            <input list="time" name="myBrowser" style="width: 100px;margin-top:1rem;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -2011,9 +2041,9 @@
                                                     <div class="a" id="con" style="display: none;">
                                                        <h6>Possession By</h6>
                                                        <div class="d-flex pad">
-                                                            <div>Expected By</div>
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width:100px;" />
+                                                            <input list="time" name="myBrowser" style="width:100px;margin-top:1rem;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -2065,15 +2095,15 @@
 
                                                         <div class="d-flex">
                                                             <h6>All inclusive</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                         </div>
                                                         <div class="d-flex">
                                                             <h6>Tax & Govt. Charges Excluded</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;"  />
                                                         </div>
                                                         <div class="d-flex">
                                                             <h6>Price Negotiable</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" class="check" />
+                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                         </div>
                                                         
                                                     </div>
@@ -2100,21 +2130,9 @@
                                                     <div class="container8">
                                                       <div class="row">
                                                         <div class="col-md-12">
+                                                          <label class="control-label">Upload File</label>
                                                           <div class="form-group">
-                                                            <label class="control-label">Upload File</label>
-                                                            <div class="preview-zone hidden">
-                                                              <div class="box4 box-solid">
-                                                                <div class="box-header with-border">
-                                                                  <div style="text-align:left;"><b>Preview</b></div>
-                                                                  <div class="box-tools pull-right">
-                                                                    <button type="button" class="btn  btn-xs remove-preview customm-btn btn-16">
-                                                                      <i class="fa fa-refresh"></i> Reset Again
-                                                                    </button>
-                                                                  </div>
-                                                                </div>
-                                                                <div class="box-body"></div>
-                                                              </div>
-                                                            </div>
+                                                            
                                                             <div class="dropzone-wrapper">
                                                               <div class="dropzone-desc">
                                                                 <i class="glyphicon glyphicon-download-alt"></i>
@@ -2128,7 +2146,7 @@
 
                                                       <div class="row">
                                                         <div class="col-md-12">
-                                                          <button type="submit" style="background:#f52e5d;color: #fff;" class="customm-btn btn-16">Upload</button>
+                                                          <button type="submit" style="background:#f52e5d;color: #fff;margin-top:1rem;" class="customm-btn btn-16">Upload</button>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -2361,6 +2379,19 @@
             });
             $('#hospDiv1').click(function(){
                 $('.next-button').show();
+            });
+        });
+    </script>
+    <!--Add Location -->
+    <script>
+        $(document).ready(function () {
+            $('.add-loc').click(function(){
+                $('.add-loc-sec').show();
+                $('.add-loc').hide();
+            });
+            $('.fa-times').click(function(){
+                $('.add-loc').show();
+                $('.add-loc-sec').hide();
             });
         });
     </script>
