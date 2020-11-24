@@ -675,7 +675,7 @@
             .dropzone-wrapperr{
               width: 300px !important;
             }
-          
+            
             .comm {
               display: flex;
               flex-direction: column !important;
@@ -702,6 +702,10 @@
             .needs .label5{
                 margin-right: 2.3rem;
             }
+        }
+
+        #fur-show{
+          display: none;
         }
 
     </style>
@@ -1359,13 +1363,13 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Furnishing</h6>
-                                                        <button class="customm-btn btn-16">Furnished</button>
-                                                        <button class="customm-btn btn-16">Semi-furnished</button>
-                                                        <button class="customm-btn btn-16">Un-Furnished</button>
+                                                        <button id="fur" class="customm-btn btn-16">Furnished</button>
+                                                        <button id="semi-fur" class="customm-btn btn-16">Semi-furnished</button>
+                                                        <button id="unfur" class="customm-btn btn-16">Un-Furnished</button>
                                                     </div>
                                                 </div>
 
-                                                <div class="locate">
+                                                <div class="locate" id="fur-show">
 
                                                     <div class="d-flex accesories">
                                                         
@@ -2474,6 +2478,20 @@
             $(targetBox).show();
         });
     });
+    </script>
+    <!--Show Furnished div -->
+    <script>
+        $(document).ready(function () {
+            $('#fur').click(function(){
+              $('#fur-show').show();
+            });
+            $('#semi-fur').click(function(){
+              $('#fur-show').show();
+            });
+            $('#unfur').click(function(){
+              $('#fur-show').hide();
+            });
+        });
     </script>
     <!--Show rent Div-->
     <script>
