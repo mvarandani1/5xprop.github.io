@@ -855,7 +855,7 @@
                                                             <h5 style="margin-top:2rem;">For</h5>
 
                                                             <div class="d-flex">
-                                                              <button class="rddd customm-btn btn-16"
+                                                              <button class="rddd sale customm-btn btn-16"
                                                                 style="margin-top:1rem;">
                                                               Sale
                                                               </button>
@@ -865,7 +865,7 @@
                                                                 Rent
                                                               </button>
 
-                                                              <button class="rddd customm-btn btn-16"
+                                                              <button class="rddd pg customm-btn btn-16"
                                                                 style="margin-top:1rem;margin-left:1rem;">
                                                                 PG
                                                               </button>
@@ -2475,6 +2475,15 @@
         $(document).ready(function () {
             $('.three-options').click(function(){
               $('.rentout').toggle();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.sale').click(function(){
+              $('.rentout').hide();
+            });
+            $('.pg').click(function(){
+              $('.rentout').hide();
             });
         });
 
