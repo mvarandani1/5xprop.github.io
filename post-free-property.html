@@ -10,13 +10,19 @@
     
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <!-- Document Title -->
     <title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
     <style>
+        div, h6, span, p,h5, h2, h3, h4, i{
+          font-family: 'Poppins', sans-serif;
+        }
+
         .customm-btn{
           max-height: 30px;
-          max-width: 210px;
+          max-width: 230px;
           color: #fff;
           border-radius: 5px;
           padding: 4px 12px 2px;
@@ -102,7 +108,12 @@
         }
 
         .activate{
-            
+            top: 2px;
+            box-shadow:
+           -7px -7px 20px 0px rgba(245,46,93,.2),
+           -4px -4px 5px 0px rgba(245,46,93,.2),
+           7px 7px 20px 0px rgba(245,46,93,.2),
+           4px 4px 5px 0px rgba(245,46,93,.2);
         }
 
         .card0 {
@@ -193,7 +204,7 @@
         }
 
         .next-button {
-            width: 40%;
+            width: 25%;
             height: 50px;
             background-color: #f52e5d;
             color: #fff;
@@ -400,26 +411,17 @@
         }
 
         .pad input{
-            height: 40px !important;
-            color: #000;
-              border-radius: 5px;
-              padding: 4px 12px 2px;
-              font-weight: 500;
-              background: transparent;
-              cursor: pointer;
-              transition: all 0.3s ease;
-              position: relative;
-              display: inline-block;
-               box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-               7px 7px 20px 0px rgba(0,0,0,.1),
-               4px 4px 5px 0px rgba(0,0,0,.1);
-              outline: none;
-              border: none;
-              margin: 0;
-              margin-right: 0.3rem;
-              text-align: center;
-              vertical-align: middle;
-              margin-bottom:1rem;
+            height: 30px !important;
+            border: 0.5px solid #f52e5d;
+            border-radius: 2px;
+            border-right-height: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .pad input::placeholder{
+          color: #000;
+          font-size: 14px;
         }
 
         .radio[type="checkbox"] {
@@ -463,7 +465,7 @@
 
         /* Drag image */
         .container8 {
-          padding: 50px 10%;
+          padding: 50px 5%;
         }
 
         .box4 {
@@ -566,6 +568,22 @@
                 top: -3rem !important;
             }
 
+            .ren{
+              display: flex;
+              flex-direction: column !important;
+            }
+
+            .ren button{
+              width: 200px !important;
+            }
+            .dropzone-wrapper{
+              min-width: 400px !important;
+            }
+
+            .dropzone-wrapperr{
+              width: 400px !important;
+            }
+
             .accesories{
                 display: flex;
                 flex-direction: column !important;
@@ -638,6 +656,24 @@
 
             .needs .label5{
                 margin-right: 3.4rem;
+            }
+
+            .next-button {
+              width: 30%;
+            }
+
+            .dropzone-wrapper{
+              min-width: 300px !important;
+            }
+            .dropzone-wrapperr{
+              width: 300px !important;
+            }
+            .customm-btn {
+              margin-right: 0rem;
+            }
+            .comm {
+              display: flex;
+              flex-direction: column !important;
             }
         }
 
@@ -760,7 +796,7 @@
                                                     </form>
                                                     <div class="residential radio">
                                                         
-                                                        <div class="apartments">
+                                                        <div class="apartments" style="margin-top:1rem;">
 
                                                             
                                                             <div id="apartDiv" style="display:flex;">
@@ -819,17 +855,27 @@
                                                             <h5 style="margin-top:2rem;">For</h5>
 
                                                             <div class="d-flex">
-                                                                <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
+                                                              <button class="rddd customm-btn btn-16"
+                                                                style="margin-top:1rem;">
+                                                              Sale
+                                                              </button>
+                                                            
+                                                              <button class="three-options rddd customm-btn btn-16"
+                                                                 style="margin-top:1rem;margin-left:1rem;">
+                                                                Rent
+                                                              </button>
 
-                                                                <input type="button" name="buttonGroup" id="two" class="rddd three-options customm-btn btn-16" value="Rent" style="margin-top:1rem;margin-left:1rem;">
+                                                              <button class="rddd customm-btn btn-16"
+                                                                style="margin-top:1rem;margin-left:1rem;">
+                                                                PG
+                                                              </button>
 
-                                                                <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;margin-left:1rem;">
                                                             </div>
 
                                                             <div class="rentout" style="display:none;margin-top:1rem;">  
                                                                     
                                                                     <div>
-                                                                        <h6>Rent Out For</h6>
+                                                                        <h6 style="margin-bottom:1rem;">Rent Out For</h6>
                                                                         <div style="display:flex;"
                                                                         class="ren">
                                                                             <button style="width:180px;margin-right:0.5rem;" class="customm-btn btn-16">Family</button>
@@ -840,11 +886,11 @@
                                                                         </div>
                                                                     </div>
 
-                                                                    <div>
-                                                                        <h6>Preferred Agreement Type</h6>
+                                                                    <div style="margin-top:1.5rem;">
+                                                                        <h6 style="margin-bottom:1rem;">Preferred Agreement Type</h6>
                                                                         <div style="display:flex;"
                                                                         class="rentt">
-                                                                            <button style="margin-right:0.5rem;" class="customm-btn btn-16">Any</button>
+                                                                            <button style="margin-right:1rem;" class="customm-btn btn-16">Any</button>
                                                                             <button style="margin-right:0.5rem;" class="customm-btn btn-16">Company Lease</button>
                                                                         </div>
                                                                     </div>
@@ -855,7 +901,7 @@
 
                                                     </div>
 
-                                                    <div class="commercial radio">
+                                                    <div class="commercial radio" style="margin-top:1rem;">
                                                         <div class="comm" style="display:flex;justify-content:space-between;">
 
                                                             <div class="d-flex">
@@ -930,24 +976,33 @@
                                                                     </div>
                                                                 </div>
                                                         </div>
-                                                        <h5 style="margin-top:2rem;">For</h5>
+                                                          <h5 style="margin-top:2rem;">For</h5>
 
-                                                        <div class="d-flex">
-                                                            <input type="button" name="buttonGroup" id="one" class="rddd customm-btn btn-16" value="Sale" style="margin-top:1rem;">
+                                                          <div class="d-flex">
 
-                                                            <input type="button" name="buttonGroup" id="two" class="rddd customm-btn btn-16" value="Rent" style="margin-top:1rem;margin-left:1rem;">
+                                                            <button class="rddd customm-btn btn-16"
+                                                              style="margin-top:1rem;">
+                                                              Sale
+                                                            </button>
+                                                            
+                                                            <button class="rddd customm-btn btn-16"
+                                                               style="margin-top:1rem;margin-left:1rem;">
+                                                              Rent
+                                                            </button>
 
-
-                                                            <input type="button" name="buttonGroup" id="three" class="rddd customm-btn btn-16" value="PG" style="margin-top:1rem;margin-left:1rem;">
-                                                        </div>
+                                                            <button class="rddd customm-btn btn-16"
+                                                              style="margin-top:1rem;margin-left:1rem;">
+                                                              PG
+                                                            </button>
+                                                             
+                                                          </div>
 
                                                     </div>
                                              
                                                 </div>
 
                                                 <div class="next-button text-center mt-1 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -975,12 +1030,12 @@
                                                          
                                                         <div>       
                                                             <p style="margin-top:-2.6rem;text-align: center;">Distance</p>       
-                                                            <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                            <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 100px;" />
                                                         </div>
                                                         
                                                         <div>
                                                             <p style="margin-top:-2.6rem;text-align: center;">Type</p>
-                                                            <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                            <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 100px;" />
                                                             <datalist id="location">
                                                                 <option value="meters">
                                                                 <option value="kilometers">
@@ -1000,12 +1055,12 @@
                                                              
                                                             <div>       
                                                                 <p style="margin-top:-2.6rem;text-align: center;">Distance</p>       
-                                                                <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                                <input type="number" id="pwd" class="form-control" required name="myBrowser" style="width: 100px;" />
                                                             </div>
                                                             
                                                             <div>
                                                                 <p style="margin-top:-2.6rem;text-align: center;">Type</p>
-                                                                <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 80px;" />
+                                                                <input list="location" id="pwd" class="form-control" required name="myBrowser" style="width: 100px;" />
                                                                 <datalist id="location">
                                                                     <option value="meters">
                                                                     <option value="kilometers">
@@ -1022,8 +1077,7 @@
 
                                                 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -1035,19 +1089,43 @@
                                                 <h5 style="margin-bottom:1rem;">Enter Location Details</h5>
 
                                                 <div class="locate">
-                                                    <div class="l">
+                                                    <div class="l" id="l">
                                                         <h6>Your Apartment is a</h6>
                                                         <button class="customm-btn btn-16">2 BHK</button>
                                                         <button class="customm-btn btn-16">3 BHK</button>
                                                         <button class="customm-btn btn-16">4 BHK</button>
-                                                        <button class="customm-btn btn-16">Other</button>
+                                                        <button class="create customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="that" style="display:none;">
+
+                                                            <div class="d-flex">
+                                                                <input type="text" style="width:50px;height:30px;border-top:none;border-right:none;border-left:none;" id="that">&nbsp;
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="thatdo customm-btn btn-16" id="create">Done</button>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
-                                                    <div class="o">
+                                                    <div class="o" id="o">
                                                         <h6>Layout of Apartment</h6>
-                                                        <button class="customm-btn btn-16">Add</button>
+                                                        <button class="creat customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
+                                                        <div class="tha" style="display:none;">
+
+                                                            <div>
+
+                                                                <div class="dropzone-wrapper">
+                                                                    <div class="dropzone-desc">
+                                                                      <i class="glyphicon glyphicon-download-alt"></i>
+                                                                      <p>Choose an image file or drag it here.</p>
+                                                                    </div>
+                                                                    <input type="file" name="img_logo" class="dropzone">
+                                                                </div>
+                                                                
+                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="thado customm-btn btn-16" id="creat">Done</button>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -1164,22 +1242,22 @@
                                                 <div class="locate d-flex">
                                                     <div class="l">
                                                         <div class="multiple-buttons">
-                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Pooja</button>
+                                                            <button class="customm-btn btn-16">Pooja</button>
                                                         </div>
                                                     </div>
                                                     <div class="o">
                                                         <div class="multiple-buttons">
-                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Servant</button>
+                                                            <button class="customm-btn btn-16">Servant</button>
                                                         </div>
                                                     </div>
                                                     <div class="c">
                                                         <div class="multiple-buttons">
-                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Store</button>
+                                                            <button class="customm-btn btn-16">Store</button>
                                                         </div>
                                                     </div>
                                                     <div class="a">
                                                         <div class="multiple-buttons">
-                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> Study</button>
+                                                            <button class="customm-btn btn-16">Study</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1220,14 +1298,14 @@
                                                 <div class="locate">
                                                     <div class="lo">
                                                         <h6>Status</h6>
-                                                        <button class="customm-btn btn-16">Ready to move</button>
-                                                        <button class="customm-btn btn-16">Under Construction</button>
+                                                        <button class="ready customm-btn btn-16">Ready to move</button>
+                                                        <button class="construct customm-btn btn-16">Under Construction</button>
                                                     </div>
                                                 </div>
 
                                                 <div class="locate">
-                                                    <div class="loc">
-                                                        <h6>Age</h6>
+                                                    <div class="c" id="age" style="display: none;">
+                                                        <h6>Age of Property</h6>
                                                         <button class="customm-btn btn-16">0-1 year</button>
                                                         <button class="customm-btn btn-16">1-3 years</button>
                                                         <button class="customm-btn btn-16">3-5 years</button>
@@ -1237,9 +1315,28 @@
                                                 </div>
 
                                                 <div class="locate">
+                                                    <div class="a" id="cons" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="locate">
                                                     <div class="d-flex">
                                                         <h6>RERE Registered</h6>
-                                                        <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
+                                                        <input type="checkbox" style="height:20px;width:20px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                     </div>
                                                     
                                                 </div>
@@ -1469,8 +1566,7 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -1648,14 +1744,44 @@
                                                 <div class="locate">
                                                     <div class="locat">
                                                         <h6>Status</h6>
-                                                        <button class="customm-btn btn-16">Ready to move</button>
-                                                        <button class="customm-btn btn-16">Under Construction</button>
+                                                        <button class="ready customm-btn btn-16">Ready to move</button>
+                                                        <button class="construct customm-btn btn-16">Under Construction</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="c" id="age" style="display: none;">
+                                                        <h6>Age of Property</h6>
+                                                        <button class="customm-btn btn-16">0-1 year</button>
+                                                        <button class="customm-btn btn-16">1-3 years</button>
+                                                        <button class="customm-btn btn-16">3-5 years</button>
+                                                        <button class="customm-btn btn-16">5-10 years</button>
+                                                        <button class="customm-btn btn-16">10+ years</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="locate">
+                                                    <div class="a" id="cons" style="display: none;">
+                                                       <h6>Possession By</h6>
+                                                       <div class="d-flex pad">
+                                                            <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
+                                                            <datalist id="time">
+                                                              <option value="3 Months">
+                                                              <option value="6 Months">
+                                                              <option value="2021">
+                                                              <option value="2022">
+                                                              <option value="2023">
+                                                              <option value="2024">
+                                                              <option value="2025">
+                                                            </datalist>
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -1774,7 +1900,7 @@
                                                        <div class="d-flex pad">
                                                             <div style="margin-top:1.5rem;font-weight:600;">Expected By</div>
                                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;" />
+                                                            <input list="time" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
                                                             <datalist id="time">
                                                               <option value="3 Months">
                                                               <option value="6 Months">
@@ -1789,8 +1915,7 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -1925,8 +2050,7 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -2041,8 +2165,7 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -2137,8 +2260,7 @@
                                                 </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -2162,34 +2284,38 @@
 
                                                     <div class="mt-4">
                                                         <div class="d-flex pwd1">
-                                                            <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Expected Price</label>
+                                                            <div class="form-group mt-1 mb-1">
+                                                              <input id="number" type="text"class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd" style="margin-bottom:0.5rem;">Expected Price</label>
                                                             </div>
                                                             &nbsp;&nbsp;
                                                             <div class="form-group mt-1 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Per Sq. ft. Price</label> </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="form-group mt-1" style="width:100%;">
+                                                      <p class="mb-1">Price in words</p>
+                                                      <span id="words"></span>
                                                     </div>
 
                                                     <div class="mt-4" style="display:flex;
                                                     flex-direction: column;">
 
                                                         <div class="d-flex">
+                                                            <input type="checkbox" style="height:20px;width:20px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                             <h6>All inclusive</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                         </div>
                                                         <div class="d-flex">
+                                                            <input type="checkbox" style="height:20px;width:20px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;"  />
                                                             <h6>Tax & Govt. Charges Excluded</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;"  />
                                                         </div>
                                                         <div class="d-flex">
+                                                            <input type="checkbox" style="height:20px;width:20px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                             <h6>Price Negotiable</h6>
-                                                            <input type="checkbox" style="height:25px;width:25px;visibility: visible!important;opacity: 1;margin-left:1rem;margin-top:-1rem;" />
                                                         </div>
                                                         
                                                     </div>
                                                 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -2200,7 +2326,7 @@
                                             <div class="card2-last">
                                                 <h5 style="margin-bottom:1rem;">What makes your property unique?</h5>
                                                 <p>Enter unique points and description</p>
-                                                <textarea style="width: 100%;height:150px;">
+                                                <textarea placeholder="Share some more details about your property" style="width: 100%;height:150px;color: #000;">
                                                 </textarea>
 
                                                 <!--Drag & Drop or upload photos-->
@@ -2208,11 +2334,12 @@
                                                   <form action="" method="POST" enctype="multipart/form-data">
                                                     <div class="container8">
                                                       <div class="row">
-                                                        <div class="col-md-12">
-                                                          <label class="control-label">Upload File</label>
-                                                          <div class="form-group">
+                                                        <div style="min-width: 480px !important;">
+                                                          <h6 style="font-size:18px;font-weight:500;margin-bottom:1rem;">Add Photos of your Property</h6>
+                                                          <label class="control-label">Upload from Desktop</label>
+                                                          <div class="">
                                                             
-                                                            <div class="dropzone-wrapper">
+                                                            <div class="dropzone-wrapper dropzone-wrapperr">
                                                               <div class="dropzone-desc">
                                                                 <i class="glyphicon glyphicon-download-alt"></i>
                                                                 <p>Choose an image file or drag it here.</p>
@@ -2225,7 +2352,7 @@
 
                                                       <div class="row">
                                                         <div class="col-md-12">
-                                                          <button type="submit" style="background:#f52e5d;color: #fff;margin-top:1rem;" class="customm-btn btn-16">Upload</button>
+                                                          <button type="submit" style="background:#f52e5d;color: #fff;margin-top:1rem;justify-content: center;" class="customm-btn btn-16">Upload</button>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -2234,8 +2361,7 @@
 
 
                                                 <div class="next-button text-center mt-3 ml-2">
-                                                    Continue&nbsp;&nbsp;&nbsp;
-                                                    <span class="fa fa-chevron-right"></span>
+                                                    Continue
                                                 </div>
                                             </div>
 
@@ -2792,7 +2918,7 @@
             });
         });
     </script>
-    
+
     <script>
 
         $('.l button').on('click', function(){
@@ -2904,6 +3030,30 @@
 
     <!-- Show input on add button -->
     <script>
+      /* Create*/
+
+        $(document).ready(function(){
+            $('.create').click(function() {
+              $('.that').show();
+              $('.create').hide();
+            });
+            $('.thatdo').click(function() {
+              $('.create').show();
+              $('.that').hide();
+            }); 
+        });
+
+        $(document).ready(function(){
+            $('.creat').click(function() {
+              $('.tha').show();
+              $('.creat').hide();
+            });
+            $('.thado').click(function() {
+              $('.creat').show();
+              $('.tha').hide();
+            });
+        });
+
         $(document).ready(function(){
             $('.ad').click(function() {
               $('.me').show();
@@ -3027,6 +3177,27 @@
         $(document).on('click', '.check[type="checkbox"]', function() {      
             $('.check[type="checkbox"]').not(this).prop('checked', false);      
         });
+    </script>
+    <script>
+      /* Covert digits into words */
+      var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+      var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+      function inWords (num) {
+          if ((num = num.toString()).length > 9) return 'overflow';
+          n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+          if (!n) return; var str = '';
+          str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+          str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+          str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+          str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+          str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+          return str;
+      }
+
+      document.getElementById('number').onkeyup = function () {
+          document.getElementById('words').innerHTML = inWords(document.getElementById('number').value);
+      };
     </script>
     
 </body>
