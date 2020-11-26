@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
     <!-- Document Title -->
     <title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
@@ -30,7 +32,7 @@
 
         .customm-btn{
           max-height: 30px;
-          max-width: 230px;
+          max-width: 500px;
           color: #fff;
           border-radius: 5px;
           padding: 4px 12px 2px;
@@ -251,7 +253,7 @@
 
         #progressbar .step0:before {
             content: "";
-            color: #fff
+            color: #fff;
         }
 
         #progressbar li:before {
@@ -274,12 +276,12 @@
             position: absolute;
             left: 14px;
             top: 15px;
-            z-index: -1
+            z-index: -1;
         }
 
         #progressbar li:last-child:after {
-            top: 147px;
-            height: 132px
+            top: 150px;
+            height: 200px
         }
 
         #progressbar li:nth-child(3):after {
@@ -419,7 +421,7 @@
         }
 
         .pad input{
-            height: 30px !important;
+            height: 45px !important;
             border: 0.5px solid #f52e5d;
             border-radius: 2px;
             border-right-height: 6px;
@@ -726,6 +728,36 @@
           display: none !important;
         }
 
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          text-align: left;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after{
+          font-size: 20px;
+        }
+
     </style>
 </head>
 
@@ -785,10 +817,12 @@
                                                     <li class="step0"></li>
                                                     <li class="step0"></li>
                                                     <li class="step0"></li>
+                                                    <li class="step0"></li>
                                                 </ul>
                                                 <h6 class="mb-5">Property Type</h6>
                                                 <h6 class="mb-5">Location</h6>
                                                 <h6 class="mb-5">Location Details</h6>
+                                                <h6 class="mb-5">Amenities</h6>
                                                 <h6 class="mb-5">Pricing Details</h6>
                                                 <h6 class="mb-5">Photos</h6>
                                             </div>
@@ -1118,9 +1152,9 @@
                                                 <div class="locate">
                                                     <div class="l" id="l">
                                                         <h6>Your Apartment is a</h6>
-                                                        <button class="customm-btn btn-16">2 BHK</button>
-                                                        <button class="customm-btn btn-16">3 BHK</button>
-                                                        <button class="customm-btn btn-16">4 BHK</button>
+                                                        <button class="twobhk customm-btn btn-16">2 BHK</button>
+                                                        <button class="threebhk customm-btn btn-16">3 BHK</button>
+                                                        <button class="fourbhk customm-btn btn-16">4 BHK</button>
                                                         <button class="create customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
                                                         <div class="that" style="display:none;">
 
@@ -1133,25 +1167,137 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="locate">
-                                                    <div class="o" id="o">
+                                                <div class="two-bhk locate" style="display: none;">
+                                                    <div>
                                                         <h6>Layout of Apartment</h6>
-                                                        <button class="creat customm-btn btn-16"><i class="fa fa-plus"></i> Add</button>
-                                                        <div class="tha" style="display:none;">
+                                                        <div class="swiper-container">
+                                                          <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                              <div>
 
-                                                            <div>
-
-                                                                <div class="dropzone-wrapper">
-                                                                    <div class="dropzone-desc">
-                                                                      <i class="glyphicon glyphicon-download-alt"></i>
-                                                                      <p>Choose an image file or drag it here.</p>
-                                                                    </div>
-                                                                    <input type="file" name="img_logo" class="dropzone">
+                                                                <div class="d-flex" style="margin-bottom:1rem;">
+                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;2BHK</strong></p>
+                                                                  <img src="./images/property/property_1.jpg" style="width:120px;height: 80px;">
                                                                 </div>
-                                                                
-                                                                <button style="color: #fff;background:#f52e5d;border: none;border-radius:4px;height:30px;width:70px;margin-top:1rem;" class="thado customm-btn btn-16" id="creat">Done</button>
-                                                            </div>
 
+                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
+
+                                                                <div class="d-flex">
+                                                                  <div style="margin-right:1rem;">
+                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
+                                                                  </div>
+
+                                                                  <div>
+                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                  </div>
+                                                                </div>
+
+                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
+
+                                                              </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <div style="text-align:center;">
+                                                                <p>Can't Find Your Floor Plan</p>
+                                                                <button class="customm-btn btn-16">
+                                                                  Click Here!
+                                                                </button>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <!-- Add Arrows -->
+                                                          <div class="swiper-button-next"></div>
+                                                          <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="three-bhk locate" style="display: none;">
+                                                    <div>
+                                                        <h6>Layout of Apartment</h6>
+                                                        <div class="swiper-container">
+                                                          <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                              <div>
+
+                                                                <div class="d-flex"style="margin-bottom:1rem;">
+                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;3BHK</strong></p>
+                                                                  <img src="./images/property/property_2.jpg" style="width:120px;height: 80px;">
+                                                                </div>
+
+                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
+
+                                                                <div class="d-flex">
+                                                                  <div style="margin-right:1rem;">
+                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
+                                                                  </div>
+
+                                                                  <div>
+                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                  </div>
+                                                                </div>
+
+                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
+
+                                                              </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <div style="text-align:center;">
+                                                                <p>Can't Find Your Floor Plan</p>
+                                                                <button class="customm-btn btn-16">
+                                                                  Click Here!
+                                                                </button>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <!-- Add Arrows -->
+                                                          <div class="swiper-button-next"></div>
+                                                          <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="four-bhk locate" style="display: none;">
+                                                    <div>
+                                                        <h6>Layout of Apartment</h6>
+                                                        <div class="swiper-container">
+                                                          <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                              <div>
+
+                                                                <div class="d-flex"style="margin-bottom:1rem;">
+                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;4BHK</strong></p>
+                                                                  <img src="./images/property/property_3.jpg" style="width:120px;height: 80px;">
+                                                                </div>
+
+                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
+
+                                                                <div class="d-flex">
+                                                                  <div style="margin-right:1rem;">
+                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
+                                                                  </div>
+
+                                                                  <div>
+                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                  </div>
+                                                                </div>
+
+                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
+
+                                                              </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <div style="text-align:center;">
+                                                                <p>Can't Find Your Floor Plan</p>
+                                                                <button class="customm-btn btn-16">
+                                                                  Click Here!
+                                                                </button>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <!-- Add Arrows -->
+                                                          <div class="swiper-button-next"></div>
+                                                          <div class="swiper-button-prev"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2294,7 +2440,331 @@
 
                                         </div> <!-- Card Finish-->
 
+                                        <div class="card2 ml-2">
+                                          <h4 class="mb-5" style="margin-top:-3rem;">Amenities</h4>
+                                            <div>
+                                              <h5 style="margin-bottom:1rem;">Amenities & Features of your property</h5>
 
+                                                <div style="margin-bottom:2rem;margin-top:1rem;">
+                                                    <h6>Amenities</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="l">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Lift</button>
+                                                        </div>
+                                                        <div class="o">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Fitness Center</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="c">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Maintanence Staff</button>
+                                                      </div>
+                                                      <div class="a">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Park</button>
+                                                      </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="t">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Rainwater Harvesting</button>
+                                                      </div>
+                                                      <div class="e">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Swimming Pool</button>
+                                                      </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Property Features</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="lo">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Water Storage</button>
+                                                        </div>
+                                                        <div class="loc">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Security/Fire Alarm</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="loca">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Feng Shui</button>
+                                                      </div>
+                                                      <div class="locat">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Intercom Facility</button>
+                                                      </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="actnow">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Piped-gas</button>
+                                                      </div>
+                                                      <div class="act">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Internet Connectivity</button>
+                                                      </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="actingnow">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Air Conditioned</button>
+                                                      </div>
+                                                      <div class="acting">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Water Purifier</button>
+                                                      </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Society / Building Features</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="am">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Visitor Parking</button>
+                                                        </div>
+                                                        <div class="ame">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Water softening plant</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div style="display: flex;">
+                                                      <div class="amen">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Shopping Center</button>
+                                                      </div>
+                                                      <div class="ameni">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Community Center</button>
+                                                      </div>
+                                                    </div>
+
+                                                    <div>
+                                                      <div class="amenit">
+                                                        <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Security Personnel</button>
+                                                      </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Other Features</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="ameniti">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Waste Disposal</button>
+                                                        </div>
+                                                        <div class="amenitie">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Bank Attached Property</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Water Source</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="amenities">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Municipal Corporation</button>
+                                                        </div>
+                                                        <div class="amenities1">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Borewell/Tank</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Overlooking</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="amenities2">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Pool</button>
+                                                        </div>
+                                                        <div class="amenities3">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Park/Garden</button>
+                                                        </div>
+                                                        <div class="amenities4">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Club</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        <div class="amenities5">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Main Road</button>
+                                                        </div>
+                                                        <div class="amenities6">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Others</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;display:flex;flex-direction: column !important;">
+                                                    <h6>Other Features</h6>
+                                                        <label>
+                                                          <input type="checkbox" value="" style="opacity: 1 !important;visibility:visible !important;width:20px !important;height:20px !important;">
+                                                          In a gated society
+                                                        </label>
+
+                                                        <label>
+                                                          <input type="checkbox" value="" style="opacity: 1 !important;visibility:visible !important;width:20px !important;height:20px !important;">
+                                                          Corner Property
+                                                        </label>
+
+                                                        <label>
+                                                          <input type="checkbox" value="" style="opacity: 1 !important;visibility:visible !important;width:20px !important;height:20px !important;">
+                                                          Pet Friendly
+                                                        </label>
+
+                                                        <label>
+                                                          <input type="checkbox" value="" style="opacity: 1 !important;visibility:visible !important;width:20px !important;height:20px !important;">
+                                                          Wheelchair friendly
+                                                        </label>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Power Backup</h6>
+
+                                                    <div style="display: flex;">
+                                                        <div class="amenities7">
+                                                          <button class="customm-btn btn-16">None</button>
+                                                        
+                                                          <button class="customm-btn btn-16">Partial</button>
+                                                        
+                                                          <button class="customm-btn btn-16">Full</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="amenities8" style="margin-bottom:2rem;">
+                                                    <h6>Property facing</h6>
+
+                                                    <div style="display: flex;">
+                                                        
+                                                          <button class="customm-btn btn-16">North</button>
+                                                        
+                                                          <button class="customm-btn btn-16">South</button>
+                                                       
+                                                          <button class="customm-btn btn-16">East</button>
+                                                       
+                                                          <button class="customm-btn btn-16">West</button>
+                                                       
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        
+                                                          <button class="customm-btn btn-16">North-East</button>
+                                                       
+                                                          <button class="customm-btn btn-16">North-West</button>
+                                                        
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        
+                                                          <button class="customm-btn btn-16">South-East</button>
+                                                        
+                                                          <button class="customm-btn btn-16">South-West</button>
+                                                       
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Type of Flooring</h6>
+                                                    <div class="mt-1 mb-1">
+                                                      <select type="text" id="pwd" class="form-control">
+                                                        <option value="">Select</option>
+                                                        <option value="">Marble</option>
+                                                        <option value="">Concrete</option>
+                                                        <option value="">Polished concrete</option>
+                                                        <option value="">Granite</option>
+                                                        <option value="">Ceramic</option>
+                                                        <option value="">Mosaic</option>
+                                                        <option value="">Cement</option>
+                                                        <option value="">Stone</option>
+                                                        <option value="">Vinyl</option>
+                                                        <option value="">Wood</option>
+                                                        <option value="">Vitrified</option>
+                                                        <option value="">Spartex</option>
+                                                        <option value="">IPSFinish</option>
+                                                        <option value="">Others</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>Width of facing road</h6>
+                                                    <div class="mt-2">
+                                                        <div class="d-flex pad">
+                                                            <input style="margin-top:1rem;font-weight:500;" placeholder="Enter the width" />
+                                                            <input list="distance" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
+                                                            <datalist id="distance">
+                                                              <option value="Feet">
+                                                              <option value="Meter">
+                                                            </datalist>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-bottom:2rem;">
+                                                    <h6>USP of your property</h6>
+                                                    <div style="display: flex;">
+                                                        <div class="amenities9">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;24*7 Water</button>
+                                                        </div>
+                                                        <div class="amenities10">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Visitor Parking Available</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        <div class="amenities11">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to School</button>
+                                                        </div>
+                                                        <div class="amenities12">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Fresh Construction</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        <div class="amenities13">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to Hospital</button>
+                                                        </div>
+                                                        <div class="amenities14">
+                                                          <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to Market</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Hidden Section -->
+                                                    <div class="add-loc-sec" style="display:none;">
+                                                      <div style="display: flex;">
+                                                          <div class="amenities15">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to Bank</button>
+                                                          </div>
+                                                          <div class="amenities16">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Natural Light</button>
+                                                          </div>
+                                                      </div>
+                                                      <div style="display: flex;">
+                                                          <div class="amenities17">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Airy Rooms</button>
+                                                          </div>
+                                                          <div class="amenities18">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Spacious Interiors</button>
+                                                          </div>
+                                                      </div>
+                                                      <div style="display: flex;">
+                                                          <div class="amenities19">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Low Density Society</button>
+                                                          </div>
+                                                          <div class="amenities20">
+                                                            <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;High Ceiling Height</button>
+                                                          </div>
+                                                      </div>
+
+                                                    </div>
+                                                </div>
+                                                <button class="add-loc" style="border: none;outline:none;background:none;color:#f52e5d;font-weight: 600;font-size:16px;margin-top:0.5rem;cursor:pointer;"><i class="fa fa-plus"></i> 
+                                                  &nbsp;Add More USPs
+                                                </button>
+
+                                                <div class="next-button text-center mt-3 ml-2">
+                                                    Continue
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="card2 ml-2">
                                              <h4 class="mb-5" style="margin-top:-3rem;">Price Detail</h4>
@@ -2386,6 +2856,9 @@
                                                   </form>
                                                 </section>
 
+                                                <h6>Share the video of your property</h6>
+
+                                                <div class="form-group mt-3 mb-1"> <input type="text" id="pwd" class="form-control" required> <label class="ml-3 form-control-placeholder" for="pwd">Enter Video Url</label> </div>
 
                                                 <div class="next-button text-center mt-3 ml-2">
                                                     Continue
@@ -2998,6 +3471,31 @@
         });
     </script>
 
+    <!-- Layout of an apartment-->
+    <script>
+        $(document).ready(function () {
+            $('.twobhk').click(function(){
+              $('.two-bhk').show();
+              $('.three-bhk').hide();
+              $('.four-bhk').hide();
+            });
+        });
+        $(document).ready(function () {
+            $('.threebhk').click(function(){
+              $('.three-bhk').show();
+              $('.two-bhk').hide();
+              $('.four-bhk').hide();
+            });
+        });
+        $(document).ready(function () {
+            $('.fourbhk').click(function(){
+              $('.four-bhk').show();
+              $('.three-bhk').hide();
+              $('.two-bhk').hide();
+            });
+        });
+    </script>
+
     <script>
 
         $('.l button').on('click', function(){
@@ -3057,6 +3555,169 @@
 
         $('.rddd').on('click', function(){
             $('.rddd').removeClass('activate');
+            $(this).addClass('activate');
+        });
+    </script>
+
+    <!-- Active now -->
+    <script>
+        $('.act button').on('click', function(){
+            $('.act button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.actnow button').on('click', function(){
+            $('.actnow button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.acting button').on('click', function(){
+            $('.acting button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.actingnow button').on('click', function(){
+            $('.actingnow button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.am button').on('click', function(){
+            $('.am button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.ame button').on('click', function(){
+            $('.ame button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amen button').on('click', function(){
+            $('.amen button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.ameni button').on('click', function(){
+            $('.ameni button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenit button').on('click', function(){
+            $('.amenit button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.ameniti button').on('click', function(){
+            $('.ameniti button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenitie button').on('click', function(){
+            $('.amenitie button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities button').on('click', function(){
+            $('.amenities button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities1 button').on('click', function(){
+            $('.amenities1 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities2 button').on('click', function(){
+            $('.amenities2 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities3 button').on('click', function(){
+            $('.amenities3 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities4 button').on('click', function(){
+            $('.amenities4 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities5 button').on('click', function(){
+            $('.amenities5 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities6 button').on('click', function(){
+            $('.amenities6 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities7 button').on('click', function(){
+            $('.amenities7 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities8 button').on('click', function(){
+            $('.amenities8 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities9 button').on('click', function(){
+            $('.amenities9 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities10 button').on('click', function(){
+            $('.amenities10 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities11 button').on('click', function(){
+            $('.amenities11 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities12 button').on('click', function(){
+            $('.amenities12 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities13 button').on('click', function(){
+            $('.amenities13 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities14 button').on('click', function(){
+            $('.amenities14 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities15 button').on('click', function(){
+            $('.amenities15 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities16 button').on('click', function(){
+            $('.amenities16 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities17 button').on('click', function(){
+            $('.amenities17 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities18 button').on('click', function(){
+            $('.amenities18 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities19 button').on('click', function(){
+            $('.amenities19 button').removeClass('activate');
+            $(this).addClass('activate');
+        });
+
+        $('.amenities20 button').on('click', function(){
+            $('.amenities20 button').removeClass('activate');
             $(this).addClass('activate');
         });
     </script>
@@ -3278,6 +3939,18 @@
           document.getElementById('words').innerHTML = inWords(document.getElementById('number').value);
       };
     </script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    </script>
     
-</body>
+  </body>
 </html>
