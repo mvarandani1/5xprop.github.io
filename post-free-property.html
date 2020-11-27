@@ -466,7 +466,7 @@
               transition: all 0.3s ease;
               position: relative;
               display: inline-block;
-               box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
                7px 7px 20px 0px rgba(0,0,0,.1),
                4px 4px 5px 0px rgba(0,0,0,.1);
               outline: none;
@@ -475,76 +475,6 @@
               text-align: center;
               vertical-align: middle;
               margin-bottom:1rem;
-        }
-
-        /* Drag image */
-        .container8 {
-          padding: 50px 5%;
-        }
-
-        .box4 {
-          position: relative;
-          background: #ffffff;
-          width: 100%;
-        }
-
-        .box-header {
-          color: #444;
-          display: block;
-          padding: 10px;
-          position: relative;
-          border-bottom: 1px solid #f4f4f4;
-          margin-bottom: 10px;
-        }
-
-        .box-tools {
-          position: absolute;
-          right: 10px;
-          top: 5px;
-        }
-
-        .dropzone-wrapper {
-          border: 2px dashed #91b0b3;
-          color: #92b0b3;
-          position: relative;
-          height: 150px;
-          width: 100%;
-        }
-
-        .dropzone-desc {
-          position: absolute;
-          margin: 0 auto;
-          left: 0;
-          right: 0;
-          text-align: center;
-          width: 40%;
-          top: 50px;
-          font-size: 16px;
-        }
-
-        .dropzone,
-        .dropzone:focus {
-          position: absolute;
-          outline: none !important;
-          width: 100%;
-          height: 150px;
-          cursor: pointer;
-          opacity: 0;
-        }
-
-        .dropzone-wrapper:hover,
-        .dropzone-wrapper.dragover {
-          background: #ecf0f5;
-        }
-
-        .preview-zone {
-          text-align: center;
-        }
-
-        .preview-zone .box {
-          box-shadow: none;
-          border-radius: 0;
-          margin-bottom: 0;
         }
 
         @media (max-width:700px){
@@ -575,6 +505,13 @@
             .v7{
                 margin-top:0.7rem !important;
             }
+            .direction-col{
+              display: flex;
+              flex-direction: column !important;
+            }
+            .hun-width{
+              width: 100px !important;
+            }
         }
 
         @media (max-width: 500px){
@@ -590,14 +527,6 @@
             .ren button{
               width: 200px !important;
             }
-            .dropzone-wrapper{
-              min-width: 400px !important;
-            }
-
-            .dropzone-wrapperr{
-              width: 400px !important;
-            }
-
             .accesories{
                 display: flex;
                 flex-direction: column !important;
@@ -682,13 +611,6 @@
             .next-button {
               width: 40%;
             }
-
-            .dropzone-wrapper{
-              min-width: 300px !important;
-            }
-            .dropzone-wrapperr{
-              width: 300px !important;
-            }
             
             .comm {
               display: flex;
@@ -728,34 +650,102 @@
           display: none !important;
         }
 
-        .swiper-container {
-          width: 100%;
-          height: 100%;
+        /* Drag and choose Image */
+        .quote-imgs-thumbs {
+          background: transparent;
+          box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+          border-radius: 0.25rem;
+          margin: 1.5rem 0;
+          padding: 0.75rem;
+        }
+        .quote-imgs-thumbs--hidden {
+          display: none;
+        }
+        .img-preview-thumb {
+          background: transparent;
+          box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+          border-radius: 0.25rem;
+          box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.12);
+          margin-right: 1rem;
+          max-width: 140px;
+          padding: 0.25rem;
         }
 
-        .swiper-slide {
+        .large{
+          background: #f52e5d !important;
+          border: none;
+          outline: none;
+          color: #fff;
+          border-radius: 5px;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .hollow{
+          margin-top:1rem;
+          border:1px solid #f52e5d;
+          color: #000;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 0.5rem;
+        }
+
+         input#file-upload-button{
+          background: #f52e5d !important;
+          border: none;
+          outline: none;
+          color: #fff;
+          border-radius: 5px;
+          padding: 0.5rem;
+         }
+
+       /* Slider */
+       /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides , .Slides, .Slidess {
+          display: none;
           text-align: center;
-          font-size: 18px;
-          background: #fff;
-          text-align: left;
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
           justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
         }
 
-        .swiper-button-next:after,
-        .swiper-button-prev:after{
-          font-size: 20px;
+        /* Next & previous buttons */
+        .previous, .nextt, .previouss, .nexttt, .previousss, .nextttt{
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .nextt, .nexttt, .nextttt {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .previous:hover, .nextt:hover , .previouss:hover,.nexttt:hover,.previousss:hover, .nextttt:hover{
+          background-color: #f52e5d;
+          color: #fff !important;
+          border-radius: 60%;
+          font-size:13px;
         }
 
     </style>
@@ -1170,135 +1160,198 @@
                                                 <div class="two-bhk locate" style="display: none;">
                                                     <div>
                                                         <h6>Layout of Apartment</h6>
-                                                        <div class="swiper-container">
-                                                          <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                              <div>
-
-                                                                <div class="d-flex" style="margin-bottom:1rem;">
-                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;2BHK</strong></p>
-                                                                  <img src="./images/property/property_1.jpg" style="width:120px;height: 80px;">
+                                                        <!-- Slideshow container -->
+                                                      <div class="slideshow-container">
+                                                        <!-- Full-width images with number and caption text -->
+                                                        <div class="mySlides">
+                                                            <div>
+                                                              <div class="card">
+                                                                <div class="card-header" role="tab" id="headingOne">
+                                                                    <ul style="color: #f52e5d;" class="floor-list">
+                                                                      <li>Apartment Type : 
+                                                                        <span>
+                                                                          <strong>2BHK</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>Size :
+                                                                        <span>
+                                                                          <strong>1267 sft</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Rooms :
+                                                                          <span>
+                                                                            <strong>144 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Baths :
+                                                                          <span>
+                                                                            <strong>48 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Price :
+                                                                          <span>
+                                                                            <strong>$1200</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                    </ul>
                                                                 </div>
-
-                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
-
-                                                                <div class="d-flex">
-                                                                  <div style="margin-right:1rem;">
-                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
-                                                                  </div>
-
-                                                                  <div>
-                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                                                  <div class="card-body">
+                                                                    <a href="images/plan-1.jpg" data-lightbox="single-1"> <img src="images/plan-1.jpg" alt="..." style="max-width: 250px;"> </a>
                                                                   </div>
                                                                 </div>
-
-                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
-
                                                               </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                              <div style="text-align:center;">
-                                                                <p>Can't Find Your Floor Plan</p>
-                                                                <button class="customm-btn btn-16">
-                                                                  Click Here!
-                                                                </button>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <!-- Add Arrows -->
-                                                          <div class="swiper-button-next"></div>
-                                                          <div class="swiper-button-prev"></div>
+                                                            </div>   
                                                         </div>
+
+                                                        <div class="mySlides">
+                                                          <div style="text-align:center;">
+                                                              <p>Can't Find Your Floor Plan</p>
+                                                              <button class="customm-btn btn-16">
+                                                                Click Here!
+                                                              </button>
+                                                          </div>
+                                                        </div>
+
+                                                        <!-- Next and previous buttons -->
+                                                        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                                                        <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+                                                      </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="three-bhk locate" style="display: none;">
                                                     <div>
                                                         <h6>Layout of Apartment</h6>
-                                                        <div class="swiper-container">
-                                                          <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                              <div>
-
-                                                                <div class="d-flex"style="margin-bottom:1rem;">
-                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;3BHK</strong></p>
-                                                                  <img src="./images/property/property_2.jpg" style="width:120px;height: 80px;">
+                                                        <!-- Slideshow container -->
+                                                      <div class="slideshow-container">
+                                                        <!-- Full-width images with number and caption text -->
+                                                        <div class="Slides">
+                                                            <div>
+                                                              <div class="card">
+                                                                <div class="card-header" role="tab" id="headingOne">
+                                                                    <ul style="color: #f52e5d;" class="floor-list">
+                                                                      <li>Apartment Type : 
+                                                                        <span>
+                                                                          <strong>3BHK</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>Size :
+                                                                        <span>
+                                                                          <strong>1267 sft</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Rooms :
+                                                                          <span>
+                                                                            <strong>144 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Baths :
+                                                                          <span>
+                                                                            <strong>48 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Price :
+                                                                          <span>
+                                                                            <strong>$1200</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                    </ul>
                                                                 </div>
-
-                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
-
-                                                                <div class="d-flex">
-                                                                  <div style="margin-right:1rem;">
-                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
-                                                                  </div>
-
-                                                                  <div>
-                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                                                  <div class="card-body">
+                                                                    <a href="images/plan-1.jpg" data-lightbox="single-1"> <img src="images/plan-1.jpg" alt="..." style="max-width: 250px;"> </a>
                                                                   </div>
                                                                 </div>
-
-                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
-
                                                               </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                              <div style="text-align:center;">
-                                                                <p>Can't Find Your Floor Plan</p>
-                                                                <button class="customm-btn btn-16">
-                                                                  Click Here!
-                                                                </button>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <!-- Add Arrows -->
-                                                          <div class="swiper-button-next"></div>
-                                                          <div class="swiper-button-prev"></div>
+                                                            </div>   
                                                         </div>
+
+                                                        <div class="Slides">
+                                                          <div style="text-align:center;">
+                                                              <p>Can't Find Your Floor Plan</p>
+                                                              <button class="customm-btn btn-16">
+                                                                Click Here!
+                                                              </button>
+                                                          </div>
+                                                        </div>
+
+                                                        <!-- Next and previous buttons -->
+                                                        <a class="previouss" onclick="plusSlidess(-1)">&#10094;</a>
+                                                        <a class="nexttt" onclick="plusSlidess(1)">&#10095;</a>
+                                                      </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="four-bhk locate" style="display: none;">
                                                     <div>
                                                         <h6>Layout of Apartment</h6>
-                                                        <div class="swiper-container">
-                                                          <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                              <div>
-
-                                                                <div class="d-flex"style="margin-bottom:1rem;">
-                                                                  <p style="margin-right:1rem;">Apartment Type<strong>&nbsp;4BHK</strong></p>
-                                                                  <img src="./images/property/property_3.jpg" style="width:120px;height: 80px;">
+                                                        <!-- Slideshow container -->
+                                                      <div class="slideshow-container">
+                                                        <!-- Full-width images with number and caption text -->
+                                                        <div class="Slidess">
+                                                            <div>
+                                                              <div class="card">
+                                                                <div class="card-header" role="tab" id="headingOne">
+                                                                    <ul style="color: #f52e5d;" class="floor-list">
+                                                                      <li>Apartment Type : 
+                                                                        <span>
+                                                                          <strong>4BHK</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>Size :
+                                                                        <span>
+                                                                          <strong>1267 sft</strong>
+                                                                        </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Rooms :
+                                                                          <span>
+                                                                            <strong>144 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Baths :
+                                                                          <span>
+                                                                            <strong>48 sft</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                      <li>
+                                                                        Price :
+                                                                          <span>
+                                                                            <strong>$1200</strong>
+                                                                          </span>
+                                                                      </li>
+                                                                    </ul>
                                                                 </div>
-
-                                                                <p>Super Built Up Area<strong> &nbsp; 800.0</strong></p>
-
-                                                                <div class="d-flex">
-                                                                  <div style="margin-right:1rem;">
-                                                                    <p>No. of Bathrooms<strong>&nbsp;2</strong></p>
-                                                                  </div>
-
-                                                                  <div>
-                                                                    <p>No. of Balconies<strong>&nbsp;2</strong></p>
+                                                                <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                                                  <div class="card-body">
+                                                                    <a href="images/plan-1.jpg" data-lightbox="single-1"> <img src="images/plan-1.jpg" alt="..." style="max-width: 250px;"> </a>
                                                                   </div>
                                                                 </div>
-
-                                                                <p>Availability <strong>&nbsp; Ready to move</strong></p>
-
                                                               </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                              <div style="text-align:center;">
-                                                                <p>Can't Find Your Floor Plan</p>
-                                                                <button class="customm-btn btn-16">
-                                                                  Click Here!
-                                                                </button>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <!-- Add Arrows -->
-                                                          <div class="swiper-button-next"></div>
-                                                          <div class="swiper-button-prev"></div>
+                                                            </div>   
                                                         </div>
+
+                                                        <div class="Slidess">
+                                                          <div style="text-align:center;">
+                                                              <p>Can't Find Your Floor Plan</p>
+                                                              <button class="customm-btn btn-16">
+                                                                Click Here!
+                                                              </button>
+                                                          </div>
+                                                        </div>
+
+                                                        <!-- Next and previous buttons -->
+                                                        <a class="previousss" onclick="plusSlidesss(-1)">&#10094;</a>
+                                                        <a class="nextttt" onclick="plusSlidesss(1)">&#10095;</a>
+                                                      </div>
                                                     </div>
                                                 </div>
 
@@ -2448,7 +2501,7 @@
                                                 <div style="margin-bottom:2rem;margin-top:1rem;">
                                                     <h6>Amenities</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="l">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Lift</button>
                                                         </div>
@@ -2457,7 +2510,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="c">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Maintanence Staff</button>
                                                       </div>
@@ -2466,7 +2519,7 @@
                                                       </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="t">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Rainwater Harvesting</button>
                                                       </div>
@@ -2480,7 +2533,7 @@
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>Property Features</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="lo">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Water Storage</button>
                                                         </div>
@@ -2489,7 +2542,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="loca">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Feng Shui</button>
                                                       </div>
@@ -2498,7 +2551,7 @@
                                                       </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="actnow">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Piped-gas</button>
                                                       </div>
@@ -2507,7 +2560,7 @@
                                                       </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="actingnow">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Air Conditioned</button>
                                                       </div>
@@ -2521,7 +2574,7 @@
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>Society / Building Features</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="am">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Visitor Parking</button>
                                                         </div>
@@ -2530,7 +2583,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                       <div class="amen">
                                                         <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Shopping Center</button>
                                                       </div>
@@ -2550,7 +2603,7 @@
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>Other Features</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="ameniti">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Waste Disposal</button>
                                                         </div>
@@ -2563,7 +2616,7 @@
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>Water Source</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Municipal Corporation</button>
                                                         </div>
@@ -2576,7 +2629,7 @@
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>Overlooking</h6>
 
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities2">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Pool</button>
                                                         </div>
@@ -2587,7 +2640,7 @@
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Club</button>
                                                         </div>
                                                     </div>
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities5">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Main Road</button>
                                                         </div>
@@ -2692,7 +2745,7 @@
                                                     <div class="mt-2">
                                                         <div class="d-flex pad">
                                                             <input style="margin-top:1rem;font-weight:500;" placeholder="Enter the width" />
-                                                            <input list="distance" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
+                                                            <input class="hun-width" list="distance" name="myBrowser" style="width: 130px;margin-top:1rem;color: #000;" />
                                                             <datalist id="distance">
                                                               <option value="Feet">
                                                               <option value="Meter">
@@ -2703,7 +2756,7 @@
 
                                                 <div style="margin-bottom:2rem;">
                                                     <h6>USP of your property</h6>
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities9">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;24*7 Water</button>
                                                         </div>
@@ -2711,7 +2764,7 @@
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Visitor Parking Available</button>
                                                         </div>
                                                     </div>
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities11">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to School</button>
                                                         </div>
@@ -2719,7 +2772,7 @@
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Fresh Construction</button>
                                                         </div>
                                                     </div>
-                                                    <div style="display: flex;">
+                                                    <div class="direction-col" style="display: flex;">
                                                         <div class="amenities13">
                                                           <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to Hospital</button>
                                                         </div>
@@ -2729,7 +2782,7 @@
                                                     </div>
                                                     <!-- Hidden Section -->
                                                     <div class="add-loc-sec" style="display:none;">
-                                                      <div style="display: flex;">
+                                                      <div class="direction-col" style="display: flex;">
                                                           <div class="amenities15">
                                                             <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Close to Bank</button>
                                                           </div>
@@ -2737,7 +2790,7 @@
                                                             <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Natural Light</button>
                                                           </div>
                                                       </div>
-                                                      <div style="display: flex;">
+                                                      <div class="direction-col" style="display: flex;">
                                                           <div class="amenities17">
                                                             <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Airy Rooms</button>
                                                           </div>
@@ -2745,7 +2798,7 @@
                                                             <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Spacious Interiors</button>
                                                           </div>
                                                       </div>
-                                                      <div style="display: flex;">
+                                                      <div class="direction-col" style="display: flex;">
                                                           <div class="amenities19">
                                                             <button class="customm-btn btn-16"><i class="fa fa-plus"></i> &nbsp;Low Density Society</button>
                                                           </div>
@@ -2828,32 +2881,20 @@
 
                                                 <!--Drag & Drop or upload photos-->
                                                 <section>
-                                                  <form action="" method="POST" enctype="multipart/form-data">
-                                                    <div class="container8">
-                                                      <div class="row">
-                                                        <div style="min-width: 430px !important;">
-                                                          <h6 style="font-size:18px;font-weight:500;margin-bottom:1rem;">Add Photos of your Property</h6>
-                                                          <label class="control-label">Upload from Desktop</label>
-                                                          <div class="">
-                                                            
-                                                            <div class="dropzone-wrapper dropzone-wrapperr">
-                                                              <div class="dropzone-desc">
-                                                                <i class="glyphicon glyphicon-download-alt"></i>
-                                                                <p>Choose an image file or drag it here.</p>
-                                                              </div>
-                                                              <input type="file" name="img_logo" class="dropzone">
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-
-                                                      <div class="row">
-                                                        <div class="col-md-12">
-                                                          <button type="submit" style="background:#f52e5d;color: #fff;margin-top:1rem;justify-content: center;" class="customm-btn btn-16">Upload</button>
-                                                        </div>
-                                                      </div>
+                                                  <div class="grid-x grid-padding-x">
+                                                    <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
+                                                      <form action="" id="img-upload-form" method="post" enctype="multipart/form-data">
+                                                        <p>
+                                                          <label for="upload_imgs" class="button hollow">Share Your Property's Images +</label>
+                                                          <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple style="display:none;" />
+                                                        </p>
+                                                        <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                                        <p>
+                                                          <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
+                                                        </p>
+                                                      </form>
                                                     </div>
-                                                  </form>
+                                                  </div>
                                                 </section>
 
                                                 <h6>Share the video of your property</h6>
@@ -3860,61 +3901,39 @@
 
     <!--Drag & Drop or choose files -->
     <script>
-        function readFile(input) {
-          if (input.files && input.files[0]) {
-            var reader = new FileReader();
+      var imgUpload = document.getElementById('upload_imgs')
+        , imgPreview = document.getElementById('img_preview')
+        , totalFiles
+        , previewTitle
+        , previewTitleText
+        , img;
 
-            reader.onload = function(e) {
-              var htmlPreview =
-                '<img width="200" src="' + e.target.result + '" />' +
-                '<p>' + input.files[0].name + '</p>';
-              var wrapperZone = $(input).parent();
-              var previewZone = $(input).parent().parent().find('.preview-zone');
-              var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
+      imgUpload.addEventListener('change', previewImgs, false);
+      
 
-              wrapperZone.removeClass('dragover');
-              previewZone.removeClass('hidden');
-              boxZone.empty();
-              boxZone.append(htmlPreview);
-            };
-
-            reader.readAsDataURL(input.files[0]);
-          }
+      function previewImgs(event) {
+        totalFiles = imgUpload.files.length;
+        
+        if(!!totalFiles) {
+          imgPreview.classList.remove('quote-imgs-thumbs--hidden');
+          previewTitle = document.createElement('p');
+          previewTitle.style.fontWeight = 'bold';
+          previewTitleText = document.createTextNode(totalFiles + ' Total Images Selected');
+          previewTitle.appendChild(previewTitleText);
+          imgPreview.appendChild(previewTitle);
         }
-
-        function reset(e) {
-          e.wrap('<form>').closest('form').get(0).reset();
-          e.unwrap();
+        
+        for(var i = 0; i < totalFiles; i++) {
+          img = document.createElement('img');
+          img.src = URL.createObjectURL(event.target.files[i]);
+          img.classList.add('img-preview-thumb');
+          imgPreview.appendChild(img);
         }
-
-        $(".dropzone").change(function() {
-          readFile(this);
-        });
-
-        $('.dropzone-wrapper').on('dragover', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).addClass('dragover');
-        });
-
-        $('.dropzone-wrapper').on('dragleave', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).removeClass('dragover');
-        });
-
-        $('.remove-preview').on('click', function() {
-          var boxZone = $(this).parents('.preview-zone').find('.box-body');
-          var previewZone = $(this).parents('.preview-zone');
-          var dropzone = $(this).parents('.form-group').find('.dropzone');
-          boxZone.empty();
-          previewZone.addClass('hidden');
-          reset(dropzone);
-        });
-
+      }
     </script>
     <script>
         $(document).on('click', '.check[type="checkbox"]', function() {      
+
             $('.check[type="checkbox"]').not(this).prop('checked', false);      
         });
     </script>
@@ -3940,17 +3959,87 @@
       };
     </script>
 
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      
+    <!-- Layout Slider 1 -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
     </script>
     
+    <!-- Layout Slider 2 -->
+    <script>
+        var slideIndex = 1;
+        showSlidess(slideIndex);
+
+        // Next/previous controls
+        function plusSlidess(n) {
+          showSlidess(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlidess(slideIndex = n);
+        }
+
+        function showSlidess(n) {
+          var i;
+          var slides = document.getElementsByClassName("Slides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+         
+          slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+    <!-- Layout Slider 3-->
+    <script>
+        var slideIndex = 1;
+        showSlidesss(slideIndex);
+
+        // Next/previous controls
+        function plusSlidesss(n) {
+          showSlidesss(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlidesss(slideIndex = n);
+        }
+
+        function showSlidesss(n) {
+          var i;
+          var slides = document.getElementsByClassName("Slidess");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          
+          slides[slideIndex-1].style.display = "block";
+        }
+    </script>
   </body>
 </html>
