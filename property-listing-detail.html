@@ -14,9 +14,13 @@
 	<link href="css/plugin.css" rel="stylesheet" />
 	<!-- style CSS -->
 	<link href="css/style.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 	<!-- Document Title -->
 	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
+	<style>
+		html,body{
+			overflow: unset !important;
+		}
+	</style>
 </head>
 
 <body>
@@ -301,14 +305,16 @@
 																	<form style="justify-content: space-between;display: flex;">
 																		<div class="sliderBox">
 																			<div class="inputBox">
-																				<label>Loan Amount</label>
-																				<span class="reupee">₹</span>
+																				<label style="display: flex;width:250px !important;">Loan Amount &nbsp;&nbsp;&nbsp;₹&nbsp;
+																					<input type="text" id="textInput" value="1000" style="border: none;width:100px;">
+																				</label>
 																			</div>
 																			<div class="container">
 																				<div class="row">
 																			    	<div class="col-md-12">
 																			        	<div class="range-slider">
-																			          		<input type="range" class="js-range-slider" value="" />
+																			          		<input type="range" class="js-range-slider" value="1000" 
+																			          		min="1000" max="10000000" onchange="updateTextInput(this.value);"/>
 																			        	</div>
 
 																			        	<div class="extra-controls">
@@ -320,14 +326,17 @@
 
 																		<div class="sliderBox">
 																			<div class="inputBox">
-																				<label>Loan Tenant</label>
-																				<span class="reupee"> Years</span>
+																				<label style="display: flex;width:250px !important;">Loan Tenant &nbsp;&nbsp;&nbsp;
+																					<input type="text" id="textInput1" value="1" style="border: none;width:20px;">
+																					years
+																				</label>
 																			</div>
 																			<div class="container">
 																				<div class="row">
 																			    	<div class="col-md-12">
 																			        	<div class="range-slider">
-																			          		<input type="range" class="js-range-slider" value="" />
+																			          		<input type="range" class="js-range-slider" value="1"
+																			          		min="1" max="20" onchange="updateTextInput1(this.value);"/>
 																			        	</div>
 																			        	<div class="extra-controls">
 																			        	</div>
@@ -338,14 +347,17 @@
 
 																		<div class="sliderBox">
 																			<div class="inputBox">
-																				<label>Interest Rate</label>
-																				<span class="reupee">%</span>
+																				<label style="display: flex;width:250px !important;">Interest Rate&nbsp;&nbsp;&nbsp;
+																					<input type="text" id="textInput2" value="5" style="border: none;width:25px;">
+																					%
+																				</label>
 																			</div>
 																			<div class="container">
 																				<div class="row">
 																			    	<div class="col-md-12">
 																			        	<div class="range-slider">
-																			          		<input type="range" class="js-range-slider" value="" />
+																			          		<input type="range" class="js-range-slider" value="5" 
+																			          		min="5" max="100"onchange="updateTextInput2(this.value);"/>
 																			        	</div>
 
 																			        	<div class="extra-controls">
@@ -1546,6 +1558,17 @@
 				}
 			});
 		});
+	</script>
+	<script>
+		function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+        function updateTextInput1(val) {
+          document.getElementById('textInput1').value=val; 
+        }
+        function updateTextInput2(val) {
+          document.getElementById('textInput2').value=val; 
+        }
 	</script>
 </body>
 
