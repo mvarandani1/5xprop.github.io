@@ -837,12 +837,12 @@
                                                         <fieldset class="wizard-fieldset show">
                                                             <div class="" style="display: flex;">
                                                                 <div class="wizard-form-radio d-flex" style="margin-right:1rem;">
-                                                                    <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;"
+                                                                    <input name="radio-name" id="radio1" type="radio" class="input-radio" style="height: 25px !important;width:25px !important;"
                                                                     value="residential">
                                                                     <label for="radio1">Residential</label>
                                                                 </div>
                                                                 <div class="wizard-form-radio d-flex">
-                                                                    <input name="radio-name" id="radio1" type="radio"  style="height: 25px !important;width:25px !important;"
+                                                                    <input name="radio-name" id="radio1" type="radio" class="input-radio" style="height: 25px !important;width:25px !important;"
                                                                     value="commercial" class="com">
                                                                     <label for="radio1">Commercial</label>
                                                                 </div>
@@ -852,23 +852,25 @@
                                                     <div class="residential radio">
                                                         
                                                         <div class="apartments" style="margin-top:1rem;">
-
-                                                            
                                                             <div id="apartDiv" style="display:flex;">
-                                                                <div class="in">
-                                                                    <button class="customm-btn btn-16">Apartments/Flat/Builder 
-                                                                    </button>
+                                                                <div class="wizard-form-radio d-flex"     style="margin-right:0.5rem;">
+                                                                  <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                  <label for="radio1">Apartments/Flat/Builder</label>
                                                                 </div>
                                                             </div>
 
                                                             <div id="threeDiv">
-                                                                <div class="ins">
-                                                                    <button class="customm-btn btn-16">Apartments 
-                                                                    </button>
-                                                                    <button class="customm-btn btn-16">Flat
-                                                                    </button>
-                                                                    <button class="customm-btn btn-16">Builder Floor
-                                                                    </button>
+                                                                <div class="wizard-form-radio d-flex"     style="margin-right:0.5rem;">
+                                                                  <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                  <label for="radio1">Apartments</label>
+                                                                </div>
+                                                                <div class="wizard-form-radio d-flex"     style="margin-right:0.5rem;">
+                                                                  <input name="radio-name" id="radio2" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                  <label for="radio2">Flat</label>
+                                                                </div>
+                                                                <div class="wizard-form-radio d-flex"     style="margin-right:0.5rem;">
+                                                                  <input name="radio-name" id="radio3" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                  <label for="radio3">Builder</label>
                                                                 </div>
                                                             </div>
                                                             
@@ -876,17 +878,20 @@
 
                                                             <div style="display:flex;">
                                                                 <div id="houseDiv" style="display:flex;">
-                                                                    <div class="insi">
-                                                                        <button class="customm-btn btn-16">House/Villa</button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>House/Villa</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="twoDiv">
-                                                                    <div class="insid">
-                                                                        <button class="customm-btn btn-16">House
-                                                                        </button>
-                                                                        <button class="customm-btn btn-16">Villa
-                                                                        </button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>House</label>
+                                                                    </div>
+                                                                    <div class="wizard-form-radio d-flex"     style="margin-right:0.5rem;">
+                                                                      <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Villa</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -894,15 +899,16 @@
                                                             <br>
                                                             <div style="display:flex;">
                                                                 <div id="othersDiv"style="display:flex;">
-                                                                    <div class="inside">
-                                                                        <button class="customm-btn btn-16">Others</button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Others</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="oneDiv">
-                                                                    <div class="insidee">
-                                                                        <button class="customm-btn btn-16">Others 
-                                                                        </button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="radio-name" id="radio1" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Others</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -961,51 +967,57 @@
 
                                                             <div class="d-flex">
                                                                 <div id="officeDiv" style="display:flex;">
-                                                                    <div class="com-in">
-                                                                        <button name="projectName" class="customm-btn btn-16">Office
-                                                                        </button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Office</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="officeDiv1">
-                                                                    <div class="com-ins">
-                                                                        <button class="customm-btn btn-16">Office 
-                                                                        </button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Office</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <br>
                                                             <div class="d-flex">
                                                                 <div id="retailDiv" style="display:flex;">
-                                                                    <div class="com-insi">
-                                                                        <button class="customm-btn btn-16">Retail</button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Retail</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="retailDiv1">
-                                                                    <div class="com-insid">
-                                                                        <button class="customm-btn btn-16">Shop/Showroom
-                                                                        </button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Shop/Showroom</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <br>
                                                             
-                                                                <div id="landDiv" style="display:flex;">
-                                                                    <div class="com-inside">
-                                                                        <button class="customm-btn btn-16">Land</button>
+                                                                <div id="landDiv">
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Land</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="landDiv1">
                                                                     <div class="com-insidee">
                                                                         <div id="landDiv2">
-                                                                            <button class="customm-btn btn-16">Agricultural/Farm Land
-                                                                            </button>
+                                                                            <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                              <input id="radio1" name="radio-name" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                              <label>Agricultural Farm Land</label>
+                                                                            </div>
                                                                         </div>
                                                                         <div id="landDiv3">
-                                                                            <button class="customm-btn btn-16">Commercial Land
-                                                                            </button>
+                                                                            <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                              <input id="radio1" name="radio-name" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                              <label>Commercial Land</label>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1013,20 +1025,25 @@
                                                             <br>
                                                             
                                                                 <div id="hospDiv" style="display:flex;">
-                                                                    <div class="com-insideee">
-                                                                        <button class="customm-btn btn-16">Hospitality</button>
+                                                                    <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                      <input name="name-radio" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                      <label>Hospitality</label>
                                                                     </div>
                                                                 </div>
 
                                                                 <div id="hospDiv1">
                                                                     <div class="com-insideeee">
                                                                         <div id="hospDiv2">
-                                                                            <button class="customm-btn btn-16">Warehouse 
-                                                                            </button>
+                                                                            <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                              <input id="radio1" name="radio-name" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                              <label>Warehouse</label>
+                                                                            </div>
                                                                         </div>
                                                                         <div id="hospDiv3">
-                                                                            <button class="customm-btn btn-16">Hotel/Resort
-                                                                            </button>
+                                                                            <div class="wizard-form-radio d-flex" style="margin-right:0.5rem;">
+                                                                              <input id="radio1" name="radio-name" type="radio" style="height: 25px !important;width:25px !important;">
+                                                                              <label>Hotel/Resort</label>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3007,7 +3024,7 @@
     </script>
     <script>
     $(document).ready(function(){
-        $('input[type="radio"]').click(function(){
+        $('.input-radio').click(function(){
             var inputValue = $(this).attr("value");
             var targetBox = $("." + inputValue);
             $(".radio").not(targetBox).hide();
@@ -3087,44 +3104,6 @@
               $('#houseDiv').toggle();
             });
         });
-    </script>
-    <script>
-        $('.in button').on('click', function(){
-            $('.in button').removeClass('active_button');
-            $(this).addClass('active_button');
-            $('.insi button').removeClass('active_button');
-            $('.inside button').removeClass('active_button');
-        });
-
-        $('.ins button').on('click', function(){
-            $('.ins button').removeClass('active_button');
-            $(this).addClass('active_button');
-        });
-
-        $('.insi button').on('click', function(){
-            $('.insi button').removeClass('active_button');
-            $(this).addClass('active_button');
-            $('.in button').removeClass('active_button');
-            $('.inside button').removeClass('active_button');
-        });
-
-        $('.insid button').on('click', function(){
-            $('.insid button').removeClass('active_button');
-            $(this).addClass('active_button');
-        });
-
-        $('.inside button').on('click', function(){
-            $('.inside button').removeClass('active_button');
-            $(this).addClass('active_button');
-            $('.in button').removeClass('active_button');
-            $('.insi button').removeClass('active_button');
-        });
-
-        $('.insidee button').on('click', function(){
-            $('.insidee button').removeClass('active_button');
-            $(this).addClass('active_button');
-        });
-
     </script>
     <!--Validation -->
     <script>
@@ -3883,7 +3862,7 @@
             });
         });
     </script>
-    <script>
+    <!---<script>
         // the selector will match all input controls of type :checkbox
         // and attach a click event handler 
         $(".radio:checkbox").on('click', function() {
@@ -3901,7 +3880,7 @@
             $box.prop("checked", false);
           }
         });
-    </script>
+    </script> -->
 
     <!--Drag & Drop or choose files -->
     <script>
