@@ -28,6 +28,188 @@
 			    margin-right: 100px;
 			}
 		}
+		.navigation {
+		  height: 70px;
+		  background: #fff;
+		  margin-top: 3.5rem;
+		  margin-bottom:3rem;
+		}
+		.brand {
+		  position: absolute;
+		  padding-left: 20px;
+		  float: left;
+		  line-height: 70px;
+		  text-transform: uppercase;
+		  font-size: 1.2em;
+		  display: none;
+		}
+		.brand a,
+		.brand a:visited {
+		  color: #000;
+		  text-decoration: none;
+		}
+
+		.nav-container {
+		  max-width: 1000px;
+		}
+		nav {
+		  justify-content: center;
+		  width: 100vw;
+		  margin-left: 3rem;
+		}
+		nav ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		}
+		nav ul li {
+		  float: left;
+		  position: relative;
+		}
+		nav ul li a,
+		nav ul li a:visited {
+		  display: block;
+		  padding: 0 18px;
+		  line-height: 70px;
+		  background: #ffffff;
+		  color: #000;
+		  text-decoration: none;
+		  font-size: 14px;
+		  z-index: 1;
+		}
+		nav ul li a:hover,
+		nav ul li a:visited:hover {
+		  background: #f52e5d;
+		  color: #ffffff;
+		}
+		nav ul li a:not(:only-child):after,
+		nav ul li a:visited:not(:only-child):after {
+		  padding-left: 4px;
+		  content: ' ▾';
+		}
+		nav ul li ul li {
+		  min-width: 190px;
+		}
+
+		nav ul li ul li a {
+		  padding: 15px;
+		  line-height: 20px;
+		}
+
+		.nav-dropdown {
+		  position: absolute;
+		  display: none;
+		  z-index: 1;
+		  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		/* Mobile navigation */
+		.nav-mobile {
+		  display: none;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  background: #ffffff;
+		  height: 70px;
+		  width: 70px;
+		}
+
+		@media only screen and (max-width: 798px) {
+		  .nav-mobile {
+		    display: block;
+		     margin-top: 3rem !important;
+		  }
+
+		  nav {
+		    width: 100%;
+		    padding: 70px 0 15px;
+		    margin-left: 0rem;
+		  }
+		  nav ul {
+		    display: none;
+		  }
+		  nav ul li {
+		    float: none;
+		  }
+		  nav ul li a {
+		    padding: 15px;
+		    line-height: 20px;
+		  }
+		  nav ul li ul li a {
+		    padding-left: 30px;
+		  }
+
+		  .nav-dropdown {
+		    position: static;
+		  }
+		}
+		@media screen and (min-width: 799px) {
+		  .nav-list {
+		    display: block !important;
+		  }
+		}
+
+		@media (max-width: 768px){
+			.navigation{
+				margin-bottom: 1rem;
+			}
+			.brand{
+				display: block;
+			}
+		}
+
+		.nav-mobile a:hover, .nav-mobile a.active{
+			border-left: none !important;
+			background: none !important;
+		}
+
+		#nav-toggle {
+		  position: absolute;
+		  left: 18px;
+		  top: 22px;
+		  cursor: pointer;
+		  color: #000 !important;
+		  padding: 10px 35px 16px 0px;
+		}
+		#nav-toggle span,
+		#nav-toggle span:before,
+		#nav-toggle span:after {
+		  cursor: pointer;
+		  border-radius: 1px;
+		  height: 3px;
+		  width: 30px;
+		  background: #000;
+		  position: absolute;
+		  display: block;
+		  content: '';
+		  transition: all 300ms ease-in-out;
+		}
+		#nav-toggle span:before {
+		  top: -10px;
+		}
+		#nav-toggle span:after {
+		  bottom: -10px;
+		}
+		#nav-toggle.active span {
+		  background-color: transparent;
+		}
+		#nav-toggle.active span:before, #nav-toggle.active span:after {
+		  top: 0;
+		}
+		#nav-toggle.active span:before {
+		  transform: rotate(45deg);
+		}
+		#nav-toggle.active span:after {
+		  transform: rotate(-45deg);
+		}
+
+		.sticky {
+		  position: fixed;
+		  margin-top: 0;
+		  top: 0;
+		  width: 100%;
+		}
+
 	</style>
 </head>
 
@@ -64,11 +246,119 @@
 			</div>
 			<!--Main Menu ends-->
 		</header>
-	</div>
-
-
-	<div class="col-lg-12 col-md-12 col-sm-12 news-post" style="justify-content:center;margin:auto;">
-                <div class="row d-flex" style="margin-top:5rem !important;">
+		<!--Categories-->
+		<div class="nav-area" style="width: 100vw;">
+			<section class="navigation" id="navbar">
+			  <div class="nav-container">
+			  	<div class="brand">
+			      <a href="#!">Categories</a>
+			    </div>
+			    <nav>
+			      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			      <ul class="nav-list">
+			        <li>
+			          <a href="#!">Home</a>
+			        </li>
+			        <li>
+			          <a href="#!">Media Coverage</a>
+			        </li>
+			        <li>
+			          <a href="#!">Awards & Recognition</a>
+			        </li>
+			        <li>
+			          <a href="#!">Research</a>
+			        </li>
+			        <li>
+			          <a href="#!">Expert Corner</a>
+			        </li>
+			        <li>
+			          <a href="#!">Finance & Legal</a>
+			          <ul class="nav-dropdown">
+			            <li>
+			              <a href="#!">Money Matters</a>
+			            </li>
+			            <li>
+			              <a href="#!">Legal & Tax</a>
+			            </li>
+			          </ul>
+			        </li>
+			        <li>
+			          <a href="#!">Buyer's Corner</a>
+			          <ul class="nav-dropdown">
+			            <li>
+			              <a href="#!">News</a>
+			            </li>
+			            <li>
+			              <a href="#!">Buyer's Guide</a>
+			            </li>
+			            <li>
+			              <a href="#!">NRI</a>
+			            </li>
+			            <li>
+			              <a href="#!">Real Estate Information</a>
+			            </li>
+			            <li>
+			              <a href="#!">Miscellaneous</a>
+			            </li>
+			          </ul>
+			        </li>
+			        <li>
+			          <a href="#!">Lifestyles</a>
+			          <ul class="nav-dropdown">
+			            <li>
+			              <a href="#!">Celebrities Home</a>
+			            </li>
+			            <li>
+			              <a href="#!">Decors</a>
+			            </li>
+			            <li>
+			              <a href="#!">Vastu</a>
+			            </li>
+			            <li>
+			              <a href="#!">Smart/Green Homes</a>
+			            </li>
+			            <li>
+			              <a href="#!">Extraordinary Homes</a>
+			            </li>
+			          </ul>
+			        </li>
+			        <li>
+			          <a href="#!">Cities</a>
+			          <ul class="nav-dropdown">
+			            <li>
+			              <a href="#!">Mumbai Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">NCR Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">Pune Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">Banglore Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">Chennai Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">Hyderabad Property Insights</a>
+			            </li>
+			            <li>
+			              <a href="#!">International</a>
+			            </li>
+			            <li>
+			              <a href="#!">Other Cities</a>
+			            </li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </nav>
+			  </div>
+			</section>
+		</div> <!--nav-area-->
+		<section>
+			<div class="news-post" style="justify-content:center;margin:auto;">
+                <div class="row d-flex" style="margin-top:1rem !important;">
                   <div class="f-card" style="width: 400px !important;">
                     <div class="content">
                       <h4>This is my new post</h4>
@@ -209,7 +499,8 @@
 
               </div>
             </div>
-
+        </section>
+    </div> <!--Page wrapper -->
 	<!--Footer Starts-->
 	<div class="footer-wrapper v3">
 		<div class="footer-top-area">
@@ -320,6 +611,46 @@
 		$('.text-danger').click(function(){
 		    $(this).find('i').toggleClass('fa-bookmark-o fa-bookmark')
 		});
+	</script>
+	<!-- Categories js-->
+	<script>
+		(function($) { // Begin jQuery
+		  $(function() { // DOM ready
+		    // If a link has a dropdown, add sub menu toggle.
+		    $('nav ul li a:not(:only-child)').click(function(e) {
+		      $(this).siblings('.nav-dropdown').toggle();
+		      // Close one dropdown when selecting another
+		      $('.nav-dropdown').not($(this).siblings()).hide();
+		      e.stopPropagation();
+		    });
+		    // Clicking away from dropdown will remove the dropdown class
+		    $('html').click(function() {
+		      $('.nav-dropdown').hide();
+		    });
+		    // Toggle open and close nav styles on click
+		    $('#nav-toggle').click(function() {
+		      $('nav ul').slideToggle();
+		    });
+		    // Hamburger to X toggle
+		    $('#nav-toggle').on('click', function() {
+		      this.classList.toggle('active');
+		    });
+		  }); // end DOM ready
+		})(jQuery); // end jQuery
+	</script>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
 	</script>
 </body>
 
