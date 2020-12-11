@@ -19966,3 +19966,445 @@ a:hover {
         display: none !important;
     }
 }
+
+/* Careers */
+
+/* Image Grid */
+.gallery {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(20vh, 200px);
+  margin-top: 2rem;
+}
+.gallery li {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  flex-wrap: wrap;
+  height: 20vh;
+  margin: .12rem;
+  width: 20rem;
+  min-width: 15rem;
+}
+@supports (display: grid) {
+  .gallery li {
+    height: initial;
+    margin: unset;
+    width: initial;
+    min-width: initial;
+  }
+  .gallery li:nth-of-type(2n + 2) {
+    grid-row: span 2;
+  }
+}
+
+.gallery li:nth-of-type(1) {
+  background-image: url('../images/property/property_1.jpg');
+}
+
+.gallery li:nth-of-type(2) {
+  background-image: url('../images/property/property_2.jpg');
+}
+
+.gallery li:nth-of-type(3) {
+  background-image: url('../images/property/property_3.jpg');
+}
+
+.gallery li:nth-of-type(4) {
+  background-image: url('../images/property/property_4.jpg');
+}
+
+.gallery li:nth-of-type(5) {
+  background-image: url('../images/property/property_5.jpg');
+}
+
+.gallery li:nth-of-type(6) {
+  background-image: url('../images/property/property_6.jpg');
+}
+
+.gallery li:nth-of-type(7) {
+  background-image: url('../images/property/property_7.jpg');
+}
+
+.gallery li:nth-of-type(8) {
+  background-image: url('../images/property/property_8.jpg');
+  height: 200px;
+}
+
+.gallery li:nth-of-type(9) {
+  background-image: url('../images/property/property_9.jpg');
+}
+
+.gallery ul, .gallery li {
+  list-style: none;
+  padding-left: 0;
+}
+
+.gallery li {
+  -webkit-box-align: stretch;
+          align-items: stretch;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1 0 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  line-height: 3;
+  overflow: hidden;
+}
+.gallery li:hover .🐜-title, .gallery li:focus .🐜-title {
+  background-color: #f52e5d;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.gallery .🐜-title {
+  background-color: rgba(4, 27, 73, 0.5);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: padding .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: padding .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: padding .3s ease-in-out, background-color .3s ease-in-out, transform .3s ease-in-out;
+  transition: padding .3s ease-in-out, background-color .3s ease-in-out, transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.gallery .intro {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: minmax(14vh, 100px);
+    }
+}
+
+/* Section 2 After Image Gallery */
+#some-box {
+  padding: 0px 0px 60px;
+  margin-top: -10rem;
+}
+#some-box h1 {
+  text-align: center;
+}
+#some-box h3 {
+  font-size: 26px;
+}
+#some-box a {
+  color: #70bcb8;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+#some-box a:hover {
+  color: #8e7bb2;
+}
+
+article.row{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+article.row div {
+  width: 49.4%;
+  display: inline-block;
+  position: relative;
+  border: 1px solid white;
+}
+
+
+article.row {
+  border: 1px solid white;
+}
+
+#idea-one img,
+#idea-two img,
+#idea-three img {
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+}
+
+@media (max-width: 750px) {
+
+  article.row div {
+    min-width: 300px;
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+    display: block;
+  }
+
+  
+  #some-other-box h3 {
+    text-align: center;
+  }
+
+  #idea-one img,
+  #idea-two img,
+  #idea-three img {
+    position: relative;
+    margin: auto;
+    left: inherit;
+    bottom: inherit;
+  }
+
+  #idea-two {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+
+  #idea-two div:first-of-type {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+  }
+  #some-box {
+      margin-top: 0rem;
+    }
+}
+
+/* Benefits */
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card_image img {
+  height: auto;
+  vertical-align: middle;
+  width: 180px;
+  margin-top: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.card_content {
+  height: 85px; 
+  width: 45rem;
+  padding: 1rem;
+}
+
+.card_title {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+@media (max-width: 500px){
+    .card_title {
+        font-size:0.9rem;
+    }
+    .cards_item{
+        width: 100%;
+    }
+}
+
+/* About Us Page */
+
+/* About Landing */
+.bannerr {
+    margin-top: 1.5rem;
+}
+.leftt {
+    float: left;
+    width: 50%;
+    height: 94vh;
+    border-bottom: 2px solid #f52e5d;
+}
+
+.leftt h1{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    margin-top: 10rem;
+    font-size: 2.5rem;
+}
+
+.leftt p{
+    font-size: 1rem;
+}
+
+.rightt {
+    float: right;
+    width: 50%;
+    background: #f52e5d;
+    height: 94vh;
+}
+
+.rightt-container img{
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.50);
+    box-shadow:
+           -7px -7px 20px 0px rgba(245,46,93,.2),
+           -4px -4px 5px 0px rgba(245,46,93,.2),
+           7px 7px 20px 0px rgba(245,46,93,.2),
+           4px 4px 5px 0px rgba(245,46,93,.2);
+    width: 560px;
+    height: 380px;
+    margin-top: 7rem;
+    margin-left: -5rem;
+}
+
+/* Whole Page After About Us Banner*/
+
+.col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 90vh; 
+  margin-top: 3rem;
+}
+
+.after-bannerr-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Cards 6 */
+.both-divs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+}
+
+.column-box {
+  float: left;
+  padding: 0 10px;
+}
+
+.row-box {margin: 0 -5px;display:flex;flex-direction: column;}
+
+
+.row-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column-box {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .col {
+    width: 100%;
+  }
+  .leftt, .rightt {
+    height: 40vh;
+  }
+  .leftt h1{
+    font-size:1.1rem;
+    margin-top:3rem;
+  }
+  .none{
+    display: none;
+  }
+  .rightt-container img{
+    width: 200px;
+    height: 150px;
+    margin-top: 3rem;
+    margin-left: -2rem;
+  }
+  .aboutus-main {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 390px){
+    .aboutus-main {
+        margin-top: 24rem;
+    }
+    .rightt-container img{
+        width: 200px;
+        height: 130px;
+        margin-top: 3rem;
+        margin-left: -1rem;
+    }
+}
+
+.card-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow:
+           -7px -7px 20px 0px rgba(245,46,93,.2),
+           -4px -4px 5px 0px rgba(245,46,93,.2),
+           7px 7px 20px 0px rgba(245,46,93,.2),
+           4px 4px 5px 0px rgba(245,46,93,.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.col p{
+    color: #000;
+}
