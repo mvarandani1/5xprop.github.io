@@ -15,11 +15,12 @@
 	<!-- style CSS -->
 	<link href="css/style.css" rel="stylesheet" />
 	<!-- Document Title -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
 	<style>
 		@media (max-width: 855px){
 			.logo {
-			    margin-top: -1rem;
+			    margin-top: -0.5rem;
 			    width: 100% !important;
 			}	
 			ul.top-nav li a.btn.v7 {
@@ -32,10 +33,6 @@
 		  background: #fff;
 		  margin-top: 3.5rem;
 		  margin-bottom:3rem;
-		}
-		.header {
-		  text-align: center;
-		  padding: 32px;
 		}
 
 		.row {
@@ -97,6 +94,13 @@
 		.section{
 			margin-bottom: -3rem;
 		}
+		.header{
+			text-align: center;
+			padding: 15px;
+		}
+		.img-fluid{
+			margin-top: -1.2rem;
+		}
 	</style>
 </head>
 
@@ -134,43 +138,62 @@
 			<!--Main Menu ends-->
 		</header>
 
-		<main>
-			<ul class="gallery">
-				<li><h2 class="🐜-title">Our Team</h2></li>
-				<li><h2 class="🐜-title">Employees</h2></li>
-				<li><h2 class="🐜-title">5xprop Family</h2></li>
-				<li><h2 class="🐜-title">We are here</h2>
-				</li>
-				<li><h2 class="🐜-title">Our Office</h2></li>
-				<li><h2 class="🐜-title">5xprop</h2></li>
-				<li><h2 class="🐜-title">Let's Go</h2></li>
-				<li><h2 class="🐜-title">Work & Life</h2></li>
-				<li><h2 class="🐜-title">Life at 5xprop</h2></li>
+		<main style="margin-top: 3rem;">
+			<!-- Gallery -->
+			<ul class="honeycomb">
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_1.jpg">
+			    <div class="honeycomb-cell__title">Our Team</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_2.jpg">
+			    <div class="honeycomb-cell__title">Work & Life</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_3.jpg">
+			    <div class="honeycomb-cell__title">Functions</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_4.jpg">
+			    <div class="honeycomb-cell__title">Togetherness</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_5.jpg">
+			    <div class="honeycomb-cell__title">Love</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_6.jpg">
+			    <div class="honeycomb-cell__title">Employees Support</div>
+			  </li>
+			  <li class="honeycomb-cell">
+			    <img class="honeycomb-cell__image" src="./images/property/property_7.jpg">
+			    <div class="honeycomb-cell__title">Awards</div>
+			  </li>
+			  <li class="honeycomb-cell honeycomb__placeholder"></li>
 			</ul>
 
 			<div id="some-box">
-
 				<article class="row" id="idea-one">
+					<div>
+						<h2>Meet Our Team</h2>
+						<p>Here's your descriptive text for your idea to sell people on the thing after the image gets their attention. This type of section looks best when there's enough text to take up most of the height of the adjacent image.</p>
+					</div>
 					<div>
 						<div class="hero-video">
 							<iframe width="400" height="220" src="https://www.youtube.com/embed/J4CyPCJdnho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-					</div>
-					<div>
-						<h2>Meet Our Team</h2>
-						<p>Here's your descriptive text for your idea to sell people on the thing after the image gets their attention. This type of section looks best when there's enough text to take up most of the height of the adjacent image.</p>
 					</div>
 				</article>
 
 				<article class="row" id="idea-two">
 					<div>
-						<h2>Life at 5xprop</h2>
-						<p>Alternating images and text works with the natural flow of your user's eyes as they scan the page, allowing their eyes to catch on each of the images in turn. If the user's eyes catch on an image, they'll likely read the accompanying text.</p>
-					</div>
-					<div>
 						<div class="hero-video">
 							<iframe width="400" height="220" src="https://www.youtube.com/embed/J4CyPCJdnho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
+					</div>
+					<div>
+						<h2>Life at 5xprop</h2>
+						<p>Alternating images and text works with the natural flow of your user's eyes as they scan the page, allowing their eyes to catch on each of the images in turn. If the user's eyes catch on an image, they'll likely read the accompanying text.</p>
 					</div>
 				</article>
 
@@ -254,7 +277,7 @@
 			  <br>
 			  <ul class="cards">
 			    <li class="cards_item">
-			      <div class="card d-flex">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/competition.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Highly Competitive Compensation</h2>
@@ -262,7 +285,7 @@
 			      </div>
 			    </li>
 			    <li class="cards_item">
-			      <div class="card">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/business.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Supersonic Growth</h2>
@@ -270,7 +293,7 @@
 			      </div>
 			    </li>
 			    <li class="cards_item">
-			      <div class="card">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/structure.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Best Incentive Structure</h2>
@@ -278,7 +301,7 @@
 			      </div>
 			    </li>
 			    <li class="cards_item">
-			      <div class="card">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/choose4.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Bi-Annual Appraisals for Sales</h2>
@@ -286,7 +309,7 @@
 			      </div>
 			    </li>
 			    <li class="cards_item">
-			      <div class="card">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/healthcare.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Healthcare & Insurance</h2>
@@ -294,7 +317,7 @@
 			      </div>
 			    </li>
 			    <li class="cards_item">
-			      <div class="card">
+			      <div class="card-not-bootstrap">
 			        <div class="card_image"><img src="./images/fun.png"></div>
 			        <div class="card_content">
 			          <h2 class="card_title">Fun, Dynamic Environment</h2>
@@ -302,7 +325,543 @@
 			      </div>
 			    </li>
 			  </ul>
-			</div>			
+			</div>
+			<div class="container">
+			    <h1 style="text-align: center;margin-top:2rem;">Open Positions</h1>
+			      <div class="row">
+			        <div class="col-md-2 mb-3">
+			            <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+			              <li class="nav-item">
+			                <a class="nav-link active" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="true">Sales</a>
+			              </li>
+			              <li class="nav-item">
+			                <a class="nav-link" id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false">Technology</a>
+			              </li>
+			              <li class="nav-item">
+			                <a class="nav-link" id="human-tab" data-toggle="tab" href="#human" role="tab" aria-controls="human" aria-selected="false">Human Resources</a>
+			              </li>
+			              <li class="nav-item">
+			                <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab" aria-controls="marketing" aria-selected="false">Marketing</a>
+			              </li>
+			              <li class="nav-item">
+			                <a class="nav-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">Customer Relations</a>
+			              </li>
+			            </ul>
+			        </div>
+			        <div class="col-md-10">
+			          <div class="tab-content" id="myTabContent">
+			            <div class="tab-pane fade show active" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+			              	<div style="padding:20px;">
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Business Development Executive<h4>
+										<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>0 - 3 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Good selling and negotiation skills</li>
+										<li>Aggressive & confident with strong communication skills</li>
+										<li>A self-motivated & passionate individual</li>
+										<li>Should have excellent communications skills and high on Emotional Quotient</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Responsible for selling residential and commercial properties</li>
+										<li>Client acquisition and business development by direct/indirect sales</li>
+										<li>Offer customized portfolio solutions to NRI clients based on their risk/ return and liquidity profile</li>
+										<li>Maximize revenue generation and lead closures by using social and public media marketing campaigns</li>
+										<li>Identifying customers, give presentation and close the deals independently</li>
+										<li>Transaction management and deal closure from sourcing to ROI generation</li>
+										<li>Develop Square Yards as a brand by ensuring service standards in line with company policies</li>
+										<li>Exploring new business development opportunities by leveraging client relationships developed over the years in previous work assignments</li>
+										<li>Strong client focus including pre and post sales services for long term wealth retention</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Regional Manager<h4>
+										<p>Delhi NCR, Mumbai, Bangalore</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>0 - 3 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Good selling and negotiation skills</li>
+										<li>Aggressive & confident with strong communication skills</li>
+										<li>A self-motivated & passionate individual</li>
+										<li>Should have excellent communications skills and high on Emotional Quotient</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Responsible for selling residential and commercial properties</li>
+										<li>Client acquisition and business development by direct/indirect sales</li>
+										<li>Offer customized portfolio solutions to NRI clients based on their risk/ return and liquidity profile</li>
+										<li>Maximize revenue generation and lead closures by using social and public media marketing campaigns</li>
+										<li>Identifying customers, give presentation and close the deals independently</li>
+										<li>Transaction management and deal closure from sourcing to ROI generation</li>
+										<li>Develop Square Yards as a brand by ensuring service standards in line with company policies</li>
+										<li>Exploring new business development opportunities by leveraging client relationships developed over the years in previous work assignments</li>
+										<li>Strong client focus including pre and post sales services for long term wealth retention</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Leadership Role<h4>
+										<p>Delhi NCR, Mumbai, Bangalore</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>0 - 3 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Good selling and negotiation skills</li>
+										<li>Aggressive & confident with strong communication skills</li>
+										<li>A self-motivated & passionate individual</li>
+										<li>Should have excellent communications skills and high on Emotional Quotient</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Responsible for selling residential and commercial properties</li>
+										<li>Client acquisition and business development by direct/indirect sales</li>
+										<li>Offer customized portfolio solutions to NRI clients based on their risk/ return and liquidity profile</li>
+										<li>Maximize revenue generation and lead closures by using social and public media marketing campaigns</li>
+										<li>Identifying customers, give presentation and close the deals independently</li>
+										<li>Transaction management and deal closure from sourcing to ROI generation</li>
+										<li>Develop Square Yards as a brand by ensuring service standards in line with company policies</li>
+										<li>Exploring new business development opportunities by leveraging client relationships developed over the years in previous work assignments</li>
+										<li>Strong client focus including pre and post sales services for long term wealth retention</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Portfolio Manager<h4>
+										<p>Australia Square</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>0 - 3 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Good selling and negotiation skills</li>
+										<li>Aggressive & confident with strong communication skills</li>
+										<li>A self-motivated & passionate individual</li>
+										<li>Should have excellent communications skills and high on Emotional Quotient</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Responsible for selling residential and commercial properties</li>
+										<li>Client acquisition and business development by direct/indirect sales</li>
+										<li>Offer customized portfolio solutions to NRI clients based on their risk/ return and liquidity profile</li>
+										<li>Maximize revenue generation and lead closures by using social and public media marketing campaigns</li>
+										<li>Identifying customers, give presentation and close the deals independently</li>
+										<li>Transaction management and deal closure from sourcing to ROI generation</li>
+										<li>Develop Square Yards as a brand by ensuring service standards in line with company policies</li>
+										<li>Exploring new business development opportunities by leveraging client relationships developed over the years in previous work assignments</li>
+										<li>Strong client focus including pre and post sales services for long term wealth retention</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Business Development Manger<h4>
+										<p>Dubai</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Pune, Hyderabad, Lucknow, Vizag, Vijayawada</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>0 - 3 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Good selling and negotiation skills</li>
+										<li>Aggressive & confident with strong communication skills</li>
+										<li>A self-motivated & passionate individual</li>
+										<li>Should have excellent communications skills and high on Emotional Quotient</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Responsible for selling residential and commercial properties</li>
+										<li>Client acquisition and business development by direct/indirect sales</li>
+										<li>Offer customized portfolio solutions to NRI clients based on their risk/ return and liquidity profile</li>
+										<li>Maximize revenue generation and lead closures by using social and public media marketing campaigns</li>
+										<li>Identifying customers, give presentation and close the deals independently</li>
+										<li>Transaction management and deal closure from sourcing to ROI generation</li>
+										<li>Develop Square Yards as a brand by ensuring service standards in line with company policies</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+							</div>
+			            </div>
+
+			            <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+			                <div style="padding:20px;">
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Data Scientist<h4>
+										<p>Mumbai</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Mumbai</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Devops Architect<h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>.Net Developer<h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Full Stack Developer<h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Python Developer<h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Data Analyst<h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 - 7 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Experience with programming languages like Python, R and SQL.</li>
+										<li>Expertise in big data technologies, Machine Learning, Natural Language Processing and AI.</li>
+										<li>Great at algorithms and big data analysis.</li>
+										<li>Strong mathematics and statistics skills.</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Setting up technical processes to collect data from different sources.</li>
+										<li>Compiling and normalising data from different sources for further processing.</li>
+										<li>Analysing the data for patterns and useful insights.</li>
+										<li>Putting processes and frameworks in place to deal with large volumes of data on regular basis.</li>
+										<li>Working on exciting products, features and reports in a collaborative fashion to meet business requirements and use cases.</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+							</div>
+			            </div>
+			            <div class="tab-pane fade" id="human" role="tabpanel" aria-labelledby="human-tab">
+			              	<div style="padding:20px;">
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Talent Acquisition Executive</h4>
+										<p>Delhi NCR, Mumbai, Bangalore, Hyderabad</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Delhi NCR, Mumbai, Bangalore, Hyderabad</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>1-4 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Should be fluent in English</li>
+										<li>Confident and target-oriented</li>
+										<li>Deep understanding of recruitment processes</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Partnering with hiring managers to determine staffing needs</li>
+										<li>Performing in-person and phone interviews/ Screening candidates</li>
+										<li>Coordinating interviews with the hiring managers</li>
+										<li>Following up on the interview process status</li>
+										<li>Maintaining relationships with both internal and external stakeholders to ensure staffing goals are achieved</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+							</div>
+			            </div>
+			            <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+			                <div style="padding:20px;">
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Content Manager</h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>Should be fluent in English</li>
+										<li>Confident and target-oriented</li>
+										<li> 2+ Years of experience into Content Writing</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Excellent writing and editing skills in English</li>
+										<li>Comfortable working under timelines and a goal-based approach</li>
+										<li>Write creative, unique, and relevant online content for articles, websites, blogs, and other emerging formats</li>
+										<li>Researching and gathering useful information and writing relevant content as per the style, tone, and requirements</li>
+										<li>Promote the company's products through social media channels using unique writing skills. Candidate should live and breathe social media - Twitter, Facebook, LinkedIn, and the others and be abuzz with ideas on how to leverage these channels</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+							</div>
+			            </div>
+			            <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer-tab">
+			                <div style="padding:20px;">
+								<div class="accordion" style="display: flex;justify-content: space-between;">
+									<button class="accordion-btn"><h4>Customer Relationship Manager</h4>
+										<p>Gurgaon</p>
+									</button>
+									<i class="fa fa-plus"></i>
+								</div>
+								<div class="panel">
+									<br>
+								  	<h5>Location</h5>
+									<p>Gurgaon</p>
+									<br>
+									<h5>Experience :</h5>
+									<p>2-5 Years</p>
+									<br>
+									<h5>Desired Candidate :</h5>
+									<ul>
+										<li>2+ Years of experience as a Customer Relationship Manager</li>
+										<li>Should be strong in handling Post sales activities</li>
+										<li>Excellent English communication skills - Spoken and Written</li>
+									</ul>
+									<br>
+									<h5>Job Description :</h5>
+									<ul>
+										<li>Client servicing & portfolio management with a view to retaining existing customers, increasing brand loyalty, and expanding the client base through referrals.</li>
+										<li> Collaborating with other departments & stakeholders for smooth client servicing.</li>
+										<li>Development of testing strategies to guarantee the most efficient approach for the organization and its customers</li>
+									</ul>
+									<br>
+									<a class="btn v7" href="#">Apply Now</a>&nbsp;&nbsp; Posted 6 days ago
+								</div>
+								<br>
+							</div>
+			            </div>
+			        </div>
+			      </div>
+			    </div>
+			</div>
 		</main>
 		<!--Footer Starts-->
 		<div class="footer-wrapper v3">
@@ -404,5 +963,23 @@
 		</div>
 		<!--Footer ends-->
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.display === "block") {
+		      panel.style.display = "none";
+		    } else {
+		      panel.style.display = "block";
+		    }
+		  });
+		}
+	</script>
 </body>
 </html>
