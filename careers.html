@@ -68,14 +68,25 @@
 
 		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 		@media screen and (max-width: 600px) {
-		  .column {
-		    -ms-flex: 100%;
-		    flex: 100%;
-		    max-width: 100%;
-		  }
-		  .section{
-			margin-bottom: 0px !important;
-		  }
+		  	.column {
+		    	-ms-flex: 100%;
+		    	flex: 100%;
+		    	max-width: 100%;
+		  	}
+		  	.section{
+				margin-bottom: 0px !important;
+		  	}
+		  	.font-size-small{
+		  		font-size: 1.9rem;
+		  	}
+		  	.img-fluid{
+				margin-top: -2rem !important;
+			}
+			ul.top-nav a.btn.v7 {
+				font-size: 13px;
+			    padding: 5px 16px !important;
+			    margin-right:60px !important;
+			}	
 		}
 
 		.service-container .box {
@@ -273,9 +284,9 @@
 					</div>
 				</div>
 			</div> <!-- Our Ethos -->
-			
+			<br>
 			<div class="main">
-			  <h1 style="text-align: center;">Benefits And Perks</h1>
+			  <h1 class="font-size-small" style="text-align: center;">Benefits And Perks</h1>
 			  <p style="margin: auto;width:70%;text-align: center;">We are of a strong opinion that our employees are the architects of our success and growth. We thus leave no stone unturned to extend our gratitude and appreciation to them.</p>
 			  <br>
 			  <ul class="cards">
@@ -330,7 +341,7 @@
 			  </ul>
 			</div>
 			<div class="container">
-			    <h1 style="text-align: center;margin-top:2rem;">Open Positions</h1>
+			    <h1 class="font-size-small" style="text-align: center;margin-top:2rem;margin-bottom:2rem;">Open Positions</h1>
 			      <div class="row">
 			        <div class="col-md-2 mb-3">
 			            <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
