@@ -1,0 +1,187 @@
+.top-dflex{
+	display: flex;
+	margin-left:2rem;
+}
+
+.row-dflex{
+	display: flex;
+}
+
+.tab-content{
+	width: 1200px;
+	margin-left: -10rem;
+}
+
+.rera-img-div:hover{
+	border: 1px solid #f52e5d;
+	border-radius: 5px;
+}
+
+.rera-img-div p:hover{
+	background: #f52e5d;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.rera-img-div{
+	text-align: center;
+	height: 80px;
+	width: 100px;
+}
+
+input[type="checkbox"]{
+	visibility: visible !important;
+	opacity: 1 !important;
+	width: 15px !important;
+	height: 15px !important;
+}
+
+.card {
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+	width: 600px;
+	height: 72vh;
+	position: relative;
+}
+
+.card-border img{
+	width: 45px;
+	height: 30px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+    
+.swiper-slide ul{
+	display: flex !important;
+	flex-direction: column;
+}
+
+.swiper-slide ul li{
+	cursor: pointer;
+}
+
+.accordion img{
+	width: 40px;
+	height: 40px;
+	margin-top:-1rem;
+}
+
+/* Popup on hover image */
+#green, #red {
+  position: relative;
+}
+
+#green div, #red div {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom:100%;
+  height: 60px;
+  margin-top: -50px; /* approx adjustment for arrow */
+  margin-left: -8px;
+}
+
+#green div h5, #red div h5{
+	font-size:14px;
+}
+
+#green a:hover + div{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  width: 110px;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+  background: green;
+  border-radius: 5px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+#green div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+  top: 50px;
+  left: 30px;
+}
+
+#red a:hover + div{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  width: 110px;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+#red div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent red transparent transparent;
+  top: 50px;
+  left: 30px;
+}
+
+@media (max-width:600px){
+	.top-dflex{
+		display: flex;
+		flex-direction: column;
+	}
+	.row-dflex{
+		display: flex;
+		flex-direction: column;
+	}
+}
