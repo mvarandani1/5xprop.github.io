@@ -1,51 +1,51 @@
 .top-dflex{
-	display: flex;
-	margin-left:2rem;
+  display: flex;
+  margin-left:2rem;
 }
 
 .row-dflex{
-	display: flex;
+  display: flex;
 }
 
 .tab-content{
-	width: 1200px;
-	margin-left: -10rem;
+  width: 1200px;
+  margin-left: -10rem;
 }
 
 .rera-img-div:hover{
-	border: 1px solid #f52e5d;
-	border-radius: 5px;
+  border: 1px solid #f52e5d;
+  border-radius: 5px;
 }
 
 .rera-img-div p:hover{
-	background: #f52e5d;
-	color: #fff;
-	border-radius: 5px;
+  background: #f52e5d;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .rera-img-div{
-	text-align: center;
-	height: 80px;
-	width: 100px;
+  text-align: center;
+  height: 80px;
+  width: 100px;
 }
 
 input[type="checkbox"]{
-	visibility: visible !important;
-	opacity: 1 !important;
-	width: 15px !important;
-	height: 15px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .card {
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-	width: 600px;
-	height: 72vh;
-	position: relative;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 600px;
+  height: 72vh;
+  position: relative;
 }
 
 .card-border img{
-	width: 45px;
-	height: 30px;
+  width: 45px;
+  height: 30px;
 }
 
 .swiper-container {
@@ -74,18 +74,18 @@ input[type="checkbox"]{
 }
     
 .swiper-slide ul{
-	display: flex !important;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .swiper-slide ul li{
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .accordion img{
-	width: 40px;
-	height: 40px;
-	margin-top:-1rem;
+  width: 40px;
+  height: 40px;
+  margin-top:-1rem;
 }
 
 /* Popup on hover image */
@@ -106,7 +106,7 @@ input[type="checkbox"]{
 }
 
 #green div h5, #red div h5{
-	font-size:14px;
+  font-size:14px;
 }
 
 #green a:hover + div{
@@ -175,13 +175,57 @@ input[type="checkbox"]{
   left: 30px;
 }
 
+.fa-plus{
+  margin-top:2rem;font-size:20px;color:#f52e5d;
+}
+
 @media (max-width:600px){
-	.top-dflex{
-		display: flex;
-		flex-direction: column;
-	}
-	.row-dflex{
-		display: flex;
-		flex-direction: column;
-	}
+  .tab-content{
+    width: 500px;
+    margin-left: 3rem !important;
+  }
+  .main-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 340px;
+    margin-left: -2rem;
+  }
+  .hide-sm{
+    display: none !important;
+  }
+  li img{
+    width: 50px;
+    height: 30px;
+  }
+  #green a:hover + div, #red a:hover + div {
+    width: 80px;
+    font-size:12px;
+  }
+  .change-card{
+    width: 100% !important;
+  }
+  .change-card-div{
+    text-align: center;
+    margin: auto !important;
+  }
+  .card-border img{
+    width: 35px;
+  }
+  .list-view .card{
+    width: 360px !important;
+  }
+  .up-accordion{
+    width: 360px !important;
+    margin-left: -2rem;
+  }
+  .accordion-d-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-plus{
+    margin-left: -50rem;
+    color:#f52e5d;
+  }
 }
