@@ -189,7 +189,7 @@ input[type="checkbox"]{
     flex-direction: column;
   }
   .card{
-    width: 340px;
+    width: 360px;
     margin-left: -2rem;
   }
   .hide-sm{
