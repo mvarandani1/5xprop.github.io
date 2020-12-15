@@ -8,8 +8,8 @@
 }
 
 .tab-content{
-  width: 1200px;
-  margin-left: -10rem;
+  width: 1300px;
+  margin-left: -15rem;
 }
 
 .rera-img-div:hover{
@@ -44,8 +44,8 @@ input[type="checkbox"]{
 }
 
 .card-border img{
-  width: 45px;
-  height: 30px;
+  width: 40px;
+  height: 35px;
 }
 
 .swiper-container {
@@ -89,11 +89,11 @@ input[type="checkbox"]{
 }
 
 /* Popup on hover image */
-#green, #red {
+.green, .red {
   position: relative;
 }
 
-#green div, #red div {
+.green div, .red div {
   display: none;
   position: absolute;
   z-index: 999;
@@ -105,11 +105,11 @@ input[type="checkbox"]{
   margin-left: -8px;
 }
 
-#green div h5, #red div h5{
+.green div h5, .red div h5{
   font-size:14px;
 }
 
-#green a:hover + div{
+.green a:hover + div{
   position: absolute;
   cursor: pointer;
   display: block;
@@ -130,7 +130,7 @@ input[type="checkbox"]{
   pointer-events: none;
 }
 
-#green div:after {
+.green div:after {
   content: "";
   position: absolute;
   width: 0;
@@ -142,7 +142,7 @@ input[type="checkbox"]{
   left: 30px;
 }
 
-#red a:hover + div{
+.red a:hover + div{
   position: absolute;
   cursor: pointer;
   display: block;
@@ -163,7 +163,7 @@ input[type="checkbox"]{
   pointer-events: none;
 }
 
-#red div:after {
+.red div:after {
   content: "";
   position: absolute;
   width: 0;
@@ -177,6 +177,72 @@ input[type="checkbox"]{
 
 .fa-plus{
   margin-top:2rem;font-size:20px;color:#f52e5d;
+}
+
+.change-card1{
+  display: none;
+  width: 27%;height:40vh;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls input[type="date"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #f52e5d;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls input[type="date"]:focus,
+.controls input[type="date"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #f52e5d;
+}
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls input[type="date"]:focus + label,
+.controls input[type="date"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #f52e5d;
+  cursor: text;
 }
 
 @media (max-width:600px){
@@ -199,12 +265,18 @@ input[type="checkbox"]{
     width: 50px;
     height: 30px;
   }
-  #green a:hover + div, #red a:hover + div {
+  .green a:hover + div, .red a:hover + div {
     width: 80px;
     font-size:12px;
   }
   .change-card{
     width: 100% !important;
+  }
+  .change-card1{
+    height: 80vh;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    width: 355px;
   }
   .change-card-div{
     text-align: center;
@@ -227,5 +299,24 @@ input[type="checkbox"]{
   .fa-plus{
     margin-left: -50rem;
     color:#f52e5d;
+  }
+  .rera-div{
+    display: flex;
+    flex-direction: row !important;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    width: 330px;
+    overflow-y: hidden;
+    margin-left: -1rem;
+  }
+  .div1{
+    width: 360px;
+    height: 160px;
+  }
+  .rera-div div{
+    margin-left: 0.5rem;
+  }
+  .rera-img-div{
+    margin-right: 2rem;
   }
 }
