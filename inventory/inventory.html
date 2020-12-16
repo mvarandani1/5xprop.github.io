@@ -135,55 +135,31 @@
 												<br>
 												<div class="rera-div" style="display: flex;flex-direction:column;">
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="1">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="2">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="3">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="4">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="5">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="6">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
-														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
-													</div>
-													<div class="d-flex">
-														<input type="checkbox">
+														<input type="checkbox" target="7">
 														<label for="1" style="margin-top:-0.3rem"><p>2BHK+Study (115)</p></label>
 													</div>
 												</div>
@@ -209,7 +185,7 @@
 
 														<div class="mySlides">
 															<div class="text">TOWER-A</div>
-															<ul>
+															<ul id="div1" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 29</li>
 																<li class="green">
 																	<a>
@@ -269,7 +245,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul>
+															<ul id="div1" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 30</li>
 																<li class="green">
 																	<a>
@@ -345,7 +321,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul>
+															<ul id="div2" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 31</li>
 																<li><img src="./images/unit-icon-disable.png"></li>
 																<li class="green">
@@ -421,7 +397,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul>
+															<ul id="div2" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 32</li>
 																<li><img src="./images/unit-icon-disable.png"></li>
 																<li><img src="./images/unit-icon-disable.png"></li>
@@ -481,7 +457,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul>
+															<ul id="div2" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 33</li>
 																<li class="green">
 																	<a>
@@ -549,7 +525,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul class="hide-sm">
+															<ul id="div3" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 34</li>
 																<li class="green">
 																	<a>
@@ -617,7 +593,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul class="hide-sm">
+															<ul id="div3" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 35</li>
 																<li><img src="./images/unit-icon-disable.png"></li>
 																<li class="green">
@@ -677,7 +653,7 @@
 																  </div>
 																</li>
 															</ul>
-															<ul>
+															<ul id="div3" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 36</li>
 																<li class="green">
 																	<a>
@@ -729,7 +705,7 @@
 																</li>
 																<li><img src="./images/unit-icon-disable.png"></li>
 															</ul>
-															<ul>
+															<ul id="div3" class="targetDiv">
 																<li style="background:#f1f1f1">Floor 37</li>
 																<li class="green">
 																	<a>
@@ -4962,6 +4938,20 @@
 			}
 		});
 
+	</script>
+	<script>
+		jQuery(function() {
+			jQuery('.rera-div input[type="checkbox"]').click(function() {
+				if($(this).is(":checked")) {
+					// $(".targetDiv").hide();
+					// jQuery('#div' + $(this).attr('target')).show();
+					var target = $(this).attr('target');
+        			$('#div'+target).toggle('.hide');
+				} else {
+					$(".targetDiv").show();
+				}
+			});
+		});
 	</script>
 </body>
 </html>

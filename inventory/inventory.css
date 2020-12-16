@@ -368,3 +368,7 @@ input[type="checkbox"]{
     width: 140vw;
   }
 }
+
+.hide{
+  display: none;
+ }
