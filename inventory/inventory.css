@@ -12,12 +12,12 @@
   margin-left: -15rem;
 }
 
-.rera-img-div:hover{
+.rera-img-div:hover, .rera-active{
   border: 1px solid #f52e5d;
   border-radius: 5px;
 }
 
-.rera-img-div p:hover{
+.rera-img-div p:hover , .rera-active p{
   background: #f52e5d;
   color: #fff;
   border-radius: 5px;
@@ -108,6 +108,7 @@ input[type="checkbox"]{
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+      flex-direction: column;
 }
 
 .mySlides ul{
@@ -372,3 +373,4 @@ input[type="checkbox"]{
 .hide{
   display: none;
  }
+
