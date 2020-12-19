@@ -65,7 +65,14 @@
                 font-size: 18px;
             }
         }
-      
+
+        input[type="checkbox"]{
+            width: 16px !important;
+            height: 16px !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
 	</style>
 </head>
 
@@ -155,7 +162,8 @@
                                 
                                     <div class="form-group mb-4">
                                         <label for="unit">Select Unit</label>
-                                        <select name="unit" id="unit" class="form-control" required="">
+                                        <select name="unit" id="unit paper" class="form-control" required="" 
+                                        onchange="update_status(this)">
                                             <option value=""> Select Unit </option>
                                             <option value="unit"> unit-11850 SQ.FT Park Facing </option>
                                             <option value="unit1"> unit-2 4545 SQ.FT </option>
@@ -164,7 +172,7 @@
                                         </select>
                                     </div>
                                     
-                                    <div id="printableArea">		
+                                    <div class="pdf-page">		
                                         <div class="unit boxx">
                                             <h6>BSP - (5400 BSP) * (1850 Size) = 9990000</h6>
                                             <h6>Floor PLC - (100 BSP) * (1850 Size) = 185000</h6>
@@ -182,7 +190,7 @@
                                             <h6>With in 30 DAYS (30 %)- 3339000</h6>
                                             <h6>On Super structure (30 %)- 3339000</h6>
                                             <h6>On Possession (40 %)- 4452000</h6>
-                                        </div>   
+                                        </div>  
                                         <div class="unit1 boxx">
                                             <h6>BSP - (5400 BSP) * (4545 Size) = 24543000</h6>
                                             <h6>Floor PLC - (100 BSP) * (4545 Size) = 454500</h6>
@@ -240,7 +248,9 @@
                                     </div>
         
                                     <div class="text-center"> 
-                                        <input type="button" name="signup" class="btn btn-custom font-14 py-2 px-4 text-uppercase mt-1" 
+                                        <input type="button" name="signup" 
+                                        class="btn btn-custom font-14 py-2 px-4 text-uppercase mt-1" 
+                                        data-toggle="modal" data-target="#ContactAgent"
                                         value="Print"> 
                                     </div>
         
@@ -250,6 +260,47 @@
                     </div>
                 </div>
             </section>
+
+            <!--Modal-->
+            <!-- Contact Popup Start -->
+            <div class="modal fade align-items-center justify-content-center contant-agenet-popup" id="ContactAgent" 
+            tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content pb-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contact Our Real Estate Experts</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Email ID">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                            <div class="enq-checkbox">
+                                <p>Intereset in (Optional)</p>
+                                <ul>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Site Visit</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Immediate Purchase</label>
+                                    </li>
+                                    <li>
+                                        <input id="check-a" type="checkbox" name="check">
+                                        <label for="check-a">Home Loan</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experts-btn">
+                                <a href="#" class="btn btn-custom  py-2 mt-10"
+                                onclick="getPrint('.pdf-page');getPrint('.pdf-page1')"> <i class="fa fa-phone mr-5"></i> Enquiry Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
         </main>
 
 		<div class="footer-wrapper v3">
@@ -372,6 +423,82 @@
                 });
             }).change();
         });
+    </script>
+    <script>
+        function update_status(selected_option){
+            (selected_option.value);
+        }
+
+        function getPDF(selector) {
+        kendo.drawing.drawDOM($(selector)).then(function(group){
+            kendo.drawing.pdf.saveAs(group, "Invoice.pdf");
+        });
+        }
+
+        function getPrint(selector) {
+            w = window.open();
+            w.document.write($(selector).html());
+            w.print();
+            w.close();
+        }
+
+        $(document).ready(function() {
+        var data = [
+            { productName: "QUESO CABRALES", unitPrice: 21, qty: 5 },
+            { productName: "ALICE MUTTON", unitPrice: 39, qty: 7 },
+            { productName: "GENEN SHOUYU", unitPrice: 15.50, qty: 3 },
+            { productName: "CHARTREUSE VERTE", unitPrice: 18, qty: 1 },
+            { productName: "MASCARPONE FABIOLI", unitPrice: 32, qty: 2 },
+            { productName: "VALKOINEN SUKLAA", unitPrice: 16.25, qty: 3 }
+        ];
+        var schema = {
+            model: {
+            productName: { type: "string" },
+            unitPrice: { type: "number", editable: false },
+            qty: { type: "number" }
+            },
+            parse: function (data) {
+            $.each(data, function(){
+                this.total = this.qty * this.unitPrice;
+            });
+            return data;
+            }
+        };
+        var aggregate = [
+            { field: "qty", aggregate: "sum" },
+            { field: "total", aggregate: "sum" }
+        ];
+        var columns = [
+            { field: "productName", title: "Product", footerTemplate: "Total"},
+            { field: "unitPrice", title: "Price", width: 120},
+            { field: "qty", title: "Pcs.", width: 120, aggregates: ["sum"], footerTemplate: "#=sum#" },
+            { field: "total", title: "Total", width: 120, aggregates: ["sum"], footerTemplate: "#=sum#" }
+        ];
+        var grid = $("#grid").kendoGrid({
+            editable: false,
+            sortable: true,
+            dataSource: {
+            data: data,
+            aggregate: aggregate,
+            schema: schema,
+            },
+            columns: columns
+        });
+
+        $("#paper").kendoDropDownList({
+            change: function() {
+            $(".pdf-page")
+                .removeClass("unit")
+                .removeClass("unit1")
+                .removeClass("unit2")
+                .removeClass("unit3")
+                .addClass(this.value());
+            }
+        });
+    });
+
+
+        
     </script>
 </body>
 </html>

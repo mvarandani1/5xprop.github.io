@@ -14336,10 +14336,7 @@ section.inner-pages {
     height: 42px;
     border-color: #d6d6d6;
 }
-.contant-agenet-popup .modal-dialog {
-    margin: 80px 0px;
-    max-width: 400px;
-}
+
 .widget-title-w-icon img {
     max-width: 40px;
     display: inline-block;
@@ -20315,11 +20312,10 @@ article.row {
   padding: 0 18px;
   display: none;
   background-color: white;
-  overflow: hidden;
 }
 
 .panel ul li, .panel p{
-    list-style: initial !important;
+    list-style: initial;
     color: #000;
 }
 
