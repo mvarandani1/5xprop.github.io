@@ -73,8 +73,25 @@
             opacity: 1 !important;
         }
 
-        h4{
+        b, .pink, th{
             color: #f52e5d;
+            font-weight: 600;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: #000;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        td{
+            line-height: 30px;
         }
         
 	</style>
@@ -178,25 +195,279 @@
                                     
                                     <div class="pdf-page">		
                                         <div class="unit boxx">
-                                            <h6>BSP - (5400 BSP) * (1850 Size) = 9990000</h6>
-                                            <h6>Floor PLC - (100 BSP) * (1850 Size) = 185000</h6>
-                                            <h6>Park PLC - (100 BSP) * (1850 Size) = 185000</h6>
-                                            <h6>Rood PLC - (100 BSP) * (1850 Size) = 185000</h6>
-                                            <h6>Car Parking =300000</h6>
-                                            <h6>Club Charge =100000</h6>
-                                            <h6>Lease Rent - (100 BSP) * (1850 Size) = 185000</h6>
-                                            <h4>Total - Rs. 11130000</h4>
-                                            <h4>Extra Charges</h4>
-                                            <h6>GST 5% Extra</h6>
-                                            <h6>Registry as per applicable</h6>
-                                            <h6>Possession charges approx. 32500/-</h6>
-                                            <h4>Payment plan - 30:30:40</h4>
-                                            <h6>With in 30 DAYS (30 %)- 3339000</h6>
-                                            <h6>On Super structure (30 %)- 3339000</h6>
-                                            <h6>On Possession (40 %)- 4452000</h6>
+                                            <table>
+                                                <tr>
+                                                  <th></th>
+                                                  <th>Rate</th>
+                                                  <th></th>
+                                                  <th>Size</th>
+                                                  <th>mzmt</th>
+                                                  <th></th>
+                                                  <th>Price</th>
+                                                  <th>GST</th>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>BSP</b></td>
+                                                  <td>5400</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,45,43,000</td>
+                                                  <td>90,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Floor P|c</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td>45,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Park P|c</b></td>
+                                                  <td>50</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,27,250</td>
+                                                  <td>21,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Road P|c</b></td>
+                                                    <td>100</td>
+                                                    <td></td>
+                                                    <td>4545</td>
+                                                    <td></td>
+                                                    <td>=</td>
+                                                    <td>4,54,500</td>
+                                                    <td>54,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Car Parking</b></td>
+                                                  <td></td>
+                                                  <td>300000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>3,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Club Charge</b></td>
+                                                  <td></td>
+                                                  <td>100000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>10,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Lease Rent</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td></td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="pink">Total</td>
+                                                    <td></td>
+                                                    <td class="pink">Rs.</td>
+                                                    <td></td>
+                                                    <td>2,58,52,000</td>
+                                                    <td>5,60,090</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Extra Charges</td>
+                                                    <td></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>GST 5% Extra</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Registry as per applicable</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Possession charges approx .32500</td>
+                                                    <td>32,500</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Payment plan - 30:30:40</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>With in 30 Days</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Super Structure</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Possession</td>
+                                                    <td>40%</td>
+                                                    <td>1034500</td>
+                                                </tr>
+                                            </table>
                                         </div>  
                                         <div class="unit1 boxx">
-                                            <h6>BSP - (5400 BSP) * (4545 Size) = 24543000</h6>
+                                            <table>
+                                                <tr>
+                                                  <th></th>
+                                                  <th>Rate</th>
+                                                  <th></th>
+                                                  <th>Size</th>
+                                                  <th>mzmt</th>
+                                                  <th></th>
+                                                  <th>Price</th>
+                                                  <th>GST</th>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>BSP</b></td>
+                                                  <td>5400</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,45,43,000</td>
+                                                  <td>90,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Floor P|c</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td>45,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Park P|c</b></td>
+                                                  <td>50</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,27,250</td>
+                                                  <td>21,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Road P|c</b></td>
+                                                    <td>100</td>
+                                                    <td></td>
+                                                    <td>4545</td>
+                                                    <td></td>
+                                                    <td>=</td>
+                                                    <td>4,54,500</td>
+                                                    <td>54,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Car Parking</b></td>
+                                                  <td></td>
+                                                  <td>300000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>3,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Club Charge</b></td>
+                                                  <td></td>
+                                                  <td>100000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>10,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Lease Rent</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td></td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="pink">Total</td>
+                                                    <td></td>
+                                                    <td class="pink">Rs.</td>
+                                                    <td></td>
+                                                    <td>2,58,52,000</td>
+                                                    <td>5,60,090</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Extra Charges</td>
+                                                    <td></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>GST 5% Extra</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Registry as per applicable</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Possession charges approx .32500</td>
+                                                    <td>32,500</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Payment plan - 30:30:40</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>With in 30 Days</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Super Structure</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Possession</td>
+                                                    <td>40%</td>
+                                                    <td>1034500</td>
+                                                </tr>
+                                            </table>
+                                            <!-- <h6>BSP - (5400 BSP) * (4545 Size) = 24543000</h6>
                                             <h6>Floor PLC - (100 BSP) * (4545 Size) = 454500</h6>
                                             <h6>Park PLC - (0 BSP) * (4545 Size) = 0</h6>
                                             <h6>Rood PLC - (0 BSP) * (4545 Size) = 0</h6>
@@ -211,10 +482,145 @@
                                             <h4>Payment plan - 30:30:40</h4>
                                             <h6>With in 30 DAYS (30 %)- 7755600</h6>
                                             <h6>On Super structure (30 %)- 7755600</h6>
-                                            <h6>On Possession (40 %)- 10340800</h6>
+                                            <h6>On Possession (40 %)- 10340800</h6> -->
                                         </div>  
                                         <div class="unit2 boxx">
-                                            <h6>BSP - (5400 BSP) * (5454 Size) = 29451600</h6>
+                                            <table>
+                                                <tr>
+                                                  <th></th>
+                                                  <th>Rate</th>
+                                                  <th></th>
+                                                  <th>Size</th>
+                                                  <th>mzmt</th>
+                                                  <th></th>
+                                                  <th>Price</th>
+                                                  <th>GST</th>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>BSP</b></td>
+                                                  <td>5400</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,45,43,000</td>
+                                                  <td>90,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Floor P|c</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td>45,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Park P|c</b></td>
+                                                  <td>50</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,27,250</td>
+                                                  <td>21,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Road P|c</b></td>
+                                                    <td>100</td>
+                                                    <td></td>
+                                                    <td>4545</td>
+                                                    <td></td>
+                                                    <td>=</td>
+                                                    <td>4,54,500</td>
+                                                    <td>54,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Car Parking</b></td>
+                                                  <td></td>
+                                                  <td>300000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>3,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Club Charge</b></td>
+                                                  <td></td>
+                                                  <td>100000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>10,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Lease Rent</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td></td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="pink">Total</td>
+                                                    <td></td>
+                                                    <td class="pink">Rs.</td>
+                                                    <td></td>
+                                                    <td>2,58,52,000</td>
+                                                    <td>5,60,090</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Extra Charges</td>
+                                                    <td></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>GST 5% Extra</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Registry as per applicable</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Possession charges approx .32500</td>
+                                                    <td>32,500</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Payment plan - 30:30:40</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>With in 30 Days</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Super Structure</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Possession</td>
+                                                    <td>40%</td>
+                                                    <td>1034500</td>
+                                                </tr>
+                                            </table>
+                                            <!-- <h6>BSP - (5400 BSP) * (5454 Size) = 29451600</h6>
                                             <h6>Floor PLC - (100 BSP) * (5454 Size) = 545400</h6>
                                             <h6>Park PLC - (100 BSP) * (5454 Size) = 545400</h6>
                                             <h6>Rood PLC - (0 BSP) * (5454 Size) = 0</h6>
@@ -229,10 +635,145 @@
                                             <h4>Payment plan - 30:30:40</h4>
                                             <h6>With in 30 DAYS (30 %)- 9446340</h6>
                                             <h6>On Super structure (30 %)- 9446340</h6>
-                                            <h6>On Possession (40 %)- 12595120</h6>
+                                            <h6>On Possession (40 %)- 12595120</h6> -->
                                         </div>
                                         <div class="unit3 boxx">
-                                            <h6>BSP - (5400 BSP) * (535 Size) = 2889000</h6>
+                                            <table>
+                                                <tr>
+                                                  <th></th>
+                                                  <th>Rate</th>
+                                                  <th></th>
+                                                  <th>Size</th>
+                                                  <th>mzmt</th>
+                                                  <th></th>
+                                                  <th>Price</th>
+                                                  <th>GST</th>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>BSP</b></td>
+                                                  <td>5400</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,45,43,000</td>
+                                                  <td>90,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Floor P|c</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td>45,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Park P|c</b></td>
+                                                  <td>50</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td>Sq. ft</td>
+                                                  <td>=</td>
+                                                  <td>2,27,250</td>
+                                                  <td>21,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Road P|c</b></td>
+                                                    <td>100</td>
+                                                    <td></td>
+                                                    <td>4545</td>
+                                                    <td></td>
+                                                    <td>=</td>
+                                                    <td>4,54,500</td>
+                                                    <td>54,000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Car Parking</b></td>
+                                                  <td></td>
+                                                  <td>300000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>3,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Club Charge</b></td>
+                                                  <td></td>
+                                                  <td>100000</td>
+                                                  <td></td>
+                                                  <td>1</td>
+                                                  <td>=</td>
+                                                  <td>10,00,000</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                  <td><b>Lease Rent</b></td>
+                                                  <td>100</td>
+                                                  <td></td>
+                                                  <td>4545</td>
+                                                  <td></td>
+                                                  <td>=</td>
+                                                  <td>4,54,500</td>
+                                                  <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="pink">Total</td>
+                                                    <td></td>
+                                                    <td class="pink">Rs.</td>
+                                                    <td></td>
+                                                    <td>2,58,52,000</td>
+                                                    <td>5,60,090</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Extra Charges</td>
+                                                    <td></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>GST 5% Extra</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Registry as per applicable</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Possession charges approx .32500</td>
+                                                    <td>32,500</td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <table>
+                                                <tr>
+                                                    <td class="pink">Payment plan - 30:30:40</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>With in 30 Days</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Super Structure</td>
+                                                    <td>30%</td>
+                                                    <td>7755600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On Possession</td>
+                                                    <td>40%</td>
+                                                    <td>1034500</td>
+                                                </tr>
+                                            </table>
+                                            <!-- <h6>BSP - (5400 BSP) * (535 Size) = 2889000</h6>
                                             <h6>Floor PLC - (100 BSP) * (535 Size) = 53500</h6>
                                             <h6>Park PLC - (0 BSP) * (535 Size) = 0</h6>
                                             <h6>Rood PLC - (0 BSP) * (535 Size) = 0</h6>
@@ -247,13 +788,13 @@
                                             <h4>Payment plan - 30:30:40</h4>
                                             <h6>With in 30 DAYS (30 %)- 1018800</h6>
                                             <h6>On Super structure (30 %)- 1018800</h6>
-                                            <h6>On Possession (40 %)- 1358400</h6>
+                                            <h6>On Possession (40 %)- 1358400</h6> -->
                                         </div>
                                     </div>
         
                                     <div class="text-center"> 
                                         <input type="button" name="signup" 
-                                        class="btn btn-custom font-14 py-2 px-4 text-uppercase mt-1" 
+                                        class="btn btn-custom font-14 py-2 px-4 text-uppercase mt-4" 
                                         data-toggle="modal" data-target="#ContactAgent"
                                         value="Print"> 
                                     </div>
