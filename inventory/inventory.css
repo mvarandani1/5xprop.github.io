@@ -109,7 +109,7 @@ input[type="checkbox"]{
 
 .mySlides ul{
   display: flex;
-  width: 41vw;
+  /* width: 41vw; */
 }
 
 .mySlides ul li{
@@ -400,7 +400,7 @@ input[type="checkbox"]{
     padding: 0px !important;
   }
   .mySlides ul{
-    width: 150vw;
+    margin-right: -280px;
   }
   .row-dflex{
     display: flex;
