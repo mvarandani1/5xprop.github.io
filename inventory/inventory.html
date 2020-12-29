@@ -102,13 +102,13 @@
 												overflow-x: scroll;
 												margin-bottom: 2rem;height: 140px;">
 													<div class="rera-width">
-														<div class="rera-img-div slide-no div1" onclick="currentSlide(1)">
+														<div class="rera-img-div slide-no div1"  onclick="currentSlide(1)">
 															<img src="./images/building-icon.png">
 															<p>TOWER-A</p>
 														</div>
 													</div>
 													<div class="rera-width">
-														<div class="rera-img-div slide-no div2" onclick="currentSlide(2)">
+														<div class="rera-img-div slide-no div2"  onclick="currentSlide(2)">
 															<img src="./images/building-icon.png">
 															<p>TOWER-B</p>
 														</div>
@@ -214,7 +214,7 @@
 													<!-- Slideshow container -->
 													<div class="slideshow-container">
 
-														<div class="mySlides">
+														<div class="mySlides" id="1">
 															<div class="text">TOWER-A</div>
 															<ul class="targetDiv">
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -816,7 +816,7 @@
 														  
 														</div>
 														
-														<div class="mySlides" id="towerB">
+														<div class="mySlides" id="2">
 															<div class="text">TOWER-B</div>
 															<ul class="targetDiv">
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -1416,7 +1416,7 @@
 															</ul>
 														</div>
 														
-														<div class="mySlides" id="towerC">
+														<div class="mySlides" id="3">
 															  <div class="text">TOWER-C</div>
 															  <ul>
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -2016,7 +2016,7 @@
 															</ul>
 														</div>
 
-														<div class="mySlides" id="towerD">
+														<div class="mySlides" id="4">
 															<div class="text">TOWER-D</div>
 															<ul>
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -2616,7 +2616,7 @@
 															</ul>
 														</div>
 
-														<div class="mySlides" id="towerG">
+														<div class="mySlides" id="5">
 															<div class="text">TOWER-G</div>
 															<ul>
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -3216,7 +3216,7 @@
 															</ul>
 														</div>
 
-														<div class="mySlides" id="towerVG">
+														<div class="mySlides" id="6">
 															<div class="text">TOWER-VG</div>
 															<ul>
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -3816,7 +3816,7 @@
 															</ul>
 														</div>
 
-														<div class="mySlides" id="towerVB">
+														<div class="mySlides" id="7">
 															<div class="text">TOWER-VB</div>
 															<ul>
 																<li style="background:#f1f1f1">Floor 29</li>
@@ -4416,7 +4416,7 @@
 															</ul>
 														</div>
 														
-														<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+														<a class="prev" onclick="plusSlides(0)">&#10094;</a>
 														<a class="next" onclick="plusSlides(1)">&#10095;</a>
 														
 													</div>
@@ -6733,31 +6733,84 @@
 
 	<!--Slideshow-->
 	<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		
+		var slideIndex = [];
+		$('.mySlides').hide();
+		showSlides(1);
+		var currentFloor;
 		function plusSlides(n) {
-		  showSlides(slideIndex += n);
+			var newOne;
+			slideIndex.sort();
+			
+			if(n==0)
+			{
+				if(slideIndex.indexOf(currentFloor)-1!=-1)
+				
+			
+			{newOne=slideIndex[slideIndex.indexOf(currentFloor)-1];
+				showSlides(newOne);		
+				
+			}
+			}
+			else if (n==1)
+			{
+				if(slideIndex.indexOf(currentFloor)+1!=slideIndex.length)
+			{
+				newOne=slideIndex[slideIndex.indexOf(currentFloor)+1];
+				showSlides(newOne);		
+			}
+			}
+			
 		}
 		
 		function currentSlide(n) {
-		  showSlides(slideIndex = n);
+			if(slideIndex.indexOf(n)==-1)
+				{	slideIndex.push(n);
+					showSlides(n);
+				}
+
+			else if(slideIndex.indexOf(n)>-1)
+			{
+				$('#'+n).hide();
+				slideIndex.sort();
+				const index = slideIndex.indexOf(n);
+				
+				if (index > -1) {
+					
+					if(index-1!=-1)
+					{
+						showSlides(n-1);
+					}
+					else
+					{
+						showSlides(n+1);
+					}
+				}
+				slideIndex.splice(index, 1);
+			}
+			else
+			{
+				showSlides(1);
+			}	
+		  
 		}
 		
 		function showSlides(n) {
+			currentFloor=n;
 		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("slide-no");
-		  if (n > slides.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			  dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " active";
+		  $('.mySlides').hide();
+		  $('#'+n).show();
+		//   var slides = document.getElementsByClassName("mySlides");
+		//   var dots = document.getElementsByClassName("slide-no");
+		//   if (n > slides.length) {slideIndex = 1}    
+		//   if (n < 1) {slideIndex = slides.length}
+		//   for (i = 0; i < slides.length; i++) {
+		// 	  slides[i].style.display = "none";  
+		//   }
+		//   for (i = 0; i < dots.length; i++) {
+		// 	  dots[i].className = dots[i].className.replace(" active", "");
+		//   }
+		//   slides[slideIndex-1].style.display = "block";  
+		//   dots[slideIndex-1].className += " active";
 		}
 	</script>
 	
