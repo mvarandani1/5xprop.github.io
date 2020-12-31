@@ -54,6 +54,18 @@
 			.front-up-dflex img{
 				width: 32px;
 			}
+			.form-wizard{
+				margin-top: 1rem;
+				padding: 0px;
+			}
+		}
+
+		@media (max-width: 365px){
+			.form-wizard{
+				margin-top: 1rem;
+				padding: 30px;
+				margin-bottom: 2rem;
+			}
 		}	
 
 		.navigation {
@@ -270,7 +282,7 @@
 			<br>
 			<div class="front-up" style="margin-left:4rem;">
 				<p>Unit</p>
-				<h4>AP0A023002<h4>
+				<h6>AP0A023002<h6>
 				<div class="d-flex front-up-dflex" style="justify-content:space-between;width:40%;">
 					<p><img src="./images/floor.png"> &nbsp;Floor 23</p>
 					<p><img src="./images/house.png"> &nbsp;Size 2BHK+Study (1155 Sq. Ft.)</p>
@@ -436,14 +448,16 @@
                                 <fieldset class="wizard-fieldset show">
                                    	<div class="wizard1" style="display: flex;width:100%;justify-content:space-around;margin-left:8rem;">
                                         <div class="wizard-form-radio d-flex" style="margin-right:1rem;width:100%;">
-                                           	<input name="radio-name" id="radio1" type="radio" class="input-radio" style="height: 20px !important;width:20px !important;">
+											   <input name="radio-name" id="radio1" type="radio" class="input-radio" 
+											   style="height: 20px !important;width:20px !important;">
                                             <label for="radio1" style="margin-top:-1rem;">
                                             	<img src="./images/booking.png" style="margin-left:1rem;">
                                             	&nbsp;&nbsp;&nbsp;&nbsp;Booking Amount ₹ 415,894</label>
                                         </div>
 
                                         <div class="wizard-form-radio d-flex" style="width:100%;">
-                                            <input name="radio-name" id="radio1" type="radio" class="input-radio" style="height: 20px !important;width:20px !important;">
+											<input name="radio-name" id="radio1" type="radio" class="input-radio" 
+											style="height: 20px !important;width:20px !important;">
                                             <label for="radio1" style="margin-top:-1rem;">
                                             <img src="./images/blocking.png" style="margin-top:-1rem;margin-left:1rem;"> 
                                         	&nbsp;&nbsp;&nbsp;&nbsp;Blocking Amount ₹ 100,000</label>
@@ -568,9 +582,9 @@
 		</div>
 		<!--Footer ends-->
 	</div>
-	<script src="js/plugin.js"></script>
+	<script src="../js/plugin.js"></script>
 	<!--Main js-->
-	<script src="js/main.js"></script>
+	<script src="../js/main.js"></script>
 	<script>
 		(function($){
 			function floatLabel(inputType){
