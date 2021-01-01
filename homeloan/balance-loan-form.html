@@ -36,6 +36,7 @@
 		  margin-top: 3.5rem;
 		  margin-bottom:3rem;
 		}
+
 	</style>
 </head>
 
@@ -73,7 +74,200 @@
         </header>
     </div>
     <main>
-
+		<div class="container-main">
+			<div class="screen">
+				<h2>Check Your Eligibility</h2>
+				<div class="screen__content">
+					<form class="login">
+						<div class="login__field">
+							<i class="login__icon fas fa-rupee-sign"></i>
+							<input list="loans"  class="login__input" name="loan" id="loan" placeholder="Type Of Loan">
+							<datalist id="loans">
+								<option value="Home Loan">
+								<option value="Personal Loan">
+								<option value="Business Loan">
+								<option value="Loan Against Property">
+								<option value="Home Loan Balance Transfer">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-check"></i>
+							<input type="text" class="login__input" placeholder="Property Value">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-search-location"></i>
+							<input list="cities" class="login__input" name="city" id="city" placeholder="Property Located In">
+							<datalist id="cities">
+								 <option value="Dhanbad">
+								 <option value="Dibrugarh">
+								 <option value="Durg">
+								 <option value="Eluru">
+								 <option value="Etawah">
+								 <option value="Faizabad">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-rupee-sign"></i>
+							<input type="text" class="login__input" placeholder="Outstanding balance">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-rupee-sign"></i>
+							<input type="text" class="login__input" placeholder="Existing Interest Rate">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-user-clock"></i>
+							<input list="years" name="year" id="year" class="login__input" placeholder="Existing Loan Start Year">
+							<datalist id="years">
+								<option value="2021">
+								<option value="2020">
+								<option value="2019">
+								<option value="2018">
+								<option value="2017">
+								<option value="2016">
+								<option value="2015">
+								<option value="2014">
+								<option value="2013">
+								<option value="2012">
+								<option value="2011">
+								<option value="2010">
+								<option value="2009">
+								<option value="2008">
+								<option value="2007">
+								<option value="2006">
+								<option value="2005">
+								<option value="2004">
+								<option value="2003">
+								<option value="2002">
+								<option value="2001">
+								<option value="2000">
+								<option value="1999">
+								<option value="1998">
+								<option value="1997">
+								<option value="1996">
+								<option value="1997">
+								<option value="1996">
+								<option value="1995">
+								<option value="1994">
+								<option value="1993">
+								<option value="1992">
+								<option value="1991">
+								<option value="1990">
+						   </datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-rupee-sign"></i>
+							<input type="number" class="login__input" placeholder="Total Loan Tenure">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-university"></i>
+							<input list="lenders" name="lender" id="lender" class="login__input" placeholder="Select current lender">
+							<datalist id="lenders">
+								<option value="AXIS BANK">
+								<option value="BANK OF INDIA">
+								<option value="CANARA BANK">
+								<option value="CBI BANK">
+								<option value="CITI BANK">
+								<option value="ICICI BANK">
+								<option value="YES BANK">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-street-view"></i>
+							<input list="currents" name="current" id="current" class="login__input" placeholder="Current City">
+							<datalist id="currents">
+								<option value="Hyderabad">
+								<option value="Guwahati">
+								<option value="Meerut">
+								<option value="Noida">
+								<option value="Ghaziabad">
+								<option value="Delhi">
+								<option value="Ahemdabad">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-user"></i>
+							<input list="types" name="type" id="type" class="login__input" placeholder="Occupation Type">
+							<datalist id="types">
+								<option value="Salaried">
+								<option value="Self Employed Business">
+								<option value="Self Employed Professional">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-user-clock"></i>
+							<input list="works" name="work" id="work" class="login__input" placeholder="Total Work Vintage">
+							<datalist id="works">
+								<option value="1 year">
+								<option value="2 year">
+								<option value="3 year">
+								<option value="4 year">
+								<option value="5 year">
+								<option value="5+ year">
+							</datalist>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-user" style="font-size: 16px;"> &nbsp;&nbsp;Gender</i>
+							<br>
+							<br>
+							<div style="display: flex;"> 
+								<div style="display: flex;width: 60px;">
+									<input type="radio" class="login__input" id="male" name="gender" value="male">
+									<label for="male" style="color: #fff;">Male</label>
+								</div>
+								&nbsp;
+								&nbsp;
+								&nbsp;
+								<div>
+									<input type="radio" id="female" name="gender" value="female">
+									  <label for="female" style="color: #fff;">Female</label>
+								</div>
+							</div>
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-birthday-cake"></i>
+							<input type="date" class="login__input">
+						</div>
+						<div class="login__field">
+							<i class="login__icon fas fa-book" style="font-size: 16px;"> &nbsp;&nbsp;Want To Add Co-borrower</i>
+							<br>
+							<br>
+							<div style="display: flex;"> 
+								<div style="display: flex;width: 60px;">
+									<input type="radio" class="login__input" id="yes" name="accept" value="yes">
+									<label for="yes" style="color: #fff;">Yes</label>
+								</div>
+								&nbsp;
+								&nbsp;
+								&nbsp;
+								<div>
+									<input type="radio" id="no" name="accept" value="no">
+									  <label for="no" style="color: #fff;">No</label>
+								</div>
+							</div>
+						</div>
+						<div class="show">
+							<div class="login__field">
+								<i class="login__icon fas fa-money-check-alt"></i>
+								<input type="text" class="login__input" placeholder="Co-borrower's Income">
+							</div>
+							<div class="login__field">
+								<i class="login__icon fas fa-money-check-alt"></i>
+								<input type="text" class="login__input" placeholder="Co-borrower's EMI">
+							</div>
+						</div>
+						<button class="button login__submit">
+							<span class="button__text">Submit</span>
+						</button>				
+					</form>
+				</div>
+				<div class="screen__background">
+					<span class="screen__background__shape screen__background__shape4"></span>
+					<span class="screen__background__shape screen__background__shape3"></span>		
+					<span class="screen__background__shape screen__background__shape2"></span>
+					<span class="screen__background__shape screen__background__shape1"></span>
+				</div>		
+			</div>
+		</div>
     </main>
     <!--Footer Starts-->
 			<div class="footer-wrapper v3">
@@ -180,5 +374,13 @@
 	<!--Main js-->
 	<script src="../js/main.js"></script>
 	<!--Scripts ends-->	
+	<script>
+		$('#yes').click(function () {
+			$(".show").show();
+		});
+		$('#no').click(function () {
+			$(".show").hide();
+		});
+	</script>
 </body>
 </html>

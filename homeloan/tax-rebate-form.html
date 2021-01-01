@@ -15,19 +15,23 @@
 	<!-- style CSS -->
 	<link href="../css/style.css" rel="stylesheet" />
 	<link href="homeloan.css" rel="stylesheet" />
-	<!--Swiper Slider-->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<!-- Document Title -->
 	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
 	<style>
 		@media (max-width: 855px){
 			.logo {
-			    margin-top: -1rem;
+			    margin-top: -0.5rem;
 			    width: 100% !important;
 			}	
 			ul.top-nav li a.btn.v7 {
 			    padding: 4px 12px;
 			    margin-right: 100px;
+			}
+			.sm{
+				display: flex;
+				flex-direction: column;
 			}
 		}
 		.navigation {
@@ -35,6 +39,186 @@
 		  background: #fff;
 		  margin-top: 3.5rem;
 		  margin-bottom:3rem;
+		}
+		.header{
+			text-align: center;
+			padding: 15px;
+		}
+		.img-fluid{
+			margin-top: -1.2rem;
+		}
+
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		}
+
+		caption, th, td {
+		  text-align: left;
+		  font-weight: normal;
+		  vertical-align: middle;
+		}
+
+		q, blockquote {
+		  quotes: none;
+		}
+		q:before, q:after, blockquote:before, blockquote:after {
+		  content: "";
+		  content: none;
+		}
+
+		article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+		  display: block;
+		}
+
+		/* Colors */
+		/* ---------------------------------------- */
+
+		.form-group {
+		  margin-bottom: 20px;
+		}
+
+		h2.heading {
+		  font-size: 18px;
+		  text-transform: uppercase;
+		  font-weight: 400;
+		  text-align: left;
+		  color: #000;
+		  border-bottom: 1px solid #000;
+		  padding-bottom: 3px;
+		  margin-bottom: 20px;
+		}
+
+		.controls {
+		  text-align: left;
+		  position: relative;
+		}
+		.controls input[type="text"],
+		.controls input[type="number"],
+		.controls input[type="email"],
+		.controls input[type="tel"],
+		.controls input[type="date"],
+		.controls textarea,
+		.controls button,
+		.controls select {
+		  padding: 12px;
+		  font-size: 14px;
+		  border: 1px solid #c6c6c6;
+		  width: 100%;
+		  margin-bottom: 18px;
+		  color: #888;
+		  font-size: 16px;
+		  font-weight: 300;
+		  background-color: #fff;
+		  -moz-border-radius: 2px;
+		  -webkit-border-radius: 2px;
+		  border-radius: 4px;
+		  -moz-transition: all 0.3s;
+		  -o-transition: all 0.3s;
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+		}
+		.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+		.controls input[type="number"]:focus, .controls input[type="number"]:hover,
+		.controls input[type="email"]:focus,
+		.controls input[type="email"]:hover,
+		.controls input[type="tel"]:focus,
+		.controls input[type="tel"]:hover,
+		.controls input[type="date"]:focus,
+		.controls input[type="date"]:hover,
+		.controls textarea:focus,
+		.controls textarea:hover,
+		.controls button:focus,
+		.controls button:hover,
+		.controls select:focus,
+		.controls select:hover {
+		  outline: none;
+		  border-color: #f52e5d;
+		}
+		.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+		.controls input[type="number"]:focus + label, .controls input[type="number"]:hover + label,
+		.controls input[type="email"]:focus + label,
+		.controls input[type="email"]:hover + label,
+		.controls input[type="tel"]:focus + label,
+		.controls input[type="tel"]:hover + label,
+		.controls input[type="date"]:focus + label,
+		.controls input[type="date"]:hover + label,
+		.controls textarea:focus + label,
+		.controls textarea:hover + label,
+		.controls button:focus + label,
+		.controls button:hover + label,
+		.controls select:focus + label,
+		.controls select:hover + label {
+		  color: #f52e5d;
+		  cursor: text;
+		}
+		.controls .fa-sort {
+		  position: absolute;
+		  right: 10px;
+		  top: 18px;
+		  color: #999;
+		}
+		.controls select {
+		  -moz-appearance: none;
+		  -webkit-appearance: none;
+		  cursor: pointer;
+		}
+		.controls label {
+		  position: absolute;
+		  left: 8px;
+		  top: 12px;
+		  color: #999;
+		  font-size: 16px;
+		  display: inline-block;
+		  padding: 2px 10px;
+		  font-weight: 400;
+		  background-color: rgba(255, 255, 255, 0);
+		  pointer-events: none;
+		  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  transition: color 0.3s, top 0.3s, background-color 0.8s;
+		}
+		.controls label.active {
+		  top: -11px;
+		  color: #555;
+		  background-color: white;
+		}
+		.controls textarea {
+		  resize: none;
+		  height: 200px;
+		}
+		.controls button {
+		  cursor: pointer;
+		  background-color: #f52e5d;
+		  border: none;
+		  color: #fff;
+		  padding: 12px 0;
+		}
+		.controls button:hover {
+		  background-color: #f52e5d;
+		}
+		.form-group{
+			display: flex;
+			flex-direction: column;
+		}
+
+		ol{
+			width: 80%;
+			margin: auto;
+		}
+
+		ol li{
+			list-style: initial !important;
+		}
+		
+		.city-icon img{
+			border-radius: 50%;
+			width: 50px;
+		}
+
+		img{
+			width: 55px;
 		}
 	</style>
 </head>
@@ -73,7 +257,348 @@
         </header>
     </div>
     <main>
+		<form style="margin:auto;width:90%;margin-top: 4rem;" action="">	
+			<div class="form-group">
+			  <h5>CALCULATE TAX REBATE ON HOME LOAN</h5>
+			  <br>
+			  <div class="d-flex">
+				<div>
+					<img src="./images/homeloan/rupee.png">&nbsp;&nbsp;
+				</div>
+				<div class="controls" style="width: 100vw;">	
+					<input type="text" id="designation" class="floatLabel" name="designation">
+					<label for="designation">Your Home Loan Amount</label>
+				</div>
+			  </div>
+			  <br>
+			  <div class="d-flex">
+				<div>
+					<img src="./images/homeloan/balance.png">&nbsp;&nbsp;
+				</div>
+				<div class="controls" style="width: 100vw;">
+					  <select class="floatLabel" name="countryCode" id="country" class="floatLabel" name="country">
+						<option selected disabled>Your Home Loan Tenure</option>
+					  <option value="1 Year">1 Year</option>
+					  <option value="2 Year">2 Year</option>
+					  <option value="3 Year">3 Year</option>
+					  <option value="4 Year">4 Year</option>
+					  <option value="5 Year">5 Year</option>
+					  <option value="6 Year">6 Year</option>
+					  <option value="7 Year">7 Year</option>
+					  <option value="8 Year">8 Year</option>
+					  <option value="9 Year">9 Year</option>
+					  <option value="10 Year">10 Year</option>
+					  <option value="11 Year">11 Year</option>
+					  <option value="12 Year">12 Year</option>
+					  <option value="13 Year">13 Year</option>
+					  <option value="14 Year">14 Year</option>
+					  <option value="15 Year">15 Year</option>
+					  <option value="16 Year">16 Year</option>
+					  <option value="17 Year">17 Year</option>
+					  <option value="18 Year">18 Year</option>
+					  <option value="19 Year">19 Year</option>
+					  <option value="20 Year">20 Year</option>
+					  <option value="21 Year">21 Year</option>
+					  <option value="22 Year">22 Year</option>
+					  <option value="23 Year">23 Year</option>
+					  <option value="24 Year">24 Year</option>
+					  <option value="25 Year">25 Year</option>
+					  </select>
+					</div>
+				  </div>
+			  </div>
+			 
+			  <div class="d-flex">
+				<div>
+					<img src="./images/homeloan/speedometer.png">&nbsp;&nbsp;
+				</div>
+				<div>
+					<div class="controls roi" style="width: 85vw;">	
+						<input type="number" id="designation" class="floatLabel" name="designation">
+						<label for="designation"><b>%</b> &nbsp;Your Home Loan EMI (or) Rate of Interest</label>
+					</div>
+					<div class="controls emi" style="width: 85vw;">	
+						<input type="number" id="designation" class="floatLabel" name="designation">
+						<label for="designation"><b>i</b> &nbsp;Your Home Loan EMI (or) Rate of Interest</label>
+					</div>
+					<div>	
+						<div style="display: flex;"> 
+							<div style="display: flex;width: 100px;">
+								<input type="radio" id="roi" name="gender" value="roi">
+								<label for="roi">ROI</label>
+							</div>
+						
+							<div style="display: flex;">
+								<input type="radio" id="emi" name="gender" value="emi">
+								  <label for="emi">EMI</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <br>
 
+			  <div class="d-flex">
+				<div>
+					<img src="./images/homeloan/building.png">&nbsp;&nbsp;
+				</div>
+				<div>
+					<div class="controls" style="width: 85vw;">	
+						<input type="number" id="designation" class="floatLabel" name="designation">
+						<label for="designation">Your Property's Cost</label>
+					</div>
+				</div>
+			  </div>
+			  <br>
+
+			  <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home Loan Start Date</label>
+			  <div class="d-flex">
+					<div>
+						<img src="./images/homeloan/calendar.png">&nbsp;&nbsp;
+					</div>
+				  <div class="controls" style="width:50%;">
+					<div class="inputGroupAdd selectBox">
+					  <em class="icon-arrow-down"></em>
+					  <select class="floatLabel" name="countryCode" id="years" class="floatLabel" name="years">
+						  <option value="January">January </option>
+						  <option value="February">February </option>
+						  <option value="March">March</option>
+						  <option value="April">April</option>
+						  <option value="May">May</option>
+						  <option value="June">June</option>
+						  <option value="July">July</option>
+						  <option value="August">August</option>
+						  <option value="September">September</option>
+						  <option value="October">October</option>
+						  <option value="November">November</option>
+						  <option value="December">December</option>
+					  </select>
+					</div>
+				  </div>
+				  &nbsp;&nbsp;
+				  <div class="controls" style="width:50%;">
+					<div class="inputGroupAdd selectBox">
+					  <em class="icon-arrow-down"></em>
+					  <select class="floatLabel" name="countryCode" id="months" class="floatLabel" name="months">
+						  <option value="2021">2021</option>
+						  <option value="2020">2020</option>
+						  <option value="2019">2019</option>
+						  <option value="2018">2018</option>
+						  <option value="2017">2017</option>
+						  <option value="2016">2016</option>
+						  <option value="2015">2015</option>
+						  <option value="2014">2014</option>
+						  <option value="2013">2013</option>
+						  <option value="2012">2012</option>
+						  <option value="2011">2011</option>
+						  <option value="2010">2010</option>
+						  <option value="2009">2009</option>
+						  <option value="2008">2008</option>
+						  <option value="2007">2007</option>
+						  <option value="2006">2006</option>
+						  <option value="2007">2007</option>
+						  <option value="2006">2006</option>
+						  <option value="2005">2005</option>
+						  <option value="2004">2004</option>
+						  <option value="2003">2003</option>
+						  <option value="2002">2002</option>
+						  <option value="2001">2001</option>
+						  <option value="2000">2000</option>
+					  </select>
+					</div>
+				  </div>
+			  </div>
+			  <br>
+
+			  <div class="d-flex">
+					<div>
+						<img src="./images/homeloan/museum.png">
+					</div>
+				  <div class="controls" style="width: 100vw;">
+					<div class="inputGroupAdd selectBox">
+					  <em class="icon-arrow-down"></em>
+					  <select class="floatLabel" name="countryCode" id="salary" class="floatLabel" name="salary">
+						  <option selected disabled>Select current lender</option>
+						  	<option value="AXIS BANK">AXIS BANK</option>
+							<option value="BANK OF INDIA">BANK OF INDIA</option>
+							<option value="CANARA BANK">CANARA BANK</option>
+							<option value="CBI BANK">CBI BANK</option>
+							<option value="CITI BANK">CITI BANK</option>
+							<option value="ICICI BANK">ICICI BANK</option>
+							<option value="YES BANK">YES BANK</option>
+					  </select>
+					</div>
+				  </div>
+			  </div>
+			<br>
+
+			<div class="d-flex">
+				<div>
+					<img src="./images/homeloan/location-pin.png">
+				</div>
+				<div class="controls" style="width: 100vw;">
+					  <select class="floatLabel" name="countryCode" id="country" class="floatLabel" name="country">
+						<option selected disabled>Select property location</option>
+						<option value="Hyderabad">Hyderabad</option>
+							<option value="Guwahati">Guwahati</option>
+							<option value="Meerut">Meerut</option>
+							<option value="Noida">Noida</option>
+							<option value="Ghaziabad">Ghaziabad</option>
+							<option value="Delhi">Delhi</option>
+							<option value="Ahemdabad">Ahemdabad</option>
+					  </select>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<h5>PROPERTY POSSESSION STATUS</h5>
+			<br>
+			<div class="d-flex">
+				<div class="controls" style="width: 100vw;">
+					<div style="display: flex;" class="sm">
+						
+						<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12 back self">
+							<div class="city-icon active" data-value="1">
+								<img src="./images/homeloan/self.png" class="self-occupied" />
+								<span>Self-occupied</span>
+							</div>
+						</div>
+						<br>
+						<div class="col-lg-4 col-md-3 col-sm-3 col-xs-12 back rent">
+							<div class="city-icon" data-value="2">
+								<img src="./images/homeloan/rent.png" class="company" />
+								<span>Rented Out</span>
+							</div>
+						</div>
+						<br>
+						<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 back under-construction">
+							<div class="city-icon" data-value="3">
+								<img src="./images/homeloan/crane.png" class="under-construction" />
+								<span>Still Under Construction</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<div class="under-div">
+				<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expected Completion</label>
+			<div class="d-flex">
+				  <div>
+					  <img src="./images/homeloan/task-complete.png">
+				  </div>
+				<div class="controls" style="width:50%;">
+				  <div class="inputGroupAdd selectBox">
+					<em class="icon-arrow-down"></em>
+					<select class="floatLabel" name="countryCode" id="years" class="floatLabel" name="years">
+						<option value="January">January </option>
+						<option value="February">February </option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+				  </div>
+				</div>
+				&nbsp;&nbsp;
+				<div class="controls" style="width:50%;">
+				  <div class="inputGroupAdd selectBox">
+					<em class="icon-arrow-down"></em>
+					<select class="floatLabel" name="countryCode" id="months" class="floatLabel" name="months">
+						<option value="2021">2021</option>
+						<option value="2020">2020</option>
+						<option value="2019">2019</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+						<option value="2013">2013</option>
+						<option value="2012">2012</option>
+						<option value="2011">2011</option>
+						<option value="2010">2010</option>
+						<option value="2009">2009</option>
+						<option value="2008">2008</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2005">2005</option>
+						<option value="2004">2004</option>
+						<option value="2003">2003</option>
+						<option value="2002">2002</option>
+						<option value="2001">2001</option>
+						<option value="2000">2000</option>
+					</select>
+				  </div>
+				</div>
+			</div>
+			</div>
+			<br>
+
+			<div class="d-flex">
+				<div>
+					<img src="./images/homeloan/winner.png">
+				</div>
+			  <div class="controls" style="width: 100vw;">
+				<div class="inputGroupAdd selectBox">
+				  <em class="icon-arrow-down"></em>
+				  <select class="floatLabel" name="countryCode" id="salary" class="floatLabel" name="salary">
+					  <option selected disabled>Is this your 1st property?</option>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+				  </select>
+				</div>
+			  </div>
+		  	</div>
+		  	<br>
+			  
+			<div class="form-group">
+				<div class="controls" style="width:50%;margin: auto;">
+				  <button>See Results &nbsp;&nbsp;<i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		  </form>
+
+		  <br>
+		  <br>
+		  <h4 style="text-align: center;">How to read the Tax rebate Calculator:</h4>
+
+		  <ol>
+			  	<li>The above calculations pertaining to Sec 80 C & Sec 24 are based on latest Tax laws, which are subject to change
+					from time to time.Please keep track of all IT law amendments to stay on top of how your Home Loan affects 
+					your tax liability.
+				</li>
+				<li>
+					The maximum rebate allowed u/s 80C of Income Tax is Rs.1,50,000/-. 
+					The principal paid on the Home Loan is one of the eligible saving components of 80 C.
+				</li>
+				<li>
+					The maximum rebate allowed u/s 24 of Income Tax is subject to the property being Self-occupied or Rented out. 
+					Self-occupied property carries a cap of 2 Lakhs as eligible rebate, while Rented out property has no limit.
+				</li>
+				<li>
+					Income Tax laws offer additional rebate for 1st time property buyer whose loan quantum being less than 35 Lakhs & Property 
+					value being less than 50 Lakhs, by the way of Rs.50,000 additional eligible rebate on the Interest paid u/s 80 EE. 
+					This is over and above the usual eligible Interest paid rebate on the Home Loan.
+				</li>
+				<li>
+					For Under Construction property, the Pre-emi paid till the period of completion of the project can be claimed as 
+					Interest Rebate in 5 equal instalments after the property being handed over.
+				</li>
+				<li>
+					The above figures are for indicative purposes, please consult a tax consultant for doing an actual tax planning.
+				</li>
+		  </ol>
     </main>
     <!--Footer Starts-->
 			<div class="footer-wrapper v3">
@@ -180,5 +705,56 @@
 	<!--Main js-->
 	<script src="../js/main.js"></script>
 	<!--Scripts ends-->	
+	<script>
+		(function($){
+			function floatLabel(inputType){
+				$(inputType).each(function(){
+					var $this = $(this);
+					// on focus add cladd active to label
+					$this.focus(function(){
+						$this.next().addClass("active");
+					});
+					//on blur check field and remove class if needed
+					$this.blur(function(){
+						if($this.val() === '' || $this.val() === 'blank'){
+							$this.next().removeClass();
+						}
+					});
+				});
+			}
+			// just add a class of "floatLabel to the input field!"
+			floatLabel(".floatLabel");
+		})(jQuery);
+	</script>
+	<script>
+		$('#roi').click(function () {
+			$(".roi").show();
+			$(".emi").hide();
+		});
+		$('#emi').click(function () {
+			$(".emi").show();
+			$(".roi").hide();
+		});
+	</script>
+	<script>
+		$('.back').on('click',function(){
+			$(this).css('background-color','#f52e5d').siblings('').css('background-color','#fff');
+		});
+		$('.back').on('click',function(){
+			$(this).css('color','#fff').siblings('').css('color','#000');
+		});
+
+		$('.under-construction').click(function () {
+			$(".under-div").toggle();
+		});
+
+		$('.rent').click(function () {
+			$(".under-div").hide();
+		});
+
+		$('.self').click(function () {
+			$(".under-div").hide();
+		});
+	</script>
 </body>
 </html>
