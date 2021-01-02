@@ -389,3 +389,308 @@ input[type="radio"]{
 .under-div{
     display: none;
 }
+
+.home-loan-partner{
+    margin-top: 4rem;
+}
+
+.home-loan-partner-list-item {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(48,48,48,.4);
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+
+.home-loan-partner-anchor{
+    width: 100%;
+    height: auto;
+    padding: 15px 24px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.home-loan-partner-brand>img {
+    width: auto;
+    height: auto;
+    max-height: 32px;
+    max-width: 92px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.home-loan-partner-name {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.home-loan-partner-roi {
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+}
+
+.home-loan-partner-tenure {
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+}
+
+.home-loan-partner-list .home-loan-action {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.home-loan-action-btn {
+    font-size: 16px;
+    padding: 0 32px;
+    height: 44px;
+    line-height: 42px;
+    color: #ffffff;
+    background-color: #f52e5d;
+    border: 1px solid #fbe9e9;
+}
+
+.home-loan-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+}
+
+.home-loan-prop-final-content {
+    width: calc(100% - 349px);
+    padding-left: 124px;
+}
+
+.home-loan-prop-final {
+    width: 85%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-loan-prop-final-graphic {
+    width: 350px;
+    height: 400px;
+    background: url('../homeloan/images/homeloan/select.svg') no-repeat 50%/100%;
+}
+
+.home-loan-section-title-text1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 2rem;
+}
+
+.home-loan-prop-final-benefits-list-item span {
+    color: #f52e5d;
+}
+
+.home-loan-about{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.home-loan-about-right{
+    width: 100%;
+}
+
+.home-loan-about-left-graphic{
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    background: url('../homeloan/images/homeloan/faqs.svg') no-repeat 50%/100%;
+}
+
+.home-loan-get-help {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    background: url('../homeloan/images/homeloan/contact.svg') no-repeat 0 100%/600px auto;
+}
+
+.home-loan-get-help>.home-loan-container {
+    width: 1200px;
+    height: auto;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-loan-get-help-content-inner {
+    width: 100%;
+    height: auto;
+    padding: 0 130px;
+}
+
+.home-loan-get-help-title {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+}
+
+.home-loan-get-help-title-text1 {
+    color: #f52e5d;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.home-loan-get-help-title-text3 {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.home-loan-get-help-support {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-loan-get-help-support-column {
+    flex: 1 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.home-loan-get-help-support-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin-right: 2rem;
+}
+
+.home-loan-get-help-form-fixed-input {
+    width: 100%;
+    height: 44px;
+    padding: 12px;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.home-loan-get-help-support-content-title {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.home-loan-get-help-or {
+    width: 120px;
+    text-align: center;
+    margin: 32px auto;
+    position: relative;
+}
+
+.home-loan-get-help-form-fixed {
+    width: 100%;
+    height: auto;
+}
+
+.home-loan-get-help-form-fixed-fieldset {
+    width: 100%;
+    height: auto;
+    padding-bottom: 22px;
+}
+
+.svg-ico>svg {
+    height: 1em;
+    font-size: inherit;
+    vertical-align: middle;
+    color: inherit;
+    fill: currentColor;
+}
+
+@media (max-width: 600px){
+    .home-loan-partner-anchor{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-loan-prop-final {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-loan-prop-final-content {
+        width:100%;
+        padding: 0px;
+    }
+    .home-loan-prop-final-graphic {
+        width: 250px;
+        height: 300px;
+        margin: auto;
+    }
+    .home-loan-about-left-graphic{
+        width: 250px;
+        height: 200px;
+        margin: auto;
+    }
+    .home-loan-about{
+        display: flex;
+        flex-direction: column;
+    }    
+    .home-loan-get-help>.home-loan-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .home-loan-get-help{
+        background: none;
+    }
+    .home-loan-get-help-content{
+        width: 100%;
+    }
+    .home-loan-get-help-content-inner {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        padding: 0px;
+    }
+    .home-loan-get-help-support {
+        width: 100%;
+        height: auto;
+        display: inline;
+        flex-direction: column;
+    }
+    .home-loan-get-help-support-column{
+        margin-bottom: 1rem;
+    }
+}
