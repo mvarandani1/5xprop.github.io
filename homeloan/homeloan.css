@@ -769,7 +769,7 @@ input[type="radio"]{
     .home-loan-partner-name, .home-loan-partner-roi{
         font-size: 15px;
     }
-    .btn{
+    .btnn{
         margin-top: -170px;
     }
     .center{
@@ -791,6 +791,9 @@ input[type="radio"]{
         grid-template-columns: auto auto auto auto;
         grid-gap: 2px;
         padding: 2px;
+    }
+    .four-btn button{
+        width: 150px;
     }
     .submit_btn {
         margin-left: 5rem;
