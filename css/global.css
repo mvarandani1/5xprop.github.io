@@ -8747,6 +8747,12 @@ section.u-image,
 .u-layout-col > .u-size-30 {
   flex: 30 0 50%;
 }
+
+@media (max-width: 600px){
+  .u-layout-row > .u-size-30{
+    overflow-x: auto;
+  }
+}
 .u-layout-row > .u-size-29 {
   flex: 0 0 48.33333333%;
   max-width: 48.33333333%;
@@ -12061,6 +12067,13 @@ section.u-image,
 .u-layout-col {
   flex-direction: column;
   min-height: 100%;
+}
+
+@media (max-width: 600px) {
+  .u-layout-col {
+    flex-direction: row;
+    min-height: 100%;
+  }
 }
 .u-layout-row {
   flex-direction: row;
@@ -30950,7 +30963,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h4
         {
         font-weight: 400;
-        font-size: 1.5rem;
+        
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;

@@ -153,9 +153,7 @@
     .tilesWrap li {
         min-width: 250px;
     }
-    .cards_item {
-        width: 100%;
-    }
+   
     .card_image img {
         padding: 0px;
         margin-left: 10px;
@@ -494,12 +492,25 @@ input[type="radio"]{
 
 .home-loan-action-btn {
     font-size: 16px;
-    padding: 0 32px;
-    height: 44px;
-    line-height: 42px;
     color: #ffffff;
     background-color: #f52e5d;
     border: 1px solid #fbe9e9;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem;
+        line-height: 2.7;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .home-loan-section {
@@ -749,10 +760,23 @@ input[type="radio"]{
     .home-loan-action-btn {
         font-size: 14px;
         padding-bottom: 40px;
-        padding-left: 5px;
-        padding-right: 5px;
         height: 30px;
         align-items: center;
+    }
+    .home-loan-partner-list .home-loan-action {
+        margin-left: 170px;
+    }
+    .home-loan-partner-name, .home-loan-partner-roi{
+        font-size: 15px;
+    }
+    .btn{
+        margin-top: -170px;
+    }
+    .center{
+        margin-left: 90px;
+    }
+    .timeline-body li, .timeline-body p{
+        display: none;
     }
     .row-container{
         display: flex;
@@ -763,13 +787,40 @@ input[type="radio"]{
     }
     .four-btn{
         margin-top: 5rem;
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2px;
+        padding: 2px;
+    }
+    .submit_btn {
+        margin-left: 5rem;
+    }
+    .btn1{
+        color: #f52e5d;
+        background-color: #f5f5f5;
+        width: 80px;
     }
     .card-not-bootstrap{
         padding-top: 0.5rem;
-        padding-bottom: 12rem;
     }
-    .cards{
+
+    .cards {
+        width: 100%;
         margin-bottom: 3rem;
+    }
+
+    .cards_item {
+        width: 100% !important;
+        margin-bottom: 1rem;
+        height: 120px !important;
+    }
+    
+    .card_content p{
+        display: none;
+    }
+    .u-valign-middle img{
+        width: 100px;
+        height: 100px;
     }
 }
 

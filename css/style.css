@@ -20243,7 +20243,7 @@ article.row {
         padding: 0;
     }
     .cards_item {
-        width: 100% !important;
+        width: 100%;
         margin: auto;
         padding-left: 10px;
         height: 150px;
@@ -21067,6 +21067,24 @@ background: linear-gradient(to right, #ffc500, #c21500);
     opacity: 1;
     transform: translateX(calc(var(--base-grid) * 1.5));
     transition: opacity 0.5s ease-in, transform 0.3s ease-in-out 0.25s;
+  }
+
+  @media (max-width: 600px){
+    .articles{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: calc(var(--base-grid) * 2);
+    }
+    .articles__article{
+        width: 150px;
+        height: 150px;
+    }
+    .articles__title{
+        font-size: 20px;
+    }
+    .articles__content--rhs img{
+        width: 40px !important;
+    }
   }
 
   /* Testimonials */
