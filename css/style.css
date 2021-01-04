@@ -20596,7 +20596,7 @@ article.row {
 	width: 20%;
 	min-width: 200px;
 	max-width: 250px;
-	padding: 80px 20px 40px;
+	padding: 20px 20px 20px;
 	position: relative;
 	vertical-align: top;
 	margin: 10px;
@@ -21037,7 +21037,7 @@ background: linear-gradient(to right, #ffc500, #c21500);
   }
   
   .articles__title {
-    font-size: calc(var(--base-grid) * 4);
+    font-size: calc(var(--base-grid) * 3);
     line-height: 1.125;
     font-weight: 700;
     letter-spacing: -0.02em;
