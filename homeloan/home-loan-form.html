@@ -75,7 +75,17 @@
     <main>
         <div class="homeloanimg">
 			<div class="container">
-				<div class="row">
+				<div class="row-container">
+					<div class="four-btn">
+						<a href="personal-loan-form.html"><button>Personal Loan</button></a>
+						<br>
+						<a href="business-loan-form.html"><button>Business Loan</button></a>
+						<br>
+						<a href="property-loan-form.html"><button>Property Loan</button></a>
+						<br>
+						<a href="balance-loan-form.html"><button>Balance Transfer</button></a>
+						<br>
+					</div>
 					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 centered">
 						<h1>Home&nbsp;Loan</h1>
 						<p>A loan offered by a bank to cater to your personal needs, whether it’s for a family wedding, 
@@ -102,28 +112,6 @@
 			 	</div>
 			</div>
 		 </div>
-		 <ul class="tilesWrap">
-			<li>
-				<img src="./images/homeloan/personalloan.png" />	
-				<h3>Personal Loan</h3>
-				<a href="personal-loan-form.html"><button>Read more</button></a>
-            </li>
-            <li>
-				<img src="./images/homeloan/businessloan.png" />	
-				<h3>Business Loan</h3>
-				<a href="business-loan-form.html"><button>Read more</button></a>
-			</li>
-			<li>
-				<img src="./images/homeloan/propertyloan.png" />	
-				<h3>Property Loan</h3>
-				<a href="property-loan-form.html"><button>Read more</button></a>
-			</li>
-			<li>
-				<img src="./images/homeloan/balancetransfer.png" />	
-				<h3>Balance Transfer</h3>
-				<a href="balance-loan-form.html"><button>Read more</button></a>
-			</li>
-		</ul>
 
 		<div class="col-xl-8 col-lg-12">
 			<div id="location" class="list-details-section">
@@ -152,7 +140,7 @@
 			</div>
 		 
 			<div id="faqs" class="list-details-section">
-				<div class="container no-pad-lr">
+				<div class="container">
 					<h4 class="description-title"><i class="fa fa-user"></i>&nbsp;PERSONAL LOAN FAQS</h4>
 
 					<div class="detail-faq">
@@ -199,11 +187,12 @@
 				<div class="inner-wrapper-sticky">
 					<div class="listing-rightbar">
 						<div class="widget widget-white experts">
-							<h3 class="widget-title widget-title-w-icon text-center"><img src="images/agent.png" alt=""> Contact Our Real Estate Experts</h3>
-							<input type="text" class="form-control" placeholder="Name">
-							<input type="text" class="form-control" placeholder="Email ID">
-							<input type="text" class="form-control" placeholder="Phone Number">
-							<select class="form-control custom-select">
+							<h4 class="widget-title widget-title-w-icon text-center"><img src="images/agent.png" alt="">
+								TALK TO OUR EXPERTS</h4>
+							<input type="text" class="form-control form-control1" placeholder="Name">
+							<input type="email" class="form-control form-control1" placeholder="Email ID">
+							<input type="tel" class="form-control form-control1" placeholder="Phone Number">
+							<select class="form-control form-control1 custom-select">
 								<option value="https://www.5xprop.com/?change_city=delhi" selected="">--Select City--</option>
 								<option value="https://www.5xprop.com/?change_city=delhi">Delhi</option>
 								<option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
@@ -213,9 +202,31 @@
 								<option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
 								<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
 							</select>
+							<select class="form-control form-control1 custom-select">
+								<option value="" selected="">--Select Loan Type--</option>
+								<option value="">Home Loan</option>
+								<option value="">Personal Loan</option>
+								<option value="">Loan Against Property</option>
+								<option value="">Business Loan</option>
+								<option value="">Balance Transfer</option>
+							</select>
+							<select class="form-control form-control1 custom-select">
+								<option value="" selected="">--Select Loan Amount--</option>
+								<option value="">0-20 Lac</option>
+								<option value="">20-40 Lac</option>
+								<option value="">40-60 Lac</option>
+								<option value="">60-80 Lac</option>
+								<option value="">80 Lac - 1 Cr</option>
+								<option value="">1 - 1.5 Cr</option>
+								<option value="">1.5 - 2 Cr</option>
+								<option value="">2 - 3 Cr</option>
+								<option value="">Above 3 Cr</option>
+							</select>
+							<input id="check" type="checkbox" style="width: 15px; height: 15px; opacity: 1;visibility: visible;"/>
+							<label for="check" style="font-size: 13px;">Enable Updates through 
+							<span style="color: chartreuse;">Whatsapp</span></label>
 							<div class="experts-btn">
-								<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i> Get a Call Back </a>
-								<a href="#" class="btn btn-success py-2 mt-10"> <i class="fab fa-whatsapp mr-5"></i> Whatsapp </a>
+								<a href="#" class="btn btn-custom  py-2 mt-10"> Submit </a>
 							</div>
 						</div>
 					</div>
@@ -229,11 +240,12 @@
 				<div class="inner-wrapper-sticky">
 					<div class="listing-rightbar">
 						<div class="widget widget-white experts">
-							<h3 class="widget-title widget-title-w-icon text-center"><img src="images/agent.png" alt=""> Contact Our Real Estate Experts</h3>
-							<input type="text" class="form-control" placeholder="Name">
-							<input type="text" class="form-control" placeholder="Email ID">
-							<input type="text" class="form-control" placeholder="Phone Number">
-							<select class="form-control custom-select">
+							<h4 class="widget-title widget-title-w-icon text-center"><img src="images/agent.png" alt="">
+								TALK TO OUR EXPERTS</h4>
+							<input type="text" class="form-control form-control1" placeholder="Name">
+							<input type="email" class="form-control form-control1" placeholder="Email ID">
+							<input type="tel" class="form-control form-control1" placeholder="Phone Number">
+							<select class="form-control form-control1 custom-select">
 								<option value="https://www.5xprop.com/?change_city=delhi" selected="">--Select City--</option>
 								<option value="https://www.5xprop.com/?change_city=delhi">Delhi</option>
 								<option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
@@ -243,9 +255,31 @@
 								<option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
 								<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
 							</select>
+							<select class="form-control form-control1 custom-select">
+								<option value="" selected="">--Select Loan Type--</option>
+								<option value="">Home Loan</option>
+								<option value="">Personal Loan</option>
+								<option value="">Loan Against Property</option>
+								<option value="">Business Loan</option>
+								<option value="">Balance Transfer</option>
+							</select>
+							<select class="form-control form-control1 custom-select">
+								<option value="" selected="">--Select Loan Amount--</option>
+								<option value="">0-20 Lac</option>
+								<option value="">20-40 Lac</option>
+								<option value="">40-60 Lac</option>
+								<option value="">60-80 Lac</option>
+								<option value="">80 Lac - 1 Cr</option>
+								<option value="">1 - 1.5 Cr</option>
+								<option value="">1.5 - 2 Cr</option>
+								<option value="">2 - 3 Cr</option>
+								<option value="">Above 3 Cr</option>
+							</select>
+							<input id="check" type="checkbox" style="width: 15px; height: 15px; opacity: 1;visibility: visible;"/>
+							<label for="check" style="font-size: 13px;">Enable Updates through 
+							<span style="color: chartreuse;">Whatsapp</span></label>
 							<div class="experts-btn">
-								<a href="#" class="btn btn-custom  py-2 mt-10"> <i class="fa fa-phone mr-5"></i> Get a Call Back </a>
-								<a href="#" class="btn btn-success py-2 mt-10"> <i class="fab fa-whatsapp mr-5"></i> Whatsapp </a>
+								<a href="#" class="btn btn-custom  py-2 mt-10"> Submit </a>
 							</div>
 						</div>
 					</div>

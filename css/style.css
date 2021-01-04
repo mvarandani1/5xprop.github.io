@@ -892,7 +892,7 @@ p {
 
 
 li {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 30px;
     list-style: none !important;
@@ -18651,6 +18651,10 @@ main section .profile-pic .pic-info {
     #wrapper{
         width: 500px;
     }
+    .nav{
+        display: flex;
+        justify-content:center;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -20278,6 +20282,14 @@ article.row {
   font-weight: 400;
 }
 
+/* Open positions*/
+
+.nav-link{
+    width: 180px;
+    color: #f52e5d;
+    font-size: 14px;
+}
+
 @media (max-width: 500px){
     .card_title {
         font-size:0.9rem;
@@ -20285,14 +20297,9 @@ article.row {
     .cards_item{
         width: 100%;
     }
-}
-
-/* Open positions*/
-
-.nav-link{
-    width: 180px;
-    color: #f52e5d;
-    font-size: 14px;
+    .nav-link{
+        font-size: 12px;
+    }
 }
 
 .nav-link:hover{

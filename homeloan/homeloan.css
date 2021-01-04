@@ -2,7 +2,7 @@
     background: url('../homeloan/images/homeloan/landing.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     float: left;
     position: relative;
     z-index: 1;
@@ -60,6 +60,11 @@
 .form-control{
     border: none;
 }
+
+.form-control1{
+    border: 1px solid grey;
+}
+
 .form-control input{
     width: 250px;
     padding: 10px;
@@ -76,7 +81,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 20rem;
+    margin-top: 1rem;
+}
+
+.no-pad-lr{
+    margin-top: 35rem;
 }
 .no-pad-lr ul li{
     list-style-type: circle !important;
@@ -194,19 +203,25 @@
 }
 
 .screen {		
-    background:#f52e5d  url(./images/homeloan/doodle-bg.png) no-repeat center top;
+    /* background:#f52e5d  url(./images/homeloan/doodle-bg.png) no-repeat center top; */
 	position: relative;	
-    width: 100%;
+    width: 80%;
     height: 1650px;	
     margin: auto;
-    box-shadow: 0px 0px 24px #f52e5d;
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.0px );
+    -webkit-backdrop-filter: blur( 13.0px );
+    border-radius: 10px;
+    outline: none !important;
 }
 
 .screen h2{
-    color: #fff;
+    color: #000;
     padding: 20px;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
 
 .screen__content {
@@ -227,7 +242,7 @@
 	clip-path: inset(0 0 0 0);	
 }
 
-.screen__background__shape {
+/* .screen__background__shape {
 	transform: rotate(45deg);
     position: absolute;
     z-index: 0;
@@ -267,10 +282,11 @@
 	top: 420px;
 	right: 50px;	
 	border-radius: 60px;
-}
+} */
 
 .login {
-	width: 340px;
+    width: 80%;
+    margin: auto;
 	padding: 40px;
 	padding-top: 140px;
 }
@@ -283,30 +299,30 @@
 .login__icon {
 	position: absolute;
 	top: 30px;
-	color: #fff;
+	color: #f52e5d;
 }
 
 .login__input {
 	border: none;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #f52e5d;
     background: none;
 	padding: 10px;
 	padding-left: 24px;
 	font-weight: 400;
 	width: 100%;
     transition: .2s;
-    color: #fff;
+    color: #000;
 }
 
 .login__input::placeholder{
-    color: #fff;
+    color: #000;
 }
 
 .login__input:active,
 .login__input:focus,
 .login__input:hover {
 	outline: none;
-	border-bottom-color: #fff;
+	border-bottom-color: #f52e5d;
 }
 
 .login__submit {
@@ -364,6 +380,27 @@
 input[type="radio"]{
     width: 18px;
     height: 18px;
+}
+
+.four-btn{
+    margin-top: 13rem;
+}
+
+.four-btn button{
+    padding: 6px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 170px;
+    cursor: pointer;
+}
+
+.four-btn button::after{
+    content: ">";
+    margin-left: 10px;
+    font-size: 18px;
+    color: #f52e5d;
 }
 
 .show{
@@ -640,7 +677,23 @@ input[type="radio"]{
     fill: currentColor;
 }
 
+.widget-white {
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+    border: solid 1px #ededed;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 600px){
+    .screen {
+        width: 100%;
+    }
+    .login{
+        width: 100%;
+    }
     .home-loan-partner-anchor{
         display: flex;
         flex-direction: column;
@@ -693,4 +746,30 @@ input[type="radio"]{
     .home-loan-get-help-support-column{
         margin-bottom: 1rem;
     }
+    .home-loan-action-btn {
+        font-size: 14px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 30px;
+        align-items: center;
+    }
+    .row-container{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .centered{
+        margin-top: 17rem;
+    }
+    .four-btn{
+        margin-top: 5rem;
+    }
+    .card-not-bootstrap{
+        padding-top: 0.5rem;
+        padding-bottom: 12rem;
+    }
+    .cards{
+        margin-bottom: 3rem;
+    }
 }
+
