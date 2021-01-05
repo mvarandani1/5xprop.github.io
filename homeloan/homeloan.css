@@ -825,12 +825,34 @@ input[type="radio"]{
         display: none;
     }
 
-    .main .card_image img{
+    .timeline-panel img{
         display: none;
     }
     .u-valign-middle img{
         width: 100px;
         height: 100px;
+    }
+}
+
+@media screen and (max-width: 695px){
+    .nav {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .select-arrow {
+        display: block !important;
+    }
+    header ul li {
+        margin-right: 0.5rem;
+    }
+    ul.top-nav li a.btn.v7 {
+        padding: 4px 12px;
+        margin-right: 60px !important;
     }
 }
 
