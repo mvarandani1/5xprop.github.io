@@ -814,11 +814,18 @@ input[type="radio"]{
 
     .cards_item {
         width: 100% !important;
-        margin-bottom: 1rem;
-        height: 120px !important;
+        height: 100px !important;
+    }
+
+    .cards_item h4{
+        text-align: center;
     }
     
     .card_content p{
+        display: none;
+    }
+
+    .main .card_image img{
         display: none;
     }
     .u-valign-middle img{
