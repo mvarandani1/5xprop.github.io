@@ -217,7 +217,7 @@
 			width: 50px;
 		}
 
-		.form-group img{
+		.screen1 img{
 			width: 55px;
 		}
 		body{
@@ -226,8 +226,19 @@
             background-size: cover;
             background-position: center;
 		}
-		form{
-
+		@media (max-width: 600px){
+			.screen1 img{
+				width: 45px;
+			}
+			.controls input[type="text"], .controls input[type="number"],
+			.controls input[type="email"], .controls input[type="tel"], 
+			.controls input[type="date"], .controls textarea,
+			.controls button, .controls select {
+				font-size: 14px;
+			}
+			.controls label{
+				font-size: 13px;
+			}
 		}
 	</style>
 </head>
@@ -266,7 +277,7 @@
         </header>
     </div>
     <main class="screen1" style="margin-top: 5rem;margin-bottom: 3rem;">
-		<form style="margin:auto;width:90%;margin-top: 4rem;" action="">	
+		<form style="margin:auto;width:90%;margin-top: 3rem;" action="">	
 			<div class="form-group">
 			  <h5>CALCULATE TAX REBATE ON HOME LOAN</h5>
 			  <br>
@@ -322,7 +333,7 @@
 					<img src="./images/homeloan/speedometer.png">
 				</div>
 				
-					<div class="controls roi" style="width: 100vw;">	
+					<div class="controls roi" style="width: 100vw;margin-left:0.2rem;">	
 						<input type="number" id="designation" class="floatLabel" name="designation">
 						<label for="designation"><b>%</b> &nbsp;Your Home Loan Rate of Interest</label>
 					</div>
@@ -360,12 +371,12 @@
 			  </div>
 			  <br>
 
-			  <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home Loan Start Date</label>
+			  <label>Home Loan Start Date</label>
 			  <div class="d-flex">
 					<div>
-						<img src="./images/homeloan/calendar.png">&nbsp;&nbsp;
+						<img src="./images/homeloan/calendar.png">
 					</div>
-				  <div class="controls" style="width:50%;">
+				  <div class="controls" style="width:50%;margin-left:0.2rem;">
 					<div class="inputGroupAdd selectBox">
 					  <em class="icon-arrow-down"></em>
 					  <select class="floatLabel" name="countryCode" id="years" class="floatLabel" name="years">
@@ -423,7 +434,7 @@
 					<div>
 						<img src="./images/homeloan/museum.png">
 					</div>
-				  <div class="controls" style="width: 100vw;">
+				  <div class="controls" style="width: 100vw;margin-left:0.2rem;">
 					<div class="inputGroupAdd selectBox">
 					  <em class="icon-arrow-down"></em>
 					  <select class="floatLabel" name="countryCode" id="salary" class="floatLabel" name="salary">
@@ -494,12 +505,12 @@
 			<br>
 
 			<div class="under-div">
-				<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expected Completion</label>
+				<label>Expected Completion</label>
 			<div class="d-flex">
 				  <div>
 					  <img src="./images/homeloan/task-complete.png">
 				  </div>
-				<div class="controls" style="width:50%;">
+				<div class="controls" style="width:50%;margin-left:0.2rem;">
 				  <div class="inputGroupAdd selectBox">
 					<em class="icon-arrow-down"></em>
 					<select class="floatLabel" name="countryCode" id="years" class="floatLabel" name="years">
@@ -558,7 +569,7 @@
 				<div>
 					<img src="./images/homeloan/winner.png">
 				</div>
-			  <div class="controls" style="width: 100vw;">
+			  <div class="controls" style="width: 100vw;margin-left:0.2rem;">
 				<div class="inputGroupAdd selectBox">
 				  <em class="icon-arrow-down"></em>
 				  <select class="floatLabel" name="countryCode" id="salary" class="floatLabel" name="salary">

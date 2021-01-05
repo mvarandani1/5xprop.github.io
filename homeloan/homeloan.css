@@ -838,7 +838,7 @@ input[type="radio"]{
     /* background:#f52e5d  url(./images/homeloan/doodle-bg.png) no-repeat center top; */
 	position: relative;	
     width: 80%;
-    height: 1650px;	
+    height: 1750px;	
     margin: auto;
     background: rgba( 255, 255, 255, 0.20 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -856,7 +856,7 @@ input[type="radio"]{
         margin-left: 1rem;
     }
     .screen1{
-        height: 2300px;
+        height: 2500px;
         width: 95%;
     }
 }
