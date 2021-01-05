@@ -834,12 +834,30 @@ input[type="radio"]{
     }
 }
 
+.screen1 {		
+    /* background:#f52e5d  url(./images/homeloan/doodle-bg.png) no-repeat center top; */
+	position: relative;	
+    width: 80%;
+    height: 1650px;	
+    margin: auto;
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.0px );
+    -webkit-backdrop-filter: blur( 13.0px );
+    border-radius: 10px;
+    outline: none !important;
+}
+
 @media screen and (max-width: 695px){
     .nav {
         display: inline-grid;
         grid-template-columns: auto auto;
         justify-content: center;
         margin-left: 1rem;
+    }
+    .screen1{
+        height: 2300px;
+        width: 95%;
     }
 }
 
