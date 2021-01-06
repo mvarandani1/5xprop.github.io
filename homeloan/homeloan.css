@@ -838,7 +838,7 @@ input[type="radio"]{
     /* background:#f52e5d  url(./images/homeloan/doodle-bg.png) no-repeat center top; */
 	position: relative;	
     width: 80%;
-    height: 1750px;	
+    height: 1500px;	
     margin: auto;
     background: rgba( 255, 255, 255, 0.20 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -848,12 +848,26 @@ input[type="radio"]{
     outline: none !important;
 }
 
+.d-flexx{
+    display: flex;
+}
+
 @media screen and (max-width: 695px){
     .nav {
         display: inline-grid;
         grid-template-columns: auto auto;
         justify-content: center;
         margin-left: 1rem;
+    }
+    .d-flexx{
+        display: flex;
+        flex-direction: column;
+    }
+    .d-flexx div{
+        width: 100% !important;
+    }
+    .controls{
+        width: 100% !important;
     }
     .screen1{
         height: 2500px;
