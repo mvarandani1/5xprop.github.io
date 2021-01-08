@@ -688,16 +688,6 @@ input[type="radio"]{
     fill: currentColor;
 }
 
-.widget-white {
-    background: #fff;
-    padding: 15px 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
-    border: solid 1px #ededed;
-    background: #fff;
-    margin-bottom: 20px;
-}
-
 @media (max-width: 600px){
     .screen {
         width: 100%;
